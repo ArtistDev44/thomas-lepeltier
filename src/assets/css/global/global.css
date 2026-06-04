@@ -16,3 +16,10 @@
 /* @import-glob 'tests/*.css' layer(test); */
 
 @import 'tailwindcss/utilities' layer(tailwindUtilities);
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux tags de passer à la ligne si nécessaire */
+  gap: 8px; /* Espacement entre les tags (CSS moderne) */
+  margin: 1rem 0;
+}

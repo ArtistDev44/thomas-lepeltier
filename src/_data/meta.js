@@ -1,11 +1,11 @@
 export const url = process.env.URL || 'http://localhost:8080';
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
-export const siteName = 'Eleventy Excellent';
+export const siteName = 'Thomas Lepeltier';
 export const siteDescription = 'Eleventy starter for building modern, resilient websites';
 export const siteType = 'Person'; // schema
-export const locale = 'en_EN';
-export const lang = 'en';
+export const locale = 'fr_FR';
+export const lang = 'fr';
 export const skipContent = 'Skip to content';
 // for the site content author, used in <head> meta and post h-card microformat
 export const author = {

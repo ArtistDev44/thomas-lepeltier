@@ -1,0 +1,14 @@
+---
+title: "La Gloire de l’aventure. Genèse d’une mystique moderne, 1850-1940"
+date: 2002-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Histoire"]
+authorFullName: "Sylvain Venayre"
+authorLastName: "Venayre"
+imageUrl: "/assets/images/couvertures/venayre-gloire-aventure.webp"
+amazonLink: ""
+alphabeticalPage: ["v"]
+permalink: "/comptes-rendus/autheur/venayre/la-gloire-de-l-aventure-genese-d-une-mystique-moderne-1850-1940/index.html"
+---
+
+L'aventure a une histoire ! Loin d'avoir toujours existé, il serait en effet possible, d'après Sylvain Venayre, de parler d'un désir d'aventure qui monte et se propage de 1850 à 1940 environ. Certes, l'histoire antérieure regorge d'explorateurs, de mercenaires, de flibustiers, de chevaliers errants et autres intrigants en tout genre. Mais, avant le milieu du XIXe siècle, on n'y voit le plus souvent que personnages sans état et sans fortune, vivant d'expédients. Or, vers 1850, on assisterait à une mutation du regard : les thèmes du départ, de l'éloignement et, plus fondamentalement, du désir des confins viendraient recouvrir certaines de ces anciennes figures. C'est de cet imaginaire qui investit les blancs des cartes géographiques que serait né le mythe de l'Aventurier. Toute une littérature va de fait se faire l'écho de ces hommes qui partirent découvrir et conquérir des territoires inconnus, à l'exemple de ce Charles-Marie David de Mayrena, éphémère roi des Sédangs de Cochinchine, ou de ce James Brooke qui se fait nommer rajah de Sarawak. Toutefois, cette première mise en scène de l'aventure restait tributaire de motivations extérieures. Il s'agissait le plus souvent d'instruire, de moraliser ou d'inculquer le sens du devoir et le goût du sacrifice.       Ce n'est qu'à partir des années 1890 que la mystique de l'aventure s'affirmerait véritablement. Au moment même où les espaces inconnus semblent disparaître, sous l'avancée bien souvent des entreprises coloniales, l'aventure commencerait en effet à être revendiquée pour elle-même. On lui prête alors des vertus qui n'étaient pas les siennes jusque-là : accomplissement de soi, révélation de son identité, dévoilement d'un sens caché du monde, etc. Ainsi cette mystique de l'aventure serait paradoxalement le résultat d'une réaction nostalgique face à la disparition annoncée des confins et des terres vierges. En tout cas, véritable métaphore de la destinée humaine, elle s'incarna alors dans les figures d'Arthur Rimbaud, d'Henry de Monfreid, de Lawrence d'Arabie ou d'Alexandra David-Neel. Mais, pour Sylvain Venayre, le cycle de ce mythe moderne de l'Aventurier s'achève dans les années 1940 avec un écrivain comme André Malraux qui en révèle son historicité. Il ne reste plus alors aux terres lointaines, qui suscitent moins de quêtes depuis lors, qu'à être envahies par ce « voyageur sans aventures » qu'est le touriste, pour qui sont organisées de pâles répliques d'« authentiques » aventures…

@@ -1,0 +1,62 @@
+---
+layout: base
+---
+
+<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+  <h1 class="gradient-text">Compte-rendu</h1>
+  <h2>Du livre {{ title }}</h2>
+
+<div class="tags-container">
+{% for tag in tags %}
+  <span slot="tag" class="button">{{ tags }}</span>
+{% endfor %}
+</div>
+
+<p>Rédigé en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}
+</p>
+<div>
+  <img src="{{ imageUrl }}" alt="Image de couverture du livre {{title}}" class="image-left">
+      {{ content | safe }}
+  </div>
+  <p class="author_cr" > {{ authorFullName }} </p>
+<a href="{{amazonLink}}">Lien Amazon</a>
+
+
+<style>
+    p.author_cr {
+        text-align: right;
+    }
+
+    .image-left {
+      float: left;
+      margin-right: 15px;
+    }
+</style>
+
+<ul>
+{%- for books in collections.books -%}
+  <li>{{ books.data.title }}</li>
+{%- endfor -%}
+</ul>
+
+{% set related = collections.books | relatedBooks(tags, page.url) %}
+
+
+{% if related.length %}
+  <h2>Recommandations</h2>
+  <ul>
+    {%- for book in related -%}
+      <li>
+        <a href="{{ book.url }}">{{ book.data.title }}</a>
+        {# Optionnel : afficher les tags communs #}
+        <small>
+          Tags communs :
+          {%- for tag in book.data.tags -%}
+            {%- if tags.includes(tag) %} {{ tag }}{%- endif -%}
+          {%- endfor -%}
+        </small>
+      </li>
+    {%- endfor -%}
+  </ul>
+{% endif %}
+</div>

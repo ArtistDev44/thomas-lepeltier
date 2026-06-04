@@ -1,0 +1,14 @@
+---
+title: "Quand la nature s’effondre. Comprendre les transitions abruptes dans les écosystèmes"
+date: 2023-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Sciences"]
+authorFullName: "Alexandre Génin"
+authorLastName: "Génin"
+imageUrl: "/assets/images/couvertures/genin-quand-la-nature-s-effondre-comprendre-les-transitions-abruptes-dans-les-ecosystemes.webp"
+amazonLink: "https://materiologiques.com/fr/modelisations-simulations-systemes-complexes-2425-5661/372-quand-la-nature-seffondre-comprendre-les-transitions-abruptes-dans-les-ecosystemes-9782373614008.html"
+alphabeticalPage: ["g"]
+permalink: "/comptes-rendus/autheur/genin/quand-la-nature-s-effondre-comprendre-les-transitions-abruptes-dans-les-ecosystemes/index.html"
+---
+
+Avec le réchauffement climatique et le développement de la société thermo-industrielle, les écosystèmes risquent de s’effondrer, entend-on souvent dire. Mais, derrière les grandes déclarations catastrophistes, que signifie cette notion d’effondrement de la nature ? C’est la question à laquelle tente de répondre l’écologue Alexandre Génin dans ce petit livre. Dans les cas les plus simples, quand l’évolution d’un écosystème dépend d’un petit nombre de paramètres, les écologues arrivent à modéliser ce qui peut être vu comme un effondrement. Plus précisément, ils arrivent à définir des seuils à partir desquels un écosystème, après une perturbation, ne retrouve pas son apparence préalable. Par exemple, certaines forêts peuvent se reconstituer rapidement tant que des incendies ne les détruisent pas au-delà de 80 %. Mais, une fois passé ce seuil, elles ont plutôt tendance à se transformer en savanes. De même, pour certains lacs, il est possible de déterminer la quantité de phosphore provenant de l’activité agricole environnante qu’ils peuvent absorber sans que la prolifération des microalgues qui en résulte empêche les plantes aquatiques de se développer et fasse perdre à l’eau sa clarté. Mais, là encore, à partir d’un certain seuil, ces lacs peuvent perdre cette flore et devenir opaques. Ces exemples ne sont toutefois pas représentatifs de la plupart des écosystèmes, en général bien plus complexes. L’auteur montre alors comment les écologues déploient des stratégies pour tenter de prévoir les transitions abruptes dans des situations plus typiques. Ses explications sur le fonctionnement des écosystèmes et le travail des écologues sont très instructives. Il en ressort que les spécialistes sont encore loin de pouvoir déterminer quand, et même si, les écosystèmes perturbés par l’activité humaine vont s’effondrer. Certes, quand une forêt est rasée, l’écosystème qu’elle représentait n’est plus. Mais en dehors des cas de destruction directe, il est très difficile de prédire l’évolution des écosystèmes. Sans compter que la transformation d’un écosystème ne doit pas nécessairement être vue négativement. Après tout, il n’y a pas de raison de considérer qu’une forêt est, en soi, préférable à une savane.

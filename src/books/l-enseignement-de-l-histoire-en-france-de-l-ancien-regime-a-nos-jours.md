@@ -1,0 +1,14 @@
+---
+title: "L’Enseignement de l’histoire en France de l’Ancien Régime à nos jours"
+date: 2003-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Historiographie"]
+authorFullName: "Patrick Garcia et Jean Leduc"
+authorLastName: "Leduc"
+imageUrl: "/assets/images/couvertures/garcia-leduc-enseignement-histoire-en-france-ancien-regime-a-nos-jours.webp"
+amazonLink: ""
+alphabeticalPage: ["g", "l"]
+permalink: "/comptes-rendus/autheur/leduc/l-enseignement-de-l-histoire-en-france-de-l-ancien-regime-a-nos-jours/index.html"
+---
+
+Pourquoi enseigner l'histoire ? Sous l'Ancien régime, l'histoire était conçue comme un recueil de faits méritoires et de comportements condamnables. L'enseigner avait donc une finalité morale. Cette dimension — bien qu'étant nettement moins présente de nos jours — n'a pas complètement disparu. Comme le notent Patrick Garcia et Jean Leduc dans cette histoire de l'enseignement de l'histoire en France, les rédacteurs du programme d'histoire et de géographie des lycées pour l'année 1995 n'hésitaient pas à écrire : « l'histoire et la géographie […] apportent à la fois l'absolu des valeurs et le sens du relatif conduisant à la tolérance » !       Depuis le XIXe siècle, au-delà de la fonction civique elle aussi mise en avant, c'est toutefois la fonction intégratrice de l'enseignement de l'histoire qui domine. Plus exactement, au XIXe siècle et au début du XXe siècle, l'histoire a eu pour vocation d'inscrire les élèves dans une généalogie qui plongeait ses racines en Gaule, voire dans l'Antiquité, puisque le parcours successif des civilisations était censé conduire à la France. En remontant ensuite des Gaulois aux temps modernes, cet enseignement devait apprendre aux élèves à aimer la France et à en être fiers. Comme le disait Gabriel Monod en 1880 : « Il faut faire sentir aux jeunes gens les liens étroits qui rattachent la France de la Révolution à la France de l'Ancien Régime. […] On y apprendra […] qu'un lien indissoluble rattache le passé au présent et le présent à l'avenir ; qu'une nation n'est forte qu'à condition d'avoir pleine conscience de son histoire… » Là aussi, cette dimension « patriotique » de l'enseignement de l'histoire n'a de nos jours pas complètement disparue — même si on ne parle plus de la « mission » de la France —, mais l'accent est désormais mis sur un patrimoine français qui permettrait de fonder une identité commune tout en établissant des liens avec l'ensemble de la culture européenne.       Il n'y a pas de doute que cette question de l'enseignement de l'histoire est particulièrement sensible en France. Comme le disait Antoine Prost en 1984 : « Il n'y a pas d'autre pays au monde où l'enseignement de l'histoire soit une question d'État. » Cela ne l'empêche pas d'être en permanence sujet à de multiples réformes et prétextes à d'infinis débats. C'est l'intérêt du livre de Garcia et Leduc d'en proposer une approche historique et didactique.
