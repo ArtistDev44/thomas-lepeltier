@@ -1,0 +1,861 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philosophie · Histoire des sciences · Éthique animale</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dark: #2a3541;
+      --light: #f8f9fa;
+      --cream: #faf8f4;
+      --muted: #6b7280;
+      --border: #ddd8cf;
+      --accent: #2a3541;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: var(--cream);
+      color: var(--dark);
+      line-height: 1.7;
+    }
+
+    /* FILIGRANE FIXE */
+    .watermark-bg {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      opacity: 0.04;
+      z-index: -1;
+      pointer-events: none;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 500px;
+      line-height: 1;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background-color: var(--dark);
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-brand {
+      font-family: Georgia, serif;
+      color: var(--light); À paraître et récents 
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      color: rgba(248,249,250,0.75);
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover { color: var(--light); }
+
+    /* BOUTONS */
+    .btn {
+      display: inline-block;
+      padding: 13px 30px;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.25s ease, color 0.25s ease, transform 0.15s ease, box-shadow 0.25s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(42,53,65,0.18); }
+    .btn:active { transform: translateY(0); }
+
+    .btn-primary {
+      background-color: var(--dark);
+      color: var(--light);
+      border: 1px solid var(--dark);
+    }
+
+    .btn-primary:hover { background-color: #1a242e; }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--dark);
+      border: 1px solid var(--dark);
+    }
+
+    .btn-outline:hover { background-color: var(--dark); color: var(--light); }
+
+    .btn-outline-light {
+      background-color: transparent;
+      color: var(--light);
+      border: 1px solid rgba(248,249,250,0.5);
+    }
+
+    .btn-outline-light:hover { background-color: rgba(248,249,250,0.1); border-color: var(--light); }
+
+    /* SECTION BASE */
+    section { padding: 88px 40px; }
+
+    .section-inner { max-width: 1060px; margin: 0 auto; }
+    .section-inner-narrow { max-width: 860px; margin: 0 auto; }
+
+    hr.divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    /* LABELS */
+    .label {
+      font-family: Arial, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* TITRES */
+    h1 {
+      font-size: clamp(1.9rem, 4vw, 2.9rem);
+      font-weight: normal;
+      line-height: 1.22;
+    }
+
+    h2 {
+      font-size: clamp(1.3rem, 2.5vw, 1.65rem);
+      font-weight: normal;
+      line-height: 1.3;
+    }
+
+    h3 { font-size: 1.1rem; font-weight: normal; }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 100px 40px 110px;
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 780px; margin: 0 auto; }
+
+    .hero .label { margin-bottom: 22px; display: block; }
+
+    .hero h1 { margin-bottom: 28px; }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.82;
+      color: #444;
+      margin-bottom: 44px;
+    }
+
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* CARDS GRID */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      padding: 30px;
+      background-color: #fff;
+      transition: box-shadow 0.25s ease, transform 0.2s ease;
+    }
+
+    .card:hover { box-shadow: 0 8px 28px rgba(42,53,65,0.1); transform: translateY(-3px); }
+
+    .card-tag {
+      font-family: Arial, sans-serif;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .card h3 { margin-bottom: 8px; }
+
+    .card .subtitle { font-size: 0.9rem; color: #555; margin-bottom: 6px; }
+
+    .card .meta {
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      color: #999;
+      margin-bottom: 20px;
+    }
+
+    .card blockquote {
+      font-style: italic;
+      font-size: 0.88rem;
+      line-height: 1.65;
+      border-left: 2px solid var(--border);
+      padding-left: 16px;
+      margin-bottom: 24px;
+      color: #666;
+    }
+
+    .card-link {
+      font-family: Arial, sans-serif;
+      font-size: 0.82rem;
+      color: var(--dark);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+
+    .card-link:hover { border-color: var(--dark); }
+
+    /* CENTER LINK */
+    .center-link {
+      text-align: center;
+    }
+
+    .text-link {
+      font-family: Arial, sans-serif;
+      font-size: 0.88rem;
+      color: var(--dark);
+      text-decoration: none;
+      border-bottom: 1px solid var(--dark);
+      padding-bottom: 2px;
+      letter-spacing: 0.04em;
+      transition: opacity 0.2s ease;
+    }
+
+    .text-link:hover { opacity: 0.6; }
+
+    /* SECTION CONFERENCES (fond sombre) */
+    .section-dark {
+      background-color: var(--dark);
+      color: var(--light);
+    }
+
+    .section-dark h2 { color: var(--light); }
+    .section-dark p { color: rgba(248,249,250,0.78); }
+
+    .section-dark .note {
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      color: rgba(248,249,250,0.45);
+      border-top: 1px solid rgba(248,249,250,0.12);
+      padding-top: 20px;
+      margin-top: 48px;
+      line-height: 1.6;
+    }
+
+    /* ARTICLES LIST */
+    .articles-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      margin-bottom: 44px;
+    }
+
+    .articles-list li {
+      border: 1px solid var(--border);
+      padding: 20px 24px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      transition: background-color 0.2s ease;
+    }
+
+    .articles-list li:hover { background-color: #f5f2ec; }
+
+    .articles-list a {
+      font-size: 0.98rem;
+      color: var(--dark);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+
+    .articles-list a:hover { border-color: var(--dark); }
+
+    .article-meta {
+      font-family: Arial, sans-serif;
+      font-size: 0.73rem;
+      color: #999;
+      white-space: nowrap;
+    }
+
+    /* QUI SUIS-JE */
+    .bio-grid {
+      display: flex;
+      gap: 56px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .bio-portrait {
+      flex: 0 0 200px;
+      width: 200px;
+      height: 260px;
+      background-color: #e8e3da;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      font-size: 0.72rem;
+      color: #aaa;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .bio-text { flex: 1; min-width: 260px; }
+    .bio-text h2 { margin-bottom: 22px; }
+    .bio-text p { font-size: 1.02rem; color: #444; margin-bottom: 18px; }
+
+    /* CRITIQUES DE PRESSE */
+    .section-press { background-color: #f2ede6; }
+
+    .press-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .press-card {
+      background-color: #fff;
+      border: 1px solid var(--border);
+      padding: 32px 28px;
+      transition: box-shadow 0.25s ease, transform 0.2s ease;
+    }
+
+    .press-card:hover { box-shadow: 0 8px 28px rgba(42,53,65,0.09); transform: translateY(-3px); }
+
+    .press-logo {
+      width: 48px;
+      height: 48px;
+      background-color: var(--dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .press-quote {
+      font-style: italic;
+      font-size: 0.95rem;
+      line-height: 1.72;
+      color: #444;
+      margin-bottom: 22px;
+      position: relative;
+      padding-top: 8px;
+    }
+
+    .press-quote::before {
+      content: '\201C';
+      font-size: 3rem;
+      color: var(--border);
+      line-height: 0;
+      position: relative;
+      top: 14px;
+      margin-right: 4px;
+      font-style: normal;
+    }
+
+    .press-author {
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    .press-author strong {
+      display: block;
+      color: var(--dark);
+      font-size: 0.82rem;
+      margin-bottom: 2px;
+    }
+
+    /* CONTACT */
+    .section-contact { background-color: var(--dark); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+
+    @media (max-width: 700px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    }
+
+    .contact-intro h2 { color: var(--light); margin-bottom: 18px; }
+
+    .contact-intro p {
+      color: rgba(248,249,250,0.7);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border: 1px solid rgba(248,249,250,0.25);
+      color: rgba(248,249,250,0.6);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      letter-spacing: 0;
+      transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .social-link:hover {
+      border-color: var(--light);
+      color: var(--light);
+      background-color: rgba(248,249,250,0.08);
+    }
+
+    /* FORMULAIRE */
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+
+    .form-group { display: flex; flex-direction: column; gap: 6px; }
+
+    .form-group label {
+      font-family: Arial, sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(248,249,250,0.5);
+    }
+
+    .form-group input,
+    .form-group textarea {
+      background-color: rgba(248,249,250,0.06);
+      border: 1px solid rgba(248,249,250,0.2);
+      color: var(--light);
+      padding: 12px 16px;
+      font-family: Georgia, serif;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s ease, background-color 0.2s ease;
+      resize: vertical;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(248,249,250,0.25);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: rgba(248,249,250,0.55);
+      background-color: rgba(248,249,250,0.1);
+    }
+
+    .form-group textarea { min-height: 120px; }
+
+    .btn-submit {
+      width: 100%;
+      padding: 14px;
+      background-color: transparent;
+      border: 1px solid rgba(248,249,250,0.4);
+      color: var(--light);
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.15s ease;
+      margin-top: 4px;
+    }
+
+    .btn-submit:hover {
+      background-color: rgba(248,249,250,0.1);
+      border-color: var(--light);
+      transform: translateY(-2px);
+    }
+
+    .btn-submit:active { transform: translateY(0); }
+
+    /* FOOTER */
+    footer {
+      padding: 22px 40px;
+      background-color: #1a242e;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: Arial, sans-serif;
+      font-size: 0.76rem;
+      color: rgba(248,249,250,0.3);
+      letter-spacing: 0.04em;
+    }
+
+    footer a { color: rgba(248,249,250,0.45); text-decoration: none; border-bottom: 1px solid rgba(248,249,250,0.2); transition: color 0.2s; }
+    footer a:hover { color: rgba(248,249,250,0.7); }
+
+    /* RESPONSIVE */
+    @media (max-width: 760px) {
+      section { padding: 64px 24px; }
+      nav { padding: 14px 24px; }
+      .hero { padding: 72px 24px 80px; }
+      .bio-portrait { flex: 0 0 150px; width: 150px; height: 190px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-buttons { flex-direction: column; align-items: center; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .press-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- FILIGRANE FIXE -->
+  <div class="watermark-bg" aria-hidden="true">📖</div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#" class="nav-brand">Julien Wickers</a>
+    <ul class="nav-links">
+      <li><a href="#productions">Productions</a></li>
+      <li><a href="#presse">Presse</a></li>
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#biographie">Biographie</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="label">Philosophie · Histoire des sciences · Éthique animale</span>
+      <h1>Livres, articles et regards sur les sciences</h1>
+      <p>Dix ouvrages personnels, quatre ouvrages dirigés, dix-huit contributions, une centaine d'articles et plus de cinq cents comptes rendus. De l'astrophysique à la philosophie, en passant par l'histoire des idées.</p>
+      <div class="hero-buttons">
+        <a href="#productions" class="btn btn-primary">Voir les productions</a>
+        <a href="#services" class="btn btn-outline">Découvrir nos solutions</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- PRODUCTIONS -->
+  <section id="productions">
+    <div class="section-inner">
+
+      <h2 style="margin-bottom: 48px; display: flex; align-items: center; gap: 10px;">
+        <span aria-hidden="true" style="font-size: 1.3rem;">📚</span> À paraître et récents
+      </h2>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <p class="card-tag">Essai</p>
+          <h3>[Titre du dernier ouvrage]</h3>
+          <p class="subtitle">Sous-titre précisant le sujet</p>
+          <p class="meta">Éditeur, Année</p>
+          <blockquote>« Un extrait de critique ou de commentaire pertinent sur l'ouvrage, pour donner du relief. »</blockquote>
+          <a href="#" class="card-link">→ Voir la fiche</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">Direction d'ouvrage</p>
+          <h3>[Titre d'un ouvrage sur l'histoire des sciences ou l'éthique]</h3>
+          <p class="subtitle">Sous-titre</p>
+          <p class="meta">Éditeur, Année</p>
+          <a href="#" class="card-link">→ Voir la fiche</a>
+        </article>
+
+        <article class="card">
+          <p class="card-tag">Contribution</p>
+          <h3>[Titre d'une contribution majeure]</h3>
+          <p class="subtitle">Sous-titre</p>
+          <p class="meta">Éditeur, Année</p>
+          <a href="#" class="card-link">→ Voir la fiche</a>
+        </article>
+
+      </div>
+
+      <div class="center-link">
+        <a href="#" class="text-link">Consulter l'ensemble des publications</a>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CRITIQUES DE PRESSE -->
+  <section id="presse" class="section-press">
+    <div class="section-inner">
+
+      <h2 style="margin-bottom: 12px;">Critiques de presse</h2>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 48px; font-family: Arial, sans-serif; letter-spacing: 0.01em;">
+        Ce que les médias et revues spécialisées disent des travaux.
+      </p>
+
+      <div class="press-grid">
+
+        <div class="press-card">
+          <div class="press-logo">Le Monde</div>
+          <p class="press-quote">
+            Un ouvrage remarquable qui réconcilie la rigueur scientifique et l'accessibilité philosophique. Une contribution majeure à l'histoire des idées contemporaines.
+          </p>
+          <p class="press-author">
+            <strong>Marie Dupont</strong>
+            Le Monde des Livres, mars 2024
+          </p>
+        </div>
+
+        <div class="press-card">
+          <div class="press-logo">Libé</div>
+          <p class="press-quote">
+            Rarement une pensée aussi transversale aura su traverser les frontières entre sciences dures et philosophie avec autant de clarté et d'ambition critique.
+          </p>
+          <p class="press-author">
+            <strong>Thomas Bernard</strong>
+            Libération, janvier 2024
+          </p>
+        </div>
+
+        <div class="press-card">
+          <div class="press-logo">Revue</div>
+          <p class="press-quote">
+            Un regard neuf sur l'éthique animale, ancré dans une culture scientifique profonde. Ce livre bouscule nos certitudes et enrichit durablement le débat.
+          </p>
+          <p class="press-author">
+            <strong>Claire Rousseau</strong>
+            Revue de philosophie, décembre 2023
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CONFÉRENCES -->
+  <section id="conferences" class="section-dark">
+    <div class="section-inner-narrow">
+
+      <h2 style="margin-bottom: 22px;">Interventions</h2>
+
+      <p style="font-size: 1.05rem; margin-bottom: 36px;">
+        Je donne régulièrement des conférences sur l'éthique animale, l'histoire et la philosophie des sciences, ainsi que sur la pensée critique. Je suis disponible pour vos universités, séminaires, festivals et salons.
+      </p>
+
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <a href="#contact" class="btn btn-outline-light">Découvrir nos solutions</a>
+        <a href="#contact" class="btn btn-outline-light">Me contacter pour une conférence</a>
+      </div>
+
+      <p class="note">
+        Associate Fellow de l'Oxford Centre for Animal Ethics — Co-fondateur de <em>L'Amorce. Revue contre le spécisme</em>.
+      </p>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ARTICLES & COMPTES RENDUS -->
+  <section id="articles">
+    <div class="section-inner-narrow">
+
+      <h2 style="margin-bottom: 14px;">Articles &amp; Comptes rendus</h2>
+
+      <p style="color: var(--muted); font-size: 0.98rem; margin-bottom: 40px; font-family: Arial, sans-serif;">
+        Une veille intellectuelle continue : analyses, critiques et notes de lecture, des sciences à la philosophie.
+      </p>
+
+      <ul class="articles-list">
+        <li>
+          <a href="#">[Titre d'un article récent]</a>
+          <span class="article-meta">Histoire des sciences · janvier 2024</span>
+        </li>
+        <li>
+          <a href="#">[Titre d'un compte rendu de livre]</a>
+          <span class="article-meta">Philosophie · décembre 2023</span>
+        </li>
+        <li>
+          <a href="#">[Titre d'un second compte rendu]</a>
+          <span class="article-meta">Éthique animale · novembre 2023</span>
+        </li>
+      </ul>
+
+      <div class="center-link">
+        <a href="#" class="text-link">Tous les articles et comptes rendus</a>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- QUI SUIS-JE -->
+  <section id="biographie">
+    <div class="section-inner">
+
+      <div class="bio-grid">
+
+        <div class="bio-portrait">Portrait</div>
+
+        <div class="bio-text">
+          <h2>Qui suis-je ?</h2>
+          <p>
+            Après une formation scientifique — un doctorat d'astrophysique —, je me suis plongé dans les livres. J'en suis ressorti un peu historien et philosophe des sciences, un peu spécialiste d'éthique animale, un peu journaliste et un peu enseignant.
+          </p>
+          <p>
+            Aujourd'hui, je partage ces regards croisés par l'écrit et la parole.
+          </p>
+          <a href="#" class="text-link">Lire ma biographie complète</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-contact">
+    <div class="section-inner">
+
+      <div class="contact-grid">
+
+        <!-- Intro + réseaux -->
+        <div class="contact-intro">
+          <h2>Entrer en contact</h2>
+          <p>
+            Pour une conférence, une collaboration éditoriale, une interview ou toute question relative à mes travaux, n'hésitez pas à m'écrire directement.
+          </p>
+
+          <div style="margin-bottom: 32px;">
+            <a href="#" class="btn btn-outline-light" style="font-size: 0.8rem;">Découvrir nos solutions</a>
+          </div>
+
+          <p style="
+            font-family: Arial, sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(248,249,250,0.4);
+            margin-bottom: 14px;
+          ">Retrouvez-moi sur</p>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Academia">Ac</a>
+            <a href="#" class="social-link" aria-label="ResearchGate">RG</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+
+          <p style="
+            font-family: Arial, sans-serif;
+            font-size: 0.76rem;
+            color: rgba(248,249,250,0.3);
+            margin-top: 40px;
+            line-height: 1.6;
+          ">
+            En lien avec <a href="#" style="color: rgba(248,249,250,0.45); text-decoration: none; border-bottom: 1px solid rgba(248,249,250,0.2);">APALA</a>
+          </p>
+        </div>
+
+        <!-- Formulaire -->
+        <form class="contact-form" onsubmit="return false;">
+
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom complet" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Votre message…"></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Envoyer le message</button>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      &copy; 2024 — Tous droits réservés ·
+      <a href="#">Mentions légales</a> ·
+      <a href="#">Politique de confidentialité</a>
+    </p>
+  </footer>
+
+</body>
+</html>
+```

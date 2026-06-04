@@ -21,7 +21,6 @@ layout: base
   <p class="author_cr" > {{ authorFullName }} </p>
 <a href="{{amazonLink}}">Lien Amazon</a>
 
-
 <style>
     p.author_cr {
         text-align: right;
@@ -33,25 +32,17 @@ layout: base
     }
 </style>
 
-<ul>
-{%- for books in collections.books -%}
-  <li>{{ books.data.title }}</li>
-{%- endfor -%}
-</ul>
-
-{% set related = collections.books | relatedBooks(tags, page.url) %}
-
+{% set related = collections.Rapports | relatedRapports(tags, page.url) %}
 
 {% if related.length %}
   <h2>Recommandations</h2>
   <ul>
-    {%- for book in related -%}
+    {%- for rapport in related -%}
       <li>
-        <a href="{{ book.url }}">{{ book.data.title }}</a>
-        {# Optionnel : afficher les tags communs #}
+        <a href="{{ rapport.url }}">{{ rapport.data.title }}</a>
         <small>
           Tags communs :
-          {%- for tag in book.data.tags -%}
+          {%- for tag in rapport.data.tags -%}
             {%- if tags.includes(tag) %} {{ tag }}{%- endif -%}
           {%- endfor -%}
         </small>

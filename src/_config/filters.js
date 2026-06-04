@@ -6,21 +6,20 @@ import {splitlines} from './filters/splitlines.js';
 import {striptags} from './filters/striptags.js';
 import {slugifyString} from './filters/slugify.js';
 
-const relatedBooks = function(books, currentTags, currentUrl) {
-  if (!books) return [];  // 👈 sécurité
-  return books
-    .filter(book => {
-      if (book.url === currentUrl) return false;
-      return book.data.tags && book.data.tags.some(tag => currentTags.includes(tag));
+const relatedRapports = function(rapports, currentTags, currentUrl) {
+  if (!rapports) return [];
+  return rapports
+    .filter(rapport => {
+      if (rapport.url === currentUrl) return false;
+      return rapport.data.tags && rapport.data.tags.some(tag => currentTags.includes(tag));
     })
-    .map(book => {
-      const commonTags = book.data.tags.filter(tag => currentTags.includes(tag));
-      return { ...book, commonTagsCount: commonTags.length };
+    .map(rapport => {
+      const commonTags = rapport.data.tags.filter(tag => currentTags.includes(tag));
+      return { ...rapport, commonTagsCount: commonTags.length };
     })
     .sort((a, b) => b.commonTagsCount - a.commonTagsCount)
     .slice(0, 5);
 };
-
 
 export default {
   toISOString,
@@ -31,5 +30,5 @@ export default {
   shuffleArray,
   sortAlphabetically,
   slugifyString,
-  relatedBooks  // 👈 ajouté ici
+  relatedRapports
 };

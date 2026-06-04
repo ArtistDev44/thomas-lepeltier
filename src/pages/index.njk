@@ -1,54 +1,183 @@
 ---
 layout: base
 permalink: /index.html
-title: 'Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
-blog:
-  title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
+title: "Philosophie · Histoire des sciences · Éthique animale"
+description: "Livres, articles et conférences autour des sciences, de la philosophie et de l’éthique animale."
 ---
 
 <div class="wrapper">
+
+  <!-- HERO -->
   <header class="full | section spot-color-theme-primary">
-    <div class="section__inner flow region">
-      <h1 class="text-center text-theme-light">{{ title }}</h1>
+    <div class="section__inner flow region text-center text-theme-light">
+      <span class="eyebrow">Philosophie · Histoire des sciences · Éthique animale</span>
+      <h1>Livres, articles et regards sur les sciences</h1>
+      <p class="lead width-md">
+        Dix ouvrages personnels, quatre ouvrages dirigés, dix-huit contributions, une centaine d'articles et plus de cinq cents comptes rendus. De l'astrophysique à la philosophie, en passant par l'histoire des idées.
+      </p>
+      <div class="cluster justify-center">
+        <a href="/productions/" class="button">Voir les productions</a>
+        <a href="/services/" class="button button-outline">Me contacter</a>
+      </div>
     </div>
     {% svg "divider/waves", null, "divider" %}
   </header>
 
-  <article class="full | region">
-    <div class="prose wrapper flow">
-      <h2 id="an-eleventy-starter">An Eleventy starter</h2>
-      <p>
-        Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It
-        incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for
-        layout. The goal is to develop frontends that provide a great experience across all devices,
-        connection speeds, and usage contexts.
-      </p>
-      <p>
-        <strong>This is <a href="https://github.com/madrilene/eleventy-excellent/">version {{ pkg.version }}</a>.</strong> I keep a
-        <a href="https://github.com/madrilene/eleventy-excellent/tree/v1">branch of v1</a>,
-        <a href="https://github.com/madrilene/eleventy-excellent/tree/v2">v2</a> and <a href="https://github.com/madrilene/eleventy-excellent/tree/v3">v3</a>. I  tried to <a href="/get-started/#docs-lol">document most features and methodologies</a>.
-      </p>
-      <p><strong>Have fun</strong> and let me know if you find any issues or have ideas for improvements!</p>
-    </div>
-  </article>
+  <!-- PRODUCTIONS -->
+  <section id="productions" class="full | region">
+    <div class="wrapper flow">
+      <h2>📚 À paraître et récents</h2>
 
-  <section class="full | region">
-    <div class="prose wrapper flow">
-      <h2>{{ blog.title }}</h2>
-      {% if blog.intro %}
-        <p>{{ blog.intro }}</p>
-      {% endif %}
-      <div class="feature |  region region-space-l">
-        <custom-masonry layout="50-50">
-          {% set itemList = collections.allPosts %}
-					{% asyncEach item in itemList.slice(0, 4) %}
-            {% set headingLevel = "h3" %}
-						{% include "partials/card-blog.njk" %}
-					{% endeach %}
-        </custom-masonry>
+      <div class="flex">
+        <article class="card flow">
+          <span class="tag">Essai</span>
+          <h3>[Titre du dernier ouvrage]</h3>
+          <p>Sous-titre</p>
+          <small>Éditeur, Année</small>
+          <a href="#">→ Voir la fiche</a>
+        </article>
+
+        <article class="card flow">
+          <span class="tag">Direction d’ouvrage</span>
+          <h3>[Titre d’un ouvrage]</h3>
+          <p>Sous-titre</p>
+          <small>Éditeur, Année</small>
+          <a href="#">→ Voir la fiche</a>
+        </article>
+
+        <article class="card flow">
+          <span class="tag">Contribution</span>
+          <h3>[Titre d’une contribution]</h3>
+          <p>Sous-titre</p>
+          <small>Éditeur, Année</small>
+          <a href="#">→ Voir la fiche</a>
+        </article>
+      </div>
+
+      <p class="text-center">
+        <a href="/productions/">Consulter l’ensemble des publications</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- CRITIQUES DE PRESSE -->
+  <section id="presse" class="full | region spot-color-theme-light">
+    <div class="wrapper flow">
+      <h2>Critiques de presse</h2>
+
+      <div class="flex">
+        <div class="card flow">
+          <strong>Le Monde</strong>
+          <blockquote>
+            Un ouvrage remarquable qui réconcilie rigueur scientifique et accessibilité philosophique.
+          </blockquote>
+          <small>Marie Dupont</small>
+        </div>
+
+        <div class="card flow">
+          <strong>Libération</strong>
+          <blockquote>
+            Une pensée transversale qui traverse sciences et philosophie avec une clarté rare.
+          </blockquote>
+          <small>Thomas Bernard</small>
+        </div>
+
+        <div class="card flow">
+          <strong>Revue de philosophie</strong>
+          <blockquote>
+            Un regard neuf sur l’éthique animale, profondément ancré dans la culture scientifique.
+          </blockquote>
+          <small>Claire Rousseau</small>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- CONFÉRENCES -->
+  <section id="conferences" class="full | region spot-color-theme-primary text-theme-light bg-theme-dark">
+    <div class="wrapper flow">
+      <h2>Interventions</h2>
+      <p>
+        Je donne régulièrement des conférences sur l’éthique animale, l’histoire et la philosophie des sciences, ainsi que sur la pensée critique.
+      </p>
+      <div class="cluster">
+        <a href="/services/" class="button button-outline">Découvrir nos solutions</a>
+      </div>
+      <small>
+        Associate Fellow de l’Oxford Centre for Animal Ethics — Co-fondateur de L’Amorce.
+      </small>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section id="articles" class="full | region">
+    <div class="wrapper flow">
+      <h2>Articles & Comptes rendus</h2>
+      <p>Une veille intellectuelle continue : analyses, critiques et notes de lecture.</p>
+
+      <ol class="flow">
+      {%- for rapport in collections.Rapports | reverse -%}
+        {% if loop.index0 < 5 %}
+          <li><a href="{{ rapport.data.permalink }}">{{ rapport.data.title }} - {{ rapport.data.date.toLocaleString(undefined, { year: 'numeric' }) }}</a></li>
+        {% endif %}
+      {%- endfor -%}
+      </ol>
+
+<div class="flex">
+      <a class="pr-l" href="/articles/">Tous les articles</a>
+      <a href="/comptes-rendus/">Tous les comptes-rendus</a>
+
+</div>    </div>
+  </section>
+
+  <!-- BIO -->
+  <section id="biographie" class="full flex | region">
+      <img src="/assets/images/thomas/thomas-lepeltier-en-conférences.webp" alt="Image de Thomas en conférences avec APALA">
+    <div class="wrapper flow">
+      <h2>Qui suis-je ?</h2>
+      <p>
+        Après une formation scientifique — un doctorat d’astrophysique —, je me suis plongé dans les livres.
+      </p>
+      <p>
+        Aujourd’hui, je partage ces regards croisés par l’écrit et la parole.
+      </p>
+      <a href="/bio/">Lire ma biographie complète</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="full | region spot-color-theme-primary">
+    <div class="wrapper flow">
+
+      <h2>Contact</h2>
+
+<a href="thom.lepeltier@gmail.com">thom.lepeltier@gmail.com</a>
+
+      <div class="cluster">
+        <a href="#">X</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+      </div>
+
+    </div>
+  </section>
+
 </div>
+
+<style>
+    h1 {
+    margin-top: 20px;
+    }
+
+      /* HERO */
+    .hero {
+      overflow: hidden;
+      text-align: center;
+      padding: 100px 40px 110px;
+    }
+
+    .hero-content { z-index: 1; max-width: 780px; margin: 0 auto; }
+.width-md {
+    padding: 0 5vw;
+}
+    </style>
