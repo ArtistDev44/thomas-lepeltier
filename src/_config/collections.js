@@ -17,3 +17,29 @@ export const tagList = collection => {
   });
   return Array.from(tagsSet).sort();
 };
+export default (eleventyConfig) => {
+
+  eleventyConfig.addCollection("tagList", (collectionApi) => {
+    const tags = new Set();
+    const excluded = ["all", "nav", "post"];
+
+    collectionApi.getAll().forEach(item => {
+      if (!item.data.tags) return;
+
+      let itemTags = item.data.tags;
+
+      if (typeof itemTags === "string") {
+        itemTags = [itemTags];
+      }
+
+      itemTags.forEach(tag => {
+        if (!excluded.includes(tag)) {
+          tags.add(tag);
+        }
+      });
+    });
+
+    return [...tags].sort();
+  });
+
+};

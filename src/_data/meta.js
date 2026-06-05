@@ -11,7 +11,6 @@ export const skipContent = 'Skip to content';
 export const author = {
   name: 'Lene Saile', // i.e. Lene Saile - page / blog author's name. Must be set.
   avatar: '/icon-512x512.png', // path to the author's avatar. In this case just using a favicon.
-  fediverse: '@lene@front-end.social', // used for highlighting journalism on the fediverse. Can be Mastodon, Flipboard, Threads, WordPress (with the ActivityPub plugin installed), PeerTube, Pixelfed, etc. https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/
   me: [
     // loop over verified rel=me profiles in the HTML <head>
     'https://front-end.social/@lene'
@@ -19,10 +18,9 @@ export const author = {
 };
 // for the site developer, used for footer credits and humans.txt info
 export const creator = {
-  name: 'Lene Saile', // i.e. Lene Saile - creator's (developer) name.
+  name: 'Guillaume RENOULT', // i.e. Lene Saile - creator's (developer) name.
   email: 'hola@lenesaile.com',
-  website: 'https://www.lenesaile.com',
-  social: 'https://front-end.social/@lene'
+  website: 'https://portfolio-guillaume-renoult.vercel.app/',
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
 export const themeColor = '#dd4462'; // used in manifest, for example primary color value

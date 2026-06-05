@@ -8,7 +8,7 @@ layout: base
 
 <div class="tags-container">
 {% for tag in tags %}
-  <span slot="tag" class="button">{{ tags }}</span>
+  <a href="/tags/{{ tag | slugify }}"><span slot="tag" class="button">{{ tag }}</span></a>
 {% endfor %}
 </div>
 

@@ -1,0 +1,15 @@
+---
+title: "Wittgenstein et la déconstruction"
+date: 2001-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Philosophie"]
+authorFullName: "Laurent Carraz"
+authorLastName: "Carraz"
+imageUrl: "/assets/images/couvertures/carraz-wittgenstein-et-la-deconstruction.webp"
+amazonLink: ""
+alphabeticalPage: ["c"]
+permalink: "/comptes-rendus/autheur/carraz/wittgenstein-et-la-deconstruction/index.html"
+metaDescription: "Laurent Carraz, Wittgenstein et la déconstruction"
+---
+
+Une des propositions les plus célèbres de Ludwig Wittgenstein est : « Ce dont on ne peut parler, il faut le taire ». À quoi Jacques Derrida répondit sur un ton parodique : « Ce qu'on ne peut pas dire, il ne faut surtout pas le taire, mais il faut l'écrire. » L'opposition ne semble pouvoir être plus nette. Tout ce que le second essaye inlassablement de dire sur ce qu'on ne peut pas dire serait en effet considéré comme un non-sens par le premier. Alors que Derrida ne cesse d'écrire et de parler sur les sujets les plus divers en prétendant déceler des problèmes philosophiques, Wittgenstein défendit l'idée que beaucoup de problèmes philosophiques disparaissent une fois déjoué le piège des mots.       Pourtant, on assiste depuis une vingtaine d'années à des tentatives de rapprochement. Wittgenstein et Derrida auraient finalement voulu dire la même chose ! Ces rapprochements paraissent d'autant plus étonnants qu'ils ont été effectués dans le monde anglophone où Derrida n'eut, à la différence de Wittgenstein, aucune influence sur la philosophie, mais uniquement sur les études littéraires et ce qu'on appelle là-bas les « cultural studies ». Raison de plus pour revenir de façon critique sur ces rapprochements, comme le fait ici Laurent Carraz.       Que Wittgenstein et Derrida privilégient tous deux l'aspect rhétorique plutôt que l'aspect logique du langage a bien sûr contribué à leur rapprochement. Mais à côté de cette analogie, souligne Carraz, combien de malentendus ! Ce n'est pas pour autant, toujours selon notre auteur, qu'il n'y a pas des affinités profondes qui justifient leur rapprochement. Par exemple, l'un et l'autre chercheraient à « déconstruire » les discours philosophiques, au sens où ils essayent de montrer comment, involontairement, un discours philosophique mine lui-même la philosophie qu'il prétend mettre en place.       Si on peut être d'accord avec cette similitude, il y a toutefois une distinction fondamentale que l'auteur mentionne sans en tirer toutes les conclusions. Alors que Wittgenstein essaye de « dénouer » les confusions propres à toute pensée pour atteindre la simplicité, Derrida, sous prétexte du caractère fuyant de la langue, rend souvent plus confus les problèmes qu'il aborde. À la lumière de cette distinction, on voit que se pose séparément le problème de la pertinence de ces deux philosophes et donc encore celui de leur rapprochement.

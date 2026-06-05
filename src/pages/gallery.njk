@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Ma Galerie Photo
+permalink: /conferences/index.html
+---
+
+<div class="gallery-grid">
+  {% for image in gallery %}
+    <div class="gallery-item">
+      <img src="{{ image.url }}" alt="{{ image.name }}" loading="lazy">
+      <p>{{ image.name }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+</style>

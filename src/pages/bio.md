@@ -7,7 +7,7 @@ layout: page
 
 ## Qui suis-je ?
 
-Après une formation scientifique (doctorat d’astrophysique), je me suis plongé dans les livres, de l’histoire aux sciences en passant par la philosophie. J’en suis ressorti un peu historien et philosophe des sciences, un peu spécialiste d’éthique animale, un peu journaliste et un peu enseignant (j’ai enseigné la physique, les maths et le français).
+Thomas Lepeltier développe depuis plusieurs années une œuvre consacrée aux grandes controverses scientifiques, philosophiques et éthiques contemporaines. Salué par la presse pour la clarté, la rigueur et l’originalité de ses ouvrages, il se distingue par sa capacité à exposer les arguments en présence sans caricature, à rendre accessibles des débats complexes et à interroger les certitudes établies avec indépendance.
  
 Concernant l’éthique animale, je suis « Associate Fellow » du « Oxford Centre for Animal Ethics » et co-fondateur de L’Amorce. Revue contre le spécisme.
  

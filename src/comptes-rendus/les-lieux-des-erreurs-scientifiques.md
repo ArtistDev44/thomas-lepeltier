@@ -1,0 +1,15 @@
+---
+title: "Les Lieux des erreurs scientifiques"
+date: 2012-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Histoire des sciences"]
+authorFullName: "Girolamo Ramunni"
+authorLastName: "Ramunni"
+imageUrl: "/assets/images/couvertures/ramunni-erreurs-scientifiques.webp"
+amazonLink: "http://www.amazon.fr/gp/product/2846704457/ref=as_li_ss_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=2846704457&linkCode=as2&tag=httpthomaslep-21"
+alphabeticalPage: ["r"]
+permalink: "/comptes-rendus/autheur/ramunni/les-lieux-des-erreurs-scientifiques/index.html"
+metaDescription: "Girolamo Ramunni, Les Lieux des erreurs scientifiques"
+---
+
+L’erreur est partout : en science, comme ailleurs. Plutôt que de l’oublier ou de la mettre sous le tapis, c’est vers elle que se tourne l’historien des sciences Girolamo Ramunni pour offrir une petite réflexion historique sur l’activité scientifique. Des erreurs, l’auteur en présente différentes sortes. C’est Galilée qui croit pouvoir prouver le mouvement de la Terre autour du Soleil en s’appuyant sur le phénomène des marées. C’est Newton qui s’inspire de l’alchimie pour établir sa loi de la gravitation. C’est Antonie van Leeuwenhoek qui voit dans sa découverte des spermatozoïdes une preuve que tout nouvel individu provient d’un animalcule contenu dans le sperme du mâle. Ce sont l’Abbé Nollet et Benjamin Franklin qui s’opposent, à coup d’expériences, sur la nature de l’électricité sans que l’un ou l’autre n’arrivent à convaincre son adversaire. C’est Lavoisier qui met un terme à la théorie du phlogistique pour adopter celle du calorique, également vouée à disparaître. C’est Max Planck, en 1900, qui invente un artifice mathématique revenant à quantifier la lumière tout en refusant toute réalité physique à cette première quantification pleine d’avenir. C’est, toujours au début du XXe siècle, le physicien René Blondlot qui, avec ses rayons N, pense avoir découvert un nouveau type de particule, avant que celle-ci ne soit finalement jugée introuvable, puisqu’imaginaire. Et ainsi de suite.       Que penser de toutes ces erreurs, et des mille autres non mentionnées dans cet ouvrage ? Certaines ont parfois été fécondes, au sens où elles ont permis de faire avancer l’état des connaissances. « Les erreurs sont les portes de la découverte », écrivait d’ailleurs James Joyce. Rien que pour cette raison, Ramunni veut « mettre à l’honneur la capacité de se tromper et l’utilité de ne pas avoir peur de se tromper ». Mais ce n’est pas, à ses yeux, le seul mérite de l’erreur. Elle n’est pas seulement riche de promesses ; elle est également une très instructive porte d’entrée pour l’histoire des sciences. Ramunni estime en effet que se tourner vers les erreurs du passé permet de se défaire d’une idéalisation de l’entreprise scientifique encore trop présente de nos jours. Comme il le montre dans de courts récits, l’analyse de ces erreurs permet de comprendre à quel point les savants sont ancrés dans une culture, une époque et parfois même un lieu. Ce qui est incidemment une très bonne invitation à méditer sur nos éventuelles erreurs…

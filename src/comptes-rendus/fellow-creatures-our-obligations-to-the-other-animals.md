@@ -1,0 +1,15 @@
+---
+title: "Fellow Creatures. Our Obligations to the Other Animals"
+date: 2018-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Philosophie"]
+authorFullName: "Christine M. Korsgaard"
+authorLastName: "Korsgaard"
+imageUrl: "/assets/images/couvertures/korsgaard-fellow-creatures.webp"
+amazonLink: "https://amzn.to/2RMU25w"
+alphabeticalPage: ["k"]
+permalink: "/comptes-rendus/autheur/korsgaard/fellow-creatures-our-obligations-to-the-other-animals/index.html"
+metaDescription: "Compte rendu du livre de Christine Korsgaard, Fellow Creatures. Our Obligations to the Other Animals, par Thomas Lepeltier"
+---
+
+Tout le monde est d’accord pour ne pas faire souffrir les animaux inutilement. Mais que signifie précisément cette position ? Pour Christine Korsgaard, Professeur de philosophie à l’Université d’Harvard, il est clair que nous ne devrions pas les manger puisque les élever dans cette optique les fait souffrir, sans que cette consommation soit nécessaire pour notre santé. Mais au-delà de cette évidence – trop souvent oubliée – quelles sont nos obligations envers les animaux ? Sur cette question, on distingue traditionnellement deux grandes approches. D’un côté, il y a celle des « animalistes » qui veulent que les animaux sensibles se voient reconnaître des droits fondamentaux, comme ne pas être emprisonnés, maltraités et tués sans raison impérieuse. C’est cette approche qui inspire le mouvement végane, en vogue de nos jours. De l’autre côté, il y a celle des « humanistes » qui récusent cette notion de droit des animaux et estiment que ces derniers peuvent être utilisés dans la mesure où on ne les fait pas souffrir plus que nécessaire. Cette approche s’appuie en particulier sur la philosophie d’Emmanuel Kant qui avançait que seuls les humains devaient être traités comme des fins et jamais comme des moyens. Mais, en reprenant les analyses de Kant, dont elle est une spécialiste reconnue, Korsgaard montre qu’il est incohérent de ne pas traiter les animaux sensibles eux aussi comme des fins. Cela ne signifie pas que les animaux seraient nos semblables. Korsgaard maintient la distinction kantienne selon laquelle seuls les humains sont des êtres rationnels et autonomes. Mais faire des animaux des moyens pour nos propres fins ne fait pas honneur, selon elle, à notre capacité à évaluer rationnellement leurs intérêts, notamment ceux à ne pas souffrir et à continuer à vivre. De la même manière, cette spécificité humaine ne signifie pas que nous sommes en soi plus importants que les autres animaux puisque, être important, c’est uniquement l’être pour quelqu’un (soi-même ou autrui). Personne n’est ainsi plus important que qui que ce soit de manière absolue. Enfin, toujours contre les « humanistes », Korsgaard montre également que ce n’est pas parce que seuls les humains établissent et reconnaissent des lois morales que ces dernières n’ont pas à être prises en compte dans nos rapports aux animaux. Même s’ils n’en sont pas les législateurs, ils appartiennent bien à notre communauté morale. Bref, si Korsgaard a raison, il semble que les « humanistes » devraient rejoindre le camp des « animalistes »…

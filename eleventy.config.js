@@ -100,7 +100,9 @@ eleventyConfig.addFilter('relatedRapports', filters.relatedRapports);
   // --------------------- Passthrough File Copy
 
   // -- same path
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
+  [
+    'src/assets/images/galerie/', // <--- AJOUTEZ CETTE LIGNE
+    'src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 

@@ -13,12 +13,12 @@ export default {
       url: '/livres/'
     },
     {
-      text: 'Comptes-rendu',
+      text: 'Comptes-rendus',
       url: '/comptes-rendus/'
     },
     {
       text: 'Articles',
-      url: '/blog/'
+      url: '/articles/'
     },
     {
       text: 'Contact',

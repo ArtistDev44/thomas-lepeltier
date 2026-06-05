@@ -7,112 +7,107 @@ description: "Livres, articles et conférences autour des sciences, de la philos
 
 <div class="wrapper">
 
-  <!-- HERO -->
-  <header class="full | section spot-color-theme-primary">
-    <div class="section__inner flow region text-center text-theme-light">
-      <span class="eyebrow">Philosophie · Histoire des sciences · Éthique animale</span>
-      <h1>Livres, articles et regards sur les sciences</h1>
-      <p class="lead width-md">
-        Dix ouvrages personnels, quatre ouvrages dirigés, dix-huit contributions, une centaine d'articles et plus de cinq cents comptes rendus. De l'astrophysique à la philosophie, en passant par l'histoire des idées.
-      </p>
-      <div class="cluster justify-center">
-        <a href="/productions/" class="button">Voir les productions</a>
-        <a href="/services/" class="button button-outline">Me contacter</a>
-      </div>
-    </div>
-    {% svg "divider/waves", null, "divider" %}
-  </header>
-
-  <!-- PRODUCTIONS -->
-  <section id="productions" class="full | region">
-    <div class="wrapper flow">
-      <h2>📚 À paraître et récents</h2>
-
-      <div class="flex">
-        <article class="card flow">
-          <span class="tag">Essai</span>
-          <h3>[Titre du dernier ouvrage]</h3>
-          <p>Sous-titre</p>
-          <small>Éditeur, Année</small>
-          <a href="#">→ Voir la fiche</a>
-        </article>
-
-        <article class="card flow">
-          <span class="tag">Direction d’ouvrage</span>
-          <h3>[Titre d’un ouvrage]</h3>
-          <p>Sous-titre</p>
-          <small>Éditeur, Année</small>
-          <a href="#">→ Voir la fiche</a>
-        </article>
-
-        <article class="card flow">
-          <span class="tag">Contribution</span>
-          <h3>[Titre d’une contribution]</h3>
-          <p>Sous-titre</p>
-          <small>Éditeur, Année</small>
-          <a href="#">→ Voir la fiche</a>
-        </article>
-      </div>
-
-      <p class="text-center">
-        <a href="/productions/">Consulter l’ensemble des publications</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- CRITIQUES DE PRESSE -->
-  <section id="presse" class="full | region spot-color-theme-light">
-    <div class="wrapper flow">
-      <h2>Critiques de presse</h2>
-
-      <div class="flex">
-        <div class="card flow">
-          <strong>Le Monde</strong>
-          <blockquote>
-            Un ouvrage remarquable qui réconcilie rigueur scientifique et accessibilité philosophique.
-          </blockquote>
-          <small>Marie Dupont</small>
+          <!-- HERO -->
+          <header class="full | section hero-parallax">
+            <div class="hero-parallax__bg" aria-hidden="true">
+              <img
+                class="hero-parallax__img"
+              src="/assets/images/thomas/thomas-lepeltier-en-conferences.webp" alt="Image de Thomas en conférences avec APALA"
+                alt=""
+                aria-hidden="true"
+              >
+            </div>
+            <div class="flow region text-center text-theme-light hero-parallax__content">
+              <span class="eyebrow">Philosophie · Histoire des sciences · Éthique animale</span>
+              <h1>Livres, articles et regards sur les sciences</h1>
+              <p class="lead width-md">
+                Dix ouvrages personnels, quatre ouvrages dirigés, dix-huit contributions, une centaine d'articles et plus de cinq cents comptes rendus. De l'astrophysique à la philosophie, en passant par l'histoire des idées.
+              </p>
+              <div class="cluster justify-center">
+                <a href="/comptes-rendus/" class="button">Voir les comptes-rendus</a>
+                <a href="/contact/" class="button button-outline">Me contacter</a>
+              </div>
+            </div>
+          </header>
         </div>
+        <style>
 
-        <div class="card flow">
-          <strong>Libération</strong>
-          <blockquote>
-            Une pensée transversale qui traverse sciences et philosophie avec une clarté rare.
-          </blockquote>
-          <small>Thomas Bernard</small>
-        </div>
+            /* ─── Conteneur principal ─── */
+        .hero-parallax {
+          position: relative;
+          overflow: hidden; /* indispensable pour masquer le débordement de l'image */
+          min-height: 100svh;
+          display: grid;
+          place-items: center;
+        }
 
-        <div class="card flow">
-          <strong>Revue de philosophie</strong>
-          <blockquote>
-            Un regard neuf sur l’éthique animale, profondément ancré dans la culture scientifique.
-          </blockquote>
-          <small>Claire Rousseau</small>
-        </div>
-      </div>
-    </div>
-  </section>
+        /* ─── Calque image (élément porteur) ─── */
+        .hero-parallax__bg {
+          position: absolute;
+          inset: 0%; /* surclasse la zone visible pour que l'image ait de la marge de défilement */
+          z-index: 0;
+        }
 
-  <!-- CONFÉRENCES -->
-  <section id="conferences" class="full | region spot-color-theme-primary text-theme-light bg-theme-dark">
+        /* ─── L'image elle-même ─── */
+        .hero-parallax__img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+
+          /* ✦ Le cœur du parallax CSS ✦ */
+          will-change: transform;
+          transform: translateY(0);
+          animation: parallax-scroll linear both;
+
+          /* Lie l'animation à la progression du scroll dans le viewport */
+          animation-timeline: view();
+          animation-range: entry 0% exit 100%;
+        }
+
+        @keyframes parallax-scroll {
+          from { transform: translateY(-15%); }
+          to   { transform: translateY(15%); }
+        }
+
+        /* ─── Contenu au-dessus de l'image ─── */
+        .hero-parallax__content {
+          position: relative;
+          z-index: 1;
+        }
+
+        /* ─── Overlay sombre facultatif pour la lisibilité ─── */
+        .hero-parallax__bg::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+        }
+
+        </style>
+  <!-- BIO -->
+  <section id="biographie" class="full | region">
     <div class="wrapper flow">
-      <h2>Interventions</h2>
+    <div class="flex" style="gap: 2rem;">
+      <img src="/assets/images/thomas/thomas-lepeltier-en-conferences-vertical.webp" alt="Image de Thomas en conférences avec APALA">
+      <div>
+      <h2>Qui suis-je ?</h2>
+      <hr>
       <p>
-        Je donne régulièrement des conférences sur l’éthique animale, l’histoire et la philosophie des sciences, ainsi que sur la pensée critique.
+Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieurs années une œuvre consacrée aux grandes controverses scientifiques, philosophiques et éthiques contemporaines. Salué par la presse pour la clarté, la rigueur et l’originalité de ses ouvrages, il se distingue par sa capacité à exposer les arguments en présence sans caricature, à rendre accessibles des débats complexes et à interroger les certitudes établies avec indépendance.
       </p>
-      <div class="cluster">
-        <a href="/services/" class="button button-outline">Découvrir nos solutions</a>
+      <hr>
+      <a href="/bio/">Lire ma biographie complète</a>
       </div>
-      <small>
-        Associate Fellow de l’Oxford Centre for Animal Ethics — Co-fondateur de L’Amorce.
-      </small>
+      </div>
     </div>
   </section>
 
   <!-- ARTICLES -->
   <section id="articles" class="full | region">
     <div class="wrapper flow">
-      <h2>Articles & Comptes rendus</h2>
+      <h2>Comptes rendus</h2>
       <p>Une veille intellectuelle continue : analyses, critiques et notes de lecture.</p>
 
       <ol class="flow">
@@ -129,21 +124,32 @@ description: "Livres, articles et conférences autour des sciences, de la philos
 
 </div>    </div>
   </section>
-
-  <!-- BIO -->
-  <section id="biographie" class="full flex | region">
-      <img src="/assets/images/thomas/thomas-lepeltier-en-conférences.webp" alt="Image de Thomas en conférences avec APALA">
+  <!-- CRITIQUES DE PRESSE -->
+  <section id="presse" class="full | region spot-color-theme-light">
     <div class="wrapper flow">
-      <h2>Qui suis-je ?</h2>
-      <p>
-        Après une formation scientifique — un doctorat d’astrophysique —, je me suis plongé dans les livres.
-      </p>
-      <p>
-        Aujourd’hui, je partage ces regards croisés par l’écrit et la parole.
-      </p>
-      <a href="/bio/">Lire ma biographie complète</a>
-    </div>
+      <h2>Commentaires reçus</h2>
+
+ <a href="/commentaires/">
+     <custom-card>
+      <p slot="content">Voir les commentaires</p>
+     </custom-card>
+ </a>
   </section>
+
+  <!-- CONFÉRENCES -->
+  <section id="conferences" class="full | region spot-color-theme-primary text-theme-light bg-theme-dark">
+    <div class="wrapper flow">
+      <h2>Interventions</h2>
+      <p>
+        Je donne régulièrement des conférences sur l’éthique animale, l’histoire et la philosophie des sciences, ainsi que sur la pensée critique.
+      </p>
+      <div class="cluster">
+        <a href="/contact/" class="button button-outline">Me contacter</a>
+      </div>
+  </section>
+
+
+
 
   <!-- CONTACT -->
   <section id="contact" class="full | region spot-color-theme-primary">
@@ -162,8 +168,6 @@ description: "Livres, articles et conférences autour des sciences, de la philos
     </div>
   </section>
 
-</div>
-
 <style>
     h1 {
     margin-top: 20px;
@@ -180,4 +184,33 @@ description: "Livres, articles et conférences autour des sciences, de la philos
 .width-md {
     padding: 0 5vw;
 }
+
+/*Hero*/
+
+.hero-parallax {
+  position: relative;
+  overflow: hidden; /* À retirer si l'effet ne fonctionne pas */
+}
+
+.hero-parallax__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+}
+
+.hero-parallax__content {
+  position: relative;
+  z-index: 1;
+}
+
     </style>

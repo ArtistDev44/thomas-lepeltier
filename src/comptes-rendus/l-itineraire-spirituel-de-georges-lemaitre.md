@@ -1,0 +1,15 @@
+---
+title: "L’Itinéraire spirituel de Georges Lemaître"
+date: 2008-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Histoire des sciences", "Sciences"]
+authorFullName: "Dominque Lambert"
+authorLastName: "Lambert"
+imageUrl: "/assets/images/couvertures/lambert-Itineraire-spirituel-georges-lemaitre.webp"
+amazonLink: ""
+alphabeticalPage: ["l"]
+permalink: "/comptes-rendus/autheur/lambert/l-itineraire-spirituel-de-georges-lemaitre/index.html"
+metaDescription: "Dominique Lambert, L'Itinéraire spirituel de Georges Lemaître"
+---
+
+Le cosmologiste Georges Lemaître (1894-1966) peut être considéré comme le père de la théorie du big bang. C'est lui qui, en 1931, proposa le premier modèle physique de la naissance de l'univers, connu sous le nom de l'hypothèse de l'atome primitif. Lemaître étant également un prêtre catholique, une certaine suspicion a souvent entouré l'origine de la théorie du big bang : ne pouvait-on pas y voir le mythe chrétien de la création sous des oripeaux scientifiques ? Lemaître n'a cessé d'affirmer que ce n'était pas le cas et qu'il fallait distinguer ses travaux scientifiques de ses croyances religieuses. Cependant, cette dénégation ne fut-elle pas une stratégie de sa part pour mieux faire accepter son credo religieux ? Pour clarifier la situation, Dominique Lambert — probablement le meilleur spécialiste au monde de Lemaître — retrace ici avec précision son itinéraire spirituel.       Que Lemaître se soit opposé à toute récupération théologique de son hypothèse cosmologique était déjà bien connu. Les promoteurs de la théorie du big bang le rappellent souvent, par peur sans doute de se faire accuser à leur tour de défendre une vision religieuse du monde. Toutefois, comme le montre Lambert, avant 1931, Lemaître ne cherche pas à séparer de manière radicale ses préoccupations scientifiques et religieuses. Or c'est une époque où il en vient à considérer que le Fiat lux de la Genèse constitue la raison profonde de l'univers. Cherchant à transposer cette intuition en termes scientifiques, il fait naître l'univers d'un rayonnement originaire. Comme le rayonnement, d'un point de vue quantique, est constitué de paquets d'énergie — les quanta —, Lemaître postule l'existence d'un atome primitif qui serait un quantum unique d'où proviendraient, par désintégrations successives, l'énergie et la matière présentes dans l'univers actuel. On voit ainsi que les réflexions théologiques de Lemaître ont bien été l'une de ses sources d'inspiration pour ses travaux scientifiques.       Pourquoi a-t-il alors affirmé ensuite qu'il fallait distinguer son activité scientifique de ses croyances religieuses ? Était-ce pour dissimuler l'origine en partie théologique de son hypothèse cosmologique ? Non, répond Lambert : Lemaître estimait tout simplement que cette hypothèse avait acquis une autonomie scientifique et que tout rattachement à ses racines théologiques nuirait à sa fécondité. En soulignant ainsi la cohérence de la position de Lemaître, Lambert apporte un éclairage important sur l'histoire de la cosmologie moderne et, plus généralement, sur les liens pouvant se tisser entre la science et la religion.

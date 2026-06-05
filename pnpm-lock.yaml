@@ -29,6 +29,9 @@ importers:
       '@11ty/is-land':
         specifier: ^4.0.1
         version: 4.0.1
+      gray-matter:
+        specifier: ^4.0.3
+        version: 4.0.3
       lite-youtube-embed:
         specifier: ^0.3.4
         version: 0.3.4

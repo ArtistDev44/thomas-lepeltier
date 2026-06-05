@@ -1,0 +1,15 @@
+---
+title: "Debating Darwin"
+date: 2016-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Histoire des sciences"]
+authorFullName: "Robert J. Richards et Michael Ruse"
+authorLastName: "Ruse"
+imageUrl: "/assets/images/couvertures/richards-ruse-debating-darwin.webp"
+amazonLink: "http://amzn.to/2hCbLJU"
+alphabeticalPage: ["r"]
+permalink: "/comptes-rendus/autheur/ruse/debating-darwin/index.html"
+metaDescription: "Compte rendu du livre de Robert J. Richards et Michael Ruse, Debating Darwin, par Thomas Lepeltier"
+---
+
+Qui était Charles Darwin ? Sa théorie de l’évolution est au fondement de la biologie moderne. Sa vie est connue dans ses moindres détails. Ses ouvrages, ses carnets de travail et sa correspondance sont parmi les textes les plus étudiés par les philosophes et historiens des sciences. Rien de ce qu’il a fait ou écrit ne semble avoir échappé à leurs scrupuleuses investigations. Pourtant, ces chercheurs n’arrivent toujours pas à s’entendre sur la façon dont Darwin a élaboré sa célèbre théorie. Du coup, pour bien faire comprendre la nature de ces désaccords, cet ouvrage présente une joute intellectuelle entre deux des meilleurs spécialistes du sujet. D’un côté, Michael Ruse, professeur à l’Université d’État de Floride, affirme que Darwin développa une conception mécaniste du monde qui prenait sa source dans la pensée libérale de l’Angleterre victorienne, notamment chez des auteurs comme Adam Smith et Thomas Malthus. Le Darwin qu’il décrit aurait ainsi conçu la sélection naturelle comme un mécanisme aveugle, s’appliquant à des individus et ne faisant écho à aucune notion de progrès. D’un autre côté, Robert J. Richard, professeur à l’Université de Chicago, défend un Darwin intellectuellement plus cosmopolite, certes très marqué par les valeurs libérales de la classe dominante de son époque et de son pays, mais également influencé par des penseurs allemands, en particulier Alexander von Humboldt. Il aurait ainsi conçu sa théorie de l’évolution dans le cadre d’une vision quelque peu romantique du monde où l’idée de finalité n’était pas totalement absente. Richards n’hésite pas non plus à avancer que Darwin attribuait une dimension esthétique et morale à la nature. Entre ces deux interprétations de la pensée de Darwin, l’opposition est donc franche. Laquelle est la plus proche de la réalité ? La question est délicate. En tout cas, après avoir exposé en détail leur thèse, Ruse et Richards critiquent respectivement celle de leur opposant et, constatant la persistance de leurs divergences, essayent de comprendre pourquoi tous deux, fins connaisseurs du sujet, n’arrivent pas à se mettre d’accord. Est-ce parce que, comme l’accuse Richards, Ruse aurait tendance à interpréter Darwin à l’aune de l’actuelle théorie de l’évolution ? Ou est-ce parce que, comme l’accuse Ruse, Richards attribuerait trop de signification aux métaphores de Darwin qui peuvent laisser entendre que la nature aurait une intention ? Là encore, il est difficile de répondre. Mais c’est un débat fondamental qu’il vaut mieux connaître avant de se prononcer sur Darwin…
