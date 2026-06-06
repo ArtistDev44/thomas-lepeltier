@@ -10,7 +10,21 @@ export default {
     },
     {
       text: 'Livres',
-      url: '/livres/'
+      url: '#',
+      submenu: [
+        {
+          text: 'Livres personnels',
+          url: '/livres/personnels/'
+        },
+        {
+          text: 'Ouvrages dirigés',
+          url: '/livres/ouvrages-diriges/'
+        },
+        {
+          text: 'Contributions',
+          url: '/livres/contributions/'
+        }
+      ]
     },
     {
       text: 'Comptes-rendus',
