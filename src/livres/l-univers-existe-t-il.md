@@ -2,7 +2,7 @@
 title: "L'univers existe-t-il ?"
 date: 1234-01-01
 layout: "livre.njk"
-tags: ["books"]
+tags: ["livre"]
 description: "Une réflexion sur le statut des concepts d'univers et de multivers en cosmologie."
 imageUrl: ""
 liens_achat: ["https://www.puf.com/content/Lunivers_existe-t-il"]

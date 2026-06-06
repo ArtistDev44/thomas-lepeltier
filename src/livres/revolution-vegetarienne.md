@@ -2,7 +2,7 @@
 title: "Révolution végétarienne"
 date: 1234-01-01
 layout: "livre.njk"
-tags: ["books"]
+tags: ["livre"]
 description: "Une grande révolution culturelle s'annonce : demain, nous ne mangerons plus de produits d'origine animale."
 imageUrl: ""
 liens_achat: []

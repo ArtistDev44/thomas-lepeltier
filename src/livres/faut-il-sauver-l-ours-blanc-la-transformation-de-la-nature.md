@@ -2,9 +2,9 @@
 title: "Faut-il sauver l'ours blanc ? La transformation de la nature"
 date: 2023-01-01
 layout: "livre.njk"
-tags: ["books"]
+tags: ["livre"]
 description: "Un ouvrage sur les enjeux éthiques et pratiques de la transformation de la nature."
-imageUrl: "/assets/images/couvertures/faut-il-sauver-ours-blanc/ours-blanc-couverture.webp"
+imageUrl: "/assets/images/livres-couvertures/faut-il-sauver-ours-blanc/ours-blanc-couverture.webp"
 liens_achat: []
 critiques: []
 nombre_de_pages: ""

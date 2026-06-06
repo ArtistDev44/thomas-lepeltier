@@ -2,9 +2,9 @@
 title: "Univers parallèles : Le livre de tous les possibles"
 date: 2010-01-01
 layout: "livre.njk"
-tags: ["books"]
+tags: ["livre"]
 description: "Un essai d'épistémologie original et brillant sur les théories des univers parallèles."
-imageUrl: "/assets/images/couvertures/univers_paralleles/couverture.webp"
+imageUrl: "/assets/images/livres-couvertures/univers_paralleles/couverture.webp"
 liens_achat: []
 critiques: 
   - auteur: "Science et Avenir"

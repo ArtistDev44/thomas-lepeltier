@@ -2,9 +2,9 @@
 title: "Darwin hérétique : L'éternel retour du créationnisme"
 date: 2007-01-01
 layout: "livre.njk"
-tags: ["books"]
+tags: ["livre"]
 description: "Un panorama précis et compréhensible des enjeux religieux qui ont traversé l'histoire de l'évolutionnisme, du créationnisme et du dessein intelligent."
-imageUrl: "/assets/images/couvertures/darwin-heretique/darwin-heretique.webp"
+imageUrl: "/assets/images/livres-couvertures/darwin-heretique/darwin-heretique.webp"
 liens_achat: ["https://www.amazon.fr/gp/product/2020882132"]
 critiques: 
   - auteur: "Jean Gayon, Professeur à l'Université Paris 1"
