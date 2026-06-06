@@ -4,7 +4,7 @@ date: 1234-01-01
 layout: "livre.njk"
 tags: ["livre"]
 description: "Un texte iconoclaste qui discute de la possible scientificité du créationnisme."
-imageUrl: ""
+imageUrl: "/assets/images/livres-couvertures/creationnisme-est-il-scientifique.webp"
 liens_achat: []
 critiques: []
 nombre_de_pages: ""

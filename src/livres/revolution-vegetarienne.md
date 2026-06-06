@@ -4,7 +4,7 @@ date: 1234-01-01
 layout: "livre.njk"
 tags: ["livre"]
 description: "Une grande révolution culturelle s'annonce : demain, nous ne mangerons plus de produits d'origine animale."
-imageUrl: ""
+imageUrl: "/assets/images/livres-couvertures/revolution-vegetarienne.webp"
 liens_achat: []
 critiques: []
 nombre_de_pages: ""

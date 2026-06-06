@@ -4,7 +4,7 @@ date: 1234-01-01
 layout: "livre.njk"
 tags: ["livre"]
 description: "Une réflexion sur le statut des concepts d'univers et de multivers en cosmologie."
-imageUrl: ""
+imageUrl: "/assets/images/livres-couvertures/univers-existe-t-il.webp"
 liens_achat: ["https://www.puf.com/content/Lunivers_existe-t-il"]
 critiques: []
 nombre_de_pages: 176

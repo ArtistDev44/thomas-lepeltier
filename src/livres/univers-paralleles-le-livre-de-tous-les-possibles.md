@@ -4,7 +4,7 @@ date: 2010-01-01
 layout: "livre.njk"
 tags: ["livre"]
 description: "Un essai d'épistémologie original et brillant sur les théories des univers parallèles."
-imageUrl: "/assets/images/livres-couvertures/univers_paralleles/couverture.webp"
+imageUrl: "/assets/images/livres-couvertures/univers-paralleles.webp"
 liens_achat: []
 critiques: 
   - auteur: "Science et Avenir"

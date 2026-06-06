@@ -4,7 +4,7 @@ date: 2021-01-01
 layout: "livre.njk"
 tags: ["livre"]
 description: "Une histoire critique du modèle cosmologique du big bang et de ses difficultés croissantes."
-imageUrl: "/assets/images/livres-couvertures/big-bang/couverture-big-bang.webp"
+imageUrl: "/assets/images/livres-couvertures/big-bang.webp"
 liens_achat: ["https://amzn.to/3jhq2gG", "https://www.placedeslibraires.fr/livre/9782070463916-big-bang-un-modele-en-crise-jean-marc-bonnet-bidaud/"]
 critiques: []
 nombre_de_pages: 304

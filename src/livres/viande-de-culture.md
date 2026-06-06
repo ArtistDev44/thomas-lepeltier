@@ -4,7 +4,7 @@ date: 1234-01-01
 layout: "livre.njk"
 tags: ["livre"]
 description: "Un essai sur la viande produite in vitro et ses implications éthiques et pratiques."
-imageUrl: ""
+imageUrl: "/assets/images/livres-couvertures/viande-de-culture.webp"
 liens_achat: []
 critiques: []
 nombre_de_pages: ""
