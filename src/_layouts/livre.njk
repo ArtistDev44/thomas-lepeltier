@@ -1,0 +1,53 @@
+---
+layout: base
+---
+
+<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+  <h1 class="gradient-text">Compte-rendu</h1>
+  <h2>Du livre {{ title }}</h2>
+
+<div class="tags-container">
+{% for tag in tags %}
+  <a href="/tags/{{ tag | slugify }}"><span slot="tag" class="button">{{ tag }}</span></a>
+{% endfor %}
+</div>
+
+<p>Rédigé en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}
+</p>
+<div>
+  <img src="{{ imageUrl }}" alt="Image de couverture du livre {{title}}" class="image-left">
+      {{ content | safe }}
+  </div>
+  <p class="author_cr" > {{ authorFullName }} </p>
+<a href="{{amazonLink}}">Lien Amazon</a>
+
+<style>
+    p.author_cr {
+        text-align: right;
+    }
+
+    .image-left {
+      float: left;
+      margin-right: 15px;
+    }
+</style>
+
+{% set related = collections.Rapports | relatedRapports(tags, page.url) %}
+
+{% if related.length %}
+  <h2>Recommandations</h2>
+  <ul>
+    {%- for rapport in related -%}
+      <li>
+        <a href="{{ rapport.url }}">{{ rapport.data.title }}</a>
+        <small>
+          Tags communs :
+          {%- for tag in rapport.data.tags -%}
+            {%- if tags.includes(tag) %} {{ tag }}{%- endif -%}
+          {%- endfor -%}
+        </small>
+      </li>
+    {%- endfor -%}
+  </ul>
+{% endif %}
+</div>
