@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/barrau-hypothese-k.webp"
 amazonLink: ""
 alphabeticalPage: ["b"]
 permalink: "/comptes-rendus/autheur/barrau/l-hypothese-k-la-science-face-a-la-catastrophe-ecologique/index.html"
-metaDescription: ""
+description: ""
 ---

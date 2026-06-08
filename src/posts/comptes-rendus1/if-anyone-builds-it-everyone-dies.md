@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/yudkowsky-soares-if-anyone-builds-it-every
 amazonLink: ""
 alphabeticalPage: ["y"]
 permalink: "/comptes-rendus/autheur/soares/if-anyone-builds-it-everyone-dies/index.html"
-metaDescription: ""
+description: ""
 ---

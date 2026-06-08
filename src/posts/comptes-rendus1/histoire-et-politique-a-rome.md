@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/arnaud-lindet-histoire-politique-rome.webp
 amazonLink: ""
 alphabeticalPage: ["a"]
 permalink: "/comptes-rendus/autheur/arnaud-lindet/histoire-et-politique-a-rome/index.html"
-metaDescription: "Marie-Pierre Arnaud-Lindet, Histoire et politique à Rome, Les historiens romains"
+description: "Marie-Pierre Arnaud-Lindet, Histoire et politique à Rome, Les historiens romains"
 ---

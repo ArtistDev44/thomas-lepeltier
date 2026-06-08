@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/yates-science-tradition-hermetique.webp"
 amazonLink: ""
 alphabeticalPage: ["y"]
 permalink: "/comptes-rendus/autheur/yates/science-et-tradition-hermetique/index.html"
-metaDescription: "Frances Yates, Science et tradition hermétique"
+description: "Frances Yates, Science et tradition hermétique"
 ---

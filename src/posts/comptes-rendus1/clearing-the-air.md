@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/ritchie-clearing-the-air.webp"
 amazonLink: ""
 alphabeticalPage: ["r"]
 permalink: "/comptes-rendus/autheur/ritchie/clearing-the-air/index.html"
-metaDescription: ""
+description: ""
 ---

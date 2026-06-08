@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/kateman-reducetarian-solution.webp"
 amazonLink: ""
 alphabeticalPage: ["k"]
 permalink: "/comptes-rendus/autheur/kateman/the-reducetarian-solution/index.html"
-metaDescription: ""
+description: ""
 ---

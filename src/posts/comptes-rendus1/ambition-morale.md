@@ -9,7 +9,7 @@ imageUrl: "/assets/images/couvertures/bregman-ambition-morale.webp"
 amazonLink: "https://amzn.to/4qr56Gb"
 alphabeticalPage: ["b"]
 permalink: "/comptes-rendus/autheur/bregman/ambition-morale/index.html"
-metaDescription: "Compte rendu du livre de Rutger Bregman, Ambition morale, par Thomas Lepeltier"
+description: "Compte rendu du livre de Rutger Bregman, Ambition morale, par Thomas Lepeltier"
 ---
 
 [à paraître]

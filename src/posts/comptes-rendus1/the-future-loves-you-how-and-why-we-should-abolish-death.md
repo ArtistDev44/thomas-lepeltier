@@ -9,5 +9,5 @@ imageUrl: ""
 amazonLink: ""
 alphabeticalPage: ["z"]
 permalink: "/comptes-rendus/autheur/zeleznikow-johnston/the-future-loves-you-how-and-why-we-should-abolish-death/index.html"
-metaDescription: ""
+description: ""
 ---

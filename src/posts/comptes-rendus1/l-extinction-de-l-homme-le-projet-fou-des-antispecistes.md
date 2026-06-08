@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/sugy-extinction-de-l-homme-projet-fou-anti
 amazonLink: ""
 alphabeticalPage: ["s"]
 permalink: "/comptes-rendus/autheur/sugy/l-extinction-de-l-homme-le-projet-fou-des-antispecistes/index.html"
-metaDescription: ""
+description: ""
 ---

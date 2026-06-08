@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/sowell-social-justice-fallacies.webp"
 amazonLink: ""
 alphabeticalPage: ["s"]
 permalink: "/comptes-rendus/autheur/sowell/social-justice-fallacies/index.html"
-metaDescription: ""
+description: ""
 ---

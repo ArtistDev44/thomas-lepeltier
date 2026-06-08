@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/ritchie-not-the-end-of-the-world.webp"
 amazonLink: ""
 alphabeticalPage: ["r"]
 permalink: "/comptes-rendus/autheur/hannahritchie/not-the-end-of-the-world/index.html"
-metaDescription: ""
+description: ""
 ---

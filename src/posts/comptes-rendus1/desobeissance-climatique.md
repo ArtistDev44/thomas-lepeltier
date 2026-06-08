@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/laugier-ogien-desobeissance-climatique.web
 amazonLink: ""
 alphabeticalPage: ["l", "o"]
 permalink: "/comptes-rendus/autheur/ogien/desobeissance-climatique/index.html"
-metaDescription: ""
+description: ""
 ---

@@ -9,7 +9,7 @@ imageUrl: "/assets/images/couvertures/huemer-progressive-myths.webp"
 amazonLink: "https://amzn.to/4dIUw5G"
 alphabeticalPage: ["h"]
 permalink: "/comptes-rendus/autheur/huemer/progressive-myths/index.html"
-metaDescription: "Compte rendu du livre de Michael Huemer, Progressive Myths, par Thomas Lepeltier"
+description: "Compte rendu du livre de Michael Huemer, Progressive Myths, par Thomas Lepeltier"
 ---
 
 (à paraître)

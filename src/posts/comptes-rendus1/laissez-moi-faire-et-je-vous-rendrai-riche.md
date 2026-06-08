@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/mccloskey-carden-laissez-moi-faire-et-je-v
 amazonLink: ""
 alphabeticalPage: ["m"]
 permalink: "/comptes-rendus/autheur/carden/laissez-moi-faire-et-je-vous-rendrai-riche/index.html"
-metaDescription: ""
+description: ""
 ---

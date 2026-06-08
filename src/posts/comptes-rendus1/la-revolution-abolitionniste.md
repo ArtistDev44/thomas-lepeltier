@@ -9,5 +9,5 @@ imageUrl: ""
 amazonLink: ""
 alphabeticalPage: ["g"]
 permalink: "/comptes-rendus/autheur/grenouilleau/la-revolution-abolitionniste/index.html"
-metaDescription: ""
+description: ""
 ---

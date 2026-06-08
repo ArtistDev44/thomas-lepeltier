@@ -9,5 +9,5 @@ imageUrl: ""
 amazonLink: ""
 alphabeticalPage: ["w"]
 permalink: "/comptes-rendus/autheur/waldenstrom/richer-and-more-equal-a-new-history-of-wealth-in-the-west/index.html"
-metaDescription: ""
+description: ""
 ---

@@ -9,5 +9,5 @@ imageUrl: ""
 amazonLink: ""
 alphabeticalPage: ["m"]
 permalink: "/comptes-rendus/autheur/mclean/the-case-for-shareholder-capitalism-how-the-pursuit-of-profit-benefits-all/index.html"
-metaDescription: ""
+description: ""
 ---

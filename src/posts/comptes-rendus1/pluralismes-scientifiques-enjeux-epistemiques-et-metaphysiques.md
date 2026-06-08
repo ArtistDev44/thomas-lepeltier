@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/ruphy-pluralismes-scientifiques.webp"
 amazonLink: "http://www.amazon.fr/gp/product/2705686738/ref=as_li_ss_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=2705686738&linkCode=as2&tag=httpthomaslep-21"
 alphabeticalPage: ["r"]
 permalink: "/comptes-rendus/autheur/ruphy/pluralismes-scientifiques-enjeux-epistemiques-et-metaphysiques/index.html"
-metaDescription: "Compte rendu de Stéphanie Ruphy, Pluralismes scientifiques, Enjeux épistémiques et métaphysiques"
+description: "Compte rendu de Stéphanie Ruphy, Pluralismes scientifiques, Enjeux épistémiques et métaphysiques"
 ---

@@ -9,5 +9,5 @@ imageUrl: "/assets/images/couvertures/sortir-des-labos-pour-defendre-le-vivant.w
 amazonLink: ""
 alphabeticalPage: ["s"]
 permalink: "/comptes-rendus/autheur/rebellion/sortir-des-labos-pour-defendre-le-vivant/index.html"
-metaDescription: ""
+description: ""
 ---

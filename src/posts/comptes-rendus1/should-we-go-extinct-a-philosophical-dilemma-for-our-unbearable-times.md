@@ -9,7 +9,7 @@ imageUrl: "/assets/images/couvertures/may-should-we-go-extinct.webp"
 amazonLink: "https://amzn.to/4h6sMKJ"
 alphabeticalPage: ["m"]
 permalink: "/comptes-rendus/autheur/may/should-we-go-extinct-a-philosophical-dilemma-for-our-unbearable-times/index.html"
-metaDescription: "Compte rendu du livre de Todd May, Should We Go Extinct?, par Thomas Lepeltier"
+description: "Compte rendu du livre de Todd May, Should We Go Extinct?, par Thomas Lepeltier"
 ---
 
 (à paraître)
