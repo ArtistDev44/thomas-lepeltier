@@ -1,0 +1,15 @@
+---
+title: "L’Intention"
+date: 1957-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Philosophie"]
+authorFullName: "Elizabeth Anscombe"
+authorLastName: "Anscombe"
+imageUrl: "/assets/images/couvertures/anscombe-intention.webp"
+amazonLink: ""
+alphabeticalPage: ["a"]
+permalink: "/comptes-rendus/autheur/anscombe/l-intention/index.html"
+metaDescription: "Elizabeth Anscombe, L'Intention, essai sur la philosophie de l'action"
+---
+
+Voici la traduction française d'un livre qui, publié en 1957, marque la naissance de la philosophie de l'action, c'est-à-dire de cette branche de la philosophie qui analyse l'action humaine en dehors de toute considération morale. Fortement influencée par Ludwig Wittgenstein, Elizabeth Anscombe s'en prenait à une conception « naturelle » mais, selon elle, incohérente de la notion d'intention. On a en effet souvent tendance à faire implicitement de l'intention une sorte de disposition interne de l'esprit totalement indépendante de l'action. Mon intention de lever mon bras serait ainsi complètement distincte de l'acte qui consiste à lever mon bras. Et je serais d'ailleurs la seule personne à avoir accès directement, par introspection, à cette intention.       Or, si tel était le cas, un individu aurait pu avoir l'intention de jouer une partie d'échecs quand bien même il aurait vécu à une époque où ce jeu n'existait pas encore. Il lui aurait suffi pour cela d'être dans la même disposition d'esprit que toute personne qui à notre époque aurait cette intention. Essayer de parer l'objection en disant que l'intention ne serait pas un état interne du sujet, mais plutôt un acte intérieur qui précéderait l'action proprement dite, ne ferait que repousser le problème, puisque se poserait alors la question de savoir en quoi consiste l'intention de l'acte intérieur, et ainsi de suite. Tout aussi problématique serait l'absence de distinction entre une intention et, par exemple, un souhait. Si l'intention traduit un état intérieur qui précède l'action intentionnelle, elle ne peut, pas plus qu'un souhait, garantir la réalisation future de l'acte. Il ne serait donc pas illogique, bien que troublant, de dire : « j'ai l'intention de lever le bras, mais je n'ai pas la moindre opinion de savoir si je le lèverai ou non. »       Ce type d'incohérences conduit Anscombe à soutenir que les intentions ne précèdent pas les actions comme une cause précède l'effet, mais qu'elles seraient plutôt ce qui en exprimeraient les raisons. Aussi peut-elle affirmer qu'« en gros, l'intention d'un homme, c'est son action ». L'intention ne doit donc plus être appréhendée indépendamment des actes, comme quelque chose que l'on observerait à l'intérieur de nous, mais à travers les actes eux-mêmes… Autant de considérations qui allaient donner naissance à de multiples débats entre philosophes et dont il faut se féliciter qu'elles soient enfin disponibles en français.
