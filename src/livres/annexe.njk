@@ -61,3 +61,19 @@ img {
     margin-top: 3rem;
 }
 </style>
+
+  <custom-masonry>
+{% for item in contributions %}
+<custom-card>
+{% image item.image, item.alt %}
+<span slot="date"></span>
+<span slot="tag" class="button">contributions</span>
+<h2 slot="headline">{{ item.title }} </h2>
+<p slot="content"></p>
+<footer slot="footer">  <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">
+Cliquez-ici
+  </a>
+</footer>
+</custom-card>
+{% endfor %}
+  </custom-masonry>

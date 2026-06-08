@@ -10,7 +10,7 @@ export default {
     },
     {
       text: 'Livres',
-      url: '#',
+      url: '/livres/',
       submenu: [
         {
           text: 'Livres personnels',
@@ -33,6 +33,10 @@ export default {
     {
       text: 'Articles',
       url: '/articles/'
+    },
+    {
+      text: 'Liens',
+      url: '/liens/'
     },
     {
       text: 'Contact',

@@ -107,9 +107,9 @@ export default {
   blocklist: ['container'],
 
   // Prevents Tailwind from generating that wall of empty custom properties
-  experimental: {
-    optimizeUniversalDefaults: true
-  },
+  // experimental: {
+  //   optimizeUniversalDefaults: true
+  // },
 
   plugins: [
     // Generates custom property values from tailwind config
