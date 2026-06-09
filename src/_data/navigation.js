@@ -13,16 +13,16 @@ export default {
       url: '/livres/',
       submenu: [
         {
-          text: 'Livres personnels',
-          url: '/livres/personnels/'
+          text: 'Mes livres',
+          url: '/livres/#mes-livres'
         },
         {
           text: 'Ouvrages dirigés',
-          url: '/livres/ouvrages-diriges/'
+          url: '/livres/#ouvrages-diriges'
         },
         {
           text: 'Contributions',
-          url: '/livres/contributions/'
+          url: '/livres/#contributions'
         }
       ]
     },

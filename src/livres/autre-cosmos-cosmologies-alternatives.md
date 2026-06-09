@@ -2,7 +2,7 @@
 title: "Un autre cosmos ?"
 date: 1234-01-01
 layout: "livre.njk"
-tags: ["livre","livres-dirigés"]
+tags: ["livre","livresDiriges"]
 description: "Une déconstruction en règle du spécisme et une promotion d'une éthique prenant en compte les intérêts de l'ensemble des êtres sensibles."
 imageUrl: "/assets/images/livres-couvertures/autre-cosmos-cosmologies-alternatives.webp"
 liens_achat: []

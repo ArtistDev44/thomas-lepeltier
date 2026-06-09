@@ -5,6 +5,10 @@ description: 'Eleventy Excellent is inspired bythe companion website of Andy Bel
 layout: page
 ---
 
+<pre>
+    rajouter apala et d'autres sites
+</pre>
+
 ##  **Sites sur des auteurs**
 
 -   [Foucault](http://www.fnet.fr/CMF/textepardefaut.html) : Le site du Centre Michel Foucault.

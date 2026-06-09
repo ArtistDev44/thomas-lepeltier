@@ -5,12 +5,11 @@ layout: "annexe.njk"
 permalink: "/livres/index.html"
 ---
 
-<h2>Rangés chronologiquement</h2>
+<h2 id="mes-livres">Mes livres</h2>
 <hr>
 
-<div class="cards-grid">
   <custom-masonry>
-    {%- for livre in collections.livre | reverse -%}
+    {%- for livre in collections.mesLivres | reverse -%}
 
       {# --- LOGIQUE DE LIEN --- #}
       {# On définit le lien : externe d'abord, sinon interne, sinon l'URL d'Eleventy #}
@@ -52,8 +51,53 @@ permalink: "/livres/index.html"
       </custom-card>
     {%- endfor -%}
   </custom-masonry>
-</div>
-<style>
+
+<h2 id="ouvrages-diriges">Les livres dont j’ai assuré la direction</h2>
+
+ <custom-masonry>
+    {%- for livre in collections.livresDiriges | reverse -%}
+
+      {# --- LOGIQUE DE LIEN --- #}
+      {# On définit le lien : externe d'abord, sinon interne, sinon l'URL d'Eleventy #}
+      {% set targetUrl = livre.data.externalLink or livre.data.internalLink or livre.url %}
+
+      {# On vérifie si c'est un lien externe pour le comportement du navigateur #}
+      {% set isExternal = livre.data.externalLink | length > 0 %}
+
+      <custom-card>
+        {# Slot Headline (Titre) - Utilise le lien dynamique #}
+        <p slot="headline">
+          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            {{ livre.data.title }}
+          </a>
+        </p>
+        {# Image de l'livre via le shortcode Eleventy #}
+        {% image livre.data.imageUrl, "Première page de mon livre " + livre.data.title %}
+
+        {# Slot Date #}
+        <span slot="date">
+          {{ livre.date.toLocaleString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' }) }}
+        </span>
+
+        {# Slot Tag #}
+        {%- for tag in livre.data.tags -%}
+          {%- if tag != "livre" -%}
+            <a href="/tags/{{ tag | slugify }}" slot="tag" class="button" style="width: 20vw; height:auto;">
+              {{ tag }}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+
+        {# Slot Headline (Titre) - Utilise le lien dynamique #}
+        <p slot="headline">
+          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
+            {{ livre.data.title }}
+          </a>
+        </p>
+      </custom-card>
+    {%- endfor -%}
+  </custom-masonry>
+  <style>
 h3 {
     --flow-space: 1.3rem;
 }
@@ -62,17 +106,20 @@ img {
 }
 </style>
 
+<h2 id="contributions">Les livres auxquels j’ai contribué</h2>
   <custom-masonry>
 {% for item in contributions %}
 <custom-card>
 {% image item.image, item.alt %}
 <span slot="date"></span>
 <span slot="tag" class="button">contributions</span>
-<h2 slot="headline">{{ item.title }} </h2>
+<a href="/tags/contributions" slot="tag" class="button" style="width: 20vw; height:auto;">
+contributions</a>
+<p slot="headline">          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
+  {{ item.title }}
+</a>
+</p>
 <p slot="content"></p>
-<footer slot="footer">  <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">
-Cliquez-ici
-  </a>
 </footer>
 </custom-card>
 {% endfor %}

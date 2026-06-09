@@ -2,7 +2,7 @@
 title: "Les véganes vont-ils prendre le pouvoir ?"
 date: 1234-01-01
 layout: "livre.njk"
-tags: ["livre", "mes-livres"]
+tags: ["livre", "mesLivres"]
 description: "Une réflexion sur les choix de société qui pourraient faire basculer dans l'ère du véganisme."
 imageUrl: "/assets/images/livres-couvertures/veganes-au-pouvoir.webp"
 liens_achat: ["https://www.placedeslibraires.fr/livre/9782746518964-les-veganes-vont-ils-prendre-le-pouvoir-thomas-lepelier/", "https://www.lalibrairie.com/livres/les-veganes-vont-ils-prendre-le-pouvoir--_0-5790741_9782746518964.html"]

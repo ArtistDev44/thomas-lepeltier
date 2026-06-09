@@ -2,7 +2,7 @@
 title: "Le créationnisme est-il scientifique ?"
 date: 1234-01-01
 layout: "livre.njk"
-tags: ["livre", "mes-livres"]
+tags: ["livre", "mesLivres"]
 description: "Un texte iconoclaste qui discute de la possible scientificité du créationnisme."
 imageUrl: "/assets/images/livres-couvertures/creationnisme-est-il-scientifique.webp"
 liens_achat: []
