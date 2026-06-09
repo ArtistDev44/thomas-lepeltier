@@ -1,0 +1,48 @@
+---
+layout: base
+title: Comptes-rendus
+description: 'All blog posts can be found here'
+pagination:
+  data: collections.allPosts
+  size: 50
+permalink: 'comptes-rendus/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+---
+
+<div class="wrapper">
+  <header class="full | section spot-color-theme-secondary">
+    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
+      <h1 class="text-center text-theme-light">{{ title }}</h1>
+    </div>
+
+    {% svg "divider/edgy", null, "divider" %}
+  </header>
+
+  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
+    <p>Persuadés que trop d'essais ne trouvent pas le nombre de lecteurs qu'ils méritent, nous avons trouvé intéressant d'utiliser le réseau Internet pour en publier des comptes rendus afin de les faire connaître à un plus large public.
+</p><p>
+Mais plutôt que d'écrire de simples « annonces publicitaires » qui n'apprennent presque rien sur le contenu des ouvrages ou, à l'inverse, des études critiques qui ne sont compréhensibles que par ceux qui ont déjà lu les livres en question, nous avons décidé de présenter explicitement et aussi simplement que possible certaines idées développées par les auteurs. Nos lecteurs pourront ainsi apprécier, par eux-mêmes, l'intérêt de ces ouvrages.
+    </p>
+  </div>
+
+  <custom-masonry layout="50-50">
+		{% asyncEach item in pagination.items %}
+			{% include "partials/card-blog.njk" %}
+		{% endeach %}
+	</custom-masonry>
+
+  <!-- set collection to paginate -->
+  {% set collectionToPaginate = collections.posts %}
+  <!-- set target pagination settings in meta.js -->
+  {% set metaKey = "blog" %}
+  <!-- if the number of items in the collection is greater than the number of items shown on one page -->
+  {% if collectionToPaginate.length > pagination.size %}
+    <!-- include pagination -->
+    {% include 'partials/pagination.njk' %}
+  {% endif %}
+</div>
+<style>
+.prose :is(p,li,dl,blockquote) {
+    max-inline-size: none;
+    text-wrap: pretty;
+}
+</style>

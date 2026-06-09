@@ -1,0 +1,14 @@
+---
+title: "La Rébellion française. Mouvements populaires et conscience sociale, 1661-1789"
+date: 2002-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Histoire"]
+authorFullName: "Jean Nicolas"
+authorLastName: "Nicolas"
+imageUrl: "/assets/images/couvertures/nicolas-rebellion-francaise.webp"
+amazonLink: ""
+alphabeticalPage: ["n"]
+description: "Jean Nicolas, La Rébellion française, Mouvements populaires et conscience sociale, 1661-1789"
+---
+
+Ce livre n'a pas pour objectif déclaré de déterminer les causes de la Révolution française, mais d'analyser toutes les « rébellions », des petites aux grandes, qu'a connues la France entre 1661 et 1789. Une interprétation des origines de la Révolution ne s'en dégage pas moins. D'abord, sur un plan quantitatif, l'auteur souligne la montée en puissance du nombre des actes de rébellion à l'approche de la Révolution. Après une décennie de calme relatif, l'agitation de la population française va ainsi croître de façon plus ou moins continue de 1764 à 1789. Ensuite, sur un plan qualitatif, l'auteur réfute la thèse selon laquelle l'esprit de contestation serait sorti des cénacles pour atteindre progressivement le bas de l'échelle sociale. Au contraire, c'est « à ras de terre que s'élaboraient les aspirations réformistes du plus grand nombre ». L'auteur laisse donc entendre que c'est une prise de conscience politique du peuple qui aurait à la fois fait émerger une volonté de réforme de la société et conduit à la multiplication des actes de rébellion à l'approche de 1789. Deux phénomènes qui auraient rendu possible, voire logique vu le contexte, le déclenchement de la Révolution.       Mais, en arrêtant l'enquête à l'année 1789, ce livre ne force-t-il pas implicitement l'interprétation qui fait de la Révolution l'aboutissement implicite de ce qui précède ? N'aurait-il pas fallu pousser l'enquête en aval de cette date charnière pour mieux rendre compte de la dynamique des mouvements contestataires ? De même, s'il est possible qu'il y ait un lien entre l'augmentation du nombre de rébellions à l'approche de 1789 et la Révolution, la logique des enchaînements événementiels est loin d'être évidente quand on voit que l'agitation connut aussi un pic en 1709. Par ailleurs, comment déceler une prise de conscience politique des émeutiers quand l'analyse montre que leurs motivations concernent principalement la fiscalité étatique et les problèmes de subsistance ? Certes, l'auteur affirme que « la poussée des comportements contestataires s'expliquent mal si on n'y reconnaît pas l'émergence d'une prise de conscience qui […] préfigure le politique ». Mais n'est-ce pas là affirmer ce qu'il faudrait justement montrer ?       Ce livre d'histoire sociale soulève donc quelques questions quant aux idées sous-jacentes qu'il véhicule. Il n'en est pas moins un travail exceptionnel sur l'agitation populaire sous l'Ancien régime.

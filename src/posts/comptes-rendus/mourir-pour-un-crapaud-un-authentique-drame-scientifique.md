@@ -1,0 +1,14 @@
+---
+title: "Mourir pour un crapaud. Un authentique drame scientifique"
+date: 2011-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Histoire des sciences"]
+authorFullName: "Catherine Bousquet"
+authorLastName: "Bousquet"
+imageUrl: "/assets/images/couvertures/bousquet-mourir-pour-un-crapaud.webp"
+amazonLink: ""
+alphabeticalPage: ["b"]
+description: "Catherine Bousquet, Mourir pour un crapaud, Un authentique drame scientifique"
+---
+
+Le zoologiste Paul Kammerer était lamarckien. Au début du XXe siècle, il devint célèbre en prétendant avoir réalisé toute une série d'expériences sur des crapauds qui, selon lui, prouvaient l'hérédité des caractères acquis. C'était une hérésie vis-à-vis de la génétique de Mendel, alors en plein développement. La controverse atteignit son point d'orgue en 1926 quand il fut accusé de fraude. Six semaines après la publication de l'accusation dans la prestigieuse revue Nature, Kammerer se suicida ; du moins, c'est la version officielle de son décès. Cette histoire dramatique, qui connut un fort retentissement, a souvent servi à illustrer la fraude scientifique ; quand ce n'était pas l'absurdité qu'il y aurait à s'accrocher contre vents et marées à une théorie prétendument caduque.       Dans ce livre, Catherine Bousquet revient sur cette histoire dont certains épisodes restent encore mystérieux. Elle utilise la forme romanesque, probablement pour toucher un plus grand nombre de lecteurs, mais sur le fond sa prose colle aux données historiques. Surtout, à travers un récit bien mené, elle offre une très belle leçon d'épistémologie. Que faut-il en effet retenir de cette histoire de crapauds ?       D'abord, Kammerer n'a vraisemblablement pas été l'auteur de la fraude. L'accusation, précipitée, fut donc malheureuse. Ensuite, il est possible que ce virtuose de l'élevage des batraciens ait vraiment réussi à obtenir des crapauds dont certains traits étaient induits par des modifications de l'environnement dans lequel vivaient leurs géniteurs. On s'est en effet rendu compte depuis lors que l'hérédité est bien plus complexe que ne l'avançaient à l'époque les tenants de la génétique de Mendel. Des facteurs environnementaux pourraient ainsi avoir influencé l'expression de certains gènes des crapauds, ce qui aurait pu donner l'impression d'une transmission de caractères acquis. Si Kammerer a commis une erreur, ce serait donc dans l'interprétation de ses résultats. Mais ses adversaires auraient également eu tort de dénigrer des expériences annonciatrices de futures découvertes concernant l'épigénétique, c'est-à-dire l'influence de l'environnement sur l'expression des gènes.       En somme, l'erreur des uns et des autres fut de prendre une position tranchée dans ce débat et de ne pas réfléchir au-delà de leur théorie de prédilection. On saura gré à ce livre de nous rappeler les méfaits de cette attitude…

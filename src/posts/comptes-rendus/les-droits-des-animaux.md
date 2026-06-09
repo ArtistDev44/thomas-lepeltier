@@ -1,0 +1,14 @@
+---
+title: "Les Droits des animaux"
+date: 2013-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Philosophie"]
+authorFullName: "Tom Regan"
+authorLastName: "Regan"
+imageUrl: "/assets/images/couvertures/regan-droits-des-animaux.webp"
+amazonLink: "http://www.amazon.fr/gp/product/2705682309/ref=as_li_ss_tl?ie=UTF8&tag=httpthomaslep-21&linkCode=as2&camp=1642&creative=19458&creativeASIN=2705682309"
+alphabeticalPage: ["r"]
+description: "Compte rendu de Tom Regan, Les Droits des animaux"
+---
+
+L’idée de libérer les animaux des abattoirs et d’un grand nombre de laboratoires s’impose à quiconque estime que l’on ne doit pas les faire souffrir sans nécessité. Cette idée fédère ainsi tout un activisme en faveur de la cause animale. Mais, derrière l’unité de la formule, il y a des différences de points de vue sur les fondements moraux de cette cause et sur l’étendue de cette libération. Par exemple, une grande figure de la cause animale comme Peter Singer fonde son éthique sur l’antispécisme et l’utilitarisme. La première doctrine enjoint d’attribuer des considérations égales aux intérêts des êtres sensibles, indépendamment de l’espèce à laquelle ils appartiennent. La seconde prescrit d’agir de manière à maximiser le bien-être global de l’ensemble des êtres sensibles, ou à minimiser leur souffrance globale. Ce qui veut dire qu’un acte n’est pas bon ou mauvais en soi, mais s’évalue à ses conséquences en termes de bien-être global, toutes espèces confondues. D’où le terme de conséquentialiste pour caractériser cette approche.        Or, pour le philosophe Tom Regan, autre grande figure de la cause animale, cette doctrine utilitariste est contestable. Dans son livre Les droits des animaux, qui offre une analyse très détaillée des différentes approches de la question animale, il défend en effet la thèse que les animaux, du moins ceux qui ne sont pas trop « rudimentaires », ont des droits intrinsèques. En particulier, il estime qu’un animal capable d’agir en fonction de préférences et de désirs a le droit de vivre. Regan en conclut que faire d’un animal un moyen pour une fin (un cobaye pour une expérience, par exemple), quelles qu’en soient les conséquences positives sur le bien-être de l’ensemble des autres êtres sensibles, revient à violer ses droits. Regan voit également dans l’alimentation carnée une négation des droits des animaux qui sont mangés. Il en déduit que le végétarisme, qui n’est chez Singer qu’un moyen de ne plus faire souffrir les animaux, est une obligation morale.        Cette approche de Regan, dite déontologique puisqu’elle exhibe des devoirs moraux, est ainsi clairement en conflit au niveau théorique avec celle plus pragmatique de Singer. Cela dit, leurs différences ne vont pas jusqu’à les diviser face, par exemple, aux millions de veaux qui chaque année souffrent le martyre. À ce niveau pratique, tous deux se retrouvent pour prôner une très vaste libération animale.

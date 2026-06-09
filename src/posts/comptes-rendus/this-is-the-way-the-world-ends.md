@@ -1,0 +1,14 @@
+---
+title: "This Is the Way the World Ends"
+date: 2018-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Sciences humaines"]
+authorFullName: "Jeff Nesbit"
+authorLastName: "Nesbit"
+imageUrl: "/assets/images/couvertures/nesbit-this-is-the-way-the-world-ends.webp"
+amazonLink: "https://amzn.to/2D2fuxE"
+alphabeticalPage: ["n"]
+description: "Compte rendu du livre de Jeff Nesbit, This Is the Way the World Ends, par Thomas Lepeltier"
+---
+
+La question du réchauffement climatique fait de plus en plus l’actualité. Selon les experts, la situation est critique mais, sur le plan politique et citoyen, rien ne bouge, ou presque. Face à ce blocage, le livre de Jeff Nesbit entend « mobiliser les troupes » à la fois en soulignant que le réchauffement climatique a déjà des effets délétères sur l’ensemble de la planète, même s’ils passent souvent inaperçus aux yeux des néophytes, en expliquant comment la situation risque de se détériorer drastiquement si rien n’est fait rapidement et en montrant que les solutions ne sont pas si compliquées que cela à mettre en œuvre. Directeur d’un Think Tank sur le changement climatique, Nesbit commence ainsi par offrir une synthèse, claire et précise, de tous les changements qui sont déjà en train de se produire et qui vont s’accélérer : modifications des dates de migrations des animaux, extinctions locales de la faune et de la flore, diminution de la glace aux pôles et surtout fontes des glaciers montagneux, désertification, etc. Il poursuit son propos en exposant les conséquences néfastes que ces phénomènes ont déjà sur certaines populations humaines et en décrivant les graves détérioration à prévoir dans un avenir proche. Une crise sanitaire et géopolitique nous attend. Outre à des grands déplacements de populations, notamment au Bangladesh, il faut par exemple s’attendre à d’âpres batailles autour des sources d’eau douce. Le tableau que dresse ainsi Nesbit est noir. Il y aurait de quoi désespérer. Mais Nesbit est un optimiste. Pour lui, il n’est pas nécessaire de remettre en cause notre système économique et nos modes de vie. Toute la société pourrait continuer à fonctionner en se passant d’énergie fossile. Nesbitt montre en effet que les solutions techniques existent déjà et que les industriels y sont prêts. Il suffirait de taxer fortement ces énergies fossiles pour que le marché des énergies renouvelables décolle et que l’accroissement des températures soit contenu. Bien sûr, cette mesure demande une volonté politique forte mais, sur un plan technique, elle est simple à mettre en place. Trop simple, diront certains, et donc pas suffisante. Probablement. D’ailleurs, la grande confiance qu’a Nesbit envers les vertus du marché peut sembler un peu naïve. Cela dit, commencer par ce qui est relativement facile à mettre en œuvre est certainement la meilleure chose à faire dans l’immédiat. À ce niveau, le livre de Nesbitt pourrait justement contribuer à mobiliser le monde politique…

@@ -1,0 +1,14 @@
+---
+title: "Les Mondes darwiniens,"
+date: 2009-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Sciences"]
+authorFullName: "T. Heams, P. Huneman, G. Lecointre et M. Silberstein (eds)"
+authorLastName: "(eds)"
+imageUrl: "/assets/images/couvertures/heams-huneman-lecointre-silberstein-mondes-darwiniens.webp"
+amazonLink: ""
+alphabeticalPage: ["h", "l", "s"]
+description: "Heam, Huneman, Lecointre, Silberstein, Les Mondes darwiniens, L'évolution de l'évolution"
+---
+
+Comment célébrer un grand savant sans le statufier ? Comment commémorer ses travaux sans figer ses idées ? Comment louer ses mérites sans passer sous silence ses limites ? Une solution consiste à présenter à la fois la dynamique et richesse des recherches qui s'en inspirent et les tensions conceptuelles qui en émanent. C'est en tout cas l'optique de ce livre collectif, véritable somme sur le darwinisme, version XXIe siècle. Pour célébrer le 150e anniversaire de la publication de L'Origine des espèces, cet ouvrage offre ainsi un état des lieux très complet des multiples champs de recherche qui trouvent leur source dans les idées clefs de Charles Darwin. Mais il n'est pas question de définir une doctrine aux contours bien nets qu'il ne resterait plus qu'à vénérer. L'objectif est de présenter des axes de recherche et de réflexion.        Qui dit darwinisme, dit variation aléatoire, sélection naturelle, évolution des espèces, adaptation, hérédité, etc. Tous ces concepts sont donc présentés et analysés dans ce livre. Avec la théorie synthétique de l'évolution mise sur pied dans les années 1930-40, on aurait pu penser qu'ils avaient tous acquis une signification précise et immuable. On voit au contraire à quel point ils sont sujets à une réélaboration permanente. Autre signe de dynamisme du darwinisme : il s'appliquait initialement à la faune et à la flore ; désormais, il irrigue également des domaines de recherche comme la linguistique, l'économie ou encore la robotique.        Pour ceux qui seraient tentés, face à cette richesse, de faire allégeance au darwinisme, ou au contraire pour ceux qui, face aux débats jamais clos qu'il suscite, voudraient marquer leur défiance, Jean Gayon écrit très justement dans sa préface que, au sortir de la lecture de ce livre, « on est persuadé de l'inanité de la question de savoir s'il faut être darwinien ou non-darwinien. Les principes darwiniens ont eu et ont, de fait, une fécondité exceptionnelle dans de nombreux champs du savoir biologique, anthropologique et technologique. Mais il est clair aussi que le darwinisme ne saurait avoir réponse à tout. Il n'épuise ni la biologie, ni les sciences de l'homme et de la société, ni évidemment la technologie. Il serait pourtant bien aventureux, et sans doute irresponsable d'un point de vue cognitif, de vouloir s'en passer. » Le mérite de ce livre est justement de faire le point sur les multiples ramifications de cette pensée darwinienne si utile dans de nombreux domaines de recherche.

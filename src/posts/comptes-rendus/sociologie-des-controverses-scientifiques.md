@@ -1,0 +1,14 @@
+---
+title: "Sociologie des controverses scientifiques"
+date: 2003-01-01
+layout: "compte-rendu.njk"
+tags: ["Rapports", "Philosophie des sciences", "Sciences humaines"]
+authorFullName: "Dominique Raynaud"
+authorLastName: "Raynaud"
+imageUrl: "/assets/images/couvertures/raynaud-sociologie-des-controverses-scientifiques.webp"
+amazonLink: ""
+alphabeticalPage: ["r"]
+description: "Dominique Raynaud, Sociologie des controverses scientifique"
+---
+
+L'étude des controverses scientifiques est la voie privilégiée pour éclairer les pratiques scientifiques et, en particulier, pour comprendre comment une théorie l'emporte sur ses concurrentes. Le problème est que l'étude des controverses est elle-même sujette à controverse ! Dans la vision traditionnelle, les sciences relèvent d'une démarche rationnelle et se soumettent volontiers au tribunal de l'expérience. La théorie qui sort gagnante d'une controverse serait donc la plus cohérente et la plus probante expérimentalement. La sociologie des sciences, quand elle s'est véritablement développée dans les années 1940, n'a en rien bousculé cette image. Mais, à partir des années 1970, une nouvelle sociologie des sciences a essayé de montrer au contraire que la théorie finalement acceptée par la communauté scientifique à l'issue d'une controverse est bien souvent celle défendue par ceux qui détiennent les positions sociales et politiques dominantes (voir notamment l'analyse critique de Michel Dubois, La Nouvelle sociologie des sciences, PUF, 2001). Cela revenait à défendre l'idée que le contexte social et culturel détermine le contenu des théories scientifiques. Une telle version relativiste de la sociologie des sciences, voire même certaines versions moins radicales, n'a bien sûr pas été sans susciter de polémiques.       Sociologue « s'inscrivant dans une perspective de recherche néo-rationaliste », Dominique Raynaud entend justement souligner ici les failles des thèses de ses confrères aux penchants relativistes. Le premier atout du livre repose sur une relecture minutieuse de controverses plus ou moins célèbres (celle sur la génération spontanée entre Pasteur et Pouchet ; celle qui a opposé les vitalistes de l'école de Montpellier aux médecins organicistes de Paris ; enfin, celle concernant le sens de propagation des rayons visuels, jadis discutée à Oxford). Le second atout est une critique serrée d'arguments philosophiques prétendument tirés de Duhem, Quine ou Wittgenstein, et utilisés par les anti-rationalistes pour ramener la science à une activité sociale comme une autre. Enfin, la conclusion défend une « épistémologie incrémentaliste » qui saurait redonner sens à la notion de certitude en science tout en reconnaissant l'évolution des modèles explicatifs ; autrement dit, qui saurait concilier vérificationnisme et falsificationnisme. Pas de doute qu'il y aurait des critiques possibles. Mais pas de doute non plus que Raynaud a ici placé haut la barre de la controverse.
