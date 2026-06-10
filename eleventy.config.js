@@ -57,6 +57,7 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
+    silent: true, // 👈
     formats: ['webp', 'jpeg'],
     widths: ['auto'],
     // AJOUT ICI :

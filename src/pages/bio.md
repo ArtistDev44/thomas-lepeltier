@@ -18,3 +18,5 @@ Vous trouverez sur ce site :
 4. mes articles (plus d’une centaine).
 
 ![](/assets/images/profil/thomas-lepeltier.jpg)
+
+[Voir les commentaires reçus](/commentaires)

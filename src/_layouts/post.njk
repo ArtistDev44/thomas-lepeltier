@@ -3,7 +3,7 @@ layout: base
 schema: BlogPosting
 ---
 
-<div class="region" style="--region-space-top: var(--space-xl-2xl)">
+<div data-pagefind-body data-pagefind-filter="section: Articles" class="region" style="--region-space-top: var(--space-xl-2xl)">
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
 
@@ -37,8 +37,9 @@ schema: BlogPosting
         {% endif %}{% endfor %}
       {% endif %}
     </p>
-
+    <div data-pagefind-ignore>
     {{ content | safe }}
+    </div>
     {% include 'partials/edit-on.njk' %}
   </div>
 

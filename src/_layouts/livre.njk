@@ -2,8 +2,8 @@
 layout: base
 ---
 
-<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
-  <h1 class="gradient-text">Compte-rendu</h1>
+<div data-pagefind-body data-pagefind-filter="section: Livres" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+  <h1 class="gradient-text">Présentation</h1>
   <h2>Du livre {{ title }}</h2>
 
 <div class="tags-container">
@@ -16,7 +16,9 @@ layout: base
 </p>
 <div>
   <img src="{{ imageUrl }}" alt="Image de couverture du livre {{title}}" class="image-left">
+  <div data-pagefind-ignore>
       {{ content | safe }}
+  </div>
   </div>
   <p class="author_cr" > {{ authorFullName }} </p>
 <a href="{{amazonLink}}">Lien Amazon</a>

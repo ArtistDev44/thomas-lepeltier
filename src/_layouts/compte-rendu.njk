@@ -21,7 +21,7 @@ layout: base
 │  ║     [voir le replay]                ║│
 </pre>
 
-<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+<div data-pagefind-body data-pagefind-filter="section: Comptes-rendus" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
   <h1 class="gradient-text">Compte-rendu</h1>
   <h2>Du livre {{ title }}</h2>
 
@@ -35,7 +35,9 @@ layout: base
 </p>
 <div>
   <img src="{{ imageUrl }}" alt="Image de couverture du livre {{title}}" class="image-left">
+  <div data-pagefind-ignore>
       {{ content | safe }}
+  </div>
   </div>
   <p class="author_cr" > {{ authorFullName }} </p>
 <a href="{{amazonLink}}">Lien Amazon</a>
@@ -51,8 +53,8 @@ layout: base
     }
 </style>
 
+<div data-pagefind-ignore>
 {% set related = collections.Rapports | relatedRapports(tags, page.url) %}
-
 {% if related.length %}
   <h2>Recommandations</h2>
   <ul>
@@ -69,4 +71,5 @@ layout: base
     {%- endfor -%}
   </ul>
 {% endif %}
+</div>
 </div>

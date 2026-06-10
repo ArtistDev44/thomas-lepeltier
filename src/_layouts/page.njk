@@ -2,7 +2,9 @@
 layout: base
 ---
 
-<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+<div data-pagefind-body class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
   <h1 class="gradient-text">{{ title }}</h1>
+  <div data-pagefind-ignore>
   {{ content | safe }}
+  </div>
 </div>

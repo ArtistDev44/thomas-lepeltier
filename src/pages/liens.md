@@ -9,6 +9,8 @@ layout: page
     rajouter apala et d'autres sites
 </pre>
 
+<div data-pagefind-body>
+
 ##  **Sites sur des auteurs**
 
 -   [Foucault](http://www.fnet.fr/CMF/textepardefaut.html) : Le site du Centre Michel Foucault.
@@ -41,3 +43,4 @@ layout: page
 -   [Danny YEE](http://dannyreviews.com/) : Un site très éclectique (en anglais).
 -   [La diplomatie française](http://www.diplomatie.fr/culture/france/biblio/folio/essai/index.html) : Quelques comptes rendus de livres français.
 -   [Paru.com](http://www.paru.com/) : Pour suivre l'actualité éditoriale.
+</div>
