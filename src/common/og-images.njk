@@ -1,9 +1,10 @@
 ---
-fontDisplay: "'Red Hat Display', Ubuntu" # needed created in local development, font must be installed on your system.
-fontBody: "'Atkinson Hyperlegible', Ubuntu" # needed created in local development, font must be installed on your system.
-background: '#FBBE25'
+fontDisplay: "'Times New Roman', Big Caslon" # needed created in local development, font must be installed on your system.
+fontBody: "'Big Caslon', Times New Roman" # needed created in local development, font must be installed on your system.
+title: "Compte rendu du livre"
+background: '#ff922b'
 text: '#161616'
-siteUrl: 'eleventy-excellent.netlify.app'
+siteUrl: 'thomas.lepeltier.free.fr'
 pagination:
   data: collections.allPosts
   size: 1
@@ -20,7 +21,7 @@ eleventyExcludeFromCollections: true
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
 >
-  {% set titleInLines = post.data.title | splitlines(22) %}
+  {% set titleInLines = title | splitlines(12) %}
   {% set numberOfLines = titleInLines.length %}
   {% if numberOfLines == 1 %}
     {% set verticalStartingPoint = 340 %}
@@ -35,20 +36,16 @@ eleventyExcludeFromCollections: true
   {% endif %}
 
   <rect id="bg" width="100%" height="100%" opacity="1" fill="{{ background }}" />
-  <!-- star -->
-  <g width="1096" height="1056" viewBox="0 0 1096 1056" fill="none" transform="translate(0, -150)">
-    <path d="M235.048 2.31017L565.808 192.455L910.285 28.026L831.43 401.258L1094.33 677.671L714.848 718.199L533.127 1053.8L377.382 705.568L2.18875 636.646L285.207 380.519L235.048 2.31017Z" stroke="{{ text }}" stroke-opacity="0.1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
 
   <!-- date -->
   <text
     font-family="{{ fontBody }}, sans-serif"
     font-size="22"
-    font-weight="500"
+    font-weight="700"
     fill="{{ text }}"
     letter-spacing="-1"
   >
-    <tspan x="160" y="{{ verticalStartingPoint - 120 }}">
+    <tspan x="100" y="{{ verticalStartingPoint - 120 }}">
       {{ post.date | formatDate('DD / MM / YYYY') }}
     </tspan>
   </text>
@@ -57,13 +54,13 @@ eleventyExcludeFromCollections: true
   <text
     id="text"
     font-family="{{ fontDisplay }}, sans-serif"
-    font-size="80"
+    font-size="100"
     font-weight="900"
     fill="{{ text }}"
     letter-spacing="-3"
   >
     {% for line in titleInLines %}
-      <tspan x="160" y="{{ verticalStartingPoint - 20 + loop.index0 * 85 }}"> {{ line }} </tspan>
+      <tspan x="100" y="{{ verticalStartingPoint - 20 + loop.index0 * 85 }}"> {{ line }} </tspan>
     {% endfor %}
   </text>
 
@@ -75,24 +72,99 @@ eleventyExcludeFromCollections: true
     fill="{{ text }}"
     letter-spacing="-0.5"
   >
-    <tspan x="160" y="580">{{ siteUrl }}</tspan>
+    <tspan x="100" y="580">{{ siteUrl }}</tspan>
   </text>
 
+  <!-- tag -->
+  <text
+    <!--font-family="{{ fontBody }}, sans-serif"
+    font-size="18"
+    font-weight="500"
+    fill="{{ text }}"
+    letter-spacing="-0.5"
+  >
+    <tspan x="160" y="500">{{ post.data.tags }}</tspan>
+  </text>-->
+
+  <!--TEST TAG-->
+  <!-- tag -->
+  <!--{% set filteredTags = post.data.tags | reject("equalto", "posts") | reject("equalto", "rapports") | list %}
+  <text
+    font-family="{{ fontBody }}, sans-serif"
+    font-size="18"
+    font-weight="500"
+    fill="{{ text }}"
+    letter-spacing="-0.5"
+  >
+    {% for tag in filteredTags %}
+      <tspan x="{{ 100 + (loop.index0 * 100) }}" y="500">{{ tag }}</tspan>
+    {% endfor %}
+  </text>-->
+
+  <!-- tag -->
+  {% set filteredTags = post.data.tags | reject("equalto", "posts") | reject("equalto", "rapports") | list %}
+
+  {% for tag in filteredTags %}
+    {% set tagX = 160 + (loop.index0 * 500) %}
+    <rect
+      x="{{ tagX - 10 }}"
+      y="482"
+      width="{{ tag | length * 10 + 20 }}"
+      height="28"
+      fill="#161616"
+      rx="4"
+    />
+    <text
+      font-family="{{ fontBody }}, sans-serif"
+      font-size="18"
+      font-weight="500"
+      fill="#ffffff"
+      letter-spacing="-0.5"
+    >
+      <tspan x="{{ tagX }}" y="500">{{ tag }}</tspan>
+    </text>
+  {% endfor %}
+
+  <!--image-->
+  <defs>
+    <clipPath id="imageClip">
+      <rect x="800" y="0" width="390" height="630"/>
+    </clipPath>
+  </defs>
+
+  <image
+    x="800"
+    y="0"
+    width="390"
+    height="630"
+    href="{{ post.data.imageUrl | toBase64 }}"
+    preserveAspectRatio="xMidYMid meet"
+    clip-path="url(#imageClip)"
+  />
+
+<image
+  href="{{ '/assets/images/thomas/thomas-profile.webp' | toBase64 }}"
+  x="550"
+  y="300"
+  width="350"
+  height="350"
+/>
 
   <!-- sitename -->
   <text
     font-family="{{ fontDisplay }}, sans-serif"
-    font-size="18"
+    font-size="26"
     font-weight="950"
     fill="{{ text }}"
     letter-spacing="-0.5"
   >
-    <tspan x="950" y="580">{{ meta.siteName | upper }}</tspan>
+    <tspan x="110" y="420">Par {{ meta.siteName | upper }}</tspan>
   </text>
 
-	<!-- 11ty logo graphic -->
-  <g transform="translate(870, 535)" viewBox="0 0 62 52">
-  <path fill="#000" d="M23.77 1.124c.517 0 .93.293 1.15.769.155.333.223.756.228 1.29v38.128c-.002.706-.077 1.257-.24 1.672-.224.578-.652.95-1.235.958h-.021l-4.398-.005c-.594 0-1.022-.38-1.242-.967-.155-.413-.225-.96-.227-1.663V9.466l-1.185.3-.471.119-.138.034-.07.016-.034.008-.012.002h-.014l.007-.007c.002-.003.005-.005 0-.007h-.017c-.498.019-.914-.25-1.141-.706-.162-.327-.232-.745-.235-1.272V5.147c0-.496.08-.91.261-1.248.206-.387.535-.652.95-.759l.025-.007.029-.007 7.602-1.956c.109-.027.228-.041.358-.046h.07ZM36.464.002c.544 0 .979.305 1.216.808.171.362.249.831.251 1.421v11.26h3.27c.513 0 .936.266 1.185.716l.012.022.013.022c.178.35.258.8.26 1.358v1.593c0 .57-.08 1.025-.265 1.38-.242.465-.665.738-1.18.745h-3.3v14.908l.003.114.002.11v.056l.003.138.004.136.005.133.01.133.002.05.005.102.007.099.008.097.007.096.005.049.007.094.005.046.005.046.01.092.009.09.005.043.01.087c.021.18.048.35.077.51l.01.053.007.036.014.07.015.068.007.034.015.065.014.063.007.031.015.06c.02.078.04.153.063.223l.019.058c.092.28.196.489.305.621.203.252.382.402.52.462l.04.017c.162.065.39.102.68.104h2.071c.489 0 .912.193 1.187.575.23.317.331.72.336 1.202v1.76c0 .534-.104.974-.345 1.315-.28.399-.711.607-1.209.611h-.027l-2.93.005c-.812 0-1.52-.058-2.136-.174-.66-.123-1.33-.399-2.019-.817a5.224 5.224 0 0 1-1.762-1.789c-.445-.732-.793-1.721-1.054-2.968-.256-1.214-.385-2.63-.39-4.243V19.327h-1.35c-.51 0-.931-.259-1.18-.704l-.012-.021-.013-.022c-.18-.348-.26-.79-.266-1.342v-1.593c0-.577.08-1.04.264-1.397.242-.471.665-.752 1.182-.759H31.57v-.044l.52-11.209.002-.05c.036-.58.13-1.035.302-1.386.237-.486.645-.79 1.165-.8h2.906v.002Zm24.18 13.48c.484 0 .86.285 1.055.727.13.3.186.675.186 1.144v.08l-.002.055-.003.03-.002.057-.003.03-.005.06-.014.157-.005.04-.007.071-.01.073-.01.074-.007.058-5.127 26.69-.012.066-.027.14-.026.138-.039.203-.026.136-.04.198-.026.13-.026.13-.027.129-.027.128-.026.126-.041.186-.027.123-.026.121-.027.12-.027.12-.026.118-.03.116-.028.113-.03.114-.028.111-.03.111-.028.11-.03.108-.028.106-.03.107-.028.104-.03.104-.028.101-.03.1-.028.098-.03.097-.028.097-.03.094-.028.094-.03.092-.03.092-.015.046-.032.09-.014.043-.015.044-.038.106-.04.106-.014.041-.031.082-.031.08c-.015.036-.03.07-.041.107l-.037.09-.038.09c-.068.16-.136.313-.206.46l-.029.063-.041.082-.041.083c-.445.884-.945 1.53-1.518 1.933-.716.508-1.627.77-2.73.8l-.048.003h-.304c-1.729 0-2.99-.474-3.718-1.477l-.022-.032-.02-.026-.01-.012c-.207-.264-.308-.626-.35-1.132l-.002-.033-.005-.066-.002-.034-.003-.033-.002-.068-.002-.034-.003-.034-.002-.09-.003-.091V47.973l.003-.087.002-.044.003-.043.002-.085.005-.082.005-.082.004-.08.003-.038.007-.078.007-.075c.034-.336.09-.621.167-.86.2-.624.602-1.042 1.206-1.052h.066l.019.002.022.003.029.005.031.005.041.007.039.007.034.007.067.017.092.024.124.034.128.036.171.051.409.121.116.036.104.032.099.029.094.026.09.025.063.016.06.015.075.02.068.016.048.012.044.01.04.01.049.01.031.004.027.005.017.003.014.002H49.977c.007 0 .01 0 .02-.005a.295.295 0 0 0 .084-.063c.111-.104.237-.295.362-.573.16-.353.276-.807.346-1.363l.005-.049.01-.082.01-.084.004-.044.005-.043.007-.087c.025-.288.037-.6.039-.933v-.114l-.002-.032-.005-.048-.008-.055-.007-.063-.005-.034-.012-.075-.012-.082-.02-.114-.02-.126-.025-.137-.027-.148-.036-.193-.039-.208-.05-.264-.066-.328-.063-.31-.077-.38-.082-.396-5.647-23.475-.01-.07-.01-.068-.007-.065-.007-.063-.01-.075-.007-.07-.002-.027-.005-.053-.005-.05-.002-.025-.003-.048-.002-.048v-.155c.002-.416.053-.752.167-1.025.176-.426.53-.71.993-.72h3.505c.467 0 .88.171 1.2.5.294.302.468.759.582 1.397l.007.037.01.062 3.065 16.221 2.393-16.107.005-.031c.087-.646.235-1.125.479-1.456l.014-.02.015-.018c.295-.375.71-.583 1.182-.59h2.432ZM9.298 1.172c.518 0 .93.293 1.15.77.156.333.223.756.228 1.29V41.313c0 .728-.072 1.293-.24 1.719-.224.578-.652.95-1.234.957H4.777c-.595 0-1.023-.38-1.243-.967-.154-.413-.225-.96-.227-1.663V9.519l-.849.216-.67.167-.159.038-.07.017-.053.012-.031.005H1.45l-.029.003c-.52.036-.952-.233-1.187-.704C.073 8.947.002 8.531 0 8.002V5.2c0-.496.08-.91.261-1.248.206-.386.534-.652.95-.759l.024-.007.03-.007 7.607-1.963c.109-.027.227-.041.358-.046h.067v.002Z"/>
+<!-- pages/documents icon -->
+<g transform="translate(60, -70) matrix(3.0106036,0,0,3.0106036,-1.7439471,-0.53191468)">
+  <path
+    fill="none"
+    d="M104,36H56A12,12,0,0,0,44,48V208a12,12,0,0,0,12,12h48a12,12,0,0,0,12-12V48A12,12,0,0,0,104,36ZM52,76h56V180H52Zm4-32h48a4,4,0,0,1,4,4V68H52V48A4,4,0,0,1,56,44Zm48,168H56a4,4,0,0,1-4-4V188h56v20A4,4,0,0,1,104,212Zm123.74-16.62L194.55,37.57a12,12,0,0,0-14.25-9.3L133.49,38.32a12.1,12.1,0,0,0-9.23,14.3l33.19,157.81a12,12,0,0,0,14.25,9.3l46.81-10.06h0A12.08,12.08,0,0,0,227.74,195.38Zm-83.21-85.27,54.63-11.73,15,71.07-54.63,11.74Zm-6.64-31.56,54.64-11.74,5,23.74-54.64,11.73Zm-2.71-32.4L182,36.09a4,4,0,0,1,.84-.09,3.94,3.94,0,0,1,2.14.64,4,4,0,0,1,1.76,2.58L190.88,59,136.24,70.72,132.09,51A4.07,4.07,0,0,1,135.18,46.15Zm81.65,155.7L170,211.91a4,4,0,0,1-3-.55,4,4,0,0,1-1.76-2.58L161.12,189l54.64-11.73L219.91,197A4.07,4.07,0,0,1,216.83,201.85Z" stroke="black" stroke-opacity="0.1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  />
 </g>
-
 </svg>
