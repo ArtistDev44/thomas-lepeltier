@@ -6,8 +6,8 @@
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig -
  * @returns {Object} -
  */
- import fs from 'fs';
- import path from 'path';
+import fs from 'fs';
+import path from 'path';
 
 // register dotenv for process.env.* variables to pickup
 import dotenv from 'dotenv';
@@ -59,17 +59,17 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
-    silent: true, // 👈
+    silent: true,
     // formats: ['webp', 'jpeg'],
     formats: ['webp'],
     widths: ['auto'],
     // AJOUT ICI :
     sharpOptions: {
-      animated: false,
+      animated: false
     },
     sharpWebpOptions: {
       lossless: false,
-      quality: 80,
+      quality: 80
     },
     htmlOptions: {
       imgAttributes: {
@@ -89,7 +89,7 @@ export default async function (eleventyConfig) {
 
   // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
-  eleventyConfig.addFilter('toBase64', function(imagePath) {
+  eleventyConfig.addFilter('toBase64', function (imagePath) {
     if (!imagePath) return '';
     const filePath = path.join('src', imagePath);
     try {
@@ -97,7 +97,7 @@ export default async function (eleventyConfig) {
       const ext = path.extname(imagePath).slice(1).toLowerCase();
       const mime = ext === 'jpg' ? 'jpeg' : ext;
       return `data:image/${mime};base64,${file.toString('base64')}`;
-    } catch(e) {
+    } catch (e) {
       console.warn(`[toBase64] Image non trouvée : ${filePath}`);
       return '';
     }
@@ -109,7 +109,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('shuffle', filters.shuffleArray);
   eleventyConfig.addFilter('alphabetic', filters.sortAlphabetically);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
-eleventyConfig.addFilter('relatedRapports', filters.relatedRapports);
+  eleventyConfig.addFilter('relatedRapports', filters.relatedRapports);
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
@@ -127,9 +127,10 @@ eleventyConfig.addFilter('relatedRapports', filters.relatedRapports);
   // -- same path
   [
     'src/assets/images/galerie/', // <--- AJOUTEZ CETTE LIGNE
-    'src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
-    eleventyConfig.addPassthroughCopy(path)
-  );
+    'src/assets/fonts/',
+    'src/assets/images/template',
+    'src/assets/og-images'
+  ].forEach(path => eleventyConfig.addPassthroughCopy(path));
 
   eleventyConfig.addPassthroughCopy({
     // -- to root
