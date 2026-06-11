@@ -5,15 +5,6 @@ title: "Philosophie · Histoire des sciences · Éthique animale"
 description: "Livres, articles et conférences autour des sciences, de la philosophie et de l’éthique animale."
 ---
 
-<pre>
-│  PUBLICATIONS                           │
-│  ├── Livres personnels                  │ -> ajouter boutons "voir l'ensemble"
-│  ├── Ouvrages dirigés                   │ -> ajouter boutons "voir l'ensemble"
-│  ├── Contributions                      │
-│  └── Comptes-rendus                     │
-│  └── Articles                           │
-│       └── [Filtrable par thème]         │
-</pre>
 <div class="wrapper">
 
           <!-- HERO -->
@@ -98,7 +89,7 @@ description: "Livres, articles et conférences autour des sciences, de la philos
   <!-- BIO -->
   <section id="biographie" class="full | region">
     <div class="wrapper flow">
-    <div class="flex" style="gap: 2rem;">
+    <div class="two-cols" style="gap: 2rem; display: grid;">
       <img src="/assets/images/thomas/thomas-lepeltier-en-conferences-vertical.webp" alt="Image de Thomas en conférences avec APALA">
       <div>
       <h2>Qui suis-je ?</h2>
@@ -119,6 +110,17 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
     img.couverture {
     filter: brightness(0.95);
         aspect-ratio: 9/14;
+    }
+    /* 0 to 480px - stack en colonne */
+
+    @media (min-width: 481px) {
+      .two-cols {
+        grid-auto-flow: column !important;
+      }
+    }    @media (max-width: 480px) {
+      .two-cols {
+        grid-auto-flow: row !important;
+      }
     }
     </style>
   </section>
@@ -142,7 +144,7 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
 <a class="button" href="/livres/" data-button-variant="primary" style="width:fit-content";>Tous les livres</a>
 </div>
 </section>
-  <!-- ARTICLES -->
+  <!-- COMPTES-RENDUS-->
   <section id="articles" class="full | region">
     <div class="wrapper flow">
       <h2>Mes derniers comptes rendus</h2>
@@ -161,9 +163,26 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
       </div>
       </section>
 
+  <!-- ARTICLES -->
+  <section id="articles" class="text-end full | region">
+    <div class="wrapper flow">
+      <h2>Mes derniers articles</h2>
 
-</div>    </div>
-  </section>
+      <p>Une veille intellectuelle continue : analyses, critiques et notes de lecture.</p>
+
+      {%- for article in collections.article | reverse -%}
+        {% if loop.index0 < 5 %}
+          <br><a href="{{ article.data.permalink }}">{{ article.data.title }} - {{ article.data.date.toLocaleString(undefined, { year: 'numeric' }) }}</a></li>
+        {% endif %}
+      {%- endfor -%}
+
+      </div>
+
+    <div class="wrapper flow justify-items-end">
+      <a class="button mt-xl" href="/articles/" data-button-variant="primary" style="width:fit-content;">Tous les articles</a>
+      </div>
+      </section>
+
   <!-- CONFÉRENCES -->
   <section id="conferences" class="full | region spot-color-theme-accent bg-theme-dark text-theme-light" style="padding: 0 0 5rem 0">
 {% svg "divider/soft-top", null, "divider" %}
@@ -173,7 +192,8 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
         Je donne régulièrement des conférences sur l’éthique animale, l’histoire et la philosophie des sciences, ainsi que sur la pensée critique.
       </p>
       <div class="cluster">
-        <a href="/contact/" class="button button-outline">Me contacter</a>
+        <a href="/interventions/" class="button button-outline">Voir mes interventions</a>
+        <a href="/contact/" class="button" data-ghost-button>Me contacter</a>
       </div>
   </section>
 

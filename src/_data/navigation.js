@@ -56,9 +56,5 @@ export default {
       text: 'Privacy',
       url: '/privacy/'
     },
-    {
-      text: 'Accessibility',
-      url: '/accessibility/'
-    }
   ]
 };

@@ -5,8 +5,34 @@ layout: base
 <div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
   <h1 class="gradient-text">{{ title }}</h1>
   {{ content | safe }}
-</div>
+<style>
+.search-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
 
-<pagefind-searchbox></pagefind-searchbox>
-<pagefind-results></pagefind-results>
-<pagefind-filter-pane></pagefind-filter-pane>
+.search-main {
+  gap: 1rem;
+}
+
+.search-sidebar {
+  flex: 0 0 250px;
+}
+
+.search-results {
+  flex: 1;
+}
+:root {
+    --pf-input-height: 48px !important;
+    --pf-input-font-size: 20px; /* Keep at 16px+ to prevent iOS auto-zoom on focus */
+    --pf-outline-focus: #ff922b !important;
+}
+</style>
+<div style="display: grid; gap: 16px;">
+    <pagefind-input></pagefind-input>
+      <pagefind-filter-pane></pagefind-filter-pane>
+      <pagefind-results></pagefind-results>
+  </div>
+  </div>

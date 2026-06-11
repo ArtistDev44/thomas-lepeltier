@@ -14,7 +14,7 @@ export default function() {
         .filter(file => /\.(jpe?g|png|gif|webp|svg|avif)$/i.test(file))
         .map(file => ({
           url: `/${relativePath}/${file}`, // URL pour le navigateur
-          alt: file.split('.')[0].replace(/-/g, ' ')
+          image: file.split('.')[0].replace(/-/g, ' ')
         }));
     }
   } catch (e) {

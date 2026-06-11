@@ -2,24 +2,24 @@ export const url = process.env.URL || 'http://localhost:8080';
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
 export const siteName = 'Thomas Lepeltier';
-export const siteDescription = 'Eleventy starter for building modern, resilient websites';
+export const siteDescription = 'Docteur en astrophysique, historien et philosophe des sciences, Thomas Lepeltier présente ses livres, articles et plus de 500 comptes rendus d`essais.';
 export const siteType = 'Person'; // schema
 export const locale = 'fr_FR';
 export const lang = 'fr';
-export const skipContent = 'Skip to content';
+export const skipContent = 'Passer au contenu';
 // for the site content author, used in <head> meta and post h-card microformat
 export const author = {
-  name: 'Lene Saile', // i.e. Lene Saile - page / blog author's name. Must be set.
+  name: 'Thomas Lepeltier', // i.e. Lene Saile - page / blog author's name. Must be set.
   avatar: '/icon-512x512.png', // path to the author's avatar. In this case just using a favicon.
   me: [
     // loop over verified rel=me profiles in the HTML <head>
-    'https://front-end.social/@lene'
+    'https://www.instagram.com/thomas.lepeltier/'
   ]
 };
 // for the site developer, used for footer credits and humans.txt info
 export const creator = {
   name: 'Guillaume RENOULT', // i.e. Lene Saile - creator's (developer) name.
-  email: 'hola@lenesaile.com',
+  email: 'guillaume.renoult@mail-esd.com',
   website: 'https://portfolio-guillaume-renoult.vercel.app/',
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
@@ -28,11 +28,11 @@ export const themeLight = '#f8f8f8'; // used for meta tag theme-color, if light 
 export const themeDark = '#2e2e2e'; // used for meta tag theme-color, if dark colors are prefered. best use value set for dark bg
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
 export const opengraph_default_alt =
-  "Visible content: An Eleventy starter with CUBE CSS, Cube CSS, Every Layout, Design Tokens and Tailwind for uitility classes. A workflow for building modern and resilient websites, introduced by Andy Bell's project buildexcellentwebsit.es"; // alt text for default meta image"
+  "Thomas Lepeltier, docteur en astrophysique, philosophe et historien des sciences. Livres, articles et plus de 500 comptes rendus d'essais.";
 export const blog = {
   // RSS feed
-  name: 'My Web Development Blog',
-  description: 'Tell the word what you are writing about in your blog. It will show up on feed readers.',
+  name: 'Comptes-rendus',
+  description: 'Persuadés que trop d\'essais ne trouvent pas le nombre de lecteurs qu\'ils méritent, nous publions des comptes rendus pour les faire connaître à un plus large public.',
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     {
@@ -49,29 +49,29 @@ export const blog = {
   // Tags
   tagSingle: 'Tag',
   tagPlural: 'Tags',
-  tagMore: 'More tags:',
+  tagMore: 'Plus de tags:',
   // pagination
   paginationLabel: 'Blog',
   paginationPage: 'Page',
-  paginationPrevious: 'Previous',
-  paginationNext: 'Next',
+  paginationPrevious: 'Précédent',
+  paginationNext: 'Prochain',
   paginationNumbers: true
 };
 export const details = {
-  aria: 'section controls',
-  expand: 'expand all',
-  collapse: 'collapse all'
+  aria: 'contrôle des sections',
+  expand: 'tout étendre',
+  collapse: 'tout resserrer'
 };
 export const dialog = {
-  close: 'Close',
-  next: 'Next',
-  previous: 'Previous'
+  close: 'Fermer',
+  next: 'Prochain',
+  previous: 'Précédent'
 };
 export const navigation = {
   navLabel: 'Menu',
   ariaTop: 'Main',
-  ariaBottom: 'Complementary',
-  ariaPlatforms: 'Platforms',
+  ariaBottom: 'Complementaire',
+  ariaPlatforms: 'Plateformes',
   drawerNav: false,
   subMenu: true
 };
@@ -101,6 +101,6 @@ export const tests = {
 export const viewRepo = {
   // this is for the view/edit on github link. The value in the package.json will be pulled in.
   allow: true,
-  infoText: 'View this page on GitHub'
+  infoText: 'Voir cette page sur GitHub'
 };
 export const easteregg = true;

@@ -6,6 +6,8 @@
  * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig -
  * @returns {Object} -
  */
+ import fs from 'fs';
+ import path from 'path';
 
 // register dotenv for process.env.* variables to pickup
 import dotenv from 'dotenv';
@@ -58,7 +60,8 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     silent: true, // 👈
-    formats: ['webp', 'jpeg'],
+    // formats: ['webp', 'jpeg'],
+    formats: ['webp'],
     widths: ['auto'],
     // AJOUT ICI :
     sharpOptions: {
@@ -86,6 +89,19 @@ export default async function (eleventyConfig) {
 
   // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
+  eleventyConfig.addFilter('toBase64', function(imagePath) {
+    if (!imagePath) return '';
+    const filePath = path.join('src', imagePath);
+    try {
+      const file = fs.readFileSync(filePath);
+      const ext = path.extname(imagePath).slice(1).toLowerCase();
+      const mime = ext === 'jpg' ? 'jpeg' : ext;
+      return `data:image/${mime};base64,${file.toString('base64')}`;
+    } catch(e) {
+      console.warn(`[toBase64] Image non trouvée : ${filePath}`);
+      return '';
+    }
+  });
   eleventyConfig.addFilter('formatDate', filters.formatDate);
   eleventyConfig.addFilter('markdownFormat', filters.markdownFormat);
   eleventyConfig.addFilter('splitlines', filters.splitlines);
@@ -102,7 +118,7 @@ eleventyConfig.addFilter('relatedRapports', filters.relatedRapports);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // --------------------- Events: after build
-  if (process.env.ELEVENTY_RUN_MODE === 'serve') {
+  if (process.env.ELEVENTY_RUN_MODE === 'build') {
     eleventyConfig.on('eleventy.after', events.svgToJpeg);
   }
 

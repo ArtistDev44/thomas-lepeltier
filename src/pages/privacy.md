@@ -1,40 +1,50 @@
 ---
-title: Privacy Policy
+title: Politique de confidentialité
 discover:
-  title: Privacy Policy
+  title: Politique de confidentialité
 permalink: /privacy/index.html
-description: I respect the EU General Data Protection Regulation (GDPR). This policy document explains how I collect and handle any information you provide to me.
+description: Je respecte le règlement général de l'UE sur la protection des données (RGPD). Ce document de politique générale explique comment je collecte et traite les informations que vous me fournissez.
 date: "Last Modified"
 layout: page
 ---
 
-Edit your details in `_data/personal.yaml`
+Je respecte le Règlement général sur la protection des données (RGPD) de l'Union européenne et ce document de politique explique comment je collecte et traite toute information que vous me fournissez.
 
-I respect the EU General Data Protection Regulation (GDPR) and this policy document explains how I collect and handle any information you provide to me.
+---
 
-**What background data is collected?**
-This site does not use any third party tracking scripts.
+**Quelles données personnelles sont collectées ?**
+Ce site n'utilise aucun script de suivi tiers.
 
-**How do I use the data you provide?**
-This website does not collect any data.
+---
 
-**How secure is your data?**
-Very secure, as this website does not collect any information.
+**Comment j'utilise les données que vous fournissez ?**
+Ce site web ne collecte aucune donnée.
 
-**How secure is this website?**
-This website transmits itself using HTTPS, encrypting all data between the browser and the server. Your network provider can still see that you are downloading assets from this site, but not its content. This also protects you from third parties intercepting data, for example, while browsing on public WiFi, or from network providers injecting advertisements on this site. All relevant response HTTP headers are set for your protection and the Content Security Policy is adjusted to this websites requirements.
+---
 
-**Data controller**
+**À quel point vos données sont-elles sécurisées ?**
+Très sécurisées, car ce site web ne collecte aucune information.
 
+---
+
+**À quel point ce site web est-il sécurisé ?**
+Ce site web transmet ses données via HTTPS, chiffrant toutes les données échangées entre le navigateur et le serveur. Votre fournisseur d'accès Internet peut toujours voir que vous téléchargez des ressources depuis ce site, mais pas leur contenu. Cela vous protège également des tiers qui pourraient intercepter les données, par exemple lorsque vous naviguez sur un WiFi public, ou des fournisseurs d'accès qui pourraient injecter des publicités sur ce site. Tous les en-têtes HTTP de réponse pertinents sont configurés pour votre protection et la politique de sécurité du contenu (CSP) est ajustée aux besoins de ce site web.
+
+---
+
+**Responsable du traitement des données**
 {{ personal.address }}
+Si vous avez des questions ou des doutes, n'hésitez pas à me contacter : {{ personal.email }}.
 
-If you have any questions or doubts, please contact me: {{ personal.email }}.
+---
 
-**Changes to the policy**
-If I change the content of this policy, those changes will be effective at the time I post them here.
+**Modifications de la politique**
+Si je modifie le contenu de cette politique, ces modifications seront effectives au moment où je les publierai ici.
 
-**Complaints**
-If you have any reason to complain about the way I handle your privacy, please contact me by email: {{ personal.email }}.
+---
+
+**Réclamations**
+Si vous avez des raisons de vous plaindre de la manière dont je traite votre vie privée, veuillez me contacter par email : {{ personal.email }}.
 
 ---
 

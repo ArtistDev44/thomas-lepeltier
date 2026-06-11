@@ -1,10 +1,10 @@
 # Personal details used for public facing pages (legal pages) and footer platform links.
 
-email: privateadress@proton.me
+email: thom.lepeltier@gmail.com
 address: |-
-  Organization name
+  Thomas Lepeltier
   Your street
   12345, city
 platforms:
-  github: 'https://github.com/madrilene/eleventy-excellent'
-  kofi: 'https://ko-fi.com/lenesaile'
+  instagram: 'https://www.instagram.com/thomas.lepeltier/'
+  linkedin: 'https://fr.linkedin.com/in/thomas-lepeltier-24b16653'
