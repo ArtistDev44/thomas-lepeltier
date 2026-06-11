@@ -23,6 +23,42 @@ permalink: 'comptes-rendus/{% if pagination.pageNumber >=1 %}page-{{ pagination.
 Mais plutôt que d'écrire de simples « annonces publicitaires » qui n'apprennent presque rien sur le contenu des ouvrages ou, à l'inverse, des études critiques qui ne sont compréhensibles que par ceux qui ont déjà lu les livres en question, je présente explicitement aussi simplement que possible certaines idées développées par les auteurs. Vous pourrez ainsi apprécier, par vous-mêmes, l'intérêt de ces ouvrages.
     </p>
   </div>
+  <h2> Rechercher un compte-rendu </h2>
+  <style>
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .search-main {
+    gap: 1rem;
+  }
+
+  .search-sidebar {
+    flex: 0 0 250px;
+  }
+
+  .search-results {
+    flex: 1;
+  }
+  :root {
+      --pf-input-height: 48px !important;
+      --pf-input-font-size: 20px; /* Keep at 16px+ to prevent iOS auto-zoom on focus */
+      --pf-outline-focus: #ff922b !important;
+  }
+  </style>
+  <div style="display: grid; gap: 16px;">
+      <pagefind-input></pagefind-input>
+      <pagefind-filter-dropdown filter="section[ Comptes-rendus]" label="Comptes-rendus"></pagefind-filter-dropdown>
+        <pagefind-results></pagefind-results>
+    </div>
+
+
+{% js "inline" %}
+ {% include "scripts/search_cr.js" %}
+{% endjs %}
 
   <custom-masonry layout="50-50">
 		{% asyncEach item in pagination.items %}

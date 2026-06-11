@@ -154,7 +154,7 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
       <ol class="flow">
       {%- for rapport in collections.Rapports | reverse -%}
         {% if loop.index0 < 5 %}
-          <li><a href="{{ rapport.data.permalink }}">{{ rapport.data.title }} - {{ rapport.data.date.toLocaleString(undefined, { year: 'numeric' }) }}</a></li>
+          <li><a href="comptes-rendus/{{ rapport.data.title | slugify }}">{{ rapport.data.title }} - {{ rapport.data.date.toLocaleString(undefined, { year: 'numeric' }) }}</a></li>
         {% endif %}
       {%- endfor -%}
       </ol>

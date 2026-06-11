@@ -63,9 +63,13 @@ export default async function (eleventyConfig) {
     // formats: ['webp', 'jpeg'],
     formats: ['webp'],
     widths: ['auto'],
+    concurrency: 1, // 👈 traitement séquentiel
+
     // AJOUT ICI :
     sharpOptions: {
       animated: false,
+      failOn: 'none', // 👈 ignore les erreurs de fichiers corrompus
+
     },
     sharpWebpOptions: {
       lossless: false,
