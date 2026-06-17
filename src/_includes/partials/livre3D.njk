@@ -1,0 +1,201 @@
+<div class="container">
+  <div class="book" id="book">
+    <div class="front">
+      <div class="cover">
+        <img
+          id="cover-img"
+          src="{{ imageUrl }}"
+          alt="Couverture du livre {{title}} de {{ authorFullName }}"
+        >
+      </div>
+    </div>
+    <div class="left-side">
+    </div>
+  </div>
+</div>
+<style>
+
+/* ─── Variables dynamiques injectées par JS ─── */
+.book {
+  --book-width: 400px;   /* valeur par défaut */
+  --book-height: 550px;  /* valeur par défaut */
+  --spine-width: 40px;
+  --spine-offset: calc(var(--spine-width) / 2);
+  --book-depth: 20px;
+}
+
+/* ─── Container ─── */
+.container {
+  float: left;
+  margin-right: 32px;
+  z-index: 1;
+  perspective: 3000px;
+}
+
+ @media only screen and (max-width: 750px) {
+     .container { float:none;
+} }
+
+/* ─── Livre ─── */
+.container .book {
+  position: relative;
+  display: block;
+  width: var(--book-width);
+  height: var(--book-height);
+  margin: 5% auto;
+  border-radius: 2px 4px 4px 2px;
+  background: linear-gradient(45deg, #DAD5DC 0%, #f2ebf4 100%);
+  font-family: acumin-pro, sans-serif;
+  box-shadow: 13px 13px 8px 0px rgba(151, 146, 153, 0.6);
+  font-weight: 400;
+  color: #2b2b2b;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.container .book:hover {
+  transform: rotate3d(0, 1, 0, 35deg);
+}
+
+.container .book > div,
+.container .front > div {
+  display: block;
+  position: absolute;
+}
+
+/* ─── Face avant ─── */
+.container .front {
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  transition: transform 0.5s;
+  transform: translate3d(0, 0, var(--book-depth));
+  z-index: 10;
+  width: var(--book-width);
+  height: var(--book-height);
+}
+
+.container .front > div {
+  width: var(--book-width);
+  height: var(--book-height);
+  border-radius: 0 3px 3px 0;
+  box-shadow: inset 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Tranche ─── */
+.container .left-side {
+  width: var(--spine-width);
+  left: calc(var(--spine-offset) * -1);
+height: var(--book-height);
+  background-color: rgba(232, 229, 234, 1);
+  transform: rotate3d(0, 1, 0, -90deg);
+}
+
+/* ─── Image de couverture ─── */
+.cover {
+  background: linear-gradient(45deg, #DAD5DC 0%, #f2ebf4 100%);
+  width: var(--book-width);
+  height: var(--book-height);
+  overflow: hidden;
+}
+
+.cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* couvre toute la surface */
+  object-position: center top;
+  display: block;
+}
+
+/* ─── Reflet sur la tranche gauche ─── */
+.container .front:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: -1px;
+  width: 1px;
+}
+
+.container .cover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+}
+
+/* ─── Titre sur la tranche ─── */
+.container h2 {
+  width: calc(var(--book-height) - 40px);  /* longueur = hauteur du livre */
+  height: var(--spine-width);
+  color: #2b2b2b;
+  font-size: 15px;
+  line-height: var(--spine-width);
+  padding-right: 10px;
+  text-align: right;
+  transform-origin: 0 0;
+  transform: rotate(90deg) translateY(calc(var(--spine-width) * -1));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.left-side h2 span:first-child {
+  font-weight: 400;
+  font-size: 13px;
+  padding-right: 20px;
+}
+
+.left-side h2 span:last-child {
+  font-family: acumin-pro, sans-serif;
+}
+
+</style>
+<script>
+    /**
+ * Lit les dimensions naturelles de l'image de couverture
+ * et les injecte comme CSS custom properties sur .book
+ */
+function applyBookDimensions() {
+  const img   = document.getElementById('cover-img');
+  const book  = document.getElementById('book');
+
+  function setDimensions() {
+    // naturalWidth/Height = dimensions réelles du fichier image
+    const w = img.naturalWidth;
+    const h = img.naturalHeight;
+
+    if (!w || !h) return; // image pas encore chargée
+
+    // Optionnel : limiter la taille max pour ne pas déborder l'écran
+    const maxWidth  = Math.min(w, window.innerWidth * 0.6);
+    const ratio     = maxWidth / w;
+    const finalW    = Math.round(w * ratio);
+    const finalH    = Math.round(h * ratio);
+
+    book.style.setProperty('--book-width',  `${finalW}px`);
+    book.style.setProperty('--book-height', `${finalH}px`);
+
+    console.info(`📖 Livre redimensionné : ${finalW}×${finalH}px (image source : ${w}×${h}px)`);
+  }
+
+  // Image déjà en cache → complete = true
+  if (img.complete && img.naturalWidth) {
+    setDimensions();
+  } else {
+    img.addEventListener('load', setDimensions);
+    img.addEventListener('error', () => {
+      console.warn('⚠️ Image non chargée, dimensions par défaut conservées.');
+    });
+  }
+
+  // Recalcul si redimensionnement fenêtre
+  window.addEventListener('resize', setDimensions);
+}
+
+document.addEventListener('DOMContentLoaded', applyBookDimensions);
+
+</script>
