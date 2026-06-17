@@ -2,8 +2,8 @@ export const url = process.env.URL || 'http://localhost:8080';
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
 export const siteName = 'Thomas Lepeltier';
-export const siteDescription = 'Docteur en astrophysique, historien et philosophe des sciences, Thomas Lepeltier présente ses livres, articles et plus de 500 comptes rendus d`essais.';
-;
+export const siteDescription =
+  'Docteur en astrophysique, historien et philosophe des sciences, Thomas Lepeltier présente ses livres, articles et plus de 500 comptes rendus d`essais.';
 export const siteType = 'Person'; // schema
 export const locale = 'fr_FR';
 export const lang = 'fr';
