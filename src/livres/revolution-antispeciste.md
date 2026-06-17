@@ -2,7 +2,7 @@
 title: "Révolution antispéciste"
 date: 1234-01-01
 layout: "livre.njk"
-tags: ["livre","livresDiriges"]
+tags: ["livre","livresDiriges", "Éthique animale"]
 description: "Une déconstruction en règle du spécisme et une promotion d'une éthique prenant en compte les intérêts de l'ensemble des êtres sensibles."
 imageUrl: "/assets/images/livres-couvertures/revolution-antispeciste-couverture-2.webp"
 liens_achat: []

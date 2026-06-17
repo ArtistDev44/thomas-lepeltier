@@ -1,18 +1,18 @@
 ---
 title: "Darwin hérétique : L'éternel retour du créationnisme"
-date: 2007-01-01
+date: 2007-12-01
 layout: "livre.njk"
-tags: ["livre", "mesLivres"]
+tags: ["livre", "mesLivres", "Religion", "Sciences"]
 description: "Un panorama précis et compréhensible des enjeux religieux qui ont traversé l'histoire de l'évolutionnisme, du créationnisme et du dessein intelligent."
 imageUrl: "/assets/images/livres-couvertures/darwin-heretique.webp"
 liens_achat: ["https://www.amazon.fr/gp/product/2020882132"]
 critiques: 
   - auteur: "Jean Gayon, Professeur à l'Université Paris 1"
     texte: "Dans ce livre particulièrement clair et documenté, [Thomas Lepeltier] a réussi à donner un panorama précis et compréhensible des enjeux religieux qui ont traversé l'histoire de l'évolutionnisme, de ses prodromes aux péripéties les plus récentes."
-nombre_de_pages: ""
+nombre_de_pages: "256"
 edition_nom: "Éditions du Seuil"
 edition_lien: "http://www.editionsduseuil.fr/"
-prix: ""
+prix: "19"
 description_auteur: "Thomas Lepeltier est historien et philosophe des sciences, journaliste et chargé de cours à l'Université d'Oxford."
 lien_table_des_matieres: ""
 note: ""

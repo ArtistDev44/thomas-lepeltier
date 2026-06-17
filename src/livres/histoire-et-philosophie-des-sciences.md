@@ -2,7 +2,7 @@
 title: "Histoire et philosophie des sciences"
 date: 2013-01-01
 layout: "livre.njk"
-tags: ["livre","livresDiriges"]
+tags: ["livre","livresDiriges", "Histoire", "Histoire des sciences"]
 description: "Un ouvrage collectif offrant un panorama complet des réflexions les plus modernes sur l'activité scientifique."
 imageUrl: "/assets/images/livres-couvertures/histoire-philosophie-sciences.webp"
 liens_achat: ["http://www.amazon.fr/gp/product/2361060396"]

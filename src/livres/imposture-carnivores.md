@@ -2,7 +2,7 @@
 title: "L’imposture intellectuelle des carnivores"
 date: 2017-04-20
 layout: "livre.njk"
-tags: ["livre","mesLivres"]
+tags: ["livre","mesLivres", "Éthique animale"]
 description: "Un livre coup de poing contre les défenseurs de la viande, du lait et des œufs"
 imageUrl: "/assets/images/livres-couvertures/imposture-intellectuelle.webp"
 liens_achat: []

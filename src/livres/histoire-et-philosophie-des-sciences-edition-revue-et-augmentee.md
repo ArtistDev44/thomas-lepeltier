@@ -2,7 +2,7 @@
 title: "Histoire et philosophie des sciences (édition revue et augmentée)"
 date: 1234-01-01
 layout: "livre.njk"
-tags: ["livre","livresDiriges"]
+tags: ["livre","livresDiriges", "Histoire des sciences", "Philosophie"]
 description: "Édition revue et augmentée du panorama complet des réflexions les plus récentes sur l'activité scientifique."
 imageUrl: "/assets/images/livres-couvertures/histoire-et-philosophie-des-sciences-2.webp"
 liens_achat: ["https://www.scienceshumaines.com/histoire-et-philosophie-des-sciences-edition-revue-et-augmentee_fr_847.htm"]

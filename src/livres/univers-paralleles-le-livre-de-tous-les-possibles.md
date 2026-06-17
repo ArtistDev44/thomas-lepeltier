@@ -2,7 +2,7 @@
 title: "Univers parallèles : Le livre de tous les possibles"
 date: 2010-01-01
 layout: "livre.njk"
-tags: ["livre", "mesLivres"]
+tags: ["livre", "mesLivres", "Astrophysique"]
 description: "Un essai d'épistémologie original et brillant sur les théories des univers parallèles."
 imageUrl: "/assets/images/livres-couvertures/univers-paralleles.webp"
 liens_achat: []
