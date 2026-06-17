@@ -2,7 +2,6 @@
 title: Titre inconnu
 date: 2003-01-01
 layout: "post.njk"
-description: Titre inconnu - article de Thomas Lepeltier
 category: "Historiographie"
 tags: ["article","Historiographie"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sans-titre-6/index.html"
+description: "Modern French Historiography, 2003, non publié."
 ---
-
-### Description
-Modern French Historiography, 2003, non publié.
-

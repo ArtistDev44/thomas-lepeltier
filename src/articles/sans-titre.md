@@ -2,7 +2,6 @@
 title: Titre inconnu
 date: 2011-11-01
 layout: "post.njk"
-description: Titre inconnu - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sans-titre/index.html"
+description: "Le Multivers, Direct Montpellier, 9 novembre 2011."
 ---
-
-### Description
-Le Multivers, Direct Montpellier, 9 novembre 2011.
-

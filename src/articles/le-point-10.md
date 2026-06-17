@@ -2,7 +2,6 @@
 title: Le Point
 date: 2024-01-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-10/index.html"
+description: "Les limites planétaires, une invention pour faire peur ?, Le Point, 3 janvier 2024."
 ---
-
-### Description
-Les limites planétaires, une invention pour faire peur ?, Le Point, 3 janvier 2024.
-

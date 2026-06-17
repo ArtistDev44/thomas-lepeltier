@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2017-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-10/index.html"
+description: "Le carnivorisme en débat, Sciences Humaines, Hors-série, 22, mai-juin 2017."
 ---
-
-### Description
-Le carnivorisme en débat, Sciences Humaines, Hors-série, 22, mai-juin 2017.
-

@@ -2,7 +2,6 @@
 title: Vegolosi
 date: 2016-10-01
 layout: "post.njk"
-description: Vegolosi - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/vegolosi/index.html"
+description: "Mangiare carne è moralmente accettabile oggi ?, Vegolosi, octobre 2016."
 ---
-
-### Description
-Mangiare carne è moralmente accettabile oggi ?, Vegolosi, octobre 2016.
-

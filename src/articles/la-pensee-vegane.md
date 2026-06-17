@@ -2,7 +2,6 @@
 title: La pensée végane
 date: 2020-01-01
 layout: "post.njk"
-description: La pensée végane - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/la-pensee-vegane/index.html"
+description: "Expérimentation animale, dans Renan Larue (ed), La pensée végane, PUF, 2020."
 ---
-
-### Description
-Expérimentation animale, dans Renan Larue (ed), La pensée végane, PUF, 2020.
-

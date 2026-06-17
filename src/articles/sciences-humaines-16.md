@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2008-03-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Historiographie"
 tags: ["article","Historiographie"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-16/index.html"
+description: "Les États-Unis ou le nouvel Empire romain, Sciences Humaines, Supplément en ligne, mars 2008."
 ---
-
-### Description
-Les États-Unis ou le nouvel Empire romain, Sciences Humaines, Supplément en ligne, mars 2008.
-

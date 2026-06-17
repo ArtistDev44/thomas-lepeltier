@@ -2,7 +2,6 @@
 title: Le Point
 date: 2026-01-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-5/index.html"
+description: "Quand l’État-providence devient contre-productif, Le Point, 29 janvier 2026."
 ---
-
-### Description
-Quand l’État-providence devient contre-productif, Le Point, 29 janvier 2026.
-

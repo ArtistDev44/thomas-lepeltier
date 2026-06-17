@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2022-01-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-30/index.html"
+description: "Qu’est-ce qu’un individu biologique ?, Sciences Humaines, 343, janvier 2022."
 ---
-
-### Description
-Qu’est-ce qu’un individu biologique ?, Sciences Humaines, 343, janvier 2022.
-

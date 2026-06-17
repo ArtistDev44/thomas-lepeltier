@@ -2,7 +2,6 @@
 title: L’Amorce. Revue contre le spécisme
 date: 2020-12-01
 layout: "post.njk"
-description: L’Amorce. Revue contre le spécisme - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/l-amorce-revue-contre-le-specisme/index.html"
+description: "Stratégie pragmatique ou illusion stratégique ?, L’Amorce. Revue contre le spécisme, 10 décembre 2020."
 ---
-
-### Description
-Stratégie pragmatique ou illusion stratégique ?, L’Amorce. Revue contre le spécisme, 10 décembre 2020.
-

@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2005-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Historiographie"
 tags: ["article","Historiographie"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-19/index.html"
+description: "Paul Veyne croit-il à ses propres mythes ?, Sciences Humaines, 160, mai 2005."
 ---
-
-### Description
-Paul Veyne croit-il à ses propres mythes ?, Sciences Humaines, 160, mai 2005.
-

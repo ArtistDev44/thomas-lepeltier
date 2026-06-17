@@ -2,7 +2,6 @@
 title: Annals of Science
 date: 2006-01-01
 layout: "post.njk"
-description: Annals of Science - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/annals-of-science/index.html"
+description: "Edward Milne’s influence on modern cosmology, Annals of Science, 63 (4), 2006."
 ---
-
-### Description
-Edward Milne’s influence on modern cosmology, Annals of Science, 63 (4), 2006.
-

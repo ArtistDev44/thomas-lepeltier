@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2006-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-3/index.html"
+description: "La philosophie des sciences, Sciences Humaines, 176, novembre 2006."
 ---
-
-### Description
-La philosophie des sciences, Sciences Humaines, 176, novembre 2006.
-

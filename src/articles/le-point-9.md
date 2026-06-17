@@ -2,7 +2,6 @@
 title: Le Point
 date: 2024-05-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-9/index.html"
+description: "Aurélien Barrau ou le vide sidéral, Le Point, 16 mai 2024."
 ---
-
-### Description
-Aurélien Barrau ou le vide sidéral, Le Point, 16 mai 2024.
-

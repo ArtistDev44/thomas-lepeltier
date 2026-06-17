@@ -2,7 +2,6 @@
 title: Revue des questions scientifiques
 date: 2005-01-01
 layout: "post.njk"
-description: Revue des questions scientifiques - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/revue-des-questions-scientifiques-3/index.html"
+description: "Nouveau dialogue sur les deux grands systèmes du monde, Revue des questions scientifiques, 176 (2), 2005."
 ---
-
-### Description
-Nouveau dialogue sur les deux grands systèmes du monde, Revue des questions scientifiques, 176 (2), 2005.
-

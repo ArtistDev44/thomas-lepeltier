@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2017-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-34/index.html"
+description: "Et si l’esprit était partout ?, Sciences Humaines, 293, juin 2017."
 ---
-
-### Description
-Et si l’esprit était partout ?, Sciences Humaines, 293, juin 2017.
-

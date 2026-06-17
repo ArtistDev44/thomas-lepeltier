@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2008-03-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-38/index.html"
+description: "A-t-on besoin de la vérité ?, Sciences Humaines, Hors-série, 10, mars-avril-mai 2008."
 ---
-
-### Description
-A-t-on besoin de la vérité ?, Sciences Humaines, Hors-série, 10, mars-avril-mai 2008.
-

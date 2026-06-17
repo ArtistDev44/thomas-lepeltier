@@ -2,7 +2,6 @@
 title: iPhilo
 date: 2021-03-01
 layout: "post.njk"
-description: iPhilo - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/iphilo/index.html"
+description: "L’univers n’est-il qu’une fiction heuristique ?, iPhilo, 20 mars 2021."
 ---
-
-### Description
-L’univers n’est-il qu’une fiction heuristique ?, iPhilo, 20 mars 2021.
-

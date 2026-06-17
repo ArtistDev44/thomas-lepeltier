@@ -2,7 +2,6 @@
 title: Causeur
 date: 2026-01-01
 layout: "post.njk"
-description: Causeur - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/causeur-4/index.html"
+description: "L’argent du leurre. L’illusion décroissantiste d’un onusien, Causeur, 141, janvier 2026."
 ---
-
-### Description
-L’argent du leurre. L’illusion décroissantiste d’un onusien, Causeur, 141, janvier 2026.
-

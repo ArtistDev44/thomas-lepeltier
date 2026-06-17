@@ -2,7 +2,6 @@
 title: Titre inconnu
 date: 2002-01-01
 layout: "post.njk"
-description: Titre inconnu - article de Thomas Lepeltier
 category: "Historiographie"
 tags: ["article","Historiographie"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sans-titre-7/index.html"
+description: "Historians and the Origins of the French Revolution, 2002, non publié."
 ---
-
-### Description
-Historians and the Origins of the French Revolution, 2002, non publié.
-

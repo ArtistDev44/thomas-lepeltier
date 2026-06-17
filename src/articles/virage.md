@@ -2,7 +2,6 @@
 title: Virage
 date: 2020-01-01
 layout: "post.njk"
-description: Virage - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/virage/index.html"
+description: "La hargne des anti-véganes, Virage, 5, printemps 2020."
 ---
-
-### Description
-La hargne des anti-véganes, Virage, 5, printemps 2020.
-

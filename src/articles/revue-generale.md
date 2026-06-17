@@ -2,7 +2,6 @@
 title: Revue Générale
 date: 2022-01-01
 layout: "post.njk"
-description: Revue Générale - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/revue-generale/index.html"
+description: "Entretien (avec Jean-Marc Bonnet-Bidaud) dans Revue Générale, 3, 2022."
 ---
-
-### Description
-Entretien (avec Jean-Marc Bonnet-Bidaud) dans Revue Générale, 3, 2022.
-

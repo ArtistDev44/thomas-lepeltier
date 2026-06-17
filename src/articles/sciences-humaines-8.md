@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2019-02-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-8/index.html"
+description: "Antispécisme. Les animaux, nos égaux ?, Sciences Humaines, 311, février 2019."
 ---
-
-### Description
-Antispécisme. Les animaux, nos égaux ?, Sciences Humaines, 311, février 2019.
-

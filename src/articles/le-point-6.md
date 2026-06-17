@@ -2,7 +2,6 @@
 title: Le Point
 date: 2025-10-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-6/index.html"
+description: "Philippe Bihouix, un malthusien moderne, Le Point, 1er octobre 2025."
 ---
-
-### Description
-Philippe Bihouix, un malthusien moderne, Le Point, 1er octobre 2025.
-

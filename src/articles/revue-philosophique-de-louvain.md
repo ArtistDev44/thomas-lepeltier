@@ -2,7 +2,6 @@
 title: Revue philosophique de Louvain
 date: 2006-01-01
 layout: "post.njk"
-description: Revue philosophique de Louvain - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/revue-philosophique-de-louvain/index.html"
+description: "Un tournant dogmatique de la cosmologie ?, Revue philosophique de Louvain, 104 (2), 2006."
 ---
-
-### Description
-Un tournant dogmatique de la cosmologie ?, Revue philosophique de Louvain, 104 (2), 2006.
-

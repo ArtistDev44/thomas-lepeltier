@@ -1,63 +1,173 @@
 ---
-title: "Liste des articles publiés"
+title: 'Liste des articles publiés'
 date: Last Modified
-layout: "annexe.njk"
-permalink: "/articles/index.html"
+layout: 'annexe.njk'
+permalink: '/articles/index.html'
 ---
 
+{% js "inline" %}
+ {% include "scripts/search_articles.js" %}
+{% endjs %}
+
 <h2>Rangés chronologiquement</h2>
-<hr>
+<hr />
+
+<div>
+<pagefind-modal-trigger></pagefind-modal-trigger>
+<pagefind-modal></pagefind-modal>
+</div>
 
 <div class="cards-grid">
   <custom-masonry>
-    {%- for article in collections.article | reverse -%}
+    {%- for article in collections.article | reverse -%} {# --- LOGIQUE DE LIEN --- #} {# On définit le lien :
+    externe d'abord, sinon interne, sinon l'URL d'Eleventy #} {% set targetUrl = article.data.externalLink or
+    article.data.internalLink or article.url %} {# On vérifie si c'est un lien externe pour le comportement du
+    navigateur #} {% set isExternal = article.data.externalLink | length > 0 %}
+<div>
+    <div class="container">
+      <img src="{{article.data.imageUrl}}" alt="Première page de mon article {{ article.data.title }}" />
+      <div class="overlay">
+        <p>
+          {{ article.data.title }} - {{ article.date.toLocaleString('fr-FR', { year: 'numeric', month: 'long'
+          }) }}
+        </p>
+        <a
+          class="button"
+          href="{{ targetUrl }}"
+          {%
+          if
+          isExternal
+          %}target="_blank"
+          rel="noopener noreferrer"
+          {%
+          endif
+          %}
+          >Lire l'article
+        </a>
+      </div>
+    </div>
 
-      {# --- LOGIQUE DE LIEN --- #}
-      {# On définit le lien : externe d'abord, sinon interne, sinon l'URL d'Eleventy #}
-      {% set targetUrl = article.data.externalLink or article.data.internalLink or article.url %}
-
-      {# On vérifie si c'est un lien externe pour le comportement du navigateur #}
-      {% set isExternal = article.data.externalLink | length > 0 %}
-
-      <custom-card>
-        {# Slot Headline (Titre) - Utilise le lien dynamique #}
-        <h3 slot="headline">
-          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
-            {{ article.data.title }}
-          </a>
-        </h3>
-        {# Image de l'article via le shortcode Eleventy #}
-        {% image article.data.imageUrl, "Première page de mon article " + article.data.title %}
-
-        {# Slot Date #}
-        <span slot="date">
-          {{ article.date.toLocaleString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' }) }}
-        </span>
-
-        {# Slot Tag #}
-        {%- for tag in article.data.tags -%}
-          {%- if tag != "article" -%}
-            <a href="/tags/{{ tag | slugify }}" slot="tag" class="button" style="width: 20vw; height:auto;">
-              {{ tag }}
-            </a>
-          {%- endif -%}
-        {%- endfor -%}
-
-        {# Slot Headline (Titre) - Utilise le lien dynamique #}
-        <h3 slot="headline">
-          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
-            {{ article.data.title }}
-          </a>
-        </h3>
-      </custom-card>
+    {# Slot Headline (Titre) - Utilise le lien dynamique #}
+    <p slot="headline">
+      <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer" {% endif %}>
+        {{ article.data.title }}
+      </a>
+    </p>
+    {# Image de l'article via le shortcode Eleventy #} {% image article.data.imageUrl, "Première page de mon
+    article " + article.data.title %} {# Slot Date #}
+    <span slot="date">
+      {{ article.date.toLocaleString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' }) }}
+    </span>
+    {# Slot Tag #} {%- for tag in article.data.tags -%} {%- if tag != "article" -%}
+    <a href="/tags/{{ tag | slugify }}" slot="tag" class="button" style="width: 20vw; height: auto">
+      {{ tag }}
+    </a>
+    {%- endif -%} {%- endfor -%} {# Slot Headline (Titre) - Utilise le lien dynamique #}
+    </div>
     {%- endfor -%}
   </custom-masonry>
 </div>
 <style>
-h3 {
+pagefind-modal-trigger {
+  display: block !important;
+}
+
+pagefind-modal-trigger {
+  margin: 2rem 0;
+}
+  h3 {
     --flow-space: 1.3rem;
+  }
+
+  img:hover {
+    filter: brightness(1);
+  }
+  img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.95);
+    aspect-ratio: 9/14;
+  }
+.pf-trigger-btn {
+  height: 40px !important;
 }
+  .container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  /* Responsive mobile */
+  @media (max-width: 480px) {
+    .container {
+    }
+  }
+
+  .container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay p {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+  }
+
+  /* Hover pour desktop */
+  @media (hover: hover) {
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .container:hover img {
+      opacity: 0.7;
+    }
+  }
+
+  /* Classe active pour mobile (tap) */
+  .container.active .overlay {
+    opacity: 1;
+  }
+
+  .container.active img {
+    opacity: 0.7;
+  }
+@media (min-width: 1100px) {
+  a.button {
+    width: auto !important;      /* largeur automatique selon le contenu */
+    /* OU */
+    width: fit-content !important; /* ajustée au contenu */
+    /* OU */
+    width: unset !important;     /* annule la valeur héritée */
+  }
+}
+
+@layer blocks {
+  .indicator::after, a[href^="http"]:not([href*="localhost:8080"]):not([href*="eleventy-excellent.netlify.app"]):not(.no-indicator)::after {
+    background-image: none !important;
+  }
 img {
-    margin-top: 3rem;
+border: 6px ridge var(--color-text);
 }
-</style>
+  </style>

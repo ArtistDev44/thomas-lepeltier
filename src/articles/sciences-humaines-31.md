@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2019-02-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-31/index.html"
+description: "Végétaux. Faut-il leur accorder des droits ?, Sciences Humaines, 311, février 2019."
 ---
-
-### Description
-Végétaux. Faut-il leur accorder des droits ?, Sciences Humaines, 311, février 2019.
-

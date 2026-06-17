@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2026-02-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-23/index.html"
+description: "Faut-il abolir l’héritage ?, Sciences Humaines, 386, février 2026."
 ---
-
-### Description
-Faut-il abolir l’héritage ?, Sciences Humaines, 386, février 2026.
-

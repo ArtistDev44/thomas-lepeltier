@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2013-01-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-14/index.html"
+description: "Le nouvel âge de la cause animale, Sciences Humaines, Grands dossiers, 29, décembre 2012/janvier-février 2013."
 ---
-
-### Description
-Le nouvel âge de la cause animale, Sciences Humaines, Grands dossiers, 29, décembre 2012/janvier-février 2013.
-

@@ -2,7 +2,6 @@
 title: Le Point
 date: 2026-05-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point/index.html"
+description: "Les affabulations du biologiste Olivier Hamant contre la performance, Le Point, 18 mai 2026."
 ---
-
-### Description
-Les affabulations du biologiste Olivier Hamant contre la performance, Le Point, 18 mai 2026.
-

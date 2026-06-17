@@ -2,7 +2,6 @@
 title: Le Point
 date: 2026-05-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-1/index.html"
+description: "L’héritage fait-il vraiment les riches ?, Le Point, 2 mai 2026."
 ---
-
-### Description
-L’héritage fait-il vraiment les riches ?, Le Point, 2 mai 2026.
-

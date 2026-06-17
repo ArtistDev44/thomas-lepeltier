@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2004-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Historiographie"
 tags: ["article","Historiographie"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-20/index.html"
+description: "Pierre Nora : de l’histoire nationale aux lieux de mémoire, Sciences Humaines, 152, août-septembre 2004."
 ---
-
-### Description
-Pierre Nora : de l’histoire nationale aux lieux de mémoire, Sciences Humaines, 152, août-septembre 2004.
-

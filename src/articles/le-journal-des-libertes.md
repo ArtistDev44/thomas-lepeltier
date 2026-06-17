@@ -2,7 +2,6 @@
 title: Le Journal des libertés
 date: 2024-01-01
 layout: "post.njk"
-description: Le Journal des libertés - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-journal-des-libertes/index.html"
+description: "La décroissance est-elle mortifère ?, Le Journal des libertés, 26, automne 2024."
 ---
-
-### Description
-La décroissance est-elle mortifère ?, Le Journal des libertés, 26, automne 2024.
-

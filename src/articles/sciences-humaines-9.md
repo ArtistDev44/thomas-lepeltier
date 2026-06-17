@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2018-04-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-9/index.html"
+description: "Splendeur et misère de la condition animale, Sciences Humaines, 302, avril 2018."
 ---
-
-### Description
-Splendeur et misère de la condition animale, Sciences Humaines, 302, avril 2018.
-

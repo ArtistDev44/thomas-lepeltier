@@ -2,7 +2,6 @@
 title: Le Point
 date: 2026-03-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-3/index.html"
+description: "Timothée Parrique, ou le dictateur camouflé, Le Point, 4 mars 2026."
 ---
-
-### Description
-Timothée Parrique, ou le dictateur camouflé, Le Point, 4 mars 2026.
-

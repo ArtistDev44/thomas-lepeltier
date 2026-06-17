@@ -2,7 +2,6 @@
 title: Science et avenir
 date: 2022-11-01
 layout: "post.njk"
-description: Science et avenir - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/science-et-avenir/index.html"
+description: "Entretien dans Science et avenir, 909, novembre 2022."
 ---
-
-### Description
-Entretien dans Science et avenir, 909, novembre 2022.
-

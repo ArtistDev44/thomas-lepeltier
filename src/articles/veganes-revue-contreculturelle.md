@@ -2,7 +2,6 @@
 title: Véganes. Revue contreculturelle
 date: 2017-01-01
 layout: "post.njk"
-description: Véganes. Revue contreculturelle - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/veganes-revue-contreculturelle/index.html"
+description: "Demander moins pour obtenir plus ? Question de stratégie végétalienne, Véganes. Revue contreculturelle, 2, hiver 2017."
 ---
-
-### Description
-Demander moins pour obtenir plus ? Question de stratégie végétalienne, Véganes. Revue contreculturelle, 2, hiver 2017.
-

@@ -2,7 +2,6 @@
 title: Res Publica
 date: 2003-05-01
 layout: "post.njk"
-description: Res Publica - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/res-publica/index.html"
+description: "A-t-on accès directement à la réalité ? Le problème de la perception, Res Publica, 33, mai 2003."
 ---
-
-### Description
-A-t-on accès directement à la réalité ? Le problème de la perception, Res Publica, 33, mai 2003.
-

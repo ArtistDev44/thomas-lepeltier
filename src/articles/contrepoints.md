@@ -2,7 +2,6 @@
 title: Contrepoints
 date: 2024-06-01
 layout: "post.njk"
-description: Contrepoints - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/contrepoints/index.html"
+description: "Des scientifiques en rébellion à la dérive, Contrepoints, 8 juin 2024."
 ---
-
-### Description
-Des scientifiques en rébellion à la dérive, Contrepoints, 8 juin 2024.
-

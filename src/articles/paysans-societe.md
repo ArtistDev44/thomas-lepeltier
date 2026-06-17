@@ -2,7 +2,6 @@
 title: Paysans & Société
 date: 2026-03-01
 layout: "post.njk"
-description: Paysans & Société - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/paysans-societe/index.html"
+description: "Il n’y a pas de crise environnementale !, Paysans & Société, 416, mars-avril 2026."
 ---
-
-### Description
-Il n’y a pas de crise environnementale !, Paysans & Société, 416, mars-avril 2026.
-

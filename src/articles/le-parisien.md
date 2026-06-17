@@ -2,7 +2,6 @@
 title: Le Parisien
 date: 2019-05-01
 layout: "post.njk"
-description: Le Parisien - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-parisien/index.html"
+description: "Pour des assises nationales de la question animale !, Le Parisien, 26 mai 2019."
 ---
-
-### Description
-Pour des assises nationales de la question animale !, Le Parisien, 26 mai 2019.
-

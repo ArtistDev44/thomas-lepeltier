@@ -2,7 +2,6 @@
 title: Contrepoints
 date: 2024-10-01
 layout: "post.njk"
-description: Contrepoints - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -15,7 +14,3 @@ pageCount: ""
 metaDescription: ""
 permalink: "/articles/contrepoints-1/index.html"
 ---
-
-### Description
-Faut-il coloniser l’espace ?, Contrepoints, 31 octobre 2024 (ou une version longue de l’article).
-

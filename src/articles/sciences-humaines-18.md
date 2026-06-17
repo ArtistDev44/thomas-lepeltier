@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2005-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Historiographie"
 tags: ["article","Historiographie"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-18/index.html"
+description: "L’Histoire culturelle, Sciences Humaines, 162, juillet 2005."
 ---
-
-### Description
-L’Histoire culturelle, Sciences Humaines, 162, juillet 2005.
-

@@ -2,7 +2,6 @@
 title: Animaux Bonheur
 date: 2014-01-01
 layout: "post.njk"
-description: Animaux Bonheur - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/animaux-bonheur/index.html"
+description: "Respect des animaux et végétalisme, Animaux Bonheur, 3, sept.-oct.-nov., 2014."
 ---
-
-### Description
-Respect des animaux et végétalisme, Animaux Bonheur, 3, sept.-oct.-nov., 2014.
-

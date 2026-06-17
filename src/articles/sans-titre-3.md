@@ -2,7 +2,6 @@
 title: Titre inconnu
 date: 2004-01-01
 layout: "post.njk"
-description: Titre inconnu - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sans-titre-3/index.html"
+description: "Un regard philosophique sur la cosmologie, Cahiers de recherches Villard de Honnecourt, 55, 2004."
 ---
-
-### Description
-Un regard philosophique sur la cosmologie, Cahiers de recherches Villard de Honnecourt, 55, 2004.
-

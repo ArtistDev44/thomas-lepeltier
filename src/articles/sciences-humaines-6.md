@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2024-03-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-6/index.html"
+description: "Les vertus d'un monde sans élevage, Sciences Humaines, 366, mars 2024."
 ---
-
-### Description
-Les vertus d'un monde sans élevage, Sciences Humaines, 366, mars 2024.
-

@@ -2,7 +2,6 @@
 title: Transitions & Énergie
 date: 2024-01-01
 layout: "post.njk"
-description: Transitions & Énergie - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/transitions-energie/index.html"
+description: "Faut-il enterrer le Rapport Meadows ?, Transitions & Énergie, 21, été 2024."
 ---
-
-### Description
-Faut-il enterrer le Rapport Meadows ?, Transitions & Énergie, 21, été 2024.
-

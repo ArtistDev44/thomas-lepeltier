@@ -2,7 +2,6 @@
 title: Libération
 date: 2019-01-01
 layout: "post.njk"
-description: Libération - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/liberation/index.html"
+description: "L’antispécisme face à ses contempteurs (écrit avec Yves Bonnardel), Libération, 15 janvier 2019."
 ---
-
-### Description
-L’antispécisme face à ses contempteurs (écrit avec Yves Bonnardel), Libération, 15 janvier 2019.
-

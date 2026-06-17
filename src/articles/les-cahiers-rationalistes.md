@@ -2,7 +2,6 @@
 title: Les Cahiers Rationalistes
 date: 1234-01-01
 layout: "post.njk"
-description: Les Cahiers Rationalistes - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/les-cahiers-rationalistes/index.html"
+description: "Va-t-on perdre le contrôle de l’IA ?, Les Cahiers Rationalistes (à paraître)."
 ---
-
-### Description
-Va-t-on perdre le contrôle de l’IA ?, Les Cahiers Rationalistes (à paraître).
-

@@ -2,7 +2,6 @@
 title: One Voice - Noé
 date: 2016-11-01
 layout: "post.njk"
-description: One Voice - Noé - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/one-voice-noe/index.html"
+description: "La force de l’éthique, One Voice - Noé, 84, novembre 2016."
 ---
-
-### Description
-La force de l’éthique, One Voice - Noé, 84, novembre 2016.
-

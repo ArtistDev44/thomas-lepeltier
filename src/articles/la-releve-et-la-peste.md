@@ -2,7 +2,6 @@
 title: La Relève et la Peste
 date: 2020-12-01
 layout: "post.njk"
-description: La Relève et la Peste - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/la-releve-et-la-peste/index.html"
+description: "Il est impossible d’avoir un débat sérieux sur la condition animale, La Relève et la Peste, 8 décembre 2020."
 ---
-
-### Description
-Il est impossible d’avoir un débat sérieux sur la condition animale, La Relève et la Peste, 8 décembre 2020.
-

@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2006-02-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-4/index.html"
+description: "L’invention de l’Intelligent Design. Les habits neufs du créationnisme, Sciences Humaines, 168, février 2006."
 ---
-
-### Description
-L’invention de l’Intelligent Design. Les habits neufs du créationnisme, Sciences Humaines, 168, février 2006.
-

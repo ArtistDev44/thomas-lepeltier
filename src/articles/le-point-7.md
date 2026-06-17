@@ -2,7 +2,6 @@
 title: Le Point
 date: 2025-06-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-7/index.html"
+description: "Timothée Parrique, l’illusionniste de la décroissance, Le Point, 16 juin 2025 (version longue)."
 ---
-
-### Description
-Timothée Parrique, l’illusionniste de la décroissance, Le Point, 16 juin 2025 (version longue).
-

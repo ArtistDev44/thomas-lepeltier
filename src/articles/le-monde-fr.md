@@ -2,7 +2,6 @@
 title: Le Monde.fr
 date: 2018-07-01
 layout: "post.njk"
-description: Le Monde.fr - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-monde-fr/index.html"
+description: "Pour un véritable débat sur le spécisme !, Le Monde.fr, 10 juillet 2018."
 ---
-
-### Description
-Pour un véritable débat sur le spécisme !, Le Monde.fr, 10 juillet 2018.
-

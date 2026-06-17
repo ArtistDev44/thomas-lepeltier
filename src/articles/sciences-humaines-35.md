@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2016-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-35/index.html"
+description: "Arne Næss. La « deep ecology », Sciences Humaines, Grands dossiers, 43, juin-juillet-août, 2016."
 ---
-
-### Description
-Arne Næss. La « deep ecology », Sciences Humaines, Grands dossiers, 43, juin-juillet-août, 2016.
-

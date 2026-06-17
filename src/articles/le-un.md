@@ -2,7 +2,6 @@
 title: Le Un
 date: 2018-10-01
 layout: "post.njk"
-description: Le Un - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-un/index.html"
+description: "Une violence injustifiée, Le Un, 222, 24 octobre 2018."
 ---
-
-### Description
-Une violence injustifiée, Le Un, 222, 24 octobre 2018.
-

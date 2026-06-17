@@ -2,7 +2,6 @@
 title: Journal of Applied Animal Ethics Research
 date: 2024-01-01
 layout: "post.njk"
-description: Journal of Applied Animal Ethics Research - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/journal-of-applied-animal-ethics-research/index.html"
+description: "Nature without Suffering, Journal of Applied Animal Ethics Research, 2024."
 ---
-
-### Description
-Nature without Suffering, Journal of Applied Animal Ethics Research, 2024.
-

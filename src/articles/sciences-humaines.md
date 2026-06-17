@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2016-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines/index.html"
+description: "Gaston Bachelard. Apprendre de ses erreurs, Sciences Humaines, Hors-série, 45, déc. 2016 - janv.-fév. 2017."
 ---
-
-### Description
-Gaston Bachelard. Apprendre de ses erreurs, Sciences Humaines, Hors-série, 45, déc. 2016 - janv.-fév. 2017.
-

@@ -2,7 +2,6 @@
 title: (V)égaux
 date: 2021-01-01
 layout: "post.njk"
-description: (V)égaux - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/v-egaux/index.html"
+description: "L’écoféminisme au regard de l’antispécisme, dans (V)égaux, Somme toute, 2021."
 ---
-
-### Description
-L’écoféminisme au regard de l’antispécisme, dans (V)égaux, Somme toute, 2021.
-

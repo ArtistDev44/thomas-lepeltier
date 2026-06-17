@@ -2,7 +2,6 @@
 title: Ethica. Revue interdisciplinaire de recherche en éthique
 date: 2018-01-01
 layout: "post.njk"
-description: Ethica. Revue interdisciplinaire de recherche en éthique - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/ethica-revue-interdisciplinaire-de-recherche-en-ethique/index.html"
+description: "Protéger la nature ou protéger les animaux ?, Ethica. Revue interdisciplinaire de recherche en éthique, 2018, 22 (1)."
 ---
-
-### Description
-Protéger la nature ou protéger les animaux ?, Ethica. Revue interdisciplinaire de recherche en éthique, 2018, 22 (1).
-

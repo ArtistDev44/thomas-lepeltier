@@ -2,7 +2,6 @@
 title: Titre inconnu
 date: 2009-04-01
 layout: "post.njk"
-description: Titre inconnu - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sans-titre-1/index.html"
+description: "L’opiniâtre combat du créationnisme, Le Monde (Hors-série), avril-mai 2009."
 ---
-
-### Description
-L’opiniâtre combat du créationnisme, Le Monde (Hors-série), avril-mai 2009.
-

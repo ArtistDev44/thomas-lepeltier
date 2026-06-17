@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2004-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Historiographie"
 tags: ["article","Historiographie"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-21/index.html"
+description: "Georges Dumézil, entre mythe et histoire, Sciences Humaines, 146, fevrier 2004."
 ---
-
-### Description
-Georges Dumézil, entre mythe et histoire, Sciences Humaines, 146, fevrier 2004.
-

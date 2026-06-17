@@ -2,7 +2,6 @@
 title: Le Point
 date: 2025-02-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-8/index.html"
+description: "Quand les anticapitalistes auront cassé leur jouet, Le Point, 4 février 2025."
 ---
-
-### Description
-Quand les anticapitalistes auront cassé leur jouet, Le Point, 4 février 2025.
-

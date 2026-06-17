@@ -2,7 +2,6 @@
 title: Causeur
 date: 2025-09-01
 layout: "post.njk"
-description: Causeur - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/causeur-5/index.html"
+description: "La dérive climato-gauchiste de Monique Pinçon-Charlot, Causeur, 17 septembre 2025."
 ---
-
-### Description
-La dérive climato-gauchiste de Monique Pinçon-Charlot, Causeur, 17 septembre 2025.
-

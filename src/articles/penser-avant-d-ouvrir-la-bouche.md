@@ -2,7 +2,6 @@
 title: Penser avant d’ouvrir la bouche
 date: 2014-02-01
 layout: "post.njk"
-description: Penser avant d’ouvrir la bouche - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/penser-avant-d-ouvrir-la-bouche/index.html"
+description: "La révolution végétarienne, Penser avant d’ouvrir la bouche, février 2014."
 ---
-
-### Description
-La révolution végétarienne, Penser avant d’ouvrir la bouche, février 2014.
-

@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2026-04-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-22/index.html"
+description: "Rachel Carson, pionnière de l’écologie, Sciences Humaines, 387, avril 2026."
 ---
-
-### Description
-Rachel Carson, pionnière de l’écologie, Sciences Humaines, 387, avril 2026.
-

@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2007-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-2/index.html"
+description: "Gaston Bachelard et Alexandre Koyré, Sciences Humaines, Hors séries, 6, octobre-novembre 2007."
 ---
-
-### Description
-Gaston Bachelard et Alexandre Koyré, Sciences Humaines, Hors séries, 6, octobre-novembre 2007.
-

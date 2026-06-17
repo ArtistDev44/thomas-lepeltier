@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2012-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-15/index.html"
+description: "Faut-il encore manger de la viande ?, Sciences Humaines, 243, décembre 2012."
 ---
-
-### Description
-Faut-il encore manger de la viande ?, Sciences Humaines, 243, décembre 2012.
-

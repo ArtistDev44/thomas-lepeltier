@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2023-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-27/index.html"
+description: "Le capitalisme est-il mortel ?, Sciences Humaines, 359, juin 2023."
 ---
-
-### Description
-Le capitalisme est-il mortel ?, Sciences Humaines, 359, juin 2023.
-

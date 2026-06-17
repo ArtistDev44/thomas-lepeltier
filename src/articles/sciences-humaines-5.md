@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2001-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-5/index.html"
+description: "Les physiciens et l’énigme de la réalité, Sciences Humaines, 118, juillet 2001."
 ---
-
-### Description
-Les physiciens et l’énigme de la réalité, Sciences Humaines, 118, juillet 2001.
-

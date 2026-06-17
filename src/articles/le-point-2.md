@@ -2,7 +2,6 @@
 title: Le Point
 date: 2026-03-01
 layout: "post.njk"
-description: Le Point - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-2/index.html"
+description: "Camille Étienne ou l’écologie manichéenne, Le Point, 31 mars 2026."
 ---
-
-### Description
-Camille Étienne ou l’écologie manichéenne, Le Point, 31 mars 2026.
-

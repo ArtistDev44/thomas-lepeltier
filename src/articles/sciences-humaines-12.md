@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2014-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-12/index.html"
+description: "Faut-il en finir avec l’experimentation animale ?, Sciences Humaines, septembre 2014."
 ---
-
-### Description
-Faut-il en finir avec l’experimentation animale ?, Sciences Humaines, septembre 2014.
-

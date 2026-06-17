@@ -2,7 +2,6 @@
 title: Revue des questions scientifiques
 date: 2006-01-01
 layout: "post.njk"
-description: Revue des questions scientifiques - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/revue-des-questions-scientifiques-2/index.html"
+description: "Fred Hoyle, entre science et fiction. I. Cosmologie, Revue des questions scientifiques, 177 (1), 2006."
 ---
-
-### Description
-Fred Hoyle, entre science et fiction. I. Cosmologie, Revue des questions scientifiques, 177 (1), 2006.
-

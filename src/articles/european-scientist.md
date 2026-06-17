@@ -2,7 +2,6 @@
 title: European Scientist
 date: 2025-12-01
 layout: "post.njk"
-description: European Scientist - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/european-scientist/index.html"
+description: "Should we return to the climate of the past ?, European Scientist, 31 décembre 2025."
 ---
-
-### Description
-Should we return to the climate of the past ?, European Scientist, 31 décembre 2025.
-

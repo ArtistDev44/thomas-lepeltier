@@ -2,7 +2,6 @@
 title: Révolutions animales
 date: 2016-05-01
 layout: "post.njk"
-description: Révolutions animales - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/revolutions-animales/index.html"
+description: "Demain, la révolution végétalienne ?, dans Révolutions animales, Les liens qui libèrent/Arte, 2016."
 ---
-
-### Description
-Demain, la révolution végétalienne ?, dans Révolutions animales, Les liens qui libèrent/Arte, 2016.
-

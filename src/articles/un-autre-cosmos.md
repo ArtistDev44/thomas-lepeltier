@@ -2,7 +2,6 @@
 title: Un autre cosmos ?
 date: 2012-01-01
 layout: "post.njk"
-description: Un autre cosmos ? - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: "19 €"
 pageCount: "160"
 metaDescription: ""
 permalink: "/articles/un-autre-cosmos/index.html"
+description: "Une ou des visions du cosmos ?, dans Lepeltier & Bonnet-Bidaud (eds), Un autre cosmos ?, Vuibert, 2012."
 ---
-
-### Description
-Une ou des visions du cosmos ?, dans Lepeltier & Bonnet-Bidaud (eds), Un autre cosmos ?, Vuibert, 2012.
-

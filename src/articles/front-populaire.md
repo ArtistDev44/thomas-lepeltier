@@ -2,7 +2,6 @@
 title: Front Populaire
 date: 2022-04-01
 layout: "post.njk"
-description: Front Populaire - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/front-populaire/index.html"
+description: "Misère de l’anti-antispécisme, Front Populaire, 6 avril 2022."
 ---
-
-### Description
-Misère de l’anti-antispécisme, Front Populaire, 6 avril 2022.
-

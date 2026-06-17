@@ -2,7 +2,6 @@
 title: Causeur
 date: 2026-02-01
 layout: "post.njk"
-description: Causeur - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/causeur-3/index.html"
+description: "Les fables de Piketty. Piètre statisticien mais bon idéologue, Causeur, 142, février 2026."
 ---
-
-### Description
-Les fables de Piketty. Piètre statisticien mais bon idéologue, Causeur, 142, février 2026.
-

@@ -2,7 +2,6 @@
 title: Creationism in Europe
 date: 2014-01-01
 layout: "post.njk"
-description: Creationism in Europe - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/creationism-in-europe/index.html"
+description: "Creationism in France, dans Blancke et all. (eds), Creationism in Europe, Johns Hopkins UP, 2014."
 ---
-
-### Description
-Creationism in France, dans Blancke et all. (eds), Creationism in Europe, Johns Hopkins UP, 2014.
-

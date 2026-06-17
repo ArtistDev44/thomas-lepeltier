@@ -2,7 +2,6 @@
 title: Archives Internationales d’Histoire des Sciences
 date: 2007-01-01
 layout: "post.njk"
-description: Archives Internationales d’Histoire des Sciences - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/archives-internationales-d-histoire-des-sciences/index.html"
+description: "Quand l’univers était plus jeune que la Terre, Archives Internationales d’Histoire des Sciences, 57 (158), 2007."
 ---
-
-### Description
-Quand l’univers était plus jeune que la Terre, Archives Internationales d’Histoire des Sciences, 57 (158), 2007.
-

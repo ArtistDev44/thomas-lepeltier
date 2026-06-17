@@ -2,7 +2,6 @@
 title: Titre inconnu
 date: 1234-01-01
 layout: "post.njk"
-description: Titre inconnu - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sans-titre-5/index.html"
+description: "Libération animale ou disparition animale ?, Revue d’Études Benthamiennes, à paraître."
 ---
-
-### Description
-Libération animale ou disparition animale ?, Revue d’Études Benthamiennes, à paraître.
-

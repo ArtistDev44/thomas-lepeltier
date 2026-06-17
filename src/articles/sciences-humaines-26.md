@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2023-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-26/index.html"
+description: "Le néolibéralisme a-t-il un avenir ?, Sciences Humaines, 363, novembre 2023."
 ---
-
-### Description
-Le néolibéralisme a-t-il un avenir ?, Sciences Humaines, 363, novembre 2023.
-

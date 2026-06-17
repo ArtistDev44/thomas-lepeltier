@@ -2,7 +2,6 @@
 title: Sens-Dessous
 date: 2013-07-01
 layout: "post.njk"
-description: Sens-Dessous - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sens-dessous/index.html"
+description: "Petite litanie des arguments anti-végétaliens, Sens-Dessous, 12, juillet 2013."
 ---
-
-### Description
-Petite litanie des arguments anti-végétaliens, Sens-Dessous, 12, juillet 2013.
-

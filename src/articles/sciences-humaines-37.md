@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2011-04-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-37/index.html"
+description: "Le consommateur impénitent, Sciences Humaines, 225, avril 2011."
 ---
-
-### Description
-Le consommateur impénitent, Sciences Humaines, 225, avril 2011.
-

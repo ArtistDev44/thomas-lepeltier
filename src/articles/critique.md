@@ -2,7 +2,6 @@
 title: Critique
 date: 2005-03-01
 layout: "post.njk"
-description: Critique - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/critique/index.html"
+description: "Histoire du big bang : la vision des vainqueurs, Critique, 694, mars 2005."
 ---
-
-### Description
-Histoire du big bang : la vision des vainqueurs, Critique, 694, mars 2005.
-

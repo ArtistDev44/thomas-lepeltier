@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2024-02-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-25/index.html"
+description: "Peut-on bien vivre en décroissance ?, Sciences Humaines, 365, février 2024."
 ---
-
-### Description
-Peut-on bien vivre en décroissance ?, Sciences Humaines, 365, février 2024.
-

@@ -2,7 +2,6 @@
 title: Journal des libertés
 date: 2025-01-01
 layout: "post.njk"
-description: Journal des libertés - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/journal-des-libertes/index.html"
+description: "Nos sociétés doivent-elles ralentir ? (version longue), Journal des libertés, 29, été 2025."
 ---
-
-### Description
-Nos sociétés doivent-elles ralentir ? (version longue), Journal des libertés, 29, été 2025.
-

@@ -2,7 +2,6 @@
 title: Usbek & Rica
 date: 2025-04-01
 layout: "post.njk"
-description: Usbek & Rica - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/usbek-rica/index.html"
+description: "IA : pourquoi il ne faut pas céder aux visions d’apocalypse numérique, Usbek & Rica, 28 avril 2025."
 ---
-
-### Description
-IA : pourquoi il ne faut pas céder aux visions d’apocalypse numérique, Usbek & Rica, 28 avril 2025.
-

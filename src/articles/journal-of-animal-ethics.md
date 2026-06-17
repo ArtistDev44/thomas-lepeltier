@@ -2,7 +2,6 @@
 title: Journal of Animal Ethics
 date: 2020-01-01
 layout: "post.njk"
-description: Journal of Animal Ethics - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/journal-of-animal-ethics/index.html"
+description: "A critique of some appeals to science in animal ethics, Journal of Animal Ethics, 10 (1), 2020."
 ---
-
-### Description
-A critique of some appeals to science in animal ethics, Journal of Animal Ethics, 10 (1), 2020.
-

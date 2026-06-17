@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2014-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-36/index.html"
+description: "Sommes-nous des survivants ?, Sciences Humaines, 262, août-septembre 2014."
 ---
-
-### Description
-Sommes-nous des survivants ?, Sciences Humaines, 262, août-septembre 2014.
-

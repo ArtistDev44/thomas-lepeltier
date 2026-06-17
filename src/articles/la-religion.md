@@ -2,7 +2,6 @@
 title: La Religion
 date: 2005-05-01
 layout: "post.njk"
-description: La Religion - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/la-religion/index.html"
+description: "Vie et mort de la religion romaine, dans J.-F. Dortier et L. Testot (eds), La Religion, Éd. Sciences Humaines, 2005."
 ---
-
-### Description
-Vie et mort de la religion romaine, dans J.-F. Dortier et L. Testot (eds), La Religion, Éd. Sciences Humaines, 2005.
-

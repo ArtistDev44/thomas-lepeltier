@@ -2,7 +2,6 @@
 title: Causeur
 date: 2026-04-01
 layout: "post.njk"
-description: Causeur - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/causeur/index.html"
+description: "Sky is not the limit. Jean-Marc Jancovici se fourvoie sur la thermodynamique, Causeur, 144, avril 2026."
 ---
-
-### Description
-Sky is not the limit. Jean-Marc Jancovici se fourvoie sur la thermodynamique, Causeur, 144, avril 2026.
-

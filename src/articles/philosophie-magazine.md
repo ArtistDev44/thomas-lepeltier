@@ -2,7 +2,6 @@
 title: Philosophie magazine
 date: 2009-02-01
 layout: "post.njk"
-description: Philosophie magazine - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/philosophie-magazine/index.html"
+description: "Charles Darwin, le gentleman naturaliste, Philosophie magazine, 26, février 2009."
 ---
-
-### Description
-Charles Darwin, le gentleman naturaliste, Philosophie magazine, 26, février 2009.
-

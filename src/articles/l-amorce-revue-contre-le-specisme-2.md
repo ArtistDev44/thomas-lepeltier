@@ -2,7 +2,6 @@
 title: L’amorce. Revue contre le spécisme
 date: 2019-05-01
 layout: "post.njk"
-description: L’amorce. Revue contre le spécisme - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/l-amorce-revue-contre-le-specisme-2/index.html"
+description: "L’antispécisme face à ses adversaires, L’amorce. Revue contre le spécisme, 24 mai 2019."
 ---
-
-### Description
-L’antispécisme face à ses adversaires, L’amorce. Revue contre le spécisme, 24 mai 2019.
-

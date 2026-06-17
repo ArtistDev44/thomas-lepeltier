@@ -2,7 +2,6 @@
 title: Paysans & Société
 date: 2024-11-01
 layout: "post.njk"
-description: Paysans & Société - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/paysans-societe-2/index.html"
+description: "Il n’y a pas de crise de la biodiversité !, Paysans & Société, 408, novembre-décembre 2024."
 ---
-
-### Description
-Il n’y a pas de crise de la biodiversité !, Paysans & Société, 408, novembre-décembre 2024.
-

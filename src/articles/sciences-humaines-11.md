@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2016-05-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Éthique animale"
 tags: ["article","Éthique animale"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-11/index.html"
+description: "Peter Singer. Diminuer la souffrance, Sciences Humaines, Grands dossiers, 43, juin-juillet-août, 2016."
 ---
-
-### Description
-Peter Singer. Diminuer la souffrance, Sciences Humaines, Grands dossiers, 43, juin-juillet-août, 2016.
-

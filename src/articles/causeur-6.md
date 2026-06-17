@@ -2,7 +2,6 @@
 title: Causeur
 date: 2025-09-01
 layout: "post.njk"
-description: Causeur - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/causeur-6/index.html"
+description: "Jean-Marc Jancovici, l’apôtre du déclin, Causeur, 5 septembre 2025."
 ---
-
-### Description
-Jean-Marc Jancovici, l’apôtre du déclin, Causeur, 5 septembre 2025.
-

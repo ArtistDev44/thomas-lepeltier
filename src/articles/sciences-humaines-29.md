@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2023-02-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-29/index.html"
+description: "Jusqu’où se soucier des générations futures ?, Sciences Humaines, 355, février 2023."
 ---
-
-### Description
-Jusqu’où se soucier des générations futures ?, Sciences Humaines, 355, février 2023.
-

@@ -2,7 +2,6 @@
 title: Les Cahiers Rationalistes
 date: 2025-11-01
 layout: "post.njk"
-description: Les Cahiers Rationalistes - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/les-cahiers-rationalistes-1/index.html"
+description: "Les IA nous mentent-elles ?, Les Cahiers Rationalistes, 699, novembre-décembre 2025."
 ---
-
-### Description
-Les IA nous mentent-elles ?, Les Cahiers Rationalistes, 699, novembre-décembre 2025.
-

@@ -2,7 +2,6 @@
 title: Paysans & Société
 date: 2025-01-01
 layout: "post.njk"
-description: Paysans & Société - article de Thomas Lepeltier
 category: "Divers"
 tags: ["article","Divers"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/paysans-societe-1/index.html"
+description: "Pour en finir avec la notion d’écocide, Paysans & Société, 409, janvier-février 2025."
 ---
-
-### Description
-Pour en finir avec la notion d’écocide, Paysans & Société, 409, janvier-février 2025.
-

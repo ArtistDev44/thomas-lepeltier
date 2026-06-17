@@ -2,7 +2,6 @@
 title: Sciences Humaines
 date: 2008-03-01
 layout: "post.njk"
-description: Sciences Humaines - article de Thomas Lepeltier
 category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
@@ -14,8 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-1/index.html"
+description: "Faut-il défendre la science ?, Sciences Humaines, Hors-série (Les grands dossiers), 10, mars-avril-mai 2008."
 ---
-
-### Description
-Faut-il défendre la science ?, Sciences Humaines, Hors-série (Les grands dossiers), 10, mars-avril-mai 2008.
-
