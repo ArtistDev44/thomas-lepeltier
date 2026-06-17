@@ -1,7 +1,7 @@
-  const manager = window.PagefindComponents.getInstanceManager();
-  const instance = manager.getInstance('default');
-
-  // Filtre persistant appliqué une seule fois
-  instance.triggerFilter('section', ['Comptes-rendus']);
-
-  instance.triggerLoad();
+(async () => {
+  await customElements.whenDefined('pagefind-results');
+  const n = window.PagefindComponents.getInstanceManager();
+  const e = n.getInstance('default');
+  e.triggerFilter('section', ['Comptes-rendus']);
+  e.triggerLoad();
+})();

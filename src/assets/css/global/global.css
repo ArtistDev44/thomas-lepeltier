@@ -23,3 +23,109 @@
   gap: 8px; /* Espacement entre les tags (CSS moderne) */
   margin: 1rem 0;
 }
+
+body {
+  --sb-track-color: #2f2f2f;
+  --sb-thumb-color: #f76707;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.search-icon {
+  fill: var(--color-text);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1,
+h2,
+h3 {
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+element {
+}
+@layer blocks {
+  .indicator,
+  a[href^='http']:not([href*='localhost:8080']):not([href*='eleventy-excellent.netlify.app']):not(
+      .button
+    ):not(.no-indicator) {
+    padding-inline-end: 0.8em;
+  }
+}
+@layer blocks {
+  .site-footer .creator a:hover {
+    color: var(--color-text) !important;
+  }
+}
+header {
+  box-shadow: 0px 1px 3px var(--color-text);
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 10;
+  background-color: var(--color-bg);
+}
+
+footer:after {
+  content: '';
+  position: absolute;
+  border: 50px solid transparent;
+  border-top: 50px solid #fefefe;
+  bottom: 0px;
+  right: 20px;
+  box-shadow: 0px -7px 6px -9px black;
+  transform: rotate(135deg);
+}
+footer {
+  position: relative; /* Indispensable pour le positionnement absolu de ::after */
+}
+.search-icon:hover {
+  fill: var(--color-primary);
+}
+@media only screen and (min-width: 640px) {
+  .space-top {
+    margin-top: 40px;
+  }
+}
+figure {
+  text-align: center;
+}
