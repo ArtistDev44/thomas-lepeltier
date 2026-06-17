@@ -40,7 +40,7 @@
     {% include "head/meta-info.njk" %}
   </head>
 
-  <body class="{{ layout }}">
+  <body class="{{ layout }} space-top">
     {% set indicateActiveHome %}
       {% if page.url == "/" %}
         aria-current=page

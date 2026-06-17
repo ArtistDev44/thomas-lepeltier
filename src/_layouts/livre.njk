@@ -3,8 +3,7 @@ layout: base
 ---
 
 <div data-pagefind-body data-pagefind-filter="section: Livres" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
-  <h1 class="gradient-text">Présentation</h1>
-  <h2>Du livre {{ title }}</h2>
+  <h1 class="gradient-text">Présentation du livre {{ title }}</h1>
 
 <div class="tags-container">
 {% for tag in tags %}
@@ -15,15 +14,25 @@ layout: base
 <p>Rédigé en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}
 </p>
 <div>
-  <img src="{{ imageUrl }}" alt="Image de couverture du livre {{title}}" class="image-left">
-  <div data-pagefind-ignore>
-      {{ content | safe }}
-  </div>
-  </div>
-  <p class="author_cr" > {{ authorFullName }} </p>
-<a href="{{amazonLink}}">Lien Amazon</a>
 
+    {% include 'partials/livre3D.njk' %}
+  <div data-pagefind-ignore>
+      {{ content | lettrine | safe }}
+  </div>
+  </div>
+  <div>
+
+<div class="flow prose">
+<a class="button" href="{{liens_achat}}">Soutenez moi en achetant ce livre</a>
+</div>
+</div>
 <style>
+
+@layer global {
+  h1 {
+    font-size: var(--size-step-4) !important;
+  }
+}
     p.author_cr {
         text-align: right;
     }
@@ -32,24 +41,11 @@ layout: base
       float: left;
       margin-right: 15px;
     }
+
+@media (min-width: 600px) {
+  img {
+    width: 30vw;
+    height: auto;
+  }
+}
 </style>
-
-{% set related = collections.Rapports | relatedRapports(tags, page.url) %}
-
-{% if related.length %}
-  <h2>Recommandations</h2>
-  <ul>
-    {%- for rapport in related -%}
-      <li>
-        <a href="{{ rapport.url }}">{{ rapport.data.title }}</a>
-        <small>
-          Tags communs :
-          {%- for tag in rapport.data.tags -%}
-            {%- if tags.includes(tag) %} {{ tag }}{%- endif -%}
-          {%- endfor -%}
-        </small>
-      </li>
-    {%- endfor -%}
-  </ul>
-{% endif %}
-</div>
