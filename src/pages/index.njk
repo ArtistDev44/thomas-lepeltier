@@ -2,35 +2,73 @@
 layout: base
 permalink: /index.html
 title: "Philosophie · Histoire des sciences · Éthique animale"
-description: "Livres, articles et conférences autour des sciences, de la philosophie et de l’éthique animale."
+description: "Thomas Lepeltier"
 ---
+
+{% js "defer" %}
+ {% include "scripts/parallax.js" %}
+{% endjs %}
 
 <div class="wrapper">
 
           <!-- HERO -->
-          <header class="full | section hero-parallax">
+          <div class="full | section hero-parallax">
             <div class="hero-parallax__bg" aria-hidden="true">
               <img
-                class="hero-parallax__img"
+                class="hero-parallax__img border-non"
+                style="border: none !important;"
               src="/assets/images/thomas/thomas-lepeltier-en-conferences.webp" alt="Image de Thomas en conférences avec APALA"
                 alt=""
                 aria-hidden="true"
               >
             </div>
             <div class="flow region text-center text-theme-light hero-parallax__content">
-              <span class="eyebrow">Philosophie · Histoire des sciences · Éthique animale</span>
+              <span class="eyebrow" style="letter-spacing: 1px; font-style: italic;">Philosophie · Histoire des sciences · Éthique animale</span>
               <h1>Livres, articles et regards sur les sciences</h1>
               <p class="lead width-md">
                 Dix ouvrages personnels, quatre ouvrages dirigés, dix-huit contributions, une centaine d'articles et plus de cinq cents comptes rendus. De l'astrophysique à la philosophie, en passant par l'histoire des idées.
               </p>
               <div class="cluster justify-center">
-                <a href="/comptes-rendus/" class="button">Voir les comptes-rendus</a>
-                <a href="/contact/" class="button button-outline">Me contacter</a>
+                <a href="/comptes-rendus/" class="button" data-ghost-button>Voir les comptes-rendus</a>
+                <a href="/contact/" class="button button-outline" data-ghost-button>Me contacter</a>
               </div>
             </div>
-          </header>
+          </div>
         </div>
         <style>
+
+.grid {
+  display: grid;
+  gap: var(--gutter, var(--space-s-m));
+
+  /* 1. MOBILE (Moins de 480px) : 1 colonne */
+  /* Disposition : 6 lignes de 1 élément (Parfaitement aligné) */
+  grid-template-columns: 1fr;
+}
+
+/* 2. PETIT ÉCRAN / MOBILE PAYSAGE (Dès 480px) : 2 colonnes */
+/* Disposition : 3 lignes de 2 éléments (Aucun vide) */
+@media (min-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3. TABLETTE / ÉCRAN MOYEN (Dès 768px) : 3 colonnes */
+/* Disposition : 2 lignes de 3 éléments (Aucun vide) */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 4. GRAND ÉCRAN / DESKTOP (Dès 1200px) : 6 colonnes */
+/* Disposition : 1 seule ligne de 6 éléments (Tout est horizontal) */
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
 
             /* ─── Conteneur principal ─── */
         .hero-parallax {
@@ -56,25 +94,9 @@ description: "Livres, articles et conférences autour des sciences, de la philos
           object-fit: cover;
           object-position: center;
 
-          /* ✦ Le cœur du parallax CSS ✦ */
-          will-change: transform;
-          transform: translateY(0);
-          animation: parallax-scroll linear both;
-
-          /* Lie l'animation à la progression du scroll dans le viewport */
-          animation-timeline: view();
-          animation-range: entry 0% exit 100%;
-        }
-
-        @keyframes parallax-scroll {
-          from { transform: translateY(-15%); }
-          to   { transform: translateY(15%); }
-        }
-
         /* ─── Contenu au-dessus de l'image ─── */
         .hero-parallax__content {
           position: relative;
-          z-index: 1;
         }
 
         /* ─── Overlay sombre facultatif pour la lisibilité ─── */
@@ -108,6 +130,7 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
     filter: brightness(1);
     }
     img.couverture {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     filter: brightness(0.95);
         aspect-ratio: 9/14;
     }
@@ -129,59 +152,60 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
 <custom-masonry>
     {%- for livre in collections.livre | reverse -%}
 
-                {% if loop.index0 < 4 %}
+                {% if loop.index0 < 6 %}
      <a href="{{ livre.url }}">
     <figure>
 <img src="{{livre.data.imageUrl}}" alt="Première page de mon livre {{livre.data.title}}" class="couverture">
-<figcaption>{{ livre.data.description }}</figcaption>
+<!--<figcaption>{{ livre.data.description }}</figcaption>-->
 </figure>
 </a>
         {% endif %}
     {%- endfor -%}
 
 </custom-masonry>
-<div style="text-align: end;">
+<div style="text-align: end; margin-top:1rem;">
 <a class="button" href="/livres/" data-button-variant="primary" style="width:fit-content";>Tous les livres</a>
 </div>
 </section>
-  <!-- COMPTES-RENDUS-->
-  <section id="articles" class="full | region">
-    <div class="wrapper flow">
-      <h2>Mes derniers comptes rendus</h2>
+<section class="wrapper img-cover">
+      <h2 class="text-center mb-xl">Mes derniers comptes-rendus</h2>
+<custom-masonry>
+    {%- for rapport in collections.Rapports | reverse -%}
 
-      <p>Une veille intellectuelle continue : analyses, critiques et notes de lecture.</p>
-
-      <ol class="flow">
-      {%- for rapport in collections.Rapports | reverse -%}
-        {% if loop.index0 < 5 %}
-          <li><a href="comptes-rendus/{{ rapport.data.title | slugify }}">{{ rapport.data.title }} - {{ rapport.data.date.toLocaleString(undefined, { year: 'numeric' }) }}</a></li>
+                {% if loop.index0 < 6 %}
+     <a href="comptes-rendus/{{ rapport.data.title | slugify }}">
+    <figure>
+<img src="{{rapport.data.imageUrl}}" alt="Première page de mon livre {{livre.data.title}}" class="couverture">
+<!--<figcaption>{{ rapport.data.description }}</figcaption>-->
+</figure>
+</a>
         {% endif %}
-      {%- endfor -%}
-      </ol>
+    {%- endfor -%}
 
-      <a class="button" href="/comptes-rendus/" data-button-variant="primary" style="width:fit-content">Tous les comptes-rendus</a>
-      </div>
-      </section>
-
-  <!-- ARTICLES -->
-  <section id="articles" class="text-end full | region">
-    <div class="wrapper flow">
-      <h2>Mes derniers articles</h2>
-
-      <p>Une veille intellectuelle continue : analyses, critiques et notes de lecture.</p>
-
-      {%- for article in collections.article | reverse -%}
-        {% if loop.index0 < 5 %}
-          <br><a href="{{ article.data.permalink }}">{{ article.data.title }} - {{ article.data.date.toLocaleString(undefined, { year: 'numeric' }) }}</a></li>
+</custom-masonry>
+<div style="text-align: end; margin-top:1rem;">
+<a class="button" href="/comptes-rendus/" data-button-variant="primary" style="width:fit-content";>Tous les comptes-rendus</a>
+</div>
+</section>
+<section class="wrapper img-cover">
+      <h2 class="text-center mb-xl">Mes derniers articles</h2>
+<custom-masonry>
+    {%- for article in collections.article | reverse -%}
+                {% if loop.index0 < 6 %}
+     <a href="{{ article.data.externalLink or article.data.internalLink }}">
+    <figure>
+<img src="{{article.data.imageUrl}}" alt="{{ article.data.title }} - {{ article.data.date.toLocaleString(undefined, { year: 'numeric' }) }}" class="couverture">
+<!--<figcaption>{{ article.data.description }}</figcaption>-->
+</figure>
+</a>
         {% endif %}
-      {%- endfor -%}
+    {%- endfor -%}
 
-      </div>
-
-    <div class="wrapper flow justify-items-end">
-      <a class="button mt-xl" href="/articles/" data-button-variant="primary" style="width:fit-content;">Tous les articles</a>
-      </div>
-      </section>
+</custom-masonry>
+<div style="text-align: end; margin-top: 1rem;">
+<a class="button" href="/articles/" data-button-variant="primary" style="width:fit-content";>Tous les articles</a>
+</div>
+</section>
 
   <!-- CONFÉRENCES -->
   <section id="conferences" class="full | region spot-color-theme-accent bg-theme-dark text-theme-light" style="padding: 0 0 5rem 0">
@@ -189,7 +213,7 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
     <div class="wrapper flow pt-xl">
       <h2>Interventions</h2>
       <p>
-        Je donne régulièrement des conférences sur l’éthique animale, l’histoire et la philosophie des sciences, ainsi que sur la pensée critique.
+Je donne régulièrement des conférences sur trois domaines qui me tiennent particulièrement à cœur : l'éthique animale, l'histoire et la philosophie des sciences, et la pensée critique. Ces interventions s'adressent à des publics variés — étudiants, professionnels, grand public — et cherchent toujours à rendre accessibles des questions qui méritent, selon moi, d'être débattues bien au-delà des cercles académiques.
       </p>
       <div class="cluster">
         <a href="/interventions/" class="button button-outline">Voir mes interventions</a>
@@ -204,15 +228,9 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
     <div class="wrapper flow">
 
       <h2>Contact</h2>
-
-<a href="thom.lepeltier@gmail.com">thom.lepeltier@gmail.com</a>
-
-      <div class="cluster">
-        <a href="#">X</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">YouTube</a>
-      </div>
-
+<p>
+Je propose des conférences, débats et ateliers sur la philosophie des sciences et la cosmologie, adaptés aux universités, entreprises, festivals et médias. Mes interventions mêlent rigueur intellectuelle et accessibilité, pour des publics variés.</p><p>Contactez-moi : <a href="thom.lepeltier@gmail.com">thom.lepeltier@gmail.com</a>
+</p>
     </div>
   </section>
 
@@ -239,7 +257,9 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
   position: relative;
   overflow: hidden; /* À retirer si l'effet ne fonctionne pas */
 }
-
+img {
+border: 4px solid var(--color-text);
+}
 .hero-parallax__bg {
   position: absolute;
   inset: 0;
@@ -258,7 +278,17 @@ Historien et philosophe des sciences, Thomas Lepeltier développe depuis plusieu
 
 .hero-parallax__content {
   position: relative;
-  z-index: 1;
 }
 
+@layer blocks {
+  .indicator::after, a[href^="http"]:not([href*="localhost:8080"]):not([href*="eleventy-excellent.netlify.app"]):not(.no-indicator)::after {
+    background-image: none !important;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+img.couverture {
+width:70vw;
+}
+}
     </style>

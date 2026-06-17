@@ -5,12 +5,12 @@ description: 'Eleventy Excellent is inspired bythe companion website of Andy Bel
 layout: page
 ---
 
-<pre>
-    rajouter apala et d'autres sites
-</pre>
-
 <div data-pagefind-body>
 
+
+## **Think Do & Thank**
+
+- [Apala](https://apala.fr/) : THINK & DO TANK des transitions basé à Nantes sous ma direction.
 ##  **Sites sur des auteurs**
 
 -   [Foucault](http://www.fnet.fr/CMF/textepardefaut.html) : Le site du Centre Michel Foucault.
@@ -44,3 +44,11 @@ layout: page
 -   [La diplomatie française](http://www.diplomatie.fr/culture/france/biblio/folio/essai/index.html) : Quelques comptes rendus de livres français.
 -   [Paru.com](http://www.paru.com/) : Pour suivre l'actualité éditoriale.
 </div>
+
+<style>
+@layer global {
+  h2 {
+    font-size: var(--size-step-3);
+  }
+}
+</style>
