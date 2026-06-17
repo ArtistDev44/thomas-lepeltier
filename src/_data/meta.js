@@ -3,6 +3,7 @@ export const url = process.env.URL || 'http://localhost:8080';
 export const domain = new URL(url).hostname;
 export const siteName = 'Thomas Lepeltier';
 export const siteDescription = 'Docteur en astrophysique, historien et philosophe des sciences, Thomas Lepeltier présente ses livres, articles et plus de 500 comptes rendus d`essais.';
+;
 export const siteType = 'Person'; // schema
 export const locale = 'fr_FR';
 export const lang = 'fr';
@@ -20,7 +21,7 @@ export const author = {
 export const creator = {
   name: 'Guillaume RENOULT', // i.e. Lene Saile - creator's (developer) name.
   email: 'guillaume.renoult@mail-esd.com',
-  website: 'https://portfolio-guillaume-renoult.vercel.app/',
+  website: 'https://portfolio-guillaume-renoult.vercel.app/'
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
 export const themeColor = '#dd4462'; // used in manifest, for example primary color value
@@ -32,7 +33,8 @@ export const opengraph_default_alt =
 export const blog = {
   // RSS feed
   name: 'Comptes-rendus',
-  description: 'Persuadés que trop d\'essais ne trouvent pas le nombre de lecteurs qu\'ils méritent, nous publions des comptes rendus pour les faire connaître à un plus large public.',
+  description:
+    "Persuadés que trop d'essais ne trouvent pas le nombre de lecteurs qu'ils méritent, nous publions des comptes rendus pour les faire connaître à un plus large public.",
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     {
@@ -72,7 +74,7 @@ export const navigation = {
   ariaTop: 'Main',
   ariaBottom: 'Complementaire',
   ariaPlatforms: 'Plateformes',
-  drawerNav: false,
+  drawerNav: true,
   subMenu: true
 };
 export const themeSwitch = {

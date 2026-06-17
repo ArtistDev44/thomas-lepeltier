@@ -171,8 +171,7 @@ function applyBookDimensions() {
     if (!w || !h) return; // image pas encore chargée
 
     // Optionnel : limiter la taille max pour ne pas déborder l'écran
-    const maxWidth  = Math.min(w, window.innerWidth * 0.6);
-    const ratio     = maxWidth / w;
+    const maxWidth = Math.min(w, 500, window.innerWidth * 0.6);
     const finalW    = Math.round(w * ratio);
     const finalH    = Math.round(h * ratio);
 
