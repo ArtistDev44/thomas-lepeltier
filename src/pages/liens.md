@@ -8,9 +8,9 @@ layout: page
 <div data-pagefind-body>
 
 
-## **Think Do & Thank**
+## **Think & Do Tank des transitions**
 
-- [Apala](https://apala.fr/) : THINK & DO TANK des transitions basé à Nantes sous ma direction.
+- [APALA](https://apala.fr/) : Think Tank basé à Nantes sous ma direction.
 ##  **Sites sur des auteurs**
 
 -   [Foucault](http://www.fnet.fr/CMF/textepardefaut.html) : Le site du Centre Michel Foucault.

@@ -83,3 +83,10 @@ de l'information,
 > **Wiktor STOCZKOWSKI,**
 > Maître de conférences à
 > l'École des Hautes Études en Sciences Sociales (Paris).
+
+<style>
+:root {
+--size-step-2
+clamp(1.6875rem,1.36rem + 0.7vw,2.75rem) !important;
+}
+</style>

@@ -172,6 +172,7 @@ function applyBookDimensions() {
 
     // Optionnel : limiter la taille max pour ne pas déborder l'écran
     const maxWidth = Math.min(w, 500, window.innerWidth * 0.6);
+    const ratio    = maxWidth / w; // ← ratio calculé ici
     const finalW    = Math.round(w * ratio);
     const finalH    = Math.round(h * ratio);
 

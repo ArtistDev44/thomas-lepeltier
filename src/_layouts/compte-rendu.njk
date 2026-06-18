@@ -121,16 +121,3 @@ layout: base
 {% for livre in collections.livre %}
   <p>{{ livre.data.title }} → {{ livre.data.tags | dump }}</p>
 {% endfor %}
-
-<style>
-.lettrine {
-  float: left;
-  font-size: 4.5em;
-  line-height: 0.82;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  margin-right: 0.1em;
-  margin-top: 0.05em;
-  color: #2c1810;
-}
-</style>
