@@ -31,7 +31,7 @@ jobs:
           cache: 'pnpm'  # était 'npm'
 
       - name: Approve build scripts (sharp, esbuild)
-        run: pnpm approve-builds --yes esbuild sharp
+        run: pnpm approve-builds  esbuild sharp
 
       - name: Install dependencies
         run: pnpm install
