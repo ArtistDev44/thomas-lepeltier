@@ -1,0 +1,68 @@
+# .github/workflows/node.js.yml
+
+name: Node.js CI & Deploy
+
+on:
+  push:
+    branches: ["main"]
+  # Permet également de lancer le déploiement manuellement depuis l'onglet Actions
+  workflow_dispatch:
+
+# Autorise le workflow à modifier GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Évite les conflits si plusieurs commits sont poussés en même temps
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x] # Pas besoin de compiler sur plusieurs versions Node pour un déploiement stable
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      - name: Approve build scripts (sharp, esbuild)
+        run: pnpm approve-builds esbuild sharp
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Run Pagefind
+        run: npx -y pagefind --site dist
+
+      # --- ÉTAPES DE DÉPLOIEMENT AJOUTÉES ---
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist' # Le dossier généré par Eleventy
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

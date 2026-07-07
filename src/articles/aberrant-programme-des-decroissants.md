@@ -5,7 +5,7 @@ layout: "post.njk"
 category: "Économie"
 tags: ["article","Économie"]
 authors: []
-imageUrl: "/assets/images/articles/aberrant-programme-des-decroissants.webp"
+imageUrl: "/assets/images/articles/aberrant-programme-politique-des-decroissants.webp"
 internalLink: ""
 externalLink: "https://www.lepoint.fr/societe/laberrant-programme-politique-des-decroissants-UMWPHDFPPFB5VCLEGPIAVPYN7A/"
 buyLink: ""
