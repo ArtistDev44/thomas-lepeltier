@@ -2,8 +2,8 @@
 title: "100 Mots pour penser les sciences"
 date: 2003-01-01
 layout: "compte-rendu.njk"
-paru_dans_titre: "Revue de Métaphysique et de Morale"
-paru_dans_url: "https://exemple.com/revue"
+paru_dans_titre: "Sciences Humaines, 146, février 2004."
+paru_dans_url: "https://www.scienceshumaines.com"
 tags: ["Rapports", "Philosophie des sciences", "Sciences"]
 authorFullName: "Isabelle Stengers et Bernadette Bensaude-Vincent"
 authorLastName: "Bensaude-Vincent"

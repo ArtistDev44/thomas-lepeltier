@@ -27,12 +27,12 @@ export default {
       ]
     },
     {
-      text: 'Comptes-rendus',
-      url: '/comptes-rendus/'
-    },
-    {
       text: 'Articles',
       url: '/articles/'
+    },
+    {
+      text: 'Comptes rendus',
+      url: '/comptes-rendus/'
     },
     {
       text: 'Contact',
