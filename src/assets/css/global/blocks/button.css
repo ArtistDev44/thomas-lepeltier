@@ -113,3 +113,13 @@
   display: inline-grid;
   place-items: center;
 }
+
+a.button {
+	position:
+relative;
+	box-shadow:
+8px 8px 0px -3px var(--color-text);
+}
+footer a.button {
+    box-shadow: none;
+}

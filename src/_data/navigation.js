@@ -35,10 +35,6 @@ export default {
       url: '/articles/'
     },
     {
-      text: 'Liens',
-      url: '/liens/'
-    },
-    {
       text: 'Contact',
       url: '/contact/'
     }
@@ -49,11 +45,11 @@ export default {
       url: '/styleguide/'
     },
     {
-      text: 'Imprint',
+      text: 'Légal',
       url: '/imprint/'
     },
     {
-      text: 'Privacy',
+      text: 'Confidentialité',
       url: '/privacy/'
     },
   ]

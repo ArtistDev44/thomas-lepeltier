@@ -81,8 +81,6 @@ h3 {
   animation-delay: 0.6s;
 }
 
-element {
-}
 @layer blocks {
   .indicator,
   a[href^='http']:not([href*='localhost:8080']):not([href*='eleventy-excellent.netlify.app']):not(
@@ -105,19 +103,6 @@ header {
   background-color: var(--color-bg);
 }
 
-footer:after {
-  content: '';
-  position: absolute;
-  border: 50px solid transparent;
-  border-top: 50px solid #fefefe;
-  bottom: 0px;
-  right: 24px;
-  box-shadow: 0px -7px 6px -9px black;
-  transform: rotate(135deg);
-}
-footer {
-  position: relative; /* Indispensable pour le positionnement absolu de ::after */
-}
 .search-icon:hover {
   fill: var(--color-primary);
 }
@@ -129,6 +114,7 @@ footer {
 figure {
   text-align: center;
 }
+
 .lettrine {
   float: left;
   font-size: 4.5em;
