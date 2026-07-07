@@ -1,5 +1,5 @@
 ---
-title: "Univers parallèles : Le livre de tous les possibles"
+title: "Univers parallèles"
 date: 2010-01-01
 layout: "livre.njk"
 tags: ["livre", "mesLivres", "Astrophysique"]
