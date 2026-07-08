@@ -1,0 +1,101 @@
+---
+layout: base
+title: Chroniques de livres
+description: 'All blog posts can be found here'
+pagination:
+  data: collections.allPosts
+  size: 50
+permalink: 'chroniques/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+---
+
+<div class="wrapper">
+  <div class="full | section spot-color-theme-primary">
+    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
+      <h1 class="text-center text-theme-light">{{ title }}</h1>
+    </div>
+
+    {% svg "divider/edgy", null, "divider" %}
+  </div>
+
+  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
+    <p>Des chroniques de livres, précis, fidèles et, parfois, critiques.
+    </p>
+  </div>
+  <h2> Rechercher une chronique </h2>
+  <style>
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .search-main {
+    gap: 1rem;
+  }
+
+  .search-sidebar {
+    flex: 0 0 250px;
+  }
+
+  .search-results {
+    flex: 1;
+  }
+  :root {
+      --pf-input-height: 48px !important;
+      --pf-input-font-size: 20px; /* Keep at 16px+ to prevent iOS auto-zoom on focus */
+      --pf-outline-focus: #ff922b !important;
+  }
+  </style>
+  <div style="display: grid; gap: 16px;">
+
+<pagefind-modal-trigger></pagefind-modal-trigger>
+<pagefind-modal></pagefind-modal>
+
+    </div>
+
+
+{% js "inline" %}
+ {% include "scripts/search_cr.js" %}
+{% endjs %}
+
+  <custom-masonry layout="50-50">
+		{% asyncEach item in pagination.items %}
+			{% include "partials/card-blog.njk" %}
+		{% endeach %}
+	</custom-masonry>
+
+  <!-- set collection to paginate -->
+  {% set collectionToPaginate = collections.posts %}
+  <!-- set target pagination settings in meta.js -->
+  {% set metaKey = "blog" %}
+  <!-- if the number of items in the collection is greater than the number of items shown on one page -->
+  {% if collectionToPaginate.length > pagination.size %}
+    <!-- include pagination -->
+    {% include 'partials/pagination.njk' %}
+  {% endif %}
+</div>
+<style>
+.prose :is(p,li,dl,blockquote) {
+    max-inline-size: none;
+    text-wrap: pretty;
+}
+pagefind-modal-trigger {
+  margin: 2rem 0;
+  }
+
+.space-top {
+    margin:0 !important;
+}
+header {
+  box-shadow: none;
+  position:initial;
+  top: 0px;
+  z-index: 10;
+  background-color: var(--color-bg);
+}
+</style>
+
+{% js "inline" %}
+ {% include "scripts/search_cr.js" %}
+{% endjs %}

@@ -1,0 +1,283 @@
+---
+layout: base
+---
+
+<div data-pagefind-body data-pagefind-filter="section: Chroniques" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl);">
+    <h1 class="gradient-text">Chronique de {{ title }}</h1>
+<div class="tags-container">
+{% for tag in tags %}
+  <a href="/tags/{{ tag | slugify }}"><span slot="tag" class="button">{{ tag }}</span></a>
+{% endfor %}
+</div>
+
+<p>Rédigé en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}
+</p>
+<div>
+
+    {% include 'partials/livre3D.njk' %}
+  <div data-pagefind-ignore>
+      {{ content | lettrine | safe }}
+  </div>
+  </div>
+  <div>
+<a class="button" href="{{amazonLink}}">Lien amazon</a>
+</div>
+{% if paru_dans_titre %}
+  <p class="publication-source">
+    Paru dans
+    {% if paru_dans_url %}
+      <a href="{{ paru_dans_url }}" target="_blank" rel="noopener noreferrer">
+        {{ paru_dans_titre }}
+      </a>
+    {% else %}
+      <em>{{ paru_dans_titre }}</em>
+    {% endif %}
+  </p>
+{% endif %}
+
+
+
+
+
+<div data-pagefind-ignore>
+{% set related = collections.Rapports | relatedRapports(tags, page.url) %}
+{% if related.length %}
+  <h2>Chroniques similaires</h2>
+    {%- for rapport in related -%}
+
+ <custom-card>
+<small>
+  Tags communs :
+  {%- for tag in rapport.data.tags -%}
+    {%- if tags.includes(tag) %} {{ tag }}{%- endif -%}
+  {%- endfor -%}
+</small>
+    <div slot="footer">        <a href="{{ rapport.url }}">{{ rapport.data.title }}</a>
+    </div>
+  </custom-card>
+
+<img src="{{ rapport.data.imageUrl }}" alt="Image d'illustration du rapport nommé {{ rapport.data.title }}">
+
+    {%- endfor -%}
+{% endif %}
+{% set related = collections.livre | relatedLivres(tags, page.url) %}
+{% if related.length %}
+  <h2>Livres recommandés</h2>
+<custom-masonry>
+    {%- for livre in related -%}
+      <li>
+        <a href="{{ livre.url }}">{{ livre.data.title }}</a>
+        <small>
+          Tags communs :
+          {%- for tag in livre.data.tags -%}
+            {%- if tags.includes(tag) %} {{ tag }}{%- endif -%}
+          {%- endfor -%}
+        </small>
+      </li>
+    {%- endfor -%}
+</custom-masonry>
+{% endif %}
+
+{# Debug temporaire #}
+<p>Collection livre count: {{ collections.livre | length }}</p>
+<p>Tags actuels: {{ tags | dump }}</p>
+<p>Related count: {{ related | length }}</p>
+
+{% for livre in collections.livre %}
+  <p>{{ livre.data.title }} → {{ livre.data.tags | dump }}</p>
+{% endfor %}
+{% if reviews and reviews.length > 0 %}
+<section class="reviews" aria-label="Critiques">
+  <h2>Ce qu'en disent les lecteurs</h2>
+
+<div class="reviews_grid">
+  {% for review in reviews %}
+  <article class="review {% if review.featured %}review--featured{% endif %}">
+
+    {% if review.excerpt or review.content %}
+    <blockquote class="review__quote">
+      {{ review.excerpt or review.content }}
+    </blockquote>
+    {% endif %}
+
+    <footer class="review__meta">
+
+      {% if review.author %}
+      <cite class="review__author">
+        {% if review.author_url %}
+          <a href="{{ review.author_url }}" rel="noopener">{{ review.author }}</a>
+        {% else %}
+          {{ review.author }}
+        {% endif %}
+        {% if review.author_role %}
+          <span class="review__role">— {{ review.author_role }}</span>
+        {% endif %}
+      </cite>
+      {% endif %}
+
+      {% if review.source %}
+      <span class="review__source">
+        {% if review.source_url %}
+          <a href="{{ review.source_url }}" rel="noopener external">{{ review.source }}</a>
+        {% else %}
+          {{ review.source }}
+        {% endif %}
+      </span>
+      {% endif %}
+
+      {% if review.rating %}
+      <span class="review__rating" aria-label="Note : {{ review.rating }} sur {{ review.rating_max or 5 }}">
+        {{ review.rating }}/{{ review.rating_max or 5 }}
+      </span>
+      {% endif %}
+
+      {% if review.sentiment %}
+      <span class="review__sentiment review__sentiment--{{ review.sentiment }}">
+        {{ review.sentiment | capitalize }}
+      </span>
+      {% endif %}
+
+    </footer>
+  </article>
+  {% endfor %}
+</div>
+</section>
+{% endif %}
+
+
+</div>
+<style>
+/* ── Section wrapper ─────────────────────────────── */
+.reviews {
+  margin-top: var(--space-xl-2xl, 4rem);
+  padding-top: var(--space-l, 2rem);
+  border-top: 1px solid #e8e4df;
+}
+
+.reviews > h2 {
+  font-size: var(--size-step-2, 1.5rem);
+  margin-bottom: var(--space-l, 2rem);
+}
+
+/* ── Card ────────────────────────────────────────── */
+.review {
+  padding: var(--space-m, 1.5rem);
+  border-left: 4px solid #c8b99a;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: var(--space-m, 1.5rem);
+}
+
+/* ── Quote ───────────────────────────────────────── */
+.review__quote {
+  margin: 0 0 var(--space-s, 1rem) 0;
+  padding: 0 0 0 1.75rem;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-style: italic;
+  position: relative;
+}
+
+.review__quote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -0.8rem;
+  font-size: 4rem;
+  color: #c8b99a;
+  line-height: 1;
+  font-style: normal;
+  font-family: Georgia, serif;
+}
+
+/* ── Meta footer ─────────────────────────────────── */
+.review__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  padding-top: var(--space-s, 0.75rem);
+  border-top: 1px solid #e8e4df;
+  font-size: 1rem;
+}
+
+/* ── Author ──────────────────────────────────────── */
+.review__author {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.review__author a {
+  text-decoration: none;
+}
+
+.review__author a:hover {
+  text-decoration: underline;
+}
+
+.review__role {Ce qu'en disent les lecteurs
+  font-style: italic;
+  font-size: 1rem;
+}
+
+/* ── Source ───────────────────────────────────── */
+
+.review__source a {
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.review__source a:hover {
+  text-decoration: underline;
+}
+
+/* ── Rating ──────────────────────────────────────── */
+.review__rating {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Sentiment badge ─────────────────────────────── */
+.review__sentiment {
+  font-size: 1rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 2px;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+footer.review__meta {
+  color: var(--color-gray-200)
+}
+
+@layer blocks {
+  .prose :is(p, li, dl, blockquote) {
+    max-inline-size: none !important;
+    text-wrap: pretty;
+  }
+}
+
+@layer blocks {
+  .indicator::after, a[href^="http"]:not([href*="localhost:8080"]):not([href*="eleventy-excellent.netlify.app"]):not(.no-indicator)::after {
+    background-image: none !important;
+  }
+  }
+    p.author_cr {
+        text-align: right;
+    }
+
+    .image-left {
+      float: left;
+      margin-right: 15px;
+    }
+@layer global {
+  h1 {
+    font-size: var(--size-step-4) !important;
+  }
+}
+
+@layer blocks {
+  .indicator::after, a[href^="http"]:not([href*="localhost:8080"]):not([href*="eleventy-excellent.netlify.app"]):not(.no-indicator)::after {
+    background-image: none !important;
+</style>

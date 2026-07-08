@@ -1,0 +1,8 @@
+<is-land on:visible>
+  <custom-masonry-no-js class="grid" data-rows="masonry" :data-layout="layout" webc:root webc:keep>
+    <slot></slot>
+
+    <template data-island="once" webc:raw>
+    </template>
+  </custom-masonry>
+</is-land>
