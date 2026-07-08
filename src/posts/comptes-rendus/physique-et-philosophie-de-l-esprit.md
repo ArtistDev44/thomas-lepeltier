@@ -1,8 +1,8 @@
 ---
 title: "Physique et Philosophie de l’esprit"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie", "Philosophie des sciences"]
 authorFullName: "Michel Bitbol"
 authorLastName: "Bitbol"
 imageUrl: "/assets/images/couvertures/bitbol-physique-et-philosophie-de-l-esprit.webp"

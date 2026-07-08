@@ -31,8 +31,8 @@ export default {
       url: '/articles/'
     },
     {
-      text: 'Comptes rendus',
-      url: '/comptes-rendus/'
+      text: 'Chroniques',
+      url: '/chroniques/'
     },
     {
       text: 'Contact',
@@ -46,11 +46,11 @@ export default {
     },
     {
       text: 'Légal',
-      url: '/imprint/'
+      url: '/legal/'
     },
     {
       text: 'Confidentialité',
-      url: '/privacy/'
-    },
+      url: '/confidentialite/'
+    }
   ]
 };

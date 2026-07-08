@@ -1,8 +1,8 @@
 ---
 title: "Après Darwin. La biologie, une science pas comme les autres"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Ernst Mayr"
 authorLastName: "Mayr"
 imageUrl: "/assets/images/couvertures/mayr-apres-Darwin-biologie-science.webp"

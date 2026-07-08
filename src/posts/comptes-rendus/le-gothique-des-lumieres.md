@@ -1,8 +1,8 @@
 ---
 title: "Le Gothique des Lumières"
 date: 1991-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Michel Baridon"
 authorLastName: "Baridon"
 imageUrl: "/assets/images/couvertures/baridon-gothique-des-lumieres.webp"

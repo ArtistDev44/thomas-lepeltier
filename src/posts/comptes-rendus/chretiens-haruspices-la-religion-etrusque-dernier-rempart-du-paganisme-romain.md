@@ -1,8 +1,8 @@
 ---
 title: "Chrétiens & haruspices. La religion étrusque, dernier rempart du paganisme romain"
 date: 1997-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Dominique Briquel"
 authorLastName: "Briquel"
 imageUrl: "/assets/images/couvertures/briquel-chretiens-haruspices-la-religion-etrusque-dernier-rempart-du-paganisme-romain.webp"

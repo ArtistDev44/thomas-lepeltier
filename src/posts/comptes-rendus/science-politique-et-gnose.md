@@ -1,8 +1,8 @@
 ---
 title: "Science, politique et gnose"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie", "Religion"]
 authorFullName: "Eric Voegelin"
 authorLastName: "Voegelin"
 imageUrl: "/assets/images/couvertures/voegelin-science-politique-gnose.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Un Crime contre l'espèce humaine ? Enfants clonés, enfants damnés"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Philippe Descamps"
 authorLastName: "Descamps"
 imageUrl: "/assets/images/couvertures/descamps-crime-contre-espece-humaine-enfants-clones.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Ainsi s’achèvent les expériences. La place des expériences dans la physique du XXe siècle"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Peter Galison"
 authorLastName: "Galison"
 imageUrl: "/assets/images/couvertures/galison-ainsi-s-achevent-les-experiences.webp"

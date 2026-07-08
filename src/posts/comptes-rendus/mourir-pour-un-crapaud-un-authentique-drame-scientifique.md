@@ -1,8 +1,8 @@
 ---
 title: "Mourir pour un crapaud. Un authentique drame scientifique"
 date: 2011-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Catherine Bousquet"
 authorLastName: "Bousquet"
 imageUrl: "/assets/images/couvertures/bousquet-mourir-pour-un-crapaud.webp"

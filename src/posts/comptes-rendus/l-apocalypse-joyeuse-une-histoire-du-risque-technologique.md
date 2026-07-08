@@ -1,8 +1,8 @@
 ---
 title: "L’Apocalypse joyeuse. Une histoire du risque technologique"
 date: 2012-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Jean-Baptiste Fressoz"
 authorLastName: "Fressoz"
 imageUrl: "/assets/images/couvertures/fressoz-apocalypse-joyeuse.webp"

@@ -1,8 +1,8 @@
 ---
 title: "La Finalité dans la nature. De Descartes à Kant"
 date: 1997-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Colas Duflo"
 authorLastName: "Duflo"
 imageUrl: "/assets/images/couvertures/duflo-finalite-dans-la-nature-descartes-kant.webp"

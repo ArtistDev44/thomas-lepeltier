@@ -1,8 +1,8 @@
 ---
 title: "La Vitesse de l’ombre. Aux limites de la science"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Jean-Marc Lévy-Leblond"
 authorLastName: "Lévy-Leblond"
 imageUrl: "/assets/images/couvertures/levy-leblond-vitesse-de-l-ombre.webp"

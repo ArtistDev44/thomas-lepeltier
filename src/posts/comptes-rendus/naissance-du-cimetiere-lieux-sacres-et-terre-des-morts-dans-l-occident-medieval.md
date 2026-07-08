@@ -1,8 +1,8 @@
 ---
 title: "Naissance du cimetière. Lieux sacrés et terre des morts dans l’Occident médiéval"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Michel Lauwers"
 authorLastName: "Lauwers"
 imageUrl: "/assets/images/couvertures/lauwers-naissance-du-cimetiere.webp"

@@ -1,8 +1,8 @@
 ---
 title: "La Vérité dans les sciences"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Jean-Pierre Changeux (ed)"
 authorLastName: "(ed)"
 imageUrl: "/assets/images/couvertures/changeux-verite-dans-les-sciences.webp"

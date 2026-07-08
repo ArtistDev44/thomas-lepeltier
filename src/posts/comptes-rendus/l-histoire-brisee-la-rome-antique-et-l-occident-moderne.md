@@ -1,8 +1,8 @@
 ---
 title: "L’histoire brisée. La Rome antique et l’Occident moderne"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Aldo Schiavone"
 authorLastName: "Schiavone"
 imageUrl: "/assets/images/couvertures/schiavone-histoire-brisee-rome-antique-Occident-moderne.webp"

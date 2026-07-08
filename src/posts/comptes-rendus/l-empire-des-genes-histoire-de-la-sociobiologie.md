@@ -1,8 +1,8 @@
 ---
 title: "L'Empire des gènes. Histoire de la sociobiologie"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Jacques G. Ruelland"
 authorLastName: "G. Ruelland"
 imageUrl: "/assets/images/couvertures/ruelland-empire-des-genes-sociobiologie.webp"

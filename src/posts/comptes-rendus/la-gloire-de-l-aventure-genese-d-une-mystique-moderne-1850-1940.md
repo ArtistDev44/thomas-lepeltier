@@ -1,8 +1,8 @@
 ---
 title: "La Gloire de l’aventure. Genèse d’une mystique moderne, 1850-1940"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Sylvain Venayre"
 authorLastName: "Venayre"
 imageUrl: "/assets/images/couvertures/venayre-gloire-aventure.webp"

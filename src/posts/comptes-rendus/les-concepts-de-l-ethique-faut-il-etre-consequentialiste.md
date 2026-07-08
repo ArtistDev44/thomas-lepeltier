@@ -1,8 +1,8 @@
 ---
 title: "Les Concepts de l’éthique. Faut-il être conséquentialiste ?"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Ruwen Ogien et Christine Tappolet"
 authorLastName: "Tappolet"
 imageUrl: "/assets/images/couvertures/ogien-tappolet-concepts-ethique.webp"

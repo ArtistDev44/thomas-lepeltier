@@ -1,8 +1,8 @@
 ---
 title: "Les Secrets du vivant. Contre la pensée unique en biologie"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Michel Morange"
 authorLastName: "Morange"
 imageUrl: "/assets/images/couvertures/morange-secrets-du-vivant-biologie.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Galilée et Kepler"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Massimo Bucciantini"
 authorLastName: "Bucciantini"
 imageUrl: "/assets/images/couvertures/bucciantini-galilee-kepler-philosophie-cosmologie-theologie-contre-reforme.webp"

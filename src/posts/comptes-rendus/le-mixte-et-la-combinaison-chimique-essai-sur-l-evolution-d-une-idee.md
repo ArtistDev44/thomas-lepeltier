@@ -1,8 +1,8 @@
 ---
 title: "Le Mixte et la combinaison chimique. Essai sur l'évolution d'une idée"
 date: 1902-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Pierre Duhem"
 authorLastName: "Duhem"
 imageUrl: "/assets/images/couvertures/duhem-le-mixte-et-la-combinaison-chimique.webp"

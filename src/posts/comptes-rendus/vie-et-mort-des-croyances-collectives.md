@@ -1,8 +1,8 @@
 ---
 title: "Vie et mort des croyances collectives"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Gérald Bronner"
 authorLastName: "Bronner"
 imageUrl: "/assets/images/couvertures/bronner-vie-et-mort-des-croyances-collectives.webp"

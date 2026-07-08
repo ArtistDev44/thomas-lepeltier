@@ -1,8 +1,8 @@
 ---
 title: "La Philosophie des actes de langage"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Michael Soubbotnik"
 authorLastName: "Soubbotnik"
 imageUrl: "/assets/images/couvertures/soubbotnik-philosophie-des-actes-de-langage.webp"

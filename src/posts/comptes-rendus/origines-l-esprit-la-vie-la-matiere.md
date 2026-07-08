@@ -1,8 +1,8 @@
 ---
 title: "Origines. L’esprit, la vie, la matière"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "David Berlinski"
 authorLastName: "Berlinski"
 imageUrl: "/assets/images/couvertures/berlinski-origines-esprit-vie-matiere.webp"

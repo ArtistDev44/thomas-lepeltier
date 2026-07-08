@@ -1,8 +1,8 @@
 ---
 title: "Que faisiez-vous avant le big bang ?"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Edgard Gunzig"
 authorLastName: "Gunzig"
 imageUrl: "/assets/images/couvertures/gunzig-que-faisiez-vous-avant-le-big-bang.webp"

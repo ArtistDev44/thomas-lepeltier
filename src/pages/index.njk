@@ -23,14 +23,14 @@ description: "Thomas Lepeltier"
               >
             </div>
             <div class="flow region text-center text-theme-light hero-parallax__content">
-              <h1>Thomas Lepeltier, un regard décalé sur les sciences, l’éthique et les grands problèmes de société</h1>
+              <h1 class="presentation">Thomas Lepeltier, un regard décalé sur les sciences, l’éthique et les grands problèmes de société</h1>
               <p class="lead width-md">
 
               </p>
               <div class="cluster justify-center">
                 <a href="/livres/" class="button" data-ghost-button>Voir mes livres</a>
                 <a href="/articles/" class="button" data-ghost-button>Voir mes articles</a>
-                <a href="/comptes-rendus/" class="button" data-ghost-button>Voir mes comptes rendus</a>
+                <a href="/chroniques/" class="button" data-ghost-button>Voir mes chroniques</a>
                 <a href="/interventions/" class="button" data-ghost-button>Voir mes conférences</a>
                 <a href="/contact/" class="button button-outline" data-ghost-button>Me contacter</a>
               </div>
@@ -109,7 +109,11 @@ description: "Thomas Lepeltier"
           z-index: 1;
         }
 
-        </style>
+
+  h1.presentation {
+    font-size: var(--size-step-4) !important;
+  }
+       </style>
   <!-- BIO -->
   <section id="biographie" class="full | region">
     <div class="wrapper flow">
@@ -169,28 +173,31 @@ Essayiste, Thomas Lepeltier développe depuis plusieurs années une œuvre consa
 <a class="button" href="/livres/" data-button-variant="primary" style="width:fit-content";>Tous les livres</a>
 </div>
 </section>
-<section class="wrapper img-cover">
-      <h2 class="text-center mb-xl">Mes derniers comptes rendus</h2>
-<custom-masonry>
-    {%- for rapport in collections.Rapports | reverse -%}
+<section class="wrapper">
+  <h2 class="text-center mb-xl">Mes dernières chroniques</h2>
 
-                {% if loop.index0 < 6 %}
-     <a href="comptes-rendus/{{ rapport.data.title | slugify }}">
-    <figure>
-<img src="{{rapport.data.imageUrl}}" alt="Première page de mon livre {{livre.data.title}}" class="couverture">
-<!--<figcaption>{{ rapport.data.description }}</figcaption>-->
-</figure>
-</a>
-        {% endif %}
+  <custom-masonry>
+    {%- for chronique in collections.Chronique | reverse -%}
+      {% if loop.index0 < 6 %}
+        <a href="/chroniques/{{ chronique.url | url | slug }}">
+          <figure>
+            <img src="{{ chronique.data.imageUrl }}"
+                 alt="{{ chronique.data.title }}"
+                 class="couverture">
+          </figure>
+        </a>
+      {% endif %}
     {%- endfor -%}
+  </custom-masonry>
 
-</custom-masonry>
-<div style="text-align: end; margin-top:1rem;">
-<a class="button" href="/comptes-rendus/" data-button-variant="primary" style="width:fit-content";>Tous les comptes-rendus</a>
-</div>
+  <div style="text-align: end; margin-top:1rem;">
+    <a class="button" href="/chroniques/" data-button-variant="primary" style="width:fit-content;">Toutes les chroniques</a>
+  </div>
 </section>
+
 <section class="wrapper img-cover">
-      <h2 class="text-center mb-xl">Mes derniers articles</h2>
+  <h2 class="text-center mb-xl">Mes derniers articles</h2>
+
 <custom-masonry>
     {%- for article in collections.article | reverse -%}
                 {% if loop.index0 < 6 %}

@@ -1,8 +1,8 @@
 ---
 title: "Va savoir ! De la connaissance en général"
 date: 2007-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Pascal Engel"
 authorLastName: "Engel"
 imageUrl: "/assets/images/couvertures/engel-va-savoir-connaissance.webp"

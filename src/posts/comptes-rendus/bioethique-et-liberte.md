@@ -1,8 +1,8 @@
 ---
 title: "Bioéthique et liberté"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Axel Kahn et Dominique Lecourt"
 authorLastName: "Lecourt"
 imageUrl: "/assets/images/couvertures/kahn-lecourt-bioethique-et-liberte.webp"

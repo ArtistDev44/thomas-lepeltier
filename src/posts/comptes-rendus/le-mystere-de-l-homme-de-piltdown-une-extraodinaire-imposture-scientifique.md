@@ -1,8 +1,8 @@
 ---
 title: "Le Mystère de l'homme de Piltdown. Une extraodinaire imposture scientifique"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Herbert Thomas"
 authorLastName: "Thomas"
 imageUrl: "/assets/images/couvertures/thomas-le-mystere-de-homme-de-piltdown.webp"

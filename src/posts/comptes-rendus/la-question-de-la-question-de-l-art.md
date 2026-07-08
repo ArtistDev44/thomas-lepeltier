@@ -1,8 +1,8 @@
 ---
 title: "La Question de la question de l’art"
 date: 1994-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Dominique Chateau"
 authorLastName: "Chateau"
 imageUrl: "/assets/images/couvertures/chateau-la-question-de-la-question-de-l-art.webp"

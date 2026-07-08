@@ -1,8 +1,8 @@
 ---
 title: "L’Éternité par les astres"
 date: 1872-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Louis-Auguste Blanqui"
 authorLastName: "Blanqui"
 imageUrl: "/assets/images/couvertures/blanqui-eternite-par-les-astres.webp"

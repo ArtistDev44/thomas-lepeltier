@@ -1,8 +1,8 @@
 ---
 title: "Petite histoire de l’Afrique"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Catherine Coquery-Vidrovitch"
 authorLastName: "Coquery-Vidrovitch"
 imageUrl: "/assets/images/couvertures/coquery-vidrovitch-petite-histoire-de-l-afrique.webp"

@@ -1,8 +1,8 @@
 ---
 title: "L’Invention technique au siècle des Lumières"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences", "Histoire"]
 authorFullName: "Liliane Hilaire-Pérez"
 authorLastName: "Hilaire-Pérez"
 imageUrl: "/assets/images/couvertures/hilaire-rperez-invention-technique-siecle-lumieres.webp"

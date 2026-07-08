@@ -1,8 +1,8 @@
 ---
 title: "La Nature de l’espace et du temps"
 date: 1996-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Stephen Hawking et Roger Penrose"
 authorLastName: "Penrose"
 imageUrl: "/assets/images/couvertures/hawking-penrose-nature-espace-temps.webp"

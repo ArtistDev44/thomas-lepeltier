@@ -3,7 +3,7 @@ export const url = process.env.URL || 'http://localhost:8080';
 export const domain = new URL(url).hostname;
 export const siteName = 'Thomas Lepeltier';
 export const siteDescription =
-  'Docteur en astrophysique, historien et philosophe des sciences, Thomas Lepeltier présente ses livres, articles et plus de 500 comptes rendus d`essais.';
+  'Docteur en astrophysique, historien et philosophe des sciences, Thomas Lepeltier présente ses livres, articles et plus de 500 chroniques d`essais.';
 export const siteType = 'Person'; // schema
 export const locale = 'fr_FR';
 export const lang = 'fr';
@@ -29,12 +29,12 @@ export const themeLight = '#f8f8f8'; // used for meta tag theme-color, if light 
 export const themeDark = '#2e2e2e'; // used for meta tag theme-color, if dark colors are prefered. best use value set for dark bg
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
 export const opengraph_default_alt =
-  "Thomas Lepeltier, docteur en astrophysique, philosophe et historien des sciences. Livres, articles et plus de 500 comptes rendus d'essais.";
+  "Thomas Lepeltier, docteur en astrophysique, philosophe et historien des sciences. Livres, articles et plus de 500 chroniques d'essais.";
 export const blog = {
   // RSS feed
-  name: 'Comptes-rendus',
+  name: 'Chroniques',
   description:
-    "Persuadés que trop d'essais ne trouvent pas le nombre de lecteurs qu'ils méritent, nous publions des comptes rendus pour les faire connaître à un plus large public.",
+    "Persuadés que trop d'essais ne trouvent pas le nombre de lecteurs qu'ils méritent, nous publions des chroniques pour les faire connaître à un plus large public.",
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     {

@@ -1,8 +1,8 @@
 ---
 title: "Les Racines sociales et économiques des"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Boris Hessen"
 authorLastName: "Hessen"
 imageUrl: "/assets/images/couvertures/hessen-racines-sociales-economiques-principia-newton.webp"

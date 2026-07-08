@@ -1,8 +1,8 @@
 ---
 title: "Le Puzzle philosophique"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Jiri Benovsky"
 authorLastName: "Benovsky"
 imageUrl: "/assets/images/couvertures/benovsky-puzzle-philosophique.webp"

@@ -1,8 +1,8 @@
 ---
 title: "L'Herméneutique du sujet. Cours au Collège de France, 1981-1982"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Michel Foucault"
 authorLastName: "Foucault"
 imageUrl: "/assets/images/couvertures/foucault-hermeneutique-du-sujet-cours-college-de-france.webp"

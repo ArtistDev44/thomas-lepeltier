@@ -1,8 +1,8 @@
 ---
 title: "Les Christianismes disparus. La bataille pour les écritures"
 date: 2007-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Bart Ehrman"
 authorLastName: "Ehrman"
 imageUrl: "/assets/images/couvertures/ehrman-christianismes_disparus.webp"

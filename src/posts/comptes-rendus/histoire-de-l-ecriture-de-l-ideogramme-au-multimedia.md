@@ -1,8 +1,8 @@
 ---
 title: "Histoire de l’écriture. De l’idéogramme au multimédia"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Anne-Marie Christin (ed)"
 authorLastName: "(ed)"
 imageUrl: "/assets/images/couvertures/christin-histoire-de-l-ecriture-ideogramme-multimedia.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Bachelard dans le monde"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Jean Gayon et Jean-Jacques Wunenburger (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/gayon-wunenburger-bachelard-dans-le-monde.webp"

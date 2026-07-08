@@ -1,8 +1,8 @@
 ---
 title: "Cracked. Why Psychiatry is Doing More Harm Than Good"
 date: 2013-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "James Davies"
 authorLastName: "Davies"
 imageUrl: "/assets/images/couvertures/davies-cracked.webp"

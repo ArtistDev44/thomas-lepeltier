@@ -1,8 +1,8 @@
 ---
 title: "La Fin du sacrifice. Les Mutations religieuses de l’Antiquité tardive"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion", "Histoire"]
 authorFullName: "Guy Stroumsa"
 authorLastName: "Stroumsa"
 imageUrl: "/assets/images/couvertures/stroumsa-fin-du-sacrifice-mutations-religieuses-antiquite-tardive.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Pour les Lumières. Défense, illustration, méthode"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Robert Darnton"
 authorLastName: "Darnton"
 imageUrl: "/assets/images/couvertures/darnton-pour-les-lumieres.webp"

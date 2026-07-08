@@ -1,8 +1,8 @@
 ---
 title: "Michelet et la Renaissance"
 date: 1943-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Lucien Febvre"
 authorLastName: "Febvre"
 imageUrl: "/assets/images/couvertures/febvre-michelet-et-la-renaissance.webp"

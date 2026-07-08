@@ -18,7 +18,7 @@ permalink: '/articles/index.html'
 </div>
 
 <div class="cards-grid">
-  <custom-masonry>
+  <custom-masonry-no-js>
     {%- for article in collections.article | reverse -%} {# --- LOGIQUE DE LIEN --- #} {# On définit le lien :
     externe d'abord, sinon interne, sinon l'URL d'Eleventy #} {% set targetUrl = article.data.externalLink or
     article.data.internalLink or article.url %} {# On vérifie si c'est un lien externe pour le comportement du

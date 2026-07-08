@@ -1,8 +1,8 @@
 ---
 title: "L'Utérus, la technique et l'amour. L'enfant et l'ectogenèse"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Philippe Descamps"
 authorLastName: "Descamps"
 imageUrl: "/assets/images/couvertures/descamps-uterus-technique-amour-enfant-ectogenese.webp"

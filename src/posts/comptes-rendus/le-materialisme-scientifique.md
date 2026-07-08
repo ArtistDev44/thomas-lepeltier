@@ -1,8 +1,8 @@
 ---
 title: "Le Matérialisme scientifique"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie", "Philosophie des sciences"]
 authorFullName: "Mario Bunge"
 authorLastName: "Bunge"
 imageUrl: "/assets/images/couvertures/bunge-materialisme-scientifique.webp"

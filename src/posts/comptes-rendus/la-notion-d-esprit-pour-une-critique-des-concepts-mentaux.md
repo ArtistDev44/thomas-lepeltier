@@ -1,8 +1,8 @@
 ---
 title: "La Notion d’esprit. Pour une critique des concepts mentaux"
 date: 1949-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Gilbert Ryle"
 authorLastName: "Ryle"
 imageUrl: "/assets/images/couvertures/ryle-notion-d-esprit-concepts-mentaux.webp"

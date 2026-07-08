@@ -1,8 +1,8 @@
 ---
 title: "La justice climatique"
 date: 2024-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Pierre André et Axel Gosseries"
 authorLastName: "Gosseries"
 imageUrl: "/assets/images/couvertures/andre-gosseries-la-justice-climatique.webp"

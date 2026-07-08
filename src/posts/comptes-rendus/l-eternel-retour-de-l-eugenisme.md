@@ -1,8 +1,8 @@
 ---
 title: "L’Éternel retour de l’eugénisme"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Jean Gayon et Daniel Jacobi (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/gayon-jacobi-eternel-retour-eugenisme.webp"

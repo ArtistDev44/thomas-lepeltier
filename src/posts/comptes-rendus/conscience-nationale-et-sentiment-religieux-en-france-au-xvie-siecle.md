@@ -1,8 +1,8 @@
 ---
 title: "Conscience nationale et sentiment religieux en France au XVIe siècle"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Alain Tallon"
 authorLastName: "Tallon"
 imageUrl: "/assets/images/couvertures/tallon-conscience-nationale-et-sentiment-religieux-en-france.webp"

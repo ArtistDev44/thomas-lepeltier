@@ -1,8 +1,8 @@
 ---
 title: "Delusions of Gender. The Real Science Behind Sex Differences"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Cordelia Fine"
 authorLastName: "Fine"
 imageUrl: "/assets/images/couvertures/fine-delusions-of-gender-science-behind-sex-differences.webp"

@@ -38,10 +38,10 @@ layout: page
 -   [Pagina](http://www.pagina.tm.fr/) : Une revue sur l'actualité littéraire et la production éditoriale.
 -    [République Internationale des Lettres](http://www.republique-des-lettres.com/) : Un journal mensuel d'informations culturelles, de débats intellectuels et de critique littéraire.
 
-## **Sites proposant des comptes rendus de livres**
+## **Sites proposant des chroniques de livres**
 
 -   [Danny YEE](http://dannyreviews.com/) : Un site très éclectique (en anglais).
--   [La diplomatie française](http://www.diplomatie.fr/culture/france/biblio/folio/essai/index.html) : Quelques comptes rendus de livres français.
+-   [La diplomatie française](http://www.diplomatie.fr/culture/france/biblio/folio/essai/index.html) : Quelques chroniques de livres français.
 -   [Paru.com](http://www.paru.com/) : Pour suivre l'actualité éditoriale.
 </div>
 

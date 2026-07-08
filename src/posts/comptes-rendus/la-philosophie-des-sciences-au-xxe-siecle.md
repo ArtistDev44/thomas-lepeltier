@@ -1,8 +1,8 @@
 ---
 title: "La Philosophie des sciences au XXe siècle"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Anouk Barberousse, Max Kistler et Pascal Ludwig"
 authorLastName: "Ludwig"
 imageUrl: "/assets/images/couvertures/barberousse-kistler-ludwig-philosophie-des-sciences-au-xxe-siecle.webp"

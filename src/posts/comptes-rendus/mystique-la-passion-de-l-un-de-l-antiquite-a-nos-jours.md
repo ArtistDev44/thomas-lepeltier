@@ -1,8 +1,8 @@
 ---
 title: "Mystique : la passion de l’Un, de l’Antiquité à nos jours"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Benoît Beyer de Ryke et Alain Dierkens (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/beyer-de-ryke-dierkens-mystique-passion-de-l-un-antiquite-a-nos-jours.webp"

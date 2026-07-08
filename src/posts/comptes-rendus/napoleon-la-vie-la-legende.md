@@ -1,8 +1,8 @@
 ---
 title: "Napoléon. La vie, la légende"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie", "Histoire"]
 authorFullName: "Gérard Gengembre"
 authorLastName: "Gengembre"
 imageUrl: "/assets/images/couvertures/gengembre-napoleon-la-vie-la-legende.webp"

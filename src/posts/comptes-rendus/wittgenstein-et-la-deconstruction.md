@@ -1,8 +1,8 @@
 ---
 title: "Wittgenstein et la déconstruction"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Laurent Carraz"
 authorLastName: "Carraz"
 imageUrl: "/assets/images/couvertures/carraz-wittgenstein-et-la-deconstruction.webp"

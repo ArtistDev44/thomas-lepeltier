@@ -1,8 +1,8 @@
 ---
 title: "À quoi bon la vérité ?"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Pascal Engel et Richard Rorty"
 authorLastName: "Rorty"
 imageUrl: "/assets/images/couvertures/engel-rorty-a-quoi-bon-la-verite.webp"

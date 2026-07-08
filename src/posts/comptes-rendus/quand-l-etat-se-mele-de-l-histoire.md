@@ -1,8 +1,8 @@
 ---
 title: "Quand l'État se mêle de l'histoire"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "René Rémond"
 authorLastName: "Rémond"
 imageUrl: "/assets/images/couvertures/remond-quand-etat-se-mele-histoire.webp"

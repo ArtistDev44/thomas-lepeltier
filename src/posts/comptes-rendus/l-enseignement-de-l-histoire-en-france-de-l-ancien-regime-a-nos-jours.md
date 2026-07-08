@@ -1,8 +1,8 @@
 ---
 title: "L’Enseignement de l’histoire en France de l’Ancien Régime à nos jours"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Patrick Garcia et Jean Leduc"
 authorLastName: "Leduc"
 imageUrl: "/assets/images/couvertures/garcia-leduc-enseignement-histoire-en-france-ancien-regime-a-nos-jours.webp"

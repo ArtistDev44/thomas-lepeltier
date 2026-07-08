@@ -1,8 +1,8 @@
 ---
 title: "Le Pari biographique. Écrire une vie"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "François Dosse"
 authorLastName: "Dosse"
 imageUrl: "/assets/images/couvertures/dosse-le-pari-biographique-ecrire-une-vie.webp"

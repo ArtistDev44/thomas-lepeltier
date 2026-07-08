@@ -1,8 +1,8 @@
 ---
 title: "Y a-t-il un Dieu ?"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Richard Swinburne"
 authorLastName: "Swinburne"
 imageUrl: "/assets/images/couvertures/swinburne-y-a-t-il-un-dieu.webp"

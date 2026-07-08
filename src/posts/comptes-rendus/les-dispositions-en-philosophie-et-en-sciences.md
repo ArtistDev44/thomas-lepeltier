@@ -1,8 +1,8 @@
 ---
 title: "Les Dispositions en philosophie et en sciences"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Bruno Gnassounou et Max Kistler (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/gnassounou-kistler-dispositions-philosophie-sciences.webp"

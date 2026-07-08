@@ -1,8 +1,8 @@
 ---
 title: "L’Intention"
 date: 1957-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Elizabeth Anscombe"
 authorLastName: "Anscombe"
 imageUrl: "/assets/images/couvertures/anscombe-intention.webp"

@@ -1,8 +1,8 @@
 ---
 title: "La Fabrique d'une nation. La France entre Rome et les Germains"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Claude Nicolet"
 authorLastName: "Nicolet"
 imageUrl: "/assets/images/couvertures/nicolet-fabrique-nation-france-rome-germains.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Darwin contre Darwin. Comment lire"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Thierry Hoquet"
 authorLastName: "Hoquet"
 imageUrl: "/assets/images/couvertures/hoquet-darwin-contre-darwin.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Mythes et histoire des sciences humaines"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Laurent Mucchielli"
 authorLastName: "Mucchielli"
 imageUrl: "/assets/images/couvertures/mucchielli-mythes-et-histoire-des-sciences-humaines.webp"

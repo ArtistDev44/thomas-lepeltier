@@ -1,8 +1,8 @@
 ---
 title: "Faut-il avoir peur de la chimie ?"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Bernadette Bensaude-Vincent"
 authorLastName: "Bensaude-Vincent"
 imageUrl: "/assets/images/couvertures/bensaude-vincent-faut-il-avoir-peur-de-la-chimie.webp"

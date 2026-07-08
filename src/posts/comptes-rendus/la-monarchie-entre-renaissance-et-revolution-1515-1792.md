@@ -1,8 +1,8 @@
 ---
 title: "La Monarchie entre Renaissance et Révolution, 1515-1792"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Joël Cornette (ed)"
 authorLastName: "(ed)"
 imageUrl: "/assets/images/couvertures/cornette-monarchie-entre-renaissance-et-revolution.webp"

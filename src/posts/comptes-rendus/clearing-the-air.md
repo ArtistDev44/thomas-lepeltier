@@ -1,8 +1,8 @@
 ---
 title: "Clearing the Air"
 date: 2025-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", ]
+layout: "chronique.njk"
+tags: ["Chronique", ]
 authorFullName: "Hannah Ritchie"
 authorLastName: "Ritchie"
 imageUrl: "/assets/images/couvertures/ritchie-clearing-the-air.webp"

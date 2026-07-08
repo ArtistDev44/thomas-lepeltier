@@ -1,8 +1,8 @@
 ---
 title: "Alors l’un devint deux. La question du réalisme en physique et en philosophie"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Roland Omnès"
 authorLastName: "Omnès"
 imageUrl: "/assets/images/couvertures/omnes-realisme-physique-philosophie.webp"

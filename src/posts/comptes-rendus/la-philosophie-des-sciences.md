@@ -1,8 +1,8 @@
 ---
 title: "La Philosophie des sciences"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Dominique Lecourt"
 authorLastName: "Lecourt"
 imageUrl: "/assets/images/couvertures/lecourt-philosophie-des-sciences.webp"

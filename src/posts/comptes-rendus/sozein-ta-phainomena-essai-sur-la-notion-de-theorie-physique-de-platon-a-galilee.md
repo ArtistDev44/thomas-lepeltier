@@ -1,8 +1,8 @@
 ---
 title: "Sozein ta phainomena. Essai sur la Notion de Théorie physique de Platon à Galilée"
 date: 1908-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Pierre Duhem"
 authorLastName: "Duhem"
 imageUrl: "/assets/images/couvertures/duhem-sozein-ta-phainomena.webp"

@@ -1,8 +1,8 @@
 ---
 title: "La Philosophie des sciences. L'invention d’une discipline"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Carles Ulises Moulines"
 authorLastName: "Moulines"
 imageUrl: "/assets/images/couvertures/moulines-philosophie-des-sciences-invention-d-une-discipline.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Le Jour où Jésus devint Dieu. L'« affaire Arius »"
 date: 1999-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Richard E. Rubenstein"
 authorLastName: "E. Rubenstein"
 imageUrl: "/assets/images/couvertures/rubenstein-le-jour-ou-jesus-devint-dieu.webp"

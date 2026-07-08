@@ -1,8 +1,8 @@
 ---
 title: "Le Temps moderne. Variations sur les Anciens et les contemporains"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Levent Yilmaz"
 authorLastName: "Yilmaz"
 imageUrl: "/assets/images/couvertures/yilmaz-temps-moderne.webp"

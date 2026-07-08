@@ -1,8 +1,8 @@
 ---
 title: "Homogenesis. Histoire de l’histoire de l’homme"
 date: 2011-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Claude Stoll"
 authorLastName: "Stoll"
 imageUrl: "/assets/images/couvertures/stoll-homogenesis.webp"

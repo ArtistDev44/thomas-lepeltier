@@ -1,8 +1,8 @@
 ---
 title: "Ni Chose ni personne. Le corps humain en question"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Bernard Edelman"
 authorLastName: "Edelman"
 imageUrl: "/assets/images/couvertures/edelman-ni-chose-ni-personne.webp"

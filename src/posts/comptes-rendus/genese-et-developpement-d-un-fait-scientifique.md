@@ -1,8 +1,8 @@
 ---
 title: "Genèse et développement d'un fait scientifique"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Ludwik Fleck"
 authorLastName: "Fleck"
 imageUrl: "/assets/images/couvertures/fleck-genese-et-developpement-d-un-fait-scientifique.webp"

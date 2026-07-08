@@ -1,8 +1,8 @@
 ---
 title: "Le Chiisme"
 date: 1988-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Heinz Halm"
 authorLastName: "Halm"
 imageUrl: "/assets/images/couvertures/halm-le-chiisme.webp"

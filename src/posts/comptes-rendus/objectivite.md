@@ -1,8 +1,8 @@
 ---
 title: "Objectivité"
 date: 2012-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Lorraine Daston et Peter Galison"
 authorLastName: "Galison"
 imageUrl: "/assets/images/couvertures/galison-daston-objectivite.webp"

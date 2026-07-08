@@ -1,8 +1,8 @@
 ---
 title: "D’Aristote à Darwin et retour. Essai sur quelques constantes de la biophilosophie"
 date: 1971-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", ]
+layout: "chronique.njk"
+tags: ["Chronique", ]
 authorFullName: "Étienne Gilson"
 authorLastName: "Gilson"
 imageUrl: "/assets/images/couvertures/gilson-d-aristote-a-darwin-et-retour.webp"

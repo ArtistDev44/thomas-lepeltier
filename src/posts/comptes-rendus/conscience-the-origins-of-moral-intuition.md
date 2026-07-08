@@ -1,14 +1,14 @@
 ---
 title: "Conscience. The Origins of Moral Intuition"
 date: 2019-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Patricia Churchland"
 authorLastName: "Churchland"
 imageUrl: "/assets/images/couvertures/churchland-conscience-origins-of-moral-intuition.webp"
 amazonLink: "https://amzn.to/2OHztXD"
 alphabeticalPage: ["c"]
-description: "Compte rendu du livre de Patricia Churchland, Conscience, The Origins of Moral Intuition, par Thomas Lepeltier"
+description: "Chronique du livre de Patricia Churchland, Conscience, The Origins of Moral Intuition, par Thomas Lepeltier"
 ---
 
 La morale serait entièrement câblée dans nos cerveaux. Il n’existerait donc pas des valeurs morales en soi, comme tentent de les découvrir les spécialistes d’éthique. Telle est la thèse de la philosophe ou, plus exactement, neurophilosophe Patricia Churchland, professeur émérite à l’Université de Californie. Une telle conception de la morale, que l’on peut qualifier de réductionniste, revient à remplacer l’éthique traditionnelle par les neurosciences. Pour la défendre, Churchland commence par rappeler comment l’évolution des animaux a donné naissance aux premiers comportements moraux. Ainsi le développement de l’altruisme proviendrait de l’avantage évolutif conféré aux mammifères qui manifestaient un sentiment d’attachement envers leur progéniture. De la même manière, les valeurs de coopération auraient découlé de l’avantage qu’apportait l’entraide chez les animaux sociaux. Pour Churchland, la vie sociale est d’ailleurs au fondement de la morale : sans elle, aucune position morale ne se serait développée. La neurophilosophe analyse ensuite les mécanismes cérébraux qui permettent à certaines inclinations de se développer chez les jeunes animaux. Elle montre ainsi comment ces derniers grandissent en apprenant les valeurs de leur groupe social, par le biais d’essais, d’erreurs et de récompenses au niveau cérébral (à coup de dopamine, par exemple). De la sorte, un louveteau, comme un petit humain, apprend à se conformer aux normes des siens. Quant à la conscience, elle se développerait tout simplement avec l’intériorisation de ces normes. Enfin, Churchland tente de montrer que les principes moraux défendus par les philosophes, notamment les déontologistes et les utilitaristes, vont à l’encontre de nos instincts les plus fondamentaux. Par exemple, si la morale consistait, selon les premiers, à suivre en toutes circonstances des règles prétendument universalisables comme « on ne doit pas mentir », des conséquences déplorables pourraient en résulter. De même, si elle consistait, selon les seconds, à maximiser de manière impartiale le plaisir, on devrait parfois se soucier davantage d’étrangers que des nôtres. Ces conséquences paraissent tellement problématiques à Churchland qu’elle en conclut que, en ce qui concerne la morale, il n’y a rien à chercher au-delà de ce que notre être biologique nous incite à penser. Bien sûr, elle reconnaît que la morale évolue, comme notre cerveau. Mais il faudrait globalement vivre avec les valeurs de son temps et se laisser porter par ses inclinations. S’il ne fait pas de doute que la morale s’enracine dans notre biologie, la question reste quand même de savoir si des principes généraux, aussi discutables soient-ils, ne peuvent pas nous aider à modifier nos penchants pour, finalement, améliorer notre société. N’est-ce pas le but de la morale ?

@@ -1,5 +1,5 @@
 {
   "layout": "post",
   "tags": "posts",
-  "permalink": "/comptes-rendus/{{ title | slugify }}/index.html"
+  "permalink": "/chroniques/{{ title | slugify }}/index.html"
 }

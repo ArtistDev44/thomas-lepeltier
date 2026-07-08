@@ -1,8 +1,8 @@
 ---
 title: "Idées reçues en biologie"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Claude Lafon"
 authorLastName: "Lafon"
 imageUrl: "/assets/images/couvertures/lafon-idees-recues-en-biologie.webp"

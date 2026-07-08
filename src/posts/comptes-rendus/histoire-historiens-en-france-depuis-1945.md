@@ -1,8 +1,8 @@
 ---
 title: "Histoire & Historiens en France depuis 1945"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Christian Delacroix, François Dosse et Patrick Garcia"
 authorLastName: "Garcia"
 imageUrl: "/assets/images/couvertures/delacroix-dosse-garcia-histoire-historiens-france-depuis-1945.webp"

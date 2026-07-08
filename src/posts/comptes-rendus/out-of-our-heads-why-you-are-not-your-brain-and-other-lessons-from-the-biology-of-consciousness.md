@@ -1,8 +1,8 @@
 ---
 title: "Out of our heads. Why you are not your brain, and other lessons from the biology of consciousness"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Alva Noë"
 authorLastName: "Noë"
 imageUrl: "/assets/images/couvertures/noe-out-of-our-heads-brain-biology-consciousness.webp"

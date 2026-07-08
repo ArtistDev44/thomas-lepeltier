@@ -1,8 +1,8 @@
 ---
 title: "Evolutionism in eighteenth-century French thought"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Mary Efrosini Gregory"
 authorLastName: "Gregory"
 imageUrl: "/assets/images/couvertures/gregory-evolutionism-in-eighteenth-century-french-thought.webp"

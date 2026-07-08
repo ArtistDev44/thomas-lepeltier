@@ -1,8 +1,8 @@
 ---
 title: "L’Éther des physiciens existe-t-il ? Écrits sur l’éther"
 date: 2011-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Jean-Jacques Samueli"
 authorLastName: "Samueli"
 imageUrl: "/assets/images/couvertures/samueli-ether.webp"

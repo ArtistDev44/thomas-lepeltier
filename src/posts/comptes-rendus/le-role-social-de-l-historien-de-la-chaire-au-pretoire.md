@@ -1,8 +1,8 @@
 ---
 title: "Le Rôle social de l'historien. De la chaire au prétoire"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Olivier Dumoulin"
 authorLastName: "Dumoulin"
 imageUrl: "/assets/images/couvertures/dumoulin-le-role-social-de-l-historien.webp"

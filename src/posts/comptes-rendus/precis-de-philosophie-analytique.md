@@ -1,8 +1,8 @@
 ---
 title: "Précis de philosophie analytique"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Pascal Engel (ed)"
 authorLastName: "(ed)"
 imageUrl: "/assets/images/couvertures/engel-precis-de-philosophie-analytique.webp"

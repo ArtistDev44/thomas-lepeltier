@@ -1,8 +1,8 @@
 ---
 title: "La Légende des gènes. Anatomie d’un mythe moderne"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences", "Sciences"]
 authorFullName: "Gérard Lambert"
 authorLastName: "Lambert"
 imageUrl: "/assets/images/couvertures/lambert-legende-des-genes-anatomie-mythe-moderne.webp"

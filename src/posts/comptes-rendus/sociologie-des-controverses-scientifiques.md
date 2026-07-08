@@ -1,8 +1,8 @@
 ---
 title: "Sociologie des controverses scientifiques"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences", "Sciences humaines"]
 authorFullName: "Dominique Raynaud"
 authorLastName: "Raynaud"
 imageUrl: "/assets/images/couvertures/raynaud-sociologie-des-controverses-scientifiques.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Un Éternel Treblinka. Des abattoirs aux camps de la mort"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Charles Patterson"
 authorLastName: "Patterson"
 imageUrl: "/assets/images/couvertures/patterson-eternel-treblinka.webp"

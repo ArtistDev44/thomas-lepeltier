@@ -1,8 +1,8 @@
 ---
 title: "Garibaldi"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Jérôme Grévy"
 authorLastName: "Grévy"
 imageUrl: "/assets/images/couvertures/grevy-garibaldi.webp"

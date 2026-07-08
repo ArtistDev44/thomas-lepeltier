@@ -1,8 +1,8 @@
 ---
 title: "L’Historisme en débat. De Nietzsche à Kantorowics"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Otto Gerhard Oexle"
 authorLastName: "Oexle"
 imageUrl: "/assets/images/couvertures/oexle-historicisme-debat.webp"

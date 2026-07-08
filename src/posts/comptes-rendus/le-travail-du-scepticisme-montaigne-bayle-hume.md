@@ -1,8 +1,8 @@
 ---
 title: "Le Travail du scepticisme. Montaigne, Bayle, Hume"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie", "Sciences humaines"]
 authorFullName: "Frédéric Brahami"
 authorLastName: "Brahami"
 imageUrl: "/assets/images/couvertures/brahami-travail-du-scepticisme-montaigne-bayle-hume.webp"

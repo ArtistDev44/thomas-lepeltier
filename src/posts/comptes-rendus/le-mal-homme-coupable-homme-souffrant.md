@@ -1,8 +1,8 @@
 ---
 title: "Le Mal. Homme coupable, homme souffrant"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Jérôme Porée"
 authorLastName: "Porée"
 imageUrl: "/assets/images/couvertures/poree-le-mal-homme-coupable-souffrant.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Le Mystère Thucydide. Enquête à partir d’Aristote"
 date: 1997-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Luciano Canfora"
 authorLastName: "Canfora"
 imageUrl: "/assets/images/couvertures/canfora-mystere-thucydide-enquete-Aristote.webp"

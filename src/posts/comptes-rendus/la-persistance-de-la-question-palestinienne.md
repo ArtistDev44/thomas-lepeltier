@@ -1,8 +1,8 @@
 ---
 title: "La Persistance de la question palestinienne"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Joseph Massad"
 authorLastName: "Massad"
 imageUrl: "/assets/images/couvertures/massad-persistance-question-palestinienne.webp"

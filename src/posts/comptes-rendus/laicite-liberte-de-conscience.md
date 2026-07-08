@@ -1,8 +1,8 @@
 ---
 title: "Laïcité & liberté de conscience"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Jocelyn Maclure et Charles Taylor"
 authorLastName: "Taylor"
 imageUrl: "/assets/images/couvertures/maclure-taylor-laicite-liberte-de-conscience.webp"

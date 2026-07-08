@@ -1,8 +1,8 @@
 ---
 title: "Comment le peuple juif fut inventé. De la Bible au sionisme"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie", "Histoire"]
 authorFullName: "Shlomo Sand"
 authorLastName: "Sand"
 imageUrl: "/assets/images/couvertures/sand-comment-le-peuple-juif-fut-invente.webp"

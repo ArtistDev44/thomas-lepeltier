@@ -1,8 +1,8 @@
 ---
 title: "La Nouvelle sociologie des sciences"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Michel Dubois"
 authorLastName: "Dubois"
 imageUrl: "/assets/images/couvertures/dubois-la-nouvelle-sociologie-des-sciences.webp"

@@ -1,14 +1,14 @@
 ---
 title: "The First Minds. Caterpillars, Karyotes, and Consciousness"
 date: 2019-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Arthur Reber"
 authorLastName: "Reber"
 imageUrl: "/assets/images/couvertures/reber-the-first-minds.webp"
 amazonLink: "https://amzn.to/2VDgcw0"
 alphabeticalPage: ["r"]
-description: "Compte rendu du livre de Arthur Reber, The First Minds. Caterpillars, Karyotes, and Consciousness, par Thomas Lepeltier"
+description: "Chronique du livre de Arthur Reber, The First Minds. Caterpillars, Karyotes, and Consciousness, par Thomas Lepeltier"
 ---
 
 D’où vient la conscience de soi, des autres et du monde ? L’idée classique est qu’elle serait apparue au cours de l’évolution chez des organismes vivants relativement complexes. Mais lesquels exactement ? Les spécialistes se disputent pour savoir si c’est uniquement chez les primates ou l’ensemble des vertébrés, ou également chez les céphalopodes, les insectes, etc. Toutefois, pour Arthur Reber, ancien professeur de psychologie à l’Université de la ville de New York, il faudrait remonter encore plus loin puisque, selon lui, la conscience et la sensibilité (au sens de sentience) seraient apparues avec la vie elle-même ; bien sûr, au départ sous des formes très rudimentaires. Pour démontrer sa thèse, il souligne les failles des autres conceptions et révèle en quoi l’attribution d’une conscience aux organismes cellulaires les plus simples est la meilleure façon d’expliquer leur comportement. En particulier, Reber souligne que les explications classiques de l’origine de la conscience sont confrontées à la difficile question des propriétés émergentes. En général, les spécialistes identifient le substrat neurobiologique de la conscience chez les humains (c’est-à-dire là où on est sûr qu’elle est présente) et auscultent le règne animal, présent et passé, pour y trouver des caractéristiques analogues. Ils étudient également le comportement des autres espèces pour y trouver des manifestations de ce qui s’apparenterait à une conscience. Ces travaux révèlent chaque jour un peu plus la richesse, longtemps insoupçonnée, de la vie mentale de nombreuses espèces. Mais cette approche est incapable de mettre en évidence le moment miraculeux où des organismes vivants seraient passés d’un stade où ils auraient agi comme des automates à celui où ils seraient devenus des êtres sensibles, conscients d’eux-mêmes. Or Reber n’est, quant à lui, pas confronté à ce problème, puisqu’il considère que la sentience et la conscience font partie des fonctions des premiers organismes vivants. En outre, Reber montre qu’il est difficile d’expliquer le déplacement d’une cellule vers une source de nutriment et son éloignement de substances toxiques sans reconnaître qu’elle éprouve une sensation agréable en rencontrant la première et désagréable en touchant les secondes. En analysant ce genre de comportement, Reber tente également de montrer comment une cellule possède un sens de soi et du monde extérieur, distingue ce qui favorise sa survie ou menace son intégrité, mémorise des expériences, décide elle-même quand et vers où se déplacer puis, parfois, communique avec d’autres cellules. Bien sûr, une telle thèse soulève nombre de questions, notamment sur la coordination des consciences au sein des organismes multicellulaires. Mais elle mérite notre attention, ne serait qu’en raison de ses implications éthiques…

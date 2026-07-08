@@ -1,8 +1,8 @@
 ---
 title: "Aux Origines de l’histoire des religions"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Philippe Borgeaud"
 authorLastName: "Borgeaud"
 imageUrl: "/assets/images/couvertures/borgeaud-aux-origines-de-l-histoire-des-religions.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Pourquoi le monde est-il mathématique ?"
 date: 1992-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "John D. Barrow"
 authorLastName: "Barrow"
 imageUrl: "/assets/images/couvertures/barrow-pourquoi-le-monde-est-il-mathematique.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Théorie et interprétation. Pour une épistémologie des sciences humaines"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Silvana Borutti"
 authorLastName: "Borutti"
 imageUrl: "/assets/images/couvertures/borutti-theorie-et-interpretation-epistemologie-des-sciences-humaines.webp"

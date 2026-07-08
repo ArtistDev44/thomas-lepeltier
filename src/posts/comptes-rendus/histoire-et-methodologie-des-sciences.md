@@ -1,8 +1,8 @@
 ---
 title: "Histoire et méthodologie des sciences"
 date: 1986-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Imre Lakatos"
 authorLastName: "Lakatos"
 imageUrl: "/assets/images/couvertures/lakatos-histoire-methodologie-des-sciences.webp"

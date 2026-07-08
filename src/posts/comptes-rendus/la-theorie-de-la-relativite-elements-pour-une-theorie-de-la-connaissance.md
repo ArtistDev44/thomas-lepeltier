@@ -1,8 +1,8 @@
 ---
 title: "La Théorie de la relativité. Éléments pour une théorie de la connaissance"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Ernst Cassirer"
 authorLastName: "Cassirer"
 imageUrl: "/assets/images/couvertures/cassirer-theorie-de-la-relativite.webp"
