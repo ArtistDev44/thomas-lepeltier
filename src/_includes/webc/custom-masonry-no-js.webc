@@ -4,9 +4,5 @@
 
     <template data-island="once" webc:raw>
     </template>
-<<<<<<< HEAD
   </custom-masonry-no-js>
-=======
-  </custom-masonry>
->>>>>>> ceb8bb76c8a194c02e1d85fcf057876a3a0e1b93
 </is-land>
