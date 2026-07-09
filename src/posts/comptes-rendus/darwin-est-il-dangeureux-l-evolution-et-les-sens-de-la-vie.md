@@ -1,8 +1,8 @@
 ---
 title: "Darwin est-il dangeureux ? L'évolution et les sens de la vie"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Daniel Dennett"
 authorLastName: "Dennett"
 imageUrl: "/assets/images/couvertures/dennett-darwin-est-il-dangeureux-evolution-sens-de-la-vie.webp"

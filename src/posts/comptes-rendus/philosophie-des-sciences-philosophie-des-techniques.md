@@ -1,8 +1,8 @@
 ---
 title: "Philosophie des sciences, philosophie des techniques"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Gilbert Hottois"
 authorLastName: "Hottois"
 imageUrl: "/assets/images/couvertures/hottois-philosophie-sciences-philosophie-techniques.webp"

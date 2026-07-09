@@ -1,11 +1,18 @@
 ---
 title: "100 Mots pour penser les sciences"
 date: 2003-01-01
+<<<<<<< HEAD
 layout: "compte-rendu.njk"
 publication:
   titre: "Revue de Métaphysique et de Morale"
   url: "https://exemple.com/revue"
 tags: ["Rapports", "Philosophie des sciences", "Sciences"]
+=======
+layout: "chronique.njk"
+paru_dans_titre: "Sciences Humaines, 146, février 2004."
+paru_dans_url: "https://www.scienceshumaines.com"
+tags: ["Chronique", "Philosophie des sciences", "Sciences"]
+>>>>>>> ceb8bb76c8a194c02e1d85fcf057876a3a0e1b93
 authorFullName: "Isabelle Stengers et Bernadette Bensaude-Vincent"
 authorLastName: "Bensaude-Vincent"
 imageUrl: "/assets/images/couvertures/stengers-bensaude-vincent-100-mots-pour-penser-les-sciences.webp"

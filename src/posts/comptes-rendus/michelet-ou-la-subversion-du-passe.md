@@ -1,8 +1,8 @@
 ---
 title: "Michelet ou la subversion du passé"
 date: 1999-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Arthur Mitzman"
 authorLastName: "Mitzman"
 imageUrl: "/assets/images/couvertures/mitzman-michelet-subversion-du-passe.webp"

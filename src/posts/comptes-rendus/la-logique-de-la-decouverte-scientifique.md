@@ -1,8 +1,8 @@
 ---
 title: "La Logique de la découverte scientifique"
 date: 1934-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Karl Popper"
 authorLastName: "Popper"
 imageUrl: "/assets/images/couvertures/popper-logique-decouverte-scientifique.webp"

@@ -1,8 +1,8 @@
 ---
 title: "The Dark Matter Problem. A Historical Perspective"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Robert Sanders"
 authorLastName: "Sanders"
 imageUrl: "/assets/images/couvertures/sanders-dark-matter.webp"

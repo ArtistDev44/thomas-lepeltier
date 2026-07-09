@@ -1,8 +1,8 @@
 ---
 title: "La Première révolution européenne. Xe-XIIIe"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Robert Moore"
 authorLastName: "Moore"
 imageUrl: "/assets/images/couvertures/moore-premiere-revolution-europeenne.webp"

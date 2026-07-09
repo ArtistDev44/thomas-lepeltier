@@ -1,8 +1,8 @@
 ---
 title: "L’Atome. Chimère ou réalité ? Débats et combats dans la chimie du XIXe siècle"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Claude Lécaille"
 authorLastName: "Lécaille"
 imageUrl: "/assets/images/couvertures/lecaille-atome-chimere-ou-relalite.webp"

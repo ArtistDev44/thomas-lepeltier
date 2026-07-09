@@ -1,8 +1,8 @@
 ---
 title: "Le Jardin au noyer. Pour un nouveau rationalisme,"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie", "Philosophie des sciences"]
 authorFullName: "Giorgio Israel"
 authorLastName: "Israel"
 imageUrl: "/assets/images/couvertures/israel-jardin-au-noyer-nouveau-rationalisme.webp"

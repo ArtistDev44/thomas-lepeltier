@@ -1,8 +1,8 @@
 ---
 title: "L’Empire du temps. Les horloges d’Einstein et les cartes de Poincaré"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Peter Galison"
 authorLastName: "Galison"
 imageUrl: "/assets/images/couvertures/galison-empire-du-temps.webp"

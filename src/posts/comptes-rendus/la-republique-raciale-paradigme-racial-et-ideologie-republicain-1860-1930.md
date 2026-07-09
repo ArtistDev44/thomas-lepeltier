@@ -1,8 +1,8 @@
 ---
 title: "La République raciale. Paradigme racial et idéologie républicain (1860-1930)"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Carole Reynaud Paligot"
 authorLastName: "Paligot"
 imageUrl: "/assets/images/couvertures/reynaud-paligot-republique-raciale.webp"

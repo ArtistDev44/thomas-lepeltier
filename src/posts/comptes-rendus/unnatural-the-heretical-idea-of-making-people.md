@@ -1,8 +1,8 @@
 ---
 title: "Unnatural. The Heretical Idea of Making People"
 date: 2011-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Philip Ball"
 authorLastName: "Ball"
 imageUrl: "/assets/images/couvertures/ball-unnatural.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Histoire et salut. Les présupposés théologiques de la philosophie de l’histoire"
 date: 1949-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie", "Religion"]
 authorFullName: "Karl Löwith"
 authorLastName: "Löwith"
 imageUrl: "/assets/images/couvertures/lowith-histoire-et-salut-presupposes-theologiques-philosophie-histoire.webp"

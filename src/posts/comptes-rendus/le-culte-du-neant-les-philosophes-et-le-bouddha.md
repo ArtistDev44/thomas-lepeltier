@@ -1,8 +1,8 @@
 ---
 title: "Le Culte du néant. Les philosophes et le Bouddha"
 date: 1997-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Roger-Pol Droit"
 authorLastName: "Droit"
 imageUrl: "/assets/images/couvertures/droit-le-culte-du-neant-philosophes-bouddha.webp"

@@ -1,8 +1,8 @@
 ---
 title: "La Religion des intellectuels français au XIXe siècle"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion", "Histoire"]
 authorFullName: "Jérôme Grondeux"
 authorLastName: "Grondeux"
 imageUrl: "/assets/images/couvertures/grondeux-religion-des-intellectuels-francais.webp"

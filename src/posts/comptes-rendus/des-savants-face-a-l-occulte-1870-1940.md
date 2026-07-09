@@ -1,8 +1,8 @@
 ---
 title: "Des Savants face à l’occulte, 1870-1940"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Bernadette Bensaude-Vincent et Christine Blondel (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/bensaude-vincent-blondel-des-savants-face-a-occulte.webp"

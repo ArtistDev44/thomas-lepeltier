@@ -1,8 +1,8 @@
 ---
 title: "The Threat to reason. How the Enlightenment was Hijacked and How we can Reclaim it"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Dan Hind"
 authorLastName: "Hind"
 imageUrl: "/assets/images/couvertures/hind-threat-to-reason.webp"

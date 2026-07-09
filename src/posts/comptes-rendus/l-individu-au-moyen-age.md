@@ -1,8 +1,8 @@
 ---
 title: "L’Individu au Moyen-Âge"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Brigitte Miriam Bedos-Rezak et Dominique Iogna-Prat (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/bedos-rezak-iogna-prat-individu-au-moyen-age.webp"

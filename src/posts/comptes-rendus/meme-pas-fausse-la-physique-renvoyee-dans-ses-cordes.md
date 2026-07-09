@@ -1,8 +1,8 @@
 ---
 title: "Même pas fausse ! La physique renvoyée... dans ses cordes"
 date: 2007-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Peter Woit"
 authorLastName: "Woit"
 imageUrl: "/assets/images/couvertures/woit-meme-pas-fausse-physique-cordes.webp"

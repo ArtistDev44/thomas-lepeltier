@@ -1,14 +1,14 @@
 ---
 title: "Life Changing. How Humans Are Altering Life on Earth,"
 date: 2020-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Helen Pilcher"
 authorLastName: "Pilcher"
 imageUrl: "/assets/images/couvertures/pilcher-life-changing-how-humans-are-altering-life-on-earth.webp"
 amazonLink: "https://amzn.to/2UKISSm"
 alphabeticalPage: ["p"]
-description: "Compte rendu du livre de Helen Pilcher, Life Changing. How Humans Are Altering Life on Earth, par Thomas Lepeltier"
+description: "Chronique du livre de Helen Pilcher, Life Changing. How Humans Are Altering Life on Earth, par Thomas Lepeltier"
 ---
 
 Depuis la préhistoire, les humains modifient des plantes et des animaux pour leur bénéfice. Cette transformation a commencé avec le loup, domestiqué il y a des dizaines de milliers d’années. Au départ, elle a été accomplie par sélection naturelle : en s’associant aux humains, les loups les plus dociles ont davantage prospéré que les plus hostiles. Puis, en privilégiant des qualités souhaitables, nos ancêtres ont transformé une grande quantité d’espèces végétales et animales pour obtenir, par exemple, des plantes ayant meilleur goût et des animaux plus productifs. La modification a pu être radicale, comme dans le cas du minuscule Chihuahua qui – on aurait tendance à l’oublier – descend du loup. Elle touche également une part massive du monde vivant : toutes les plantes et les animaux que l’on consomme procèdent de cette sélection artificielle ; à quoi il faut désormais ajouter l’insémination artificielle. Comme le raconte la journaliste scientifique Helen Pilcher dans ce livre, cette transformation peut même prendre des proportions hallucinantes. Par exemple, les humains ont transformé des oiseaux venant d’Asie en « mutants » qui grossissent tellement vite qu’ils peuvent à peine respirer et se déplacer sous le poids de leurs organes. C’est ce qu’on appelle des poulets et que l’on consomme, avant qu’ils ne meurent très jeunes puisqu’ils ne sont pas viables, à hauteur de 60 milliards d’individus par an dans le monde. Cette transformation du monde vivant donne déjà le tournis, mais l’auteure raconte comment les manipulations génétiques lui donnent une nouvelle dimension. Un secteur en plein développement est celui des chimères, c’est-à-dire ces animaux (en particulier les cochons) dans lesquels des gènes humains sont insérés pour qu’ils puissent fournir des organes pour les transplantations. Les manipulations génétiques sont également mises en œuvre pour l’élimination de nombreux parasites et espèces dites nuisibles. D’une certaine manière, cette interventionnisme n’a rien de radicalement nouveau : tout au long de son histoire, l’humanité a fait disparaître un très grand nombre d’espèces et en a forcé plein d’autres à s’adapter à son expansion. Toutefois, pendant longtemps, cette destruction ou modification du vivant se faisait à son profit ou involontairement. Désormais, crise environnementale oblige, il est de plus en plus question de modifier génétiquement de nombreuses espèces de plantes et d’animaux, sauvages et domestiques, pour qu’elles s’adaptent aux nouvelles conditions de vie sur Terre. Ce livre fait ainsi bien comprendre que l’idée d’une nature vierge aura de moins en moins de sens. Demain, il est possible que la plupart des espèces vivantes auront été modifiées, d’une manière ou d’une autre, par les humains. Espérons que ce soit pour le meilleur…

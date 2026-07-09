@@ -1,8 +1,8 @@
 ---
 title: "Qui a écrit les manuscrits de la mer Morte ?"
 date: 1995-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Norman Golb"
 authorLastName: "Golb"
 imageUrl: "/assets/images/couvertures/golb-qui-a-ecrit-manuscrits-mer-morte.webp"

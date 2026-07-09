@@ -1,8 +1,8 @@
 ---
 title: "Introduction aux Science Studies"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Dominique Pestre"
 authorLastName: "Pestre"
 imageUrl: "/assets/images/couvertures/pestre-introduction-science-studies.webp"

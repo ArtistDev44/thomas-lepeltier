@@ -1,8 +1,8 @@
 ---
 title: "Les Origines religieuses de la Révolution française, 1560-1791"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Dale K. Van Kley"
 authorLastName: "Kley"
 imageUrl: "/assets/images/couvertures/van-kley-origines-religieuses-revolution-francaise.webp"

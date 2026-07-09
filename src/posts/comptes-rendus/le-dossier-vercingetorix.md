@@ -1,8 +1,8 @@
 ---
 title: "Le Dossier Vercingétorix"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Christian Goudineau"
 authorLastName: "Goudineau"
 imageUrl: "/assets/images/couvertures/goudineau-dossier-vercingetorix.webp"

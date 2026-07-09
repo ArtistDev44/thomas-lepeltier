@@ -1,8 +1,8 @@
 ---
 title: "Le Crime des Lemniennes. Rites et légendes du monde égéen"
 date: 1924-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Georges Dumézil"
 authorLastName: "Dumézil"
 imageUrl: "/assets/images/couvertures/dumezil-le-crime-des-lemniennes.webp"

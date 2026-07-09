@@ -1,8 +1,8 @@
 ---
 title: "Pseudosciences et postmodernisme. Adversaires ou compagnons de route ?"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Alan Sokal"
 authorLastName: "Sokal"
 imageUrl: "/assets/images/couvertures/sokal-pseudosciences-et-postmodernisme.webp"

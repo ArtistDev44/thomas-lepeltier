@@ -1,8 +1,8 @@
 ---
 title: "The Ego Trick. What does it mean to be you ?"
 date: 2011-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Julian Baggini"
 authorLastName: "Baggini"
 imageUrl: "/assets/images/couvertures/baggini-ego-trick.webp"

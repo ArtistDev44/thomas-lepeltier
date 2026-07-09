@@ -1,8 +1,8 @@
 ---
 title: "Science de la science et réflexivité"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences", "Sciences humaines"]
 authorFullName: "Pierre Bourdieu"
 authorLastName: "Bourdieu"
 imageUrl: "/assets/images/couvertures/bourdieu-science-de-la-science-et-reflexivite.webp"

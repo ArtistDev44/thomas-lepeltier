@@ -1,8 +1,8 @@
 ---
 title: "Quand faire, c’est croire. Les rites sacrificiels des Romains"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "John Scheid"
 authorLastName: "Scheid"
 imageUrl: "/assets/images/couvertures/scheid-quand-faire-c-est-croire-rites-sacrificiels-romains.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Sans offenser le genre humain. Réflexions sur la cause animale"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Elisabeth de Fontenay"
 authorLastName: "Fontenay"
 imageUrl: "/assets/images/couvertures/de-fontenay-sans-offenser-le-genre-humain-reflexions-cause-animale.webp"

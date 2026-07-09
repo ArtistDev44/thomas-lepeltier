@@ -1,8 +1,8 @@
 ---
 title: "Expliquer la vie. Modèles, métaphores et machines en biologie du développement"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Evelyn Fox Keller"
 authorLastName: "Keller"
 imageUrl: "/assets/images/couvertures/fox-keller-expliquer-la-vie-modeles-metaphores-machines-en-biologie-du-developpement.webp"

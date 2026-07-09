@@ -1,8 +1,8 @@
 ---
 title: "Heinrich Hertz. L’administration de la preuve"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Michel Atten et Dominique Pestre"
 authorLastName: "Pestre"
 imageUrl: "/assets/images/couvertures/atten-pestre-hertz-administration-preuve.webp"

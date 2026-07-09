@@ -1,8 +1,8 @@
 ---
 title: "L'Institution sociale de l'esprit. Nouvelles approches de la raison"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Jean de Munck"
 authorLastName: "Munck"
 imageUrl: "/assets/images/couvertures/de-munck-institution-sociale-de-l-esprit.webp"

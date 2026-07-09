@@ -1,8 +1,8 @@
 ---
 title: "Why History Matters"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "John Tosh"
 authorLastName: "Tosh"
 imageUrl: "/assets/images/couvertures/tosh-why-history-matters.webp"

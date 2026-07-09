@@ -1,8 +1,8 @@
 ---
 title: "La Révolution, une exception française ?"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Annie Jourdan"
 authorLastName: "Jourdan"
 imageUrl: "/assets/images/couvertures/jourdan-revolution-exception-francaise.webp"

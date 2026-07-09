@@ -1,8 +1,8 @@
 ---
 title: "La Controverse expliquer - comprendre"
 date: 1979-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Karl Otto Apel"
 authorLastName: "Apel"
 imageUrl: "/assets/images/couvertures/apel-ontroverse-expliquer-comprendre.webp"

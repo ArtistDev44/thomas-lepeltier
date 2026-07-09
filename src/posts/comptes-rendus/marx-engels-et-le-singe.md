@@ -1,8 +1,8 @@
 ---
 title: "Marx, Engels et le singe"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Bernard Naccache"
 authorLastName: "Naccache"
 imageUrl: "/assets/images/couvertures/naccache-marx-engels-singe.webp"

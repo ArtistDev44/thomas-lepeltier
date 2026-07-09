@@ -1,8 +1,8 @@
 ---
 title: "Les Mondes darwiniens,"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "T. Heams, P. Huneman, G. Lecointre et M. Silberstein (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/heams-huneman-lecointre-silberstein-mondes-darwiniens.webp"

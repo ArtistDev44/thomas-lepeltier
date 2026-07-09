@@ -1,8 +1,8 @@
 ---
 title: "Pour en finir avec Dieu"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Richard Dawkins"
 authorLastName: "Dawkins"
 imageUrl: "/assets/images/couvertures/dawkins-pour-en-finir-avec-dieu.webp"

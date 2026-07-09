@@ -1,14 +1,14 @@
 ---
 title: "A Tale of Seven Scientists and a New Philosophy of Science"
 date: 2016-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences", "Philosophie des sciences"]
 authorFullName: "Eric Scerri"
 authorLastName: "Scerri"
 imageUrl: "/assets/images/couvertures/scerri-tale-of-seven-scientists-new-philosophy-of-science.webp"
 amazonLink: "http://amzn.to/2jJ6XHQ"
 alphabeticalPage: ["s"]
-description: "Compte rendu du livre de Eric Scerri, A Tale of Seven Scientists and a New Philosophy of Science, par Thomas Lepeltier"
+description: "Chronique du livre de Eric Scerri, A Tale of Seven Scientists and a New Philosophy of Science, par Thomas Lepeltier"
 ---
 
 L’histoire de la théorie quantique de l’atome au début du xxe siècle se réduit souvent à quelques grands noms : Niels Bohr, Arnold Sommerfeld, Wolfgang Pauli, etc. L’impression qui s’en dégage est que la conception de l’atome a été bouleversée grâce au travail de ces pionniers. On parle même de révolution scientifique à propos de cette théorie et, parfois, on fait référence au célèbre ouvrage de Thomas Kuhn, La Structure des révolutions scientifiques (1962), pour laisser entendre que l’on est bien en présence d’un changement de « paradigme ». Mais cette approche historique ne convient pas au philosophe des sciences Eric Scerri, professeur à l’Université de Californie et grand spécialiste du Tableau de Mendeleïev. Dans ce livre, plutôt que de revenir sur ces grandes figures de la science, il présente les travaux de sept chercheurs de l’époque dont la postérité n’a pas retenu les noms mais qui ont joué un rôle fondamental dans l’élaboration de cette nouvelle théorie. À l’exemple d’un John Nicholson qui a quantifié le moment angulaire de l’électron avant que l’idée ne soit reprise par Bohr en 1913, ces illustres inconnus ont apporté des modifications théoriques importantes à la conception de l’atome. Leurs contributions peuvent même être vues comme les étapes nécessaires qui conduisirent aux avancées que l’on connaît. Certes, tous leurs travaux sur l’atome n’ont pas connu le même destin et n’ont pas donné lieu à une théorie bien aboutie. Mais, selon Scerri, tous ont participé à la dynamique qui a permis à la connaissance de l’atome de progresser. Ici, les « petits chercheurs » sont aussi importants que les « grands ». Cette histoire convainc Scerri de défendre une conception du progrès scientifique qui ne se ferait pas à coup de révolutions orchestrées par quelques individus, mais procéderait graduellement grâce au travail d’une multitude de chercheurs, pas toujours célèbres. Il établit même un parallèle entre le développement de la science et l’évolution des espèces dans le cadre de la théorie de la sélection naturelle. Toutes les contributions des chercheurs sont ainsi vues comme des sortes de mutations et seules celles qui s’adapteraient mieux à un contexte de découvertes seraient retenues et reprises. Fort de cette métaphore organiciste, Scerri avance qu’il n’y aurait plus à s’encombrer du concept de vérité en science. Une théorie serait juste plus ou moins adaptée à un contexte de recherche. L’idée n’est pas nouvelle. Mais il est intéressant de la voir appliquée en détail à la théorie quantique de l’atome. Reste à savoir si on peut la généraliser…

@@ -1,8 +1,8 @@
 ---
 title: "La Révélation d'Hermès Trismégiste. Tome II : Le Dieu cosmique"
 date: 1950-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "André-Jean Festugière"
 authorLastName: "Festugière"
 imageUrl: "/assets/images/couvertures/festugiere-revelation-hermes-trismegiste-dieu-cosmique.webp"

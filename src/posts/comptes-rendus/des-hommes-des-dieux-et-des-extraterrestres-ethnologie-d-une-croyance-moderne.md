@@ -1,8 +1,8 @@
 ---
 title: "Des Hommes, des dieux et des extraterrestres. Ethnologie d’une croyance moderne"
 date: 1999-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Wiktor Stoczkowski"
 authorLastName: "Stoczkowski"
 imageUrl: "/assets/images/couvertures/stoczkowski-des-hommes-des-dieux-et-des-extraterrestres.webp"

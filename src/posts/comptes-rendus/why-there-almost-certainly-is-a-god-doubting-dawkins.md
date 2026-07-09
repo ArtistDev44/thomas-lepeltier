@@ -1,8 +1,8 @@
 ---
 title: "Why there almost certainly is a God. Doubting Dawkins"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Keith Ward"
 authorLastName: "Ward"
 imageUrl: "/assets/images/couvertures/ward-why-certainly-god-doubting-dawkins.webp"

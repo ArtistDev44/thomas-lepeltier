@@ -1,8 +1,8 @@
 ---
 title: "Les Lieux de mémoire"
 date: 1992-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Pierre Nora (ed)"
 authorLastName: "(ed)"
 imageUrl: "/assets/images/couvertures/nora-lieux-de-memoire.webp"

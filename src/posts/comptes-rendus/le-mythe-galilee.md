@@ -1,8 +1,8 @@
 ---
 title: "Le Mythe Galilée"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Fabien Chareix"
 authorLastName: "Chareix"
 imageUrl: "/assets/images/couvertures/chareix-le-mythe-galilee.webp"

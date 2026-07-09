@@ -1,8 +1,8 @@
 ---
 title: "Le Livre Coeur"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Edmondo de Amici"
 authorLastName: "Amici"
 imageUrl: "/assets/images/couvertures/de-amici-le-livre-coeur.webp"

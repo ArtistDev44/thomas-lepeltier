@@ -1,8 +1,8 @@
 ---
 title: "La Science nouvelle"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Giambattista Vico"
 authorLastName: "Vico"
 imageUrl: "/assets/images/couvertures/vico-science-nouvelle.webp"

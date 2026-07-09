@@ -1,8 +1,8 @@
 ---
 title: "Culture et politique dans la France des Lumières (1715-1792)"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Monique Cottret"
 authorLastName: "Cottret"
 imageUrl: "/assets/images/couvertures/cottret-culture-et-politique-dans-la-france-des-lumieres.webp"

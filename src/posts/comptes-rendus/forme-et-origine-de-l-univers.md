@@ -1,8 +1,8 @@
 ---
 title: "Forme et origine de l’univers"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences", "Sciences"]
 authorFullName: "Aurélien Barrau et Daniel Parrochia (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/barrau-parrochia-forme-origine-univers.webp"

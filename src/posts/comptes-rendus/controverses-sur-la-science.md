@@ -1,8 +1,8 @@
 ---
 title: "Controverses sur la science"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences", "Sciences humaines"]
 authorFullName: "Terry Shinn et Pascal Ragouet"
 authorLastName: "Ragouet"
 imageUrl: "/assets/images/couvertures/shinn-ragouet-controverses-sur-la-science.webp"

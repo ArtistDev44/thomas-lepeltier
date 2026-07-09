@@ -1,8 +1,8 @@
 ---
 title: "L’Avenir d’un passé incertain. Quelle histoire du Moyen Age au XXIe siècle"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Alain Guerreau"
 authorLastName: "Guerreau"
 imageUrl: "/assets/images/couvertures/guerreau-avenir-d-un-passe-incertain.webp"

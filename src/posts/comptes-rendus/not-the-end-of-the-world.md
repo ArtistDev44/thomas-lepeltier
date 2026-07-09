@@ -1,8 +1,8 @@
 ---
 title: "Not the End of the World"
 date: 2024-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", ]
+layout: "chronique.njk"
+tags: ["Chronique", ]
 authorFullName: "HannahRitchie"
 authorLastName: "HannahRitchie"
 imageUrl: "/assets/images/couvertures/ritchie-not-the-end-of-the-world.webp"

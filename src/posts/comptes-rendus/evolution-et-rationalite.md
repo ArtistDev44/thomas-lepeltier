@@ -1,8 +1,8 @@
 ---
 title: "Évolution et rationalité"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Ronald de Sousa"
 authorLastName: "Sousa"
 imageUrl: "/assets/images/couvertures/de-sousa-evolution-et-rationalite.webp"

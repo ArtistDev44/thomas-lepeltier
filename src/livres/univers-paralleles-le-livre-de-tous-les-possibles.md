@@ -1,5 +1,5 @@
 ---
-title: "Univers parallèles : Le livre de tous les possibles"
+title: "Univers parallèles"
 date: 2010-01-01
 layout: "livre.njk"
 tags: ["livre", "mesLivres", "Astrophysique"]
@@ -26,4 +26,4 @@ supplements: "Traduit en turc."
 permalink: "/livres/univers-paralleles-le-livre-de-tous-les-possibles/index.html"
 ---
 
-Depuis l'Antiquité, philosophes et scientifiques ont imaginé l'existence d'autres mondes. Aujourd'hui, plusieurs théories scientifiques — mécanique quantique, cosmologie inflationnaire, théorie des cordes — semblent accréditer l'idée qu'il pourrait exister une infinité d'univers parallèles au nôtre. Mais que valent réellement ces théories ? Sont-elles de la science ou de la spéculation ?
+Sachez, lecteur, que vous vivez peut-être en ce moment même un grand nombre d’histoires parallèles dans d’autres univers. C'est en tout cas une possibilité découlant de recherches parmi les plus novatrices de la physique moderne sur l’infiniment grand et l’infiniment petit. Dans le sillage des réflexions sur le « principe anthropique », l’idée que notre univers ne serait que l’un parmi une multitude d’univers différents a récemment fait une entrée en force dans la cosmologie. Une interprétation de la mécanique quantique actuellement en vogue suggère aussi que tous les dénouements possibles d’un événement se réalisent dans autant d’univers parallèles. De quoi remettre au goût du jour d’anciens débats théologiques et philosophiques sur la pluralité des mondes. Reste à savoir si ces spéculations relèvent de la science ou de la science-fiction. Mais pourquoi pas des deux à la fois ?

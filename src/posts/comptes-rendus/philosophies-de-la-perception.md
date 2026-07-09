@@ -1,8 +1,8 @@
 ---
 title: "Philosophies de la perception"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Jacques Bouveresse et Jean-Jacques Rosat (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/bouveresse-rosat-philosophies-de-la-perception.webp"

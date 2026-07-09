@@ -43,7 +43,7 @@ layout: page
 | | |
 | :--- | :--- |
 | **1. Mes livres**<br>Une présentation de mes livres (10 en tant qu'auteur et 4 que j'ai dirigés). | **2. Contributions**<br>Les livres auxquels j'ai contribué (18). |
-| **3. Comptes rendus**<br>Mes comptes rendus de livres (+ de 500). | **4. Articles**<br>Mes articles (plus d'une centaine). |
+| **3. Chroniques**<br>Mes chroniques de livres (+ de 500). | **4. Articles**<br>Mes articles (plus d'une centaine). |
 
 ## Critiques de référence
 

@@ -1,8 +1,8 @@
 ---
 title: "Le Démon de la théorie. Littérature et sens commun"
 date: 1998-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Antoine Compagnon"
 authorLastName: "Compagnon"
 imageUrl: "/assets/images/couvertures/compagnon-le-demon-de-la-theorie-litterature-sens-commun.webp"

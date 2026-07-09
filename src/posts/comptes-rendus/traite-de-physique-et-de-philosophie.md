@@ -1,8 +1,8 @@
 ---
 title: "Traité de physique et de philosophie"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Bernard d'Espagnat"
 authorLastName: "d'Espagnat"
 imageUrl: "/assets/images/couvertures/d-espagnat-traite-de-physique-et-philosophie.webp"

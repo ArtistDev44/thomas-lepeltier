@@ -1,8 +1,8 @@
 ---
 title: "\"Il faut défendre la société.\" Cours au Collège de France, 1976"
 date: 1997-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Michel Foucault"
 authorLastName: "Foucault"
 imageUrl: "/assets/images/couvertures/foucault-il-faut-defendre-la-societe-cours-college-de-france.webp"

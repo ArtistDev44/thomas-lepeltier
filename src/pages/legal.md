@@ -1,8 +1,8 @@
 ---
-title: Legal notice
+title: Informations Légales
 discover:
   title: Legal notice
-permalink: /imprint/index.html
+permalink: /legal/index.html
 description: Imprint infos
 layout: page
 ---

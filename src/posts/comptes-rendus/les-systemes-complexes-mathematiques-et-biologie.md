@@ -1,8 +1,8 @@
 ---
 title: "Les Systèmes complexes. Mathématiques et biologie"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Hervé Zwirn"
 authorLastName: "Zwirn"
 imageUrl: "/assets/images/couvertures/zwirn-systemes-complexes-mathematiques-biologie.webp"

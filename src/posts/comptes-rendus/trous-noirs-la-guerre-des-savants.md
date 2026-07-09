@@ -1,8 +1,8 @@
 ---
 title: "Trous noirs. La guerre des savants"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Leonard Susskind"
 authorLastName: "Susskind"
 imageUrl: "/assets/images/couvertures/susskind-trous-noirs-la-guerre-des-savants.webp"

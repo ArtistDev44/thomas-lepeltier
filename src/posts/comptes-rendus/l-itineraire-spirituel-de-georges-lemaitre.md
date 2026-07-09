@@ -1,8 +1,8 @@
 ---
 title: "L’Itinéraire spirituel de Georges Lemaître"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences", "Sciences"]
 authorFullName: "Dominque Lambert"
 authorLastName: "Lambert"
 imageUrl: "/assets/images/couvertures/lambert-Itineraire-spirituel-georges-lemaitre.webp"

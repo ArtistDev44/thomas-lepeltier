@@ -1,8 +1,8 @@
 ---
 title: "The Origins of Sex. A History of the First Sexual Revolution"
 date: 2012-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Faramerz Dabhoiwala"
 authorLastName: "Dabhoiwala"
 imageUrl: "/assets/images/couvertures/dabhoiwala-origins-of-sex.webp"

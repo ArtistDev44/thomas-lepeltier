@@ -1,14 +1,14 @@
 ---
 title: "A Big Bang in a Little Room. The Quest to Create New Universes"
 date: 2017-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Zeeya Merali"
 authorLastName: "Merali"
 imageUrl: "/assets/images/couvertures/merali-big-bang-in-a-little-room.webp"
 amazonLink: "http://amzn.to/2rk11tf"
 alphabeticalPage: ["m"]
-description: "Compte rendu du livre de Zeeya Merali, A Big Bang in a Little Room. The Quest to Create New Universes, par Thomas Lepeltier"
+description: "Chronique du livre de Zeeya Merali, A Big Bang in a Little Room. The Quest to Create New Universes, par Thomas Lepeltier"
 reviews:
 
   - # Identité du critique

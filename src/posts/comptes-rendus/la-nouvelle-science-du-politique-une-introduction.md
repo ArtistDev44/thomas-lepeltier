@@ -1,8 +1,8 @@
 ---
 title: "La Nouvelle science du politique. Une introduction"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie", "Religion"]
 authorFullName: "Eric Voegelin"
 authorLastName: "Voegelin"
 imageUrl: "/assets/images/couvertures/voegelin-nouvelle-science-du-politique.webp"

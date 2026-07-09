@@ -1,8 +1,8 @@
 ---
 title: "Contes de la Lune. Essai sur la fiction et la science modernes"
 date: 2011-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Frédérique Aït-Touati"
 authorLastName: "Aït-Touati"
 imageUrl: "/assets/images/couvertures/ait-touati-contes-lune.webp"

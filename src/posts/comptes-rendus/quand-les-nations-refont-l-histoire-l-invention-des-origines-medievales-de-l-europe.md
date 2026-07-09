@@ -1,8 +1,8 @@
 ---
 title: "Quand les nations refont l’histoire. L’invention des origines médiévales de l’Europe"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Patrick J. Geary"
 authorLastName: "Geary"
 imageUrl: "/assets/images/couvertures/geary-quand-les-nations-refont-histoire.webp"

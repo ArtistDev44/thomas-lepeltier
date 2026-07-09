@@ -1,8 +1,8 @@
 ---
 title: "The Artificial Ape. How Technology Changed the Course of Human Evolution"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Timothy Taylor"
 authorLastName: "Taylor"
 imageUrl: "/assets/images/couvertures/taylor-the-artificial-ape.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Les Héros de l’histoire de France"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Christian Amalvi"
 authorLastName: "Amalvi"
 imageUrl: "/assets/images/couvertures/amalvi-heros-histoire-france.webp"

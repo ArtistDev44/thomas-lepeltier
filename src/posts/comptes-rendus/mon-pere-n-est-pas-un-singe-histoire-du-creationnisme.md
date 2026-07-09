@@ -1,8 +1,8 @@
 ---
 title: "Mon père n’est pas un singe ? Histoire du créationnisme"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Cédric Grimoult"
 authorLastName: "Grimoult"
 imageUrl: "/assets/images/couvertures/grimoult-mon-pere-n-est-pas-un-singe.webp"

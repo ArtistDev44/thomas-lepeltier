@@ -2,7 +2,7 @@
 title: Politique de confidentialité
 discover:
   title: Politique de confidentialité
-permalink: /privacy/index.html
+permalink: /confidentialite/index.html
 description: Je respecte le règlement général de l'UE sur la protection des données (RGPD). Ce document de politique générale explique comment je collecte et traite les informations que vous me fournissez.
 date: "Last Modified"
 layout: page

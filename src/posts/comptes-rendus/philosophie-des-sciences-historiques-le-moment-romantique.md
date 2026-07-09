@@ -1,8 +1,8 @@
 ---
 title: "Philosophie des sciences historiques. Le moment romantique"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Marcel Gauchet"
 authorLastName: "Gauchet"
 imageUrl: "/assets/images/couvertures/gauchet-philosophie-des-sciences-historiques.webp"

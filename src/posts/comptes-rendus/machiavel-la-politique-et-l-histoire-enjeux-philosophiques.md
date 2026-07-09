@@ -1,8 +1,8 @@
 ---
 title: "Machiavel, la politique et l'histoire. Enjeux philosophiques"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Thierry Ménissier"
 authorLastName: "Ménissier"
 imageUrl: "/assets/images/couvertures/menissier-machiavel-politique-histoire.webp"

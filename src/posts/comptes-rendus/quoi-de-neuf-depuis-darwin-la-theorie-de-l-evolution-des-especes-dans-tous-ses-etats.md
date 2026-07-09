@@ -1,8 +1,8 @@
 ---
 title: "Quoi de neuf depuis Darwin ? La Théorie de l’évolution des espèces dans tous ses états"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Jean Chaline"
 authorLastName: "Chaline"
 imageUrl: "/assets/images/couvertures/chaline-quoi-de-neuf-depuis-darwin-theorie-evolution.webp"

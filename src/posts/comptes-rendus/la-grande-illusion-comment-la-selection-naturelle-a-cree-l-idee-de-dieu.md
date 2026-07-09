@@ -1,8 +1,8 @@
 ---
 title: "La Grande illusion. Comment la sélection naturelle a créé l’idée de Dieu"
 date: 2007-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Daniel Baril"
 authorLastName: "Baril"
 imageUrl: "/assets/images/couvertures/baril-grande-illusion-selection-naturelle-idee-de-dieu.webp"

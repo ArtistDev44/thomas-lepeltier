@@ -1,8 +1,8 @@
 ---
 title: "Le Roi et les barricades. Une histoire des 5 et 6 juin 1832"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie", "Histoire"]
 authorFullName: "Thomas Bouchet"
 authorLastName: "Bouchet"
 imageUrl: "/assets/images/couvertures/bouchet-le-roi-et-les-barricades.webp"

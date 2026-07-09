@@ -1,8 +1,8 @@
 ---
 title: "De Darwin aux dinosaures. Essai sur l’idée d’évolution"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Kevin Padian"
 authorLastName: "Padian"
 imageUrl: "/assets/images/couvertures/padian-darwin-dinosaures.webp"

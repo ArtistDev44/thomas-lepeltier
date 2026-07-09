@@ -1,8 +1,8 @@
 ---
 title: "Comment peut-on être dieu ? La secte d'Épicure"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion"]
 authorFullName: "Renée Koch"
 authorLastName: "Koch"
 imageUrl: "/assets/images/couvertures/koch-comment-peut-on-etre-dieu-secte-epicure.webp"

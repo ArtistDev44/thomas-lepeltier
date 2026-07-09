@@ -1,8 +1,8 @@
 ---
 title: "Le Sens de l'univers. Essai sur Jacques Merleau-Ponty"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences"]
 authorFullName: "Jean-François Robredo"
 authorLastName: "Robredo"
 imageUrl: "/assets/images/couvertures/robredo-sens-de-univers-jacques-merleau-ponty.webp"

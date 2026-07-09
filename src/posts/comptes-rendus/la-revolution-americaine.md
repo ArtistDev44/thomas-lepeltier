@@ -1,8 +1,8 @@
 ---
 title: "La Révolution américaine"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Bernard Cottret"
 authorLastName: "Cottret"
 imageUrl: "/assets/images/couvertures/cottret-la-revolution-americaine.webp"

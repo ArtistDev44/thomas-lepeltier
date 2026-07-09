@@ -1,8 +1,8 @@
 ---
 title: "De la Pluralité des mondes"
 date: 2007-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "David Lewis"
 authorLastName: "Lewis"
 imageUrl: "/assets/images/couvertures/lewis-pluralite-des-mondes.webp"

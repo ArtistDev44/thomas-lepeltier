@@ -1,8 +1,8 @@
 ---
 title: "Agriculture biologique : espoir ou chimère ?"
 date: 2013-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Marc Dufumier, Gil Rivière-Wekstein et Thierry Doré"
 authorLastName: "Doré"
 imageUrl: "/assets/images/couvertures/dufumier-agriculture-biologique.webp"

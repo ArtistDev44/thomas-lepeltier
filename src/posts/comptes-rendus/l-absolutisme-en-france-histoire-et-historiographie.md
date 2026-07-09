@@ -1,8 +1,8 @@
 ---
 title: "L’Absolutisme en France. Histoire et historiographie"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie", "Histoire"]
 authorFullName: "Fanny Cosandey et Robert Descimon"
 authorLastName: "Descimon"
 imageUrl: "/assets/images/couvertures/cosandey-descimon-absolutisme-en-france-histoire-et-historiographie.webp"

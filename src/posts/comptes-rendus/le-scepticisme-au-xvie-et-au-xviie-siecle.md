@@ -1,8 +1,8 @@
 ---
 title: "Le Scepticisme au XVIe et au XVIIe siècle"
 date: 2001-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Pierre-François Moreau (ed)"
 authorLastName: "(ed)"
 imageUrl: "/assets/images/couvertures/moreau-scepticisme.webp"

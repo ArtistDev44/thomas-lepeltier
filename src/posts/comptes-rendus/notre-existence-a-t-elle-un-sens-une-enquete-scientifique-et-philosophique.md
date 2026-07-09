@@ -1,8 +1,8 @@
 ---
 title: "Notre existence a-t-elle un sens ? Une enquête scientifique et philosophique"
 date: 2007-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Jean Staune"
 authorLastName: "Staune"
 imageUrl: "/assets/images/couvertures/staune-notre-existence-a-t-elle-un-sens.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Le Roman du big bang. La plus importante découverte scientifique de tous les temps"
 date: 2007-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences", "Sciences"]
 authorFullName: "Simon Singh"
 authorLastName: "Singh"
 imageUrl: "/assets/images/couvertures/singh-le-roman-du-big-bang.webp"

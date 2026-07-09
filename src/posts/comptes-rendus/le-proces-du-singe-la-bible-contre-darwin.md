@@ -1,8 +1,8 @@
 ---
 title: "Le Procès du singe. La Bible contre Darwin"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Gordon Golding"
 authorLastName: "Golding"
 imageUrl: "/assets/images/couvertures/golding-proces-du-singe.webp"

@@ -1,14 +1,14 @@
 ---
 title: "The Demon in the Machine. How hidden webs of information are solving the mystery of life"
 date: 2019-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Paul Davies"
 authorLastName: "Davies"
 imageUrl: "/assets/images/couvertures/davies-the-demon-in-the-machine.webp"
 amazonLink: "https://amzn.to/2W8Pckj"
 alphabeticalPage: ["d"]
-description: "Compte rendu du livre de Paul Davies, The Demon in the Machine, par Thomas Lepeltier"
+description: "Chronique du livre de Paul Davies, The Demon in the Machine, par Thomas Lepeltier"
 ---
 
 En 1944, le physicien Erwin Schrödinger publie What Is Life ? Dans cet ouvrage, il avance que les gènes doivent être constitués des grosses molécules codant des informations à partir desquelles les organismes vivants se développent. Les biologistes Francis Crick et James Watson lui donnent raison quand ils découvrent, en 1953, la structure de l’ADN. Mais, au 21e siècle, la question centrale de Schrödinger est toujours sans réponse. Personne ne sait définir ce qu’est la vie ou, pour le dire autrement, ce qui fait qu’un organisme est vivant. Bien que certains chercheurs aient tenté leur chance en s’appuyant sur la notion d’information, ils ont buté sur le manque de clarté de cette dernière. Puisque l’information n’a de sens que pour une entité déjà vivante – qu’est-ce que serait en effet de l’information dans un monde inerte ? –, cette approche conduisait notamment à une explication quelque peu circulaire. C’est toutefois en approfondissant la signification de cette notion que le physicien et écrivain scientifique prolifique Paul Davies tente à son tour d’apporter un nouvel éclairage sur ce qu’est la vie. Le « démon » du titre est celui inventé, en 1867, par la physicien James Clerk Maxwell dans une célèbre expérience de pensée, où un être minuscule (le démon), grâce à l’information qu’il a d’un système physique, est capable de le faire évoluer contre la seconde loi de la thermodynamique qui stipule que son entropie (ou degré de désordre) ne peut que croître. Analysant la postérité de ce paradoxe, ainsi que les liens entre la théorie de l’information, la mécanique quantique et la biologie, Davies en vient à soutenir que l’information n’est pas simplement un ensemble de données abstraites traitées par un cerveau, codées dans des gènes ou analysées par un démon. Elle serait, au même titre que l’énergie, une entité ayant des effets sur le monde et pouvant passer d’un système à un autre. Il montre également que les organismes vivants regorgeraient de mécanismes qui s’apparenteraient à des démons et qui, par les informations qu’ils obtiendraient et perdraient, les maintiendraient en vie. Ces perspectives le conduisent à avancer que la vie serait comme « le démon dans la machine » ou qu’elle correspondrait au flot d’informations qui circulerait dans les organismes biologiques. L’idée est potentiellement intéressante, mais manque de clarté. Qui plus est, bien qu’il s’en défende, Davies donne un peu l’impression de retomber dans une approche vitaliste où la notion de « force vitale » aurait été remplacée par celle d’information. Ces défauts n’enlèvent rien à l’intérêt du livre qui a le mérite de présenter une grande quantité d’informations scientifiques et de réflexions philosophiques sur une question on ne peut plus difficile…

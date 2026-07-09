@@ -1,8 +1,8 @@
 ---
 title: "Évolution et liberté"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Hans Jonas"
 authorLastName: "Jonas"
 imageUrl: "/assets/images/couvertures/jonas-evolution-et-liberte.webp"

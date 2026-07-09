@@ -1,8 +1,8 @@
 ---
 title: "Plus vite que la lumière"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Joao Magueijo"
 authorLastName: "Magueijo"
 imageUrl: "/assets/images/couvertures/magueijo-plus-vite-que-la-lumiere.webp"

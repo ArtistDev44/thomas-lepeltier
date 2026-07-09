@@ -1,8 +1,8 @@
 ---
 title: "Physique moderne et philosophie"
 date: 1999-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences", "Sciences"]
 authorFullName: "Wolfgang Pauli"
 authorLastName: "Pauli"
 imageUrl: "/assets/images/couvertures/pauli-physique-moderne-philosophie.webp"

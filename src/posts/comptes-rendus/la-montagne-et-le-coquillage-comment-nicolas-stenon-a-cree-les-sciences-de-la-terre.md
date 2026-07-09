@@ -1,8 +1,8 @@
 ---
 title: "La Montagne et le coquillage. Comment Nicolas Sténon a créé les sciences de la terre"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Alan Cutler"
 authorLastName: "Cutler"
 imageUrl: "/assets/images/couvertures/cutler-montagne-coquillage-nicolas-stenon-bible-sciences-de-la-terre.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Science and Religion"
 date: 2010-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie des sciences", "Religion"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie des sciences", "Religion"]
 authorFullName: "Peter Harrison (ed)"
 authorLastName: "(ed)"
 imageUrl: "/assets/images/couvertures/harrison-science-and-religion.webp"

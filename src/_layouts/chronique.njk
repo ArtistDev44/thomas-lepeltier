@@ -2,7 +2,17 @@
 layout: base
 ---
 
+<<<<<<< HEAD:src/_layouts/compte-rendu.njk
 <div data-pagefind-body data-pagefind-filter="section: Comptes-rendus" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl);">
+=======
+<div data-pagefind-body data-pagefind-filter="section: Chroniques" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl);">
+    <h1 class="gradient-text">Chronique de {{ title }}</h1>
+<div class="tags-container">
+{% for tag in tags %}
+  <a href="/tags/{{ tag | slugify }}"><span slot="tag" class="button">{{ tag }}</span></a>
+{% endfor %}
+</div>
+>>>>>>> ceb8bb76c8a194c02e1d85fcf057876a3a0e1b93:src/_layouts/chronique.njk
 
     <div class="flex">
     {% include 'partials/livre3D.njk' %}
@@ -43,7 +53,7 @@ en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}.
 <!--<div data-pagefind-ignore>
 {% set related = collections.Rapports | relatedRapports(tags, page.url) %}
 {% if related.length %}
-  <h2>Comptes-rendus similaires</h2>
+  <h2>Chroniques similaires</h2>
     {%- for rapport in related -%}
 
  <custom-card>

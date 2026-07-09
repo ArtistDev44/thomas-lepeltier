@@ -1,8 +1,8 @@
 ---
 title: "La Denrée mentale"
 date: 1995-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Vincent Descombes"
 authorLastName: "Descombes"
 imageUrl: "/assets/images/couvertures/descombes-la-denree-mentale.webp"

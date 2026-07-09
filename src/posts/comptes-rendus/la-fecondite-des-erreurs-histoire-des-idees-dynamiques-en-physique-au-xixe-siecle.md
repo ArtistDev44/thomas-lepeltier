@@ -1,8 +1,8 @@
 ---
 title: "La Fécondité des erreurs. Histoire des idées dynamiques en physique au XIXe siècle"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Bernard Pourprix"
 authorLastName: "Pourprix"
 imageUrl: "/assets/images/couvertures/pourprix-fecondite-des-erreurs.webp"

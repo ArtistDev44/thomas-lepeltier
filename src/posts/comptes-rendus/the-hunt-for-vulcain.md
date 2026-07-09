@@ -1,14 +1,14 @@
 ---
 title: "The Hunt for Vulcain"
 date: 2015-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Thomas Levenson"
 authorLastName: "Levenson"
 imageUrl: "/assets/images/couvertures/levenson-the-hunt-for-vulcain.webp"
 amazonLink: "http://www.amazon.fr/gp/product/1784973971/ref=as_li_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=1784973971&linkCode=as2&tag=httpthomaslep-21"
 alphabeticalPage: ["l"]
-description: "Compte rendu du livre de Thomas Levenson, The Hunt for Vulcain, par Thomas Lepeltier"
+description: "Chronique du livre de Thomas Levenson, The Hunt for Vulcain, par Thomas Lepeltier"
 ---
 
 Que font les scientifiques quand leur théorie n’est pas confirmée par les observations ? Ils la remettent en cause, entend-on souvent dire. Pourtant, historiquement, ce n’est pas toujours le cas, comme le montre dans ce livre Thomas Levenson, professeur de « Science Writing » au MIT, à propos d’une planète introuvable. L’histoire commence en 1859. En s’appuyant sur la théorie de la gravitation de Newton, l’astronome Urbain Le Verrier calcule la précession du périhélie de Mercure, c’est-à-dire le déplacement régulier du point de l’orbite de la planète qui est le plus proche du Soleil. Bien qu’ayant pris en compte l’effet de toutes les autres planètes, il trouve un léger écart par rapport aux observations. Or, en 1846, la planète Neptune avait été découverte après qu’il ait lui-même prédit son existence pour expliquer des anomalies dans l’orbite d’Uranus. S’inspirant de ce succès qui l’avait rendu célèbre, Le Verrier montre là encore qu’une planète inconnue, cette fois-ci proche de l’orbite de Mercure, permettrait d’expliquer cette nouvelle anomalie. Confiants dans la valeur de cette prédiction, les astronomes pointent donc leurs télescopes vers le ciel pour découvrir cette planète désignée Vulcain. Pourtant, il va y avoir un hic. Pendant deux décennies, Vulcain va être observée plusieurs fois, bien que jamais de façon complètement satisfaisante. Si, pour beaucoup, son existence ne fait pas de doute, le désir d’observations plus probantes se fait quand même sentir. Puis la situation change à partir de juillet 1878, lors d’une éclipse censée être propice à son observation. Vulcain ne s’étant pas laissé découvrir, le doute sur son existence s’installe en effet chez les astronomes. Toutefois, cet échec ne les conduit pas à remettre en cause la théorie de Newton. Pendant plusieurs décennies, ils essayent de la sauver, par exemple, en imaginant que le Soleil est aplati aux pôles ou en « triturant » légèrement la formule mathématique de la gravitation universelle, sans changer l’essentiel de la théorie. En vain. Aucune solution ne s’avère satisfaisante. Il faudra attendre 1915 pour qu’Albert Einstein, sans s’en préoccuper au départ, fasse disparaître l’anomalie de l’orbite de Mercure avec sa nouvelle théorie de la gravitation et, du même coup, fasse définitivement oublier Vulcain. L’auteur en tire deux leçons : d’abord, qu’un conflit avec les observations ne conduit pas toujours les scientifiques à remettre en cause leur théorie de prédilection ; ensuite, qu’il est parfois « facile de voir ce que l’on veut ou espère trouver ». Reste à savoir si, de nos jours, les scientifiques ne se retrouvent pas dans une situation similaire face à certaines anomalies…

@@ -1,8 +1,8 @@
 ---
 title: "Altered past. Counterfactuals in History"
 date: 2014-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Richard J. Evans"
 authorLastName: "J. Evans"
 imageUrl: "/assets/images/couvertures/evans-altered-pasts.webp"

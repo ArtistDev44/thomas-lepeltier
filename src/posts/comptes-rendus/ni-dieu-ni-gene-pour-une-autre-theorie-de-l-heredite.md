@@ -1,8 +1,8 @@
 ---
 title: "Ni Dieu ni gène. Pour une autre théorie de l'hérédité"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Jean-Jacques Kupiec et Pierre Sonigo"
 authorLastName: "Sonigo"
 imageUrl: "/assets/images/couvertures/kupiec-sonigo-ni-dieu-ni-gene.webp"

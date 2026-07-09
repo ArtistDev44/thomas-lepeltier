@@ -1,8 +1,8 @@
 ---
 title: "Rapports de force. Histoire, rhétorique, preuve"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie", "Histoire"]
 authorFullName: "Carlo Ginzburg"
 authorLastName: "Ginzburg"
 imageUrl: "/assets/images/couvertures/ginzburg-rapports-de-force-histoire-rhetorique-preuve.webp"

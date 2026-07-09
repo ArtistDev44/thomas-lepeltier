@@ -1,8 +1,8 @@
 ---
 title: "Animal Rights without Liberation. Applied Ethics and Human Obligations"
 date: 2012-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Alasdair Cochrane"
 authorLastName: "Cochrane"
 imageUrl: "/assets/images/couvertures/cochrane-animal-rigths-without-liberation.webp"

@@ -1,8 +1,8 @@
 ---
 title: "La Rébellion française. Mouvements populaires et conscience sociale, 1661-1789"
 date: 2002-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Jean Nicolas"
 authorLastName: "Nicolas"
 imageUrl: "/assets/images/couvertures/nicolas-rebellion-francaise.webp"

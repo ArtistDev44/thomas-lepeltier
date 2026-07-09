@@ -1,8 +1,8 @@
 ---
 title: "L'Évolution de la mécanique"
 date: 1903-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Pierre Duhem"
 authorLastName: "Duhem"
 imageUrl: "/assets/images/couvertures/duhem-l-evolution-de-la-mecanique.webp"

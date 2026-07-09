@@ -1,8 +1,8 @@
 ---
 title: "L’Invention du Pays Cathare"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Marie-Carmen Garcia et William Genieys"
 authorLastName: "Genieys"
 imageUrl: "/assets/images/couvertures/garcia-genieys-invention-du-pays-cathare.webp"

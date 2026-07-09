@@ -1,8 +1,8 @@
 ---
 title: "Le Dieu de la République. Aux sources protestantes de la laïcité (1860-1900)"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Patrick Cabanel"
 authorLastName: "Cabanel"
 imageUrl: "/assets/images/couvertures/cabanel-dieu-de-la-republique-sources-protestantes-laicite.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Les Fondements de la psychanalyse. Une critique philosophique"
 date: 1984-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Adolf Grünbaum"
 authorLastName: "Grünbaum"
 imageUrl: "/assets/images/couvertures/grunbaum-fondements-de-la-psychanalyse.webp"

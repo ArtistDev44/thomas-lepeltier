@@ -1,8 +1,8 @@
 ---
 title: "L"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences", "Sciences humaines"]
 authorFullName: "Albert et Jacqueline Ducros (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/ducros-homme-prehistorique-images-imaginaire.webp"

@@ -1,8 +1,8 @@
 ---
 title: "La Méditerranée et le monde méditerranéen à l’époque de Philippe II"
 date: 1949-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire"]
 authorFullName: "Fernand Braudel"
 authorLastName: "Braudel"
 imageUrl: "/assets/images/couvertures/braudel-la-mediterranee-et-le-monde-mediterraneen.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Perception et réalité. Essai sur la nature du visible"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Louis Allix"
 authorLastName: "Allix"
 imageUrl: "/assets/images/couvertures/allix-perception-et-realite.webp"

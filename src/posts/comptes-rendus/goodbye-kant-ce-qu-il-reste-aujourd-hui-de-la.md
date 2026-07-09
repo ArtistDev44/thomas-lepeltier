@@ -1,8 +1,8 @@
 ---
 title: "Goodbye Kant ! Ce qu'il reste aujourd'hui de la"
 date: 2009-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Maurizio Ferraris"
 authorLastName: "Ferraris"
 imageUrl: "/assets/images/couvertures/ferraris-goodbye-kant-aujourd-hui-critique-de-la-raison-pure.webp"

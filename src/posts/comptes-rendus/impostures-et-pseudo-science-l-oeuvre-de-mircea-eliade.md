@@ -1,8 +1,8 @@
 ---
 title: "Impostures et pseudo-science. L'oeuvre de Mircea Eliade"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion", "Sciences humaines"]
 authorFullName: "Daniel Dubuisson"
 authorLastName: "Dubuisson"
 imageUrl: "/assets/images/couvertures/dubuisson-impostures-et-pseudo-science-oeuvre-de-mircea-eliade.webp"

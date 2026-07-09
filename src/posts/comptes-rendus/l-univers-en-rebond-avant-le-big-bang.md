@@ -1,8 +1,8 @@
 ---
 title: "L’Univers en rebond. Avant le big-bang"
 date: 2011-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Martin Bojowald"
 authorLastName: "Bojowald"
 imageUrl: "/assets/images/couvertures/bojowald-univers-en-rebond-avant-le-big-bang.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Le Siècle du gène"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Evelyn Fox Keller"
 authorLastName: "Keller"
 imageUrl: "/assets/images/couvertures/fox-keller-le-siecle-du-gene.webp"

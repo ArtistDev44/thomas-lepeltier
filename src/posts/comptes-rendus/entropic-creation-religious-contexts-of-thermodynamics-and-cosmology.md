@@ -1,8 +1,8 @@
 ---
 title: "Entropic Creation. Religious contexts of thermodynamics and cosmology"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Helge Kragh"
 authorLastName: "Kragh"
 imageUrl: "/assets/images/couvertures/kragh-entropic-creation-religious-thermodynamics-cosmology.webp"

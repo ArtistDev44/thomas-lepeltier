@@ -1,8 +1,8 @@
 ---
 title: "La Sociologie et sa vocation scientifique"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Dominique Raynaud"
 authorLastName: "Raynaud"
 imageUrl: "/assets/images/couvertures/raynaud-sociologie-et-sa-vocation-scientifique.webp"

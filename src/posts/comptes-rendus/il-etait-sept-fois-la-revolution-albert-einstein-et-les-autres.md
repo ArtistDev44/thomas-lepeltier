@@ -1,8 +1,8 @@
 ---
 title: "Il était sept fois la révolution. Albert Einstein et les autres..."
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences", "Sciences"]
 authorFullName: "Étienne Klein"
 authorLastName: "Klein"
 imageUrl: "/assets/images/couvertures/klein-sept-fois-revolution-einstein.webp"

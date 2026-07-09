@@ -1,8 +1,8 @@
 ---
 title: "La Philosophie de l’esprit. De la relation entre l’esprit et la nature"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Michael Esfeld"
 authorLastName: "Esfeld"
 imageUrl: "/assets/images/couvertures/esfeld-philosophie-de-l-esprit.webp"

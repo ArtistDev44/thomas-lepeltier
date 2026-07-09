@@ -27,12 +27,12 @@ export default {
       ]
     },
     {
-      text: 'Comptes-rendus',
-      url: '/comptes-rendus/'
-    },
-    {
       text: 'Articles',
       url: '/articles/'
+    },
+    {
+      text: 'Chroniques',
+      url: '/chroniques/'
     },
     {
       text: 'Contact',
@@ -46,11 +46,11 @@ export default {
     },
     {
       text: 'Légal',
-      url: '/imprint/'
+      url: '/legal/'
     },
     {
       text: 'Confidentialité',
-      url: '/privacy/'
-    },
+      url: '/confidentialite/'
+    }
   ]
 };

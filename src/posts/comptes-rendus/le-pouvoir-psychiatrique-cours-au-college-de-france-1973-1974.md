@@ -1,8 +1,8 @@
 ---
 title: "Le Pouvoir psychiatrique. Cours au Collège de France, 1973-1974"
 date: 2003-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Michel Foucault"
 authorLastName: "Foucault"
 imageUrl: "/assets/images/couvertures/foucault-pouvoir-psychiatrique-cours-college-de-france.webp"

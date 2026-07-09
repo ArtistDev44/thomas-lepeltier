@@ -1,8 +1,8 @@
 ---
 title: "L’Univers dévoilé. Une histoire de l’astronomie de 1910 à aujourd’hui"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "James Lequeux"
 authorLastName: "Lequeux"
 imageUrl: "/assets/images/couvertures/lequeux-univers-devoile.webp"

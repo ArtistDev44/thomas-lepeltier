@@ -1,8 +1,8 @@
 ---
 title: "Adam’s ancestors. Race, religion & the politics of human origins"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "David N. Livingstone"
 authorLastName: "N. Livingstone"
 imageUrl: "/assets/images/couvertures/livingstone-adam-s-ancestors.webp"

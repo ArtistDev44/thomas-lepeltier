@@ -1,8 +1,8 @@
 ---
 title: "Petit traité du commencement de toutes choses"
 date: 2008-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Religion", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Religion", "Sciences"]
 authorFullName: "Hans Küng"
 authorLastName: "Küng"
 imageUrl: "/assets/images/couvertures/kung-petit-traite-commencement-toutes-choses.webp"

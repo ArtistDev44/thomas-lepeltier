@@ -1,8 +1,8 @@
 ---
 title: "Avant Einstein. Relativité, lumière, gravitation"
 date: 2005-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Jean Eisenstaedt"
 authorLastName: "Eisenstaedt"
 imageUrl: "/assets/images/couvertures/eisenstaedt-avant-einstein.webp"

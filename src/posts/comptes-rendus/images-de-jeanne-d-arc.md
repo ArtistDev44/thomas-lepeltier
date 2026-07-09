@@ -1,8 +1,8 @@
 ---
 title: "Images de Jeanne d’Arc"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Jean Maurice et Daniel Couty (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/maurice-couty-images-de-jeanne-d-Arc.webp"

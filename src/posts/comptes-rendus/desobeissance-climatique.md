@@ -1,8 +1,8 @@
 ---
 title: "Désobéissance climatique"
 date: 2024-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", ]
+layout: "chronique.njk"
+tags: ["Chronique", ]
 authorFullName: "Sandra Laugier et Albert Ogien"
 authorLastName: "Ogien"
 imageUrl: "/assets/images/couvertures/laugier-ogien-desobeissance-climatique.webp"

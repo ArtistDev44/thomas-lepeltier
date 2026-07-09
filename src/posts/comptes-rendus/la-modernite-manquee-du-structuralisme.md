@@ -1,8 +1,8 @@
 ---
 title: "La Modernité manquée du structuralisme"
 date: 2004-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Maxime Parodi"
 authorLastName: "Parodi"
 imageUrl: "/assets/images/couvertures/parodi-modernite-manquee-du-structuralisme.webp"

@@ -1,14 +1,14 @@
 ---
 title: "L’Histoire conquérante. Un regard sur l’historiographie française"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Historiographie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Historiographie"]
 authorFullName: "Carlos Antonio Aguirre Rojas"
 authorLastName: "Rojas"
 imageUrl: "/assets/images/couvertures/aguirre-rojas-histoire-conquerante.webp"
 amazonLink: ""
 alphabeticalPage: ["a"]
-description: "compte rendu de Carlos Antonio Aguirre Rojas, L'Histoire conquerante, Un regard sur l’historiographie française, annales, Marc Bloch, Lucien Febvre."
+description: "Chronique de Carlos Antonio Aguirre Rojas, L'Histoire conquerante, Un regard sur l’historiographie française, annales, Marc Bloch, Lucien Febvre."
 ---
 
 En 1929, Marc Bloch et Lucien Febvre lançaient la revue les Annales qui allait bouleverser le paysage historiographique français. En adoptant un ton polémique contre une historiographie dominante qui privilégiait les sources écrites et se focalisait sur les événements politiques, nos deux historiens définissaient clairement leur orientation. À une histoire tournée vers les grands hommes et les « champs de bataille », ils entendaient en effet substituer une histoire qui, s’appuyant sur toutes les traces du passé, s’intéressait à ce que justement ne disent pas les textes, c’est-à-dire à la fois aux manières anciennes de vivre, de travailler, de se loger, de penser, etc., et à ces lents processus qui, en deçà des événements politiques, témoignent des transformations profondes des sociétés. Entreprise qui a été couronnée de succès si on en juge par l’abondante production historiographique qui s’en inspire et par les positions de pouvoir qu’occupent actuellement dans le monde éditorial et universitaire les historiens issus de ce courant.        Il ne faudrait toutefois pas voir dans ce dernier une école aux orientations toujours identiques. Comme le souligne l’auteur de ce livre alerte, qui retrace son évolution de 1929 à 1999, ce courant historiographique est effectivement traversé par différentes lignes de force, chacune prédominant plus ou moins suivant les époques ou les historiens. L’auteur distingue ainsi quatre (ou cinq) grandes périodes. Les années 1929-1941 où Bloch et Febvre réussissent à imposer leurs idées et à nouer le dialogue avec les sciences sociales. Les années 1941-1956 — années de transition dit l’auteur — où, après la rupture avec Bloch et surtout après l’exécution de ce dernier par les Allemands en 1944, Febvre gère seul la revue jusqu’à sa mort. Les années 1956-1968, marquées par la personnalité de Fernand Braudel, où dominent l’histoire économique et l’étude des phénomènes de longue durée. Les années 1968-1989, propices à l’histoire des mentalités. Enfin, les années 1989-1999 où les historiens, critiquant l’ambiguïté de cette notion de mentalité, essayèrent de mieux définir les liens entre phénomènes culturels et phénomènes sociaux.        En analysant et en situant ces différentes orientations à la fois dans la production historiographique mondiale et, chose moins courante, par rapport à l’historiographie d’inspiration marxiste, l’auteur réussit ainsi en relativement peu de pages à brosser un panorama complet du courant des Annales.

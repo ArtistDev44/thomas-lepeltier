@@ -1,8 +1,8 @@
 ---
 title: "L’Âge d'or de l'empirisme logique (1929-1936)"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Philosophie"]
+layout: "chronique.njk"
+tags: ["Chronique", "Philosophie"]
 authorFullName: "Christian Bonnet et Pierre Wagner (eds)"
 authorLastName: "(eds)"
 imageUrl: "/assets/images/couvertures/bonnet-wagner-age-d-or-empirisme-logique-vienne-berlin-prague.webp"

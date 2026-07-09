@@ -1,11 +1,11 @@
 ---
 layout: base
-title: Comptes-rendus
+title: Chroniques de livres
 description: 'All blog posts can be found here'
 pagination:
   data: collections.allPosts
   size: 50
-permalink: 'comptes-rendus/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+permalink: 'chroniques/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 ---
 
 <div class="wrapper">
@@ -17,6 +17,7 @@ permalink: 'comptes-rendus/{% if pagination.pageNumber >=1 %}page-{{ pagination.
     {% svg "divider/edgy", null, "divider" %}
   </div>
 
+<<<<<<< HEAD:src/pages/comptes-rendus.njk
   <!--<div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
     <p>Persuadés que trop d'essais ne trouvent pas le nombre de lecteurs qu'ils méritent, je crois à l'intérêt d'en publier des comptes-rendus afin de les faire connaître à un plus large public.
 </p><p>
@@ -24,6 +25,13 @@ Mais plutôt que d'écrire de simples « annonces publicitaires » qui n'apprenn
     </p>
   </div>-->
   <h2> Rechercher un compte-rendu </h2>
+=======
+  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
+    <p>Des chroniques de livres, précis, fidèles et, parfois, critiques.
+    </p>
+  </div>
+  <h2> Rechercher une chronique </h2>
+>>>>>>> ceb8bb76c8a194c02e1d85fcf057876a3a0e1b93:src/pages/chroniques.njk
   <style>
   .search-container {
     display: flex;

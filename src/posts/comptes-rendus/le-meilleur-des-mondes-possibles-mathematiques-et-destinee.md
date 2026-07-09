@@ -1,8 +1,8 @@
 ---
 title: "Le Meilleur des mondes possibles. Mathématiques et destinée"
 date: 2000-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences"]
 authorFullName: "Ivar Ekeland"
 authorLastName: "Ekeland"
 imageUrl: "/assets/images/couvertures/ekeland-meilleur-des-mondes-possibles.webp"

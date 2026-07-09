@@ -1,8 +1,8 @@
 ---
 title: "Histoire de la voyance et du paranormal. Du XVIIIe siècle à nos jours"
 date: 2006-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Sciences humaines"]
+layout: "chronique.njk"
+tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Nicole Edelman"
 authorLastName: "Edelman"
 imageUrl: "/assets/images/couvertures/edelman-histoire-voyance-paranormal.webp"

@@ -1,8 +1,8 @@
 ---
 title: "Quand les sciences dialoguent avec la métaphysique"
 date: 2011-01-01
-layout: "compte-rendu.njk"
-tags: ["Rapports", "Histoire des sciences"]
+layout: "chronique.njk"
+tags: ["Chronique", "Histoire des sciences"]
 authorFullName: "Pascal Charbonnat"
 authorLastName: "Charbonnat"
 imageUrl: "/assets/images/couvertures/charbonnat-sciences-metaphysique.webp"
