@@ -34,8 +34,9 @@ layout: page
   </p>
 
   <p>
-    Engagé dans les réflexions sur la transition écologique et sociétale, je préside également le pôle <em>think tank</em> d'<strong>APALA</strong>. Cette association nantaise, structurée comme un <em>think & do tank</em>, promeut une approche rationnelle, scientifique et critique afin d'identifier les leviers d'action les plus efficaces, d'écarter les fausses bonnes idées et de soutenir des projets concrets de transition.
+    Engagé dans les réflexions sur la transition écologique et sociétale, je dirige également le pôle <em>think tank</em> d'<strong>APALA</strong>. Cette association nantaise, structurée comme un <em>think & do tank</em>, promeut une approche rationnelle, scientifique et critique afin d'identifier les leviers d'action les plus efficaces, d'écarter les fausses bonnes idées et de soutenir des projets concrets de transition.
   </p>
+  <p>Thomas Lepeltier s’est fait connaître par un travail de recension exigeant, clair et indépendant, reconnu à la fois par des lecteurs, des universitaires, des chercheurs et des auteurs pour sa rigueur intellectuelle, sa fidélité aux œuvres analysées et sa capacité à rendre accessibles des sujets complexes sans les simplifier abusivement.</p>
 
   <p class="mt-4">Vous trouverez sur ce site :</p>
 
@@ -44,11 +45,11 @@ layout: page
 | **1. Mes livres**<br>Une présentation de mes livres (10 en tant qu'auteur et 4 que j'ai dirigés). | **2. Contributions**<br>Les livres auxquels j'ai contribué (18). |
 | **3. Comptes rendus**<br>Mes comptes rendus de livres (+ de 500). | **4. Articles**<br>Mes articles (plus d'une centaine). |
 
-  <div class="mt-4">
-    <a class="button underline" href="/commentaires">
-      Voir les commentaires reçus
-    </a>
-  </div>
+## Critiques de référence
+
+{% set itemList = collections.critiquesg %}
+{% set headingLevel = "h3" %} {# optional, defaults to false #}
+{% include 'partials/details.njk' %}
 
 <style>
 img {

@@ -20,7 +20,11 @@ layout: base
       {{ content | lettrine | safe }}
   </div>
   </div>
-  <div>
+
+  {% if critiques %}
+    {% set headingLevel = "h3" %}
+    {% include 'partials/commentaires.njk' %}
+  {% endif %}
 
 <div class="flow prose">
 <a class="button" href="{{liens_achat}}">Soutenez moi en achetant ce livre</a>

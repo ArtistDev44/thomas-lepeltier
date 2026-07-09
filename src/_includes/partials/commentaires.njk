@@ -1,0 +1,32 @@
+{% set headingLevel = headingLevel | default(false) %}
+
+{% if critiques %}
+<div class="details flow">
+  <details id="critiques-du-livre">
+            <summary>
+        {%- if headingLevel -%}
+          <{{ headingLevel }}>Critiques du livre</{{ headingLevel }}>
+        {%- else -%}
+Critiques du livre
+        {%- endif -%}
+      </summary>
+    <custom-masonry layout="50-50">
+      {% for critique in critiques %}
+      <custom-card>
+        <h3 slot="headline">{{ critique.auteur }}</h3>
+        <p slot="content">{{ critique.contenu }}</p>
+        <footer slot="footer"></footer>
+      </custom-card>
+      {% endfor %}
+    </custom-masonry>
+  </details>
+</div>
+
+{% css "local" %}
+  {% include "css/details.css" %}
+{% endcss %}
+
+{% js "defer" %}
+  {% include "scripts/details.js" %}
+{% endjs %}
+{% endif %}

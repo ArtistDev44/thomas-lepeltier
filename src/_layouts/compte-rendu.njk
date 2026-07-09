@@ -3,43 +3,44 @@ layout: base
 ---
 
 <div data-pagefind-body data-pagefind-filter="section: Comptes-rendus" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl);">
-    <h1 class="gradient-text">Compte-rendu de {{ title }}</h1>
-<div class="tags-container">
-{% for tag in tags %}
-  <a href="/tags/{{ tag | slugify }}"><span slot="tag" class="button">{{ tag }}</span></a>
-{% endfor %}
-</div>
 
-<p>Rédigé en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}
-</p>
+    <div class="flex">
+    {% include 'partials/livre3D.njk' %}
+    <div style="align-content: center;">
+    <h1>Compte-rendu<span class="gradient-text"><br>{{ title }}</span></h1>
+    <p>{{authorFullName}}</p>
+    </div>
+    </div>
 <div>
 
-    {% include 'partials/livre3D.njk' %}
   <div data-pagefind-ignore>
       {{ content | lettrine | safe }}
   </div>
   </div>
   <div>
-<a class="button" href="{{amazonLink}}">Lien amazon</a>
+      <div class="flex flex-nowrap" style="gap: 5rem;">
+<div>
+          <a class="button" href="{{amazonLink}}">Lien amazon</a>
 </div>
-{% if paru_dans_titre %}
-  <p class="publication-source">
-    Paru dans
-    {% if paru_dans_url %}
-      <a href="{{ paru_dans_url }}" target="_blank" rel="noopener noreferrer">
-        {{ paru_dans_titre }}
+<div>
+  <p class="publication-source content-end">
+    Paru
+{% if publication.titre %}
+ dans
+    {% if publication.url %}
+      <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer" style="padding: 0;">
+        {{ publication.titre }}
       </a>
     {% else %}
-      <em>{{ paru_dans_titre }}</em>
+      <em>{{ publication.titre }}</em>
     {% endif %}
-  </p>
 {% endif %}
+en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}.
+</p>
+</div>
+</div>
 
-
-
-
-
-<div data-pagefind-ignore>
+<!--<div data-pagefind-ignore>
 {% set related = collections.Rapports | relatedRapports(tags, page.url) %}
 {% if related.length %}
   <h2>Comptes-rendus similaires</h2>
@@ -145,7 +146,7 @@ layout: base
 {% endif %}
 
 
-</div>
+</div>-->
 <style>
 /* ── Section wrapper ─────────────────────────────── */
 .reviews {

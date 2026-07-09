@@ -6,7 +6,6 @@ tags: ["livre","livresDiriges","Astrophysique"]
 description: "Une déconstruction en règle du spécisme et une promotion d'une éthique prenant en compte les intérêts de l'ensemble des êtres sensibles."
 imageUrl: "/assets/images/livres-couvertures/autre-cosmos-cosmologies-alternatives.webp"
 liens_achat: []
-critiques: "<<Cet ouvrage arrive à point nommé, c'est un livre lucide et constructeur>>, Science et pseudo-sciences."
 nombre_de_pages: "160"
 edition_nom: "Éditions Vuibert"
 edition_lien: "http://www.vuibert.fr/"
@@ -16,6 +15,11 @@ lien_table_des_matieres: ""
 note: ""
 supplements: ""
 permalink: "/livres/autre-cosmos-cosmologies-alternatives/index.html"
+critiques:
+  - contenu: "Un livre essentiel qui bouscule nos certitudes cosmologiques."
+    auteur: "Étienne Klein"
+  - contenu: "Une réflexion rigoureuse et accessible."
+    auteur: "Sean Carroll"
 ---
 
 L'univers est-il né d'un big bang ? La plupart des cosmologistes et astrophysiciens l'affirment. Ils précisent même que l'univers est apparu il y a 13,7 milliards d'années et qu'il est maintenant entré dans une phase d'expansion accélérée. Pourtant, il existe bel et bien d'autres scénarios de l'histoire du cosmos.

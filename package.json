@@ -17,6 +17,7 @@
     "dev:11ty": "cross-env ELEVENTY_ENV=development NODE_OPTIONS=--max-old-space-size=16384 eleventy --serve",
     "build:11ty": "cross-env ELEVENTY_ENV=production eleventy",
     "start": "npm run dev:11ty",
+    "serve-low": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "build": "npm run clean && npm run build:11ty && npx -y pagefind --site dist",
     "pa11y:build": "npm run clean && cross-env ELEVENTY_ENV=test eleventy",
     "pa11y:test": "sleep 3 && pa11y-ci --config ./dist/pa11y.json",
