@@ -2,19 +2,11 @@
 layout: base
 ---
 
-<div data-pagefind-body data-pagefind-filter="section: Comptes-rendus" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl);">
-=======
 <div data-pagefind-body data-pagefind-filter="section: Chroniques" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl);">
-    <h1 class="gradient-text">Chronique de {{ title }}</h1>
-<div class="tags-container">
-{% for tag in tags %}
-  <a href="/tags/{{ tag | slugify }}"><span slot="tag" class="button">{{ tag }}</span></a>
-{% endfor %}
-</div>
 
     <div class="flex">
     {% include 'partials/livre3D.njk' %}
-    <div style="align-content: center;">
+    <div class="content-center">
     <h1>Compte-rendu<span class="gradient-text"><br>{{ title }}</span></h1>
     <p>{{authorFullName}}</p>
     </div>

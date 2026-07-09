@@ -179,7 +179,7 @@ Essayiste, Thomas Lepeltier développe depuis plusieurs années une œuvre consa
   <custom-masonry>
     {%- for chronique in collections.Chronique | reverse -%}
       {% if loop.index0 < 6 %}
-        <a href="/chroniques/{{ chronique.url | url | slug }}">
+        <a href="/chroniques/{{ chronique.data.title | slugify }}/">
           <figure>
             <img src="{{ chronique.data.imageUrl }}"
                  alt="{{ chronique.data.title }}"
