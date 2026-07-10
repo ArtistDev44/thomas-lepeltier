@@ -2,8 +2,8 @@
 title: Stability of axisymmetric massive current sheets supported by...
 date: 1996-01-01
 layout: "post.njk"
-category: "Astrophysique"
-tags: ["article","Astrophysique"]
+category: "Cosmologie"
+tags: ["article","Cosmologie"]
 authors: []
 imageUrl: "/assets/images/articles/astrophysique1.webp"
 internalLink: ""

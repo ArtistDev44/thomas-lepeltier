@@ -2,8 +2,8 @@
 title: Current sheet model of normal prominence in which the background magnetic...
 date: 1994-01-01
 layout: "post.njk"
-category: "Astrophysique"
-tags: ["article","Astrophysique"]
+category: "Cosmologie"
+tags: ["article","Cosmologie"]
 authors: []
 imageUrl: "/assets/images/articles/astrophysique3.webp"
 internalLink: ""

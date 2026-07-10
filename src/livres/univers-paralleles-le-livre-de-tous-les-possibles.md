@@ -2,20 +2,20 @@
 title: "Univers parallèles"
 date: 2010-01-01
 layout: "livre.njk"
-tags: ["livre", "mesLivres", "Astrophysique"]
+tags: ["livre", "mesLivres", "Cosmologie"]
 description: "Un essai d'épistémologie original et brillant sur les théories des univers parallèles."
 imageUrl: "/assets/images/livres-couvertures/univers-paralleles.webp"
 liens_achat: []
 critiques: 
   - auteur: "Science et Avenir"
-    texte: "Un livre passionnant, dans lequel on est prêt à plonger une multitude de fois."
+    contenu: "Un livre passionnant, dans lequel on est prêt à plonger une multitude de fois."
   - auteur: "Ciel et Espace"
-    texte: "Thomas Lepeltier signe un essai d'épistémologie (son troisième) original et brillant. Lepeltier nous régale. C'est bien écrit, inattendu et érudit."
+    contenu: "Thomas Lepeltier signe un essai d'épistémologie (son troisième) original et brillant. Lepeltier nous régale. C'est bien écrit, inattendu et érudit."
   - auteur: "Astronomie magazine"
-    texte: "Un livre passionnant, qui mêle l'histoire des idées et celle des sciences, la littérature, la théologie et la science-fiction. Avec un souci constant de clarté et de pédagogie, et non sans un certain humour, l'auteur réussit cet exploit de nous parler thermodynamique ou physique quantique dans un langage simple et accessible à tous."
+    contenu: "Un livre passionnant, qui mêle l'histoire des idées et celle des sciences, la littérature, la théologie et la science-fiction. Avec un souci constant de clarté et de pédagogie, et non sans un certain humour, l'auteur réussit cet exploit de nous parler thermodynamique ou physique quantique dans un langage simple et accessible à tous."
   - auteur: "L'Astronomie"
-    texte: "Très intéressant ouvrage abordant avec clarté des problèmes complexes de la physique actuelle. Ce livre captivant sera apprécié par les esprits avides de découvertes."
-nombre_de_pages: ""
+    contenu: "Très intéressant ouvrage abordant avec clarté des problèmes complexes de la physique actuelle. Ce livre captivant sera apprécié par les esprits avides de découvertes."
+nombre_de_pages: 
 edition_nom: "Éditions du Seuil"
 edition_lien: "http://www.editionsduseuil.fr/"
 prix: ""

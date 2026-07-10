@@ -2,8 +2,8 @@
 title: Computation of the magnetic field around a quiescent prominence from...
 date: 1995-01-01
 layout: "post.njk"
-category: "Astrophysique"
-tags: ["article","Astrophysique"]
+category: "Cosmologie"
+tags: ["article","Cosmologie"]
 authors: []
 imageUrl: "/assets/images/articles/astrophysique2.webp"
 internalLink: ""

@@ -2,14 +2,14 @@
 title: "Un autre cosmos ?"
 date: 1234-01-01
 layout: "livre.njk"
-tags: ["livre","livresDiriges","Astrophysique"]
+tags: ["livre","livresDiriges","Cosmologie"]
 description: "Une déconstruction en règle du spécisme et une promotion d'une éthique prenant en compte les intérêts de l'ensemble des êtres sensibles."
 imageUrl: "/assets/images/livres-couvertures/autre-cosmos-cosmologies-alternatives.webp"
 liens_achat: []
 nombre_de_pages: "160"
 edition_nom: "Éditions Vuibert"
 edition_lien: "http://www.vuibert.fr/"
-prix: "19 €"
+prix: "19"
 description_auteur: "Thomas Lepeltier est essayiste spécialisé en histoire et philosophie des sciences ainsi qu'en éthique animale."
 lien_table_des_matieres: ""
 note: ""
