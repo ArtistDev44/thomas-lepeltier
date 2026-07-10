@@ -125,3 +125,13 @@ figure {
   margin-top: 0.05em;
   color: var(--color-primary);
 }
+
+p.mise_en_avant {
+  color: var(--color-primary);
+  font-size: larger;
+  display: block;
+  width: 600px;
+  font-weight: 700;
+  float: right;
+  padding: 1rem 2rem;
+}
