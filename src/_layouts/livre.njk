@@ -5,14 +5,11 @@ layout: base
 <div data-pagefind-body data-pagefind-filter="section: Livres" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
   <h1 class="gradient-text">Présentation du livre {{ title }}</h1>
 
-<div class="tags-container">
-{% for tag in tags %}
-  <a href="/tags/{{ tag | slugify }}"><span slot="tag" class="button">{{ tag }}</span></a>
-{% endfor %}
-</div>
-
-<p>Rédigé en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}
-</p>
+  <h2>Fiche technique</h2>
+<p>Date de commercialisation : {{page.date.toLocaleString( undefined, { year: 'numeric' })}}
+<p>Nombre de pages : {{nombre_de_pages}} </p>
+<p>Prix en euro : {{prix}} </p>
+<p>Editeur : <a href="{{ edition_lie }}">{{ edition_nom }}</a> </p>
 <div>
 
     {% include 'partials/livre3D.njk' %}

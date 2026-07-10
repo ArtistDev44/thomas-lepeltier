@@ -10,7 +10,7 @@
 Critiques du livre
         {%- endif -%}
       </summary>
-    <custom-masonry layout="50-50">
+    <custom-masonry-no-js layout="50-50">
       {% for critique in critiques %}
       <custom-card>
         <h3 slot="headline">{{ critique.auteur }}</h3>
@@ -18,7 +18,7 @@ Critiques du livre
         <footer slot="footer"></footer>
       </custom-card>
       {% endfor %}
-    </custom-masonry>
+    </custom-masonry-no-js>
   </details>
 </div>
 
