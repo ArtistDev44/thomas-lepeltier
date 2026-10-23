@@ -31,6 +31,15 @@ export const markdownLib = markdownIt({
   .use(markdownItClass, {})
   .use(markdownItLinkAttributes, [
     {
+      // liens d'affiliation Amazon : à déclarer comme tels aux moteurs de recherche
+      matcher(href) {
+        return /^https?:\/\/([^/]+\.)?(amazon\.[a-z.]+|amzn\.[a-z]+)\//.test(href);
+      },
+      attrs: {
+        rel: 'sponsored noopener'
+      }
+    },
+    {
       // match external links
       matcher(href) {
         return href.match(/^https?:\/\//);

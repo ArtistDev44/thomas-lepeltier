@@ -278,7 +278,7 @@
     },
     {
       "source": "/autre-cosmos/contents-cosmologie-alternative.html",
-      "destination": "/livres/autre-cosmos-cosmologies-alternatives/",
+      "destination": "/livres/autre-cosmos-cosmologies-alternatives/table-des-matieres/",
       "permanent": true
     },
     {
@@ -2958,7 +2958,7 @@
     },
     {
       "source": "/darwin-heretique/contents.html",
-      "destination": "/livres/darwin-heretique-l-eternel-retour-du-creationnisme/",
+      "destination": "/livres/darwin-heretique-l-eternel-retour-du-creationnisme/table-des-matieres/",
       "permanent": true
     },
     {
@@ -2968,7 +2968,7 @@
     },
     {
       "source": "/hist-philo-sciences/histoire-philosophie-sciences-tb-2.html",
-      "destination": "/livres/histoire-et-philosophie-des-sciences-edition-revue-et-augmentee/",
+      "destination": "/livres/histoire-et-philosophie-des-sciences-edition-revue-et-augmentee/table-des-matieres/",
       "permanent": true
     },
     {
@@ -3013,7 +3013,7 @@
     },
     {
       "source": "/revolution-antispeciste/tdm.html",
-      "destination": "/livres/revolution-antispeciste/#table-des-matieres",
+      "destination": "/livres/revolution-antispeciste/table-des-matieres/",
       "permanent": true
     },
     {
@@ -3033,7 +3033,7 @@
     },
     {
       "source": "/univers_paralleles/contents.html",
-      "destination": "/livres/univers-paralleles-le-livre-de-tous-les-possibles/",
+      "destination": "/livres/univers-paralleles-le-livre-de-tous-les-possibles/table-des-matieres/",
       "permanent": true
     },
     {
@@ -3043,7 +3043,7 @@
     },
     {
       "source": "/veganes-au-pouvoir/tdm-1.html",
-      "destination": "/livres/les-veganes-vont-ils-prendre-le-pouvoir/",
+      "destination": "/livres/les-veganes-vont-ils-prendre-le-pouvoir/table-des-matieres/",
       "permanent": true
     },
     {
@@ -3053,7 +3053,7 @@
     },
     {
       "source": "/viande-de-culture/tdm.html",
-      "destination": "/livres/viande-de-culture/",
+      "destination": "/livres/viande-de-culture/table-des-matieres/",
       "permanent": true
     },
     {
