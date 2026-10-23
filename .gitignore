@@ -16,3 +16,6 @@ src/_includes/scripts
 src/pages/annexes
 src/pages/styleguide.njk
 src/comptes-rendus/
+
+# images Open Graph générées au build (npm run clean:og pour les supprimer)
+src/assets/og-images
