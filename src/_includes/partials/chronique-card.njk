@@ -8,7 +8,7 @@
 >
   <a class="chronique-card" href="{{ item.url | url }}">
     <span class="chronique-card__cover">
-      {% if item.data.imageUrl %}{% image item.data.imageUrl, "", "", "lazy", "", "", [160, 320], "96px", ["webp", "jpeg"] %}{% endif %}
+      {% if item.data.imageUrl %}{% image item.data.imageUrl, "", "", "lazy", "", "", [160, 320], "96px", ["webp"] %}{% endif %}
     </span>
     <span class="chronique-card__body">
       <span class="chronique-card__title">{{ item.data.title }}</span>

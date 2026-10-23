@@ -106,6 +106,10 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
     silent: true,
+    // Par défaut, `--serve` encode les images à la volée, à chaque requête et sans jamais garder le résultat :
+    // /articles/ ré-encodait ses ~165 images (~28 s de sharp) à chaque affichage et saturait le serveur.
+    // Encodées au build, elles sont écrites dans dist/ une fois pour toutes et ignorées ensuite.
+    transformOnRequest: false,
     // formats: ['webp', 'jpeg'],
     formats: ['webp'],
     widths: ['auto'],

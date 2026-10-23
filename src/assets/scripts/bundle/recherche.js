@@ -240,7 +240,8 @@ const initSearch = form => {
   // (l'adresse change à chaque essai, car le navigateur garde en mémoire l'échec d'un import).
   const load = async attempt => {
     try {
-      pagefind = await import(/* @vite-ignore */ `${PAGEFIND_URL}?essai=${attempt}`);
+      // 1er essai : l'adresse exacte du <link rel="modulepreload"> de la page, donc déjà en cache
+      pagefind = await import(/* @vite-ignore */ attempt === 1 ? PAGEFIND_URL : `${PAGEFIND_URL}?essai=${attempt}`);
       await pagefind.init();
       totals = await pagefind.filters();
     } catch (error) {
