@@ -1,12 +1,46 @@
 .gallery dialog {
   border-radius: var(--border-radius-medium);
   inset: revert;
+  max-inline-size: calc(100vw - 2rem);
+  padding: var(--space-s);
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
 /* the image that serves as button */
 .gallery dialog + button {
   all: unset;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--shadow-cover);
+  background: var(--color-bg-accent);
+  aspect-ratio: 4 / 3;
   cursor: pointer;
+  transition:
+    transform var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
+}
+
+.gallery dialog + button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-m);
+}
+
+.gallery .poster-year {
+  position: absolute;
+  inset-block-start: var(--space-2xs);
+  inset-inline-start: var(--space-2xs);
+  z-index: 1;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  background: rgb(12 14 46 / 0.82);
+  color: #ffffff;
+  font-size: var(--size-step-min-2);
+  font-weight: var(--font-bold);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
 }
 
 .gallery dialog + button:focus-visible {
@@ -21,8 +55,16 @@
 }
 
 .gallery dialog + button img {
-  aspect-ratio: 1;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
+  border: 0;
+  border-radius: 0;
+}
+
+.gallery dialog + button picture {
+  display: block;
+  block-size: 100%;
 }
 
 /* Don't indicate interactivity without JS */
@@ -31,9 +73,7 @@ is-land:not(:defined) .gallery dialog + button {
 }
 
 .gallery dialog::backdrop {
-  background-image: var(--gradient-stripes);
-  opacity: 0.9;
-  filter: brightness(50%);
+  background: rgb(7 8 32 / 0.88);
 }
 
 .gallery dialog img {

@@ -6,34 +6,30 @@ pagination:
   alias: tag
 permalink: /tags/{{ tag | slugify }}/
 eleventyComputed:
-  title: '{{ meta.blog.tagSingle }}: {{ tag }}'
+  title: '{{ meta.blog.tagSingle }} : {{ tag }}'
 ---
 
-<custom-masonry layout="50-50">
+<ul class="chronique-list" role="list">
   {% set itemList = collections[tag] | reverse %}
-  {% for item in itemList %}
-
-		{% include "partials/card-tag.njk" %}
-  {% endfor %}
-</custom-masonry>
-
-<h2 class="text-step-2">{{ meta.blog.tagMore }}</h2>
-
-<ul class="taglist | my-s-m cluster gutter-s" role="list">
-  {% for tag in collections.tagList %}
-    <li>
-      <a
-        href="/tags/{{ tag | slugify }}/"
-        class="button"
-        {{
-          helpers.getLinkActiveState('/tags/' + tag | slugify + '/',
-          page.url)
-          |
-          safe
-        }}
-      >
-        {{ tag }}
-      </a>
-    </li>
-  {% endfor %}
+  {% asyncEach item in itemList %}
+    {% include "partials/chronique-card.njk" %}
+  {% endeach %}
 </ul>
+
+<section class="page-section" aria-labelledby="autres-rubriques">
+  <h2 id="autres-rubriques" class="text-step-2">{{ meta.blog.tagMore }}</h2>
+
+  <ul class="tag-list" role="list">
+    {% for t in collections.tagList | publicTags %}
+      <li>
+        <a
+          href="/tags/{{ t | slugify }}/"
+          class="tag"
+          {{ helpers.getLinkActiveState('/tags/' + t | slugify + '/', page.url) | safe }}
+        >
+          {{ t }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

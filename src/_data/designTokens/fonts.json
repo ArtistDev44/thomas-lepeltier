@@ -5,13 +5,25 @@
   "items": [
     {
       "name": "Display",
-      "description": "Display font stack for headings and large text. Redhat Display is made for headlines and big statements, are low contrast and spaced tightly, with a large x-height and open counters.",
-      "value": ["Times New Roman", "Big Caslon", "Arial", "sans-serif"]
+      "description": "Display font stack for headings and large text: an editorial serif available on every system (Iowan Old Style on Apple devices, Palatino Linotype on Windows, Georgia as a safety net). No download needed.",
+      "value": [
+        "Iowan Old Style",
+        "Palatino Linotype",
+        "Palatino",
+        "Book Antiqua",
+        "Georgia",
+        "serif"
+      ]
     },
     {
       "name": "Base",
-      "description": "Base font stack for body text. Atkinson Hyperlegible, named after the founder of the Braille Institute, has been developed specifically to increase legibility for readers with low vision, and to improve comprehension.",
-      "value": ["Big Caslon", "Arial", "sans-serif"]
+      "description": "Base font stack for body text. Atkinson Hyperlegible, named after the founder of the Braille Institute, has been developed specifically to increase legibility for readers with low vision, and to improve comprehension. It is self-hosted in /assets/fonts/atkinson.",
+      "value": [
+        "Atkinson Hyperlegible",
+        "Segoe UI",
+        "system-ui",
+        "sans-serif"
+      ]
     },
     {
       "name": "Mono",

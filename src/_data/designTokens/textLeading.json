@@ -14,6 +14,10 @@
     {
       "name": "Standard",
       "value": 1.4
+    },
+    {
+      "name": "Relaxed",
+      "value": 1.6
     }
   ]
 }

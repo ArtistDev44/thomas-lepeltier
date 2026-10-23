@@ -2,188 +2,51 @@
 layout: base
 ---
 
-<div data-pagefind-body data-pagefind-filter="section: Chroniques" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl);">
+{% set texteChronique = content | striptags | trim %}
 
-    <div class=":max-[1000px]:flex-col-reverse md:flex">
-    {% include 'partials/livre3D.njk' %}
-    <div class="content-center">
-    <h1>Compte-rendu<span class="gradient-text"><br>{{ title }}</span></h1>
-    <p>{{authorFullName}}</p>
+<article data-pagefind-body data-pagefind-filter="section: Chroniques" class="wrapper">
+  <header class="page-header">
+    <span class="eyebrow">Chronique{% if page.date | anneeConnue %} · {{ page.date | anneeConnue }}{% endif %}</span>
+    <h1>{{ title }}</h1>
+    {% if authorFullName %}<p class="lead">{{ authorFullName }}</p>{% endif %}
+  </header>
+
+  <div class="book-layout">
+    <aside class="book-aside" aria-label="Le livre chroniqué">
+      {% include 'partials/couverture.njk' %}
+
+      {% if publication.titre %}
+        <dl class="book-facts">
+          <div>
+            <dt>Chronique parue</dt>
+            <dd>
+              {% if publication.url %}<a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.titre }}</a>{% else %}<em>{{ publication.titre }}</em>{% endif %}{% if page.date | anneeConnue %}, {{ page.date | anneeConnue }}{% endif %}
+            </dd>
+          </div>
+        </dl>
+      {% endif %}
+
+      {% if amazonLink %}
+        <div class="book-buy">
+          <a class="button" data-button-variant="primary" href="{{ amazonLink }}" rel="sponsored noopener" target="_blank">Acheter le livre<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a>
+          <p class="book-buy__note">Lien d’affiliation : il me soutient sans surcoût pour vous.</p>
+        </div>
+      {% endif %}
+    </aside>
+
+    <div class="book-main prose flow" data-pagefind-ignore>
+      {% if texteChronique.length > 40 %}
+        {{ content | safe }}
+      {% elif externalLink %}
+        <p>Cette chronique a été publiée dans {{ externalLinkSource or "un autre média" }}.</p>
+        <p>
+          <a class="button" data-button-variant="primary" href="{{ externalLink }}" target="_blank" rel="noopener noreferrer">Lire la chronique<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a>
+        </p>
+      {% else %}
+        <p><em>Cette chronique est en préparation.</em></p>
+      {% endif %}
+
+      <p class="chronique-signature">Chronique de Thomas Lepeltier</p>
     </div>
-    </div>
-<div>
-
-  {% set texteChronique = content | striptags | trim %}
-  <div data-pagefind-ignore>
-    {% if texteChronique.length > 40 %}
-      {{ content | lettrine | safe }}
-    {% elif externalLink %}
-      <p>
-        Cette chronique a été publiée dans {{ externalLinkSource or "un autre média" }}.
-        <a href="{{ externalLink }}" target="_blank" rel="noopener noreferrer">Lire la chronique</a>
-      </p>
-    {% else %}
-      <p><em>Cette chronique est en préparation.</em></p>
-    {% endif %}
   </div>
-  </div>
-  <div>
-      <div class="flex flex-nowrap" style="gap: 5rem;">
-{% if amazonLink %}
-<div>
-          <a class="button" href="{{amazonLink}}" rel="sponsored noopener" target="_blank">Acheter sur Amazon</a>
-</div>
-{% endif %}
-<div>
-  <p class="publication-source content-end">
-    {% if publication.titre or (page.date | anneeConnue) %}Paru
-{% if publication.titre %}
- dans
-    {% if publication.url %}
-      <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer" style="padding: 0;">
-        {{ publication.titre }}
-      </a>
-    {% else %}
-      <em>{{ publication.titre }}</em>
-    {% endif %}
-{% endif %}
-{% if page.date | anneeConnue %}en {{ page.date | anneeConnue }}{% endif %}.{% endif %}
-</p>
-</div>
-</div>
-
-<style>
-/* ── Section wrapper ─────────────────────────────── */
-.reviews {
-  margin-top: var(--space-xl-2xl, 4rem);
-  padding-top: var(--space-l, 2rem);
-  border-top: 1px solid #e8e4df;
-}
-
-.reviews > h2 {
-  font-size: var(--size-step-2, 1.5rem);
-  margin-bottom: var(--space-l, 2rem);
-}
-
-/* ── Card ────────────────────────────────────────── */
-.review {
-  padding: var(--space-m, 1.5rem);
-  border-left: 4px solid #c8b99a;
-  border-radius: 0 4px 4px 0;
-  margin-bottom: var(--space-m, 1.5rem);
-}
-
-/* ── Quote ───────────────────────────────────────── */
-.review__quote {
-  margin: 0 0 var(--space-s, 1rem) 0;
-  padding: 0 0 0 1.75rem;
-  border: none;
-  font-size: 1.5rem;
-  line-height: 1.8;
-  font-style: italic;
-  position: relative;
-}
-
-.review__quote::before {
-  content: "\201C";
-  position: absolute;
-  left: 0;
-  top: -0.8rem;
-  font-size: 4rem;
-  color: #c8b99a;
-  line-height: 1;
-  font-style: normal;
-  font-family: Georgia, serif;
-}
-
-/* ── Meta footer ─────────────────────────────────── */
-.review__meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem 1rem;
-  padding-top: var(--space-s, 0.75rem);
-  border-top: 1px solid #e8e4df;
-  font-size: 1rem;
-}
-
-/* ── Author ──────────────────────────────────────── */
-.review__author {
-  font-style: normal;
-  font-size: 1rem;
-}
-
-.review__author a {
-  text-decoration: none;
-}
-
-.review__author a:hover {
-  text-decoration: underline;
-}
-
-.review__role {Ce qu'en disent les lecteurs
-  font-style: italic;
-  font-size: 1rem;
-}
-
-/* ── Source ───────────────────────────────────── */
-
-.review__source a {
-  text-decoration: none;
-  font-size: 1rem;
-  letter-spacing: 0.02em;
-}
-
-.review__source a:hover {
-  text-decoration: underline;
-}
-
-/* ── Rating ──────────────────────────────────────── */
-.review__rating {
-  font-variant-numeric: tabular-nums;
-}
-
-/* ── Sentiment badge ─────────────────────────────── */
-.review__sentiment {
-  font-size: 1rem;
-  padding: 0.15rem 0.6rem;
-  border-radius: 2px;
-  font-style: normal;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-footer.review__meta {
-  color: var(--color-gray-200)
-}
-
-@layer blocks {
-  .prose :is(p, li, dl, blockquote) {
-    max-inline-size: none !important;
-    text-wrap: pretty;
-  }
-}
-
-@layer blocks {
-  .indicator::after, a[href^="http"]:not([href*="thomaslepeltier.fr"]):not(.no-indicator)::after {
-    background-image: none !important;
-  }
-  }
-    p.author_cr {
-        text-align: right;
-    }
-
-    .image-left {
-      float: left;
-      margin-right: 15px;
-    }
-@layer global {
-  h1 {
-    font-size: var(--size-step-4) !important;
-  }
-}
-
-@layer blocks {
-  .indicator::after, a[href^="http"]:not([href*="thomaslepeltier.fr"]):not(.no-indicator)::after {
-    background-image: none !important;
-</style>
+</article>

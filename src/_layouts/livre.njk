@@ -2,55 +2,57 @@
 layout: base
 ---
 
-<div data-pagefind-body data-pagefind-filter="section: Livres" class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
-  <h1 class="gradient-text">Présentation du livre {{ title }}</h1>
+<article data-pagefind-body data-pagefind-filter="section: Livres" class="wrapper">
+  <header class="page-header">
+    <span class="eyebrow">Livre{% if page.date | anneeConnue %} · {{ page.date | anneeConnue }}{% endif %}</span>
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="lead">{{ description }}</p>{% endif %}
+  </header>
 
-  <h2>Fiche technique</h2>
-{% if page.date | anneeConnue %}<p>Date de commercialisation : {{ page.date | anneeConnue }}</p>{% endif %}
-{% if nombre_de_pages %}<p>Nombre de pages : {{ nombre_de_pages }}</p>{% endif %}
-{% if prix %}<p>Prix en euro : {{ prix }}</p>{% endif %}
-{% if edition_nom %}<p>Éditeur : {% if edition_lien %}<a href="{{ edition_lien }}">{{ edition_nom }}</a>{% else %}{{ edition_nom }}{% endif %}</p>{% endif %}
-<div>
+  <div class="book-layout">
+    <aside class="book-aside" aria-label="Fiche technique">
+      {% include 'partials/couverture.njk' %}
 
-    {% include 'partials/livre3D.njk' %}
-  <div data-pagefind-ignore>
-      {{ content | lettrine | safe }}
+      {% if nombre_de_pages or prix or edition_nom or (page.date | anneeConnue) %}
+        <dl class="book-facts">
+          {% if page.date | anneeConnue %}<div><dt>Parution</dt><dd>{{ page.date | anneeConnue }}</dd></div>{% endif %}
+          {% if edition_nom %}<div><dt>Éditeur</dt><dd>{% if edition_lien %}<a href="{{ edition_lien }}" target="_blank" rel="noopener noreferrer">{{ edition_nom }}</a>{% else %}{{ edition_nom }}{% endif %}</dd></div>{% endif %}
+          {% if nombre_de_pages %}<div><dt>Pages</dt><dd>{{ nombre_de_pages }}</dd></div>{% endif %}
+          {% if prix %}<div><dt>Prix</dt><dd>{{ prix }}</dd></div>{% endif %}
+        </dl>
+      {% endif %}
+
+      {% if liens_achat and liens_achat.length %}
+        <div class="book-buy">
+          {% for lien in liens_achat %}
+            <a
+              class="button"
+              {% if loop.first %}data-button-variant="primary"{% else %}data-ghost-button{% endif %}
+              href="{{ lien }}"
+              rel="sponsored noopener"
+              target="_blank"
+              >{% if loop.first %}Acheter ce livre{% else %}Autre librairie{% endif %}<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a
+            >
+          {% endfor %}
+          <p class="book-buy__note">Certains liens sont des liens d’affiliation : ils me soutiennent sans surcoût pour vous.</p>
+        </div>
+      {% endif %}
+    </aside>
+
+    <div class="book-main prose flow" data-pagefind-ignore>
+      {{ content | safe }}
+
+      {% if description_auteur %}
+        <section class="book-about" aria-labelledby="a-propos">
+          <h2 id="a-propos">À propos de l’auteur</h2>
+          <p>{{ description_auteur }}</p>
+        </section>
+      {% endif %}
+
+      {% if critiques and critiques.length %}
+        {% set headingLevel = "h2" %}
+        {% include 'partials/commentaires.njk' %}
+      {% endif %}
+    </div>
   </div>
-  </div>
-
-  {% if critiques %}
-    {% set headingLevel = "h3" %}
-    {% include 'partials/commentaires.njk' %}
-  {% endif %}
-
-{% if liens_achat and liens_achat.length %}
-<div class="flow prose">
-{% for lien in liens_achat %}
-<a class="button" href="{{ lien }}" rel="sponsored noopener" target="_blank">{% if loop.first %}Soutenez-moi en achetant ce livre{% else %}Autre librairie{% endif %}</a>
-{% endfor %}
-</div>
-{% endif %}
-</div>
-<style>
-
-@layer global {
-  h1 {
-    font-size: var(--size-step-4) !important;
-  }
-}
-    p.author_cr {
-        text-align: right;
-    }
-
-    .image-left {
-      float: left;
-      margin-right: 15px;
-    }
-
-@media (min-width: 600px) {
-  img {
-    width: 30vw;
-    height: auto;
-  }
-}
-</style>
+</article>

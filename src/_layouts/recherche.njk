@@ -2,38 +2,18 @@
 layout: base
 ---
 
-<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
-  <h1 class="gradient-text">{{ title }}</h1>
-  {{ content | safe }}
-<style>
-.search-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
+<div class="wrapper">
+  <header class="page-header">
+    <span class="eyebrow">Recherche</span>
+    <h1>{{ title }}</h1>
+    <p class="lead">Cherchez un livre, un article, une chronique ou un auteur. Les résultats se mettent à jour pendant la saisie.</p>
+  </header>
 
-.search-main {
-  gap: 1rem;
-}
-
-.search-sidebar {
-  flex: 0 0 250px;
-}
-
-.search-results {
-  flex: 1;
-}
-:root {
-    --pf-input-height: 48px !important;
-    --pf-input-font-size: 20px; /* Keep at 16px+ to prevent iOS auto-zoom on focus */
-    --pf-outline-focus: #ff922b !important;
-}
-</style>
-<div style="display: grid; gap: 16px;">
+  <div class="page-body search-page">
     <pagefind-input></pagefind-input>
-      <pagefind-filter-pane></pagefind-filter-pane>
-<pagefind-summary></pagefind-summary>
-<pagefind-results>
-</pagefind-results>  </div>
+    <pagefind-filter-pane></pagefind-filter-pane>
+    <pagefind-summary></pagefind-summary>
+    <pagefind-results></pagefind-results>
+    {{ content | safe }}
   </div>
+</div>

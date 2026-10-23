@@ -1,41 +1,41 @@
+/* Pagination des chroniques */
 .pagination {
-  --gutter: var(--space-xs-s);
+  --gutter: var(--space-2xs);
+  justify-content: center;
+  margin-block-start: var(--space-xl);
+  padding: 0;
+  list-style: none;
 }
 
 .pagination li {
-  color: var(--pagination-text, var(--color-text));
-  background-color: var(--pagination-bg, var(--color-bg));
-  border: 3px solid var(--pagination-border, var(--color-bg-accent));
-  border-radius: var(--border-radius-medium);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
 .pagination li:not(:has(a)) {
-  padding: var(--space-xs) var(--space-s-m);
-  opacity: 0.6;
+  padding: var(--space-2xs) var(--space-s);
+  opacity: 0.5;
 }
 
 .pagination a {
-  text-decoration: none;
-}
-
-.pagination a {
-  padding: var(--space-xs) var(--space-s-m);
-  text-decoration: none;
   display: block;
-}
-
-.pagination li:not(:has(a)) {
-  padding: var(--space-xs) var(--space-s-m);
-  opacity: 0.6;
+  min-inline-size: 2.5rem;
+  padding: var(--space-2xs) var(--space-s);
+  text-align: center;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
 }
 
 .pagination li:has(a:hover) {
-  --pagination-bg: var(--color-bg-accent);
-  --pagination-border: var(--color-bg-accent);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .pagination li:has(a[aria-current='page']) {
-  --pagination-bg: var(--color-secondary);
-  --pagination-border: var(--color-secondary);
-  --pagination-text: var(--color-light);
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: var(--font-bold);
 }

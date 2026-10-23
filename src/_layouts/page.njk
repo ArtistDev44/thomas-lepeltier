@@ -2,9 +2,14 @@
 layout: base
 ---
 
-<div data-pagefind-body class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
-  <h1 class="gradient-text">{{ title }}</h1>
-  <div data-pagefind-ignore>
-  {{ content | safe }}
+<div data-pagefind-body class="wrapper">
+  <header class="page-header">
+    {% if eyebrow %}<span class="eyebrow">{{ eyebrow }}</span>{% endif %}
+    <h1>{{ title }}</h1>
+    {% if lead %}<p class="lead">{{ lead }}</p>{% endif %}
+  </header>
+
+  <div data-pagefind-ignore class="page-body prose flow{% if narrow %} page-body--narrow{% endif %}">
+    {{ content | safe }}
   </div>
 </div>

@@ -53,9 +53,9 @@ export const blog = {
     }
   ],
   // Tags
-  tagSingle: 'Tag',
-  tagPlural: 'Tags',
-  tagMore: 'Plus de tags:',
+  tagSingle: 'Rubrique',
+  tagPlural: 'Rubriques',
+  tagMore: 'Autres rubriques',
   // pagination
   paginationLabel: 'Blog',
   paginationPage: 'Page',

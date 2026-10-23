@@ -5,16 +5,8 @@ eleventyComputed:
   title: '{{ meta.blog.tagPlural }}'
 ---
 
-<div class="taglist | mt-s-m cluster">
-  {% for tag in collections.tagList %}
-    <a href="/tags/{{ tag | slugify }}/" class="button"> {{ tag }} </a>
+<ul class="tag-list" role="list">
+  {% for tag in collections.tagList | publicTags %}
+    <li><a href="/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a></li>
   {% endfor %}
-</div>
-
-<custom-masonry layout="50-50">
-  {% set itemlist = collections.posts %}
-  {% for item in itemlist %}
-
-		{% include "partials/card-tag.njk" %}
-  {% endfor %}
-</custom-masonry>
+</ul>

@@ -3,12 +3,21 @@ layout: base
 schema: BlogPosting
 ---
 
-<div data-pagefind-body data-pagefind-filter="section: Articles" class="region" style="--region-space-top: var(--space-xl-2xl)">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
+<article data-pagefind-body data-pagefind-filter="section: Articles" class="wrapper">
+  <header class="page-header">
+    <span class="eyebrow">Article{% if date | anneeConnue %} · {{ date | anneeConnue }}{% endif %}</span>
+    <h1>{{ title }}</h1>
+    {% if tags | publicTags | length %}
+      <p class="tag-list">
+        {% for tag in tags | publicTags %}
+          <a class="tag" href="/tags/{{ tag | slugify }}/">{{ tag }}</a>
+        {% endfor %}
+      </p>
+    {% endif %}
+  </header>
 
+  <div class="page-body prose flow" data-pagefind-ignore>
     {% if image %}
-      <!-- image -->
       {%
         imageKeys {
           "src": image,
@@ -19,27 +28,7 @@ schema: BlogPosting
         }
       %}
     {% endif %}
-
-    <p class="meta | cluster gutter-xs-s">
-      <!-- draft status -->
-      {%- if draft -%}
-        <span class="button" data-small-button data-button-variant="tertiary">draft</span>
-      {%- endif %}
-      <!-- date -->
-      {% set definedDate = date %} {% include "partials/date.njk" %}
-      {%
-        if tags.length >
-        1
-      %}
-        <!-- tags -->
-        {% for tag in tags %}{% if tag != "posts" %}
-          <a class="button" href="/tags/{{ tag | slugify }}/" data-small-button> {{ tag }} </a>
-        {% endif %}{% endfor %}
-      {% endif %}
-    </p>
-    <div data-pagefind-ignore>
     {{ content | safe }}
-    </div>
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
@@ -53,7 +42,7 @@ schema: BlogPosting
       alt="{{ meta.author.name }}"
     />
   </div>
-</div>
+</article>
 
 {%- css "local" -%}
   {%- include 'css/post.css' -%}

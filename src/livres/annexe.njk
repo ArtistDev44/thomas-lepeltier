@@ -1,137 +1,63 @@
 ---
 title: "Liste des livres publiés"
+eyebrow: Bibliographie
+lead: Mes livres, ceux que j’ai dirigés et ceux auxquels j’ai contribué, sur la cosmologie, l’histoire des sciences et l’éthique animale.
 date: Last Modified
-layout: "annexe.njk"
+layout: "page.njk"
 permalink: "/livres/index.html"
+description: "Les livres de Thomas Lepeltier : ouvrages d’auteur, livres dirigés et contributions."
 ---
 
-<h2 id="mes-livres">Mes livres</h2>
-<hr>
+<nav aria-label="Aller à une section" class="tag-list">
+  <a class="tag" href="#mes-livres">Mes livres ({{ collections.mesLivres | length }})</a>
+  <a class="tag" href="#ouvrages-diriges">Ouvrages dirigés ({{ collections.livresDiriges | length }})</a>
+  <a class="tag" href="#contributions">Contributions ({{ contributions | length }})</a>
+</nav>
 
-  <custom-masonry-no-js>
-    {%- for livre in collections.mesLivres | reverse -%}
+<section class="page-section" aria-labelledby="mes-livres">
+  <div class="section-head"><h2 id="mes-livres">Mes livres</h2></div>
+  <ul class="cover-grid" role="list">
+    {%- asyncEach livre in collections.mesLivres | reverse -%}
+      {% set cardUrl = livre.data.externalLink or livre.data.internalLink or livre.url %}
+      {% set cardExternal = livre.data.externalLink | length > 0 %}
+      {% set cardTitle = livre.data.title %}
+      {% set cardImage = livre.data.imageUrl %}
+      {% set cardYear = livre.date | anneeConnue %}
+      {% set cardTags = livre.data.tags %}
+      {% include "partials/book-card.njk" %}
+    {%- endeach -%}
+  </ul>
+</section>
 
-      {# --- LOGIQUE DE LIEN --- #}
-      {# On définit le lien : externe d'abord, sinon interne, sinon l'URL d'Eleventy #}
-      {% set targetUrl = livre.data.externalLink or livre.data.internalLink or livre.url %}
+<section class="page-section" aria-labelledby="ouvrages-diriges">
+  <div class="section-head"><h2 id="ouvrages-diriges">Les livres dont j’ai assuré la direction</h2></div>
+  <ul class="cover-grid" role="list">
+    {%- asyncEach livre in collections.livresDiriges | reverse -%}
+      {% set cardUrl = livre.data.externalLink or livre.data.internalLink or livre.url %}
+      {% set cardExternal = livre.data.externalLink | length > 0 %}
+      {% set cardTitle = livre.data.title %}
+      {% set cardImage = livre.data.imageUrl %}
+      {% set cardYear = livre.date | anneeConnue %}
+      {% set cardTags = livre.data.tags %}
+      {% include "partials/book-card.njk" %}
+    {%- endeach -%}
+  </ul>
+</section>
 
-      {# On vérifie si c'est un lien externe pour le comportement du navigateur #}
-      {% set isExternal = livre.data.externalLink | length > 0 %}
-
-      <custom-card>
-        {# Slot Headline (Titre) - Utilise le lien dynamique #}
-        <p slot="headline">
-          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
-            {{ livre.data.title }}
-          </a>
-        </p>
-        {# Image de l'livre via le shortcode Eleventy #}
-        {% image livre.data.imageUrl, "Première page de mon livre " + livre.data.title %}
-
-        {# Slot Date #}
-        <span slot="date">
-          {{ livre.date | anneeConnue }}
-        </span>
-
-        {# Slot Tag #}
-        {%- for tag in livre.data.tags -%}
-          {%- if tag != "livre" -%}
-            <a href="/tags/{{ tag | slugify }}" slot="tag" class="button" style="width: 20vw; height:auto;">
-              {{ tag }}
-            </a>
-          {%- endif -%}
-        {%- endfor -%}
-
-        {# Slot Headline (Titre) - Utilise le lien dynamique #}
-        <p slot="headline">
-          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
-            {{ livre.data.title }}
-          </a>
-        </p>
-      </custom-card>
-    {%- endfor -%}
-  </custom-masonry-no-js>
-
-<h2 id="ouvrages-diriges">Les livres dont j’ai assuré la direction</h2>
-
- <custom-masonry-no-js>
-    {%- for livre in collections.livresDiriges | reverse -%}
-
-      {# --- LOGIQUE DE LIEN --- #}
-      {# On définit le lien : externe d'abord, sinon interne, sinon l'URL d'Eleventy #}
-      {% set targetUrl = livre.data.externalLink or livre.data.internalLink or livre.url %}
-
-      {# On vérifie si c'est un lien externe pour le comportement du navigateur #}
-      {% set isExternal = livre.data.externalLink | length > 0 %}
-
-      <custom-card>
-        {# Slot Headline (Titre) - Utilise le lien dynamique #}
-        <p slot="headline">
-          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
-            {{ livre.data.title }}
-          </a>
-        </p>
-        {# Image de l'livre via le shortcode Eleventy #}
-        {% image livre.data.imageUrl, "Première page de mon livre " + livre.data.title %}
-
-        {# Slot Date #}
-        <span slot="date">
-          {{ livre.date | anneeConnue }}
-        </span>
-
-        {# Slot Tag #}
-        {%- for tag in livre.data.tags -%}
-          {%- if tag != "livre" -%}
-            <a href="/tags/{{ tag | slugify }}" slot="tag" class="button" style="width: 20vw; height:auto;">
-              {{ tag }}
-            </a>
-          {%- endif -%}
-        {%- endfor -%}
-
-        {# Slot Headline (Titre) - Utilise le lien dynamique #}
-        <p slot="headline">
-          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
-            {{ livre.data.title }}
-          </a>
-        </p>
-      </custom-card>
-    {%- endfor -%}
-  </custom-masonry-no-js>
-  <style>
-h3 {
-    --flow-space: 1.3rem;
-}
-img {
-    margin-top: 3rem;
-}
-img {
-border: 4px solid var(--color-text);
-}
-</style>
-
-<h2 id="contributions">Les livres auxquels j’ai contribué</h2>
-  <custom-masonry-no-js>
-{% for item in contributions %}
-<custom-card>
-{% image item.image, item.alt %}
-<span slot="date"></span>
-<span slot="tag" class="button">contributions</span>
-<p slot="headline">          <a href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
-  {{ item.title }}
-</a>
-</p>
-<p slot="content"></p>
-</footer>
-</custom-card>
-{% endfor %}
-  </custom-masonry-no-js>
-<style>
-    img:hover {
-    filter: brightness(1);
-    }
-    img {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    filter: brightness(0.95);
-        aspect-ratio: 9/14;
-    }
-</style>
+<section class="page-section" aria-labelledby="contributions">
+  <div class="section-head">
+    <h2 id="contributions">Les livres auxquels j’ai contribué</h2>
+    <p>Ces ouvrages collectifs sont présentés par leurs éditeurs : les liens s’ouvrent sur leurs sites.</p>
+  </div>
+  <ul class="cover-grid" role="list">
+    {%- asyncEach item in contributions -%}
+      {% set cardUrl = item.link %}
+      {% set cardExternal = true %}
+      {% set cardTitle = item.title %}
+      {% set cardImage = item.image %}
+      {% set cardYear = "" %}
+      {% set cardTags = [] %}
+      {% include "partials/book-card.njk" %}
+    {%- endeach -%}
+  </ul>
+</section>

@@ -1,5 +1,5 @@
 <is-land on:idle>
-  <div class="gallery | grid mt-l-xl gutter-xs" role="list">
+  <div class="gallery poster-grid" role="list">
     {%- for item in gallery -%}
       <dialog class="flow modal{{ loop.index }}">
         <div class="cluster justify-center flow-space-m gutter-s">
@@ -15,7 +15,7 @@
         </div>
         {%- image item.image, item.alt, item.caption -%}
       </dialog>
-      <button data-index="{{ loop.index }}">{%- image item.image, item.alt -%}</button>
+      <button data-index="{{ loop.index }}" aria-label="Agrandir : {{ item.alt }}"><span class="poster-year">{{ item.year }}</span>{%- image item.image, item.alt -%}</button>
     {%- endfor -%}
   </div>
 

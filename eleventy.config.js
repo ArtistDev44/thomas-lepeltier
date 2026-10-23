@@ -162,7 +162,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('slugify', filters.slugifyString);
   eleventyConfig.addFilter('relatedRapports', filters.relatedRapports);
   eleventyConfig.addFilter('relatedLivres', filters.relatedLivres);
-  eleventyConfig.addFilter('lettrine', filters.lettrine); // ← ligne manquante
+  eleventyConfig.addFilter('publicTags', filters.publicTags);
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);

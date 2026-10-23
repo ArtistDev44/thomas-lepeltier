@@ -16,122 +16,38 @@
 /* @import-glob 'tests/*.css' layer(test); */
 
 @import 'tailwindcss/utilities' layer(tailwindUtilities);
+/* Les gabarits utilisent encore quelques règles historiques, regroupées ici. */
 
 .tags-container {
   display: flex;
-  flex-wrap: wrap; /* Permet aux tags de passer à la ligne si nécessaire */
-  gap: 8px; /* Espacement entre les tags (CSS moderne) */
-  margin: 1rem 0;
-}
-
-body {
-  --sb-track-color: #2f2f2f;
-  --sb-thumb-color: #f76707;
-  --sb-size: 14px;
-}
-
-body::-webkit-scrollbar {
-  width: var(--sb-size);
-}
-
-body::-webkit-scrollbar-track {
-  background: var(--sb-track-color);
-  border-radius: 3px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);
-  border-radius: 3px;
-}
-
-@supports not selector(::-webkit-scrollbar) {
-  body {
-    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
-  }
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-block: var(--space-s);
 }
 
 .search-icon {
-  fill: var(--color-text);
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  fill: currentColor;
 }
 
-h1,
-h2,
-h3 {
-  animation: fadeIn 0.6s ease-out forwards;
-  opacity: 0;
+figure {
+  text-align: center;
 }
 
-.delay-1 {
-  animation-delay: 0.2s;
-}
-.delay-2 {
-  animation-delay: 0.4s;
-}
-.delay-3 {
-  animation-delay: 0.6s;
+p.mise_en_avant {
+  color: var(--color-primary);
+  font-size: var(--size-step-1);
+  display: block;
+  max-inline-size: 36rem;
+  font-weight: var(--font-bold);
+  float: right;
+  padding: var(--space-s) var(--space-m);
 }
 
 @layer blocks {
   .indicator,
   a[href^='http']:not([href*='thomaslepeltier.fr']):not(
       .button
-    ):not(.no-indicator) {
+    ):not(.cover-card):not(.no-indicator) {
     padding-inline-end: 0.8em;
   }
-}
-@layer blocks {
-  .site-footer .creator a:hover {
-    color: var(--color-text) !important;
-  }
-}
-header {
-  box-shadow: 0px 1px 3px var(--color-text);
-  position: fixed;
-  top: 0px;
-  width: 100vw;
-  z-index: 10;
-  background-color: var(--color-bg);
-}
-
-.search-icon:hover {
-  fill: var(--color-primary);
-}
-@media only screen and (min-width: 640px) {
-  .space-top {
-    margin-top: 40px;
-  }
-}
-figure {
-  text-align: center;
-}
-
-.lettrine {
-  float: left;
-  font-size: 4.5em;
-  line-height: 0.82;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  margin-right: 0.1em;
-  margin-top: 0.05em;
-  color: var(--color-primary);
-}
-
-p.mise_en_avant {
-  color: var(--color-primary);
-  font-size: larger;
-  display: block;
-  width: 600px;
-  font-weight: 700;
-  float: right;
-  padding: 1rem 2rem;
 }

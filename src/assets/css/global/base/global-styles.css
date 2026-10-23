@@ -8,7 +8,9 @@
 html {
   color-scheme: light dark;
   /* l'en-tête est collant : sans cette marge, l'élément ciblé ou focalisé passe dessous */
-  scroll-padding-top: 6rem;
+  scroll-padding-top: calc(var(--header-height) + 1.5rem);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -18,11 +20,14 @@ body {
   font-size: var(--size-step-0);
   font-weight: var(--font-regular);
   font-size-adjust: from-font;
-  line-height: var(--leading-standard);
+  line-height: var(--leading-relaxed);
   color: var(--color-text);
   background-color: var(--color-bg);
   accent-color: var(--color-primary);
   letter-spacing: var(--tracking);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 main {
@@ -31,39 +36,48 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: var(--font-display);
-  font-weight: var(--font-extra-bold);
+  font-weight: var(--font-bold);
   line-height: var(--leading-fine);
   letter-spacing: var(--tracking-s);
+  color: var(--color-text);
 }
 
 h1 {
-  font-size: var(--size-step-6);
+  font-size: var(--size-step-4);
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: var(--size-step-4);
+  font-size: var(--size-step-3);
 }
 
 h3 {
   font-size: var(--size-step-2);
 }
 
+h4 {
+  font-size: var(--size-step-1);
+}
+
 blockquote {
-  padding: var(--space-m-l);
-  border-inline-start: 0.5rem solid var(--color-primary);
-  font-size: var(--size-step-2);
+  padding-inline: var(--space-m-l);
+  padding-block: var(--space-2xs);
+  border-inline-start: 3px solid var(--color-primary);
+  font-family: var(--font-display);
+  font-size: var(--size-step-1);
+  font-style: italic;
+  color: var(--color-text-accent);
 }
 
 blockquote > * + * {
-  margin-block-start: var(--space-m-l);
+  margin-block-start: var(--space-s);
 }
 
 blockquote :last-child {
-  font-family: var(--font-base);
   font-style: normal;
-  font-size: var(--size-step-1);
 }
 
 input,
@@ -85,37 +99,29 @@ strong {
 hr {
   border: none;
   height: 1px;
-  width: 10%;
+  width: 100%;
   margin-block: var(--flow-space, var(--space-m-l));
   margin-inline-start: 0;
-  background-color: var(--color-bg-accent-2);
+  background-color: var(--color-border);
 }
 
 figcaption {
-  margin-block-start: var(--space-s);
+  margin-block-start: var(--space-xs);
   font-size: var(--size-step-min-1);
+  color: var(--color-text-soft);
   text-align: center;
-  padding-block-end: var(--space-xs);
-}
-
-figcaption:after {
-  border-block: var(--stroke);
-  content: '';
-  display: block;
-  margin-block: var(--space-xs);
-  /* block-size: 1rem; */
-  inline-size: 50%;
-  margin-inline: auto;
-  opacity: 0.8;
 }
 
 a {
-  text-decoration-thickness: 0.15ex;
-  text-underline-offset: 0.2ch;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.22em;
+  text-decoration-color: color-mix(in oklab, currentColor 45%, transparent);
+  transition: color var(--transition-duration) var(--transition-timing),
+    text-decoration-color var(--transition-duration) var(--transition-timing);
 }
 
 a:not([class]):hover {
-  text-decoration: none;
+  text-decoration-color: currentColor;
 }
 
 :focus {
@@ -123,21 +129,22 @@ a:not([class]):hover {
 }
 
 :focus-visible {
-  outline: 3px solid var(--focus-color, currentColor);
-  outline-offset: var(--focus-offset, 0.3ch);
+  outline: 3px solid var(--focus-color, var(--color-primary));
+  outline-offset: var(--focus-offset, 3px);
+  border-radius: 2px;
 }
 
 /* reduce focus offset for Firefox
 */
 @supports (-moz-appearance: none) {
   :root {
-    --focus-offset: 0.08em;
+    --focus-offset: 2px;
   }
 }
 
 ::selection {
-  background-color: var(--color-text);
-  color: var(--color-bg);
+  background-color: color-mix(in oklab, var(--color-primary) 30%, var(--color-bg));
+  color: var(--color-text);
 }
 
 .preload-transitions * {

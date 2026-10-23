@@ -37,29 +37,13 @@
     {% include "head/meta-info.njk" %}
   </head>
 
-  <body class="{{ layout }} space-top">
+  <body class="{{ layout }}">
     {% set indicateActiveHome %}
       {% if page.url == "/" %}
         aria-current=page
       {% endif %}
     {% endset %}
     {% include "partials/header.njk" %}
-<style>
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 9999;
-
-  /* Texture combinée : bruit + fibres */
-  background-image:
-    url("https://www.transparenttextures.com/patterns/black-paper.png");
-  opacity: 0.25;
-  mix-blend-mode: multiply;
-}
-</style>
-
     <main id="main" class="flow">{{ content | safe }}</main>
 
     {% include "partials/footer.njk" %}

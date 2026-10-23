@@ -14,7 +14,15 @@
 }
 
 .prose :is(img, video) {
-  border: var(--stroke);
+  border: 0;
+}
+
+.prose a:not([class]) {
+  color: var(--color-link);
+}
+
+.prose a:not([class]):hover {
+  color: var(--color-primary);
 }
 
 .prose :is(h2, h3, h4) {
@@ -35,8 +43,16 @@
 }
 
 .prose :is(p, li, dl, blockquote) {
-  max-inline-size: 60ch;
+  max-inline-size: var(--measure);
   text-wrap: pretty;
+}
+
+.prose > h2 {
+  font-size: var(--size-step-2);
+}
+
+.prose > h3 {
+  font-size: var(--size-step-1);
 }
 
 .prose .heading-anchor:where(:hover, :focus) {

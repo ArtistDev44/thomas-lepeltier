@@ -1,8 +1,13 @@
+/* Accordéon : critiques, avis de lecteurs */
+
+.details {
+  --flow-space: 0;
+}
+
 .details .control {
-  --gutter: var(--space-xs-s);
+  --gutter: var(--space-2xs);
   --cluster-horizontal-alignment: flex-end;
-  border-block-start: var(--stroke);
-  padding-block-start: var(--space-xs);
+  margin-block-end: var(--space-xs);
 }
 
 /* Hide without JS */
@@ -10,70 +15,67 @@ is-land:not(:defined) .details .control {
   display: none;
 }
 
+.details details {
+  border-block-end: 1px solid var(--color-border);
+}
+
+.details details:first-of-type {
+  border-block-start: 1px solid var(--color-border);
+}
+
 .details details > * + * {
   margin-block-start: var(--flow-space, 1em);
 }
 
-.details details[open] + details {
-  margin-block-start: var(--space-2xl);
-}
-
 .details details > p:last-child {
-  margin-block-end: var(--space-l);
+  margin-block-end: var(--space-m);
 }
 
 .details summary {
-  grid-column: content;
-}
-
-.details summary,
-.details summary :is(h1, h2, h3) {
   display: flex;
-  align-items: baseline;
-  line-height: 1.2;
-  gap: 0 var(--space-m);
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-s);
+  padding-block: var(--space-s);
   cursor: pointer;
   list-style: none;
+  font-family: var(--font-display);
+  font-size: var(--size-step-1);
   font-weight: var(--font-bold);
-  font-size: var(--size-step-2);
+  line-height: 1.2;
+}
+
+.details summary :is(h1, h2, h3, h4) {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
 }
 
 .details summary:hover,
-.details summary:focus-visible,
-.details[open] > summary {
+.details[open] > summary,
+.details details[open] > summary {
   color: var(--color-primary);
 }
 
-.details summary::before {
+/* plus / moins : indicateur d'état dessiné en CSS */
+.details summary::after {
   content: '+';
-  display: block;
+  flex: none;
+  inline-size: 1.75rem;
+  block-size: 1.75rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--color-bg-accent);
   color: var(--color-primary);
-  font-family: var(--font-mono);
-  font-size: var(--size-step-1);
+  font-family: var(--font-base);
+  font-size: 1.2rem;
   font-weight: var(--font-regular);
-  line-height: 0.5;
-  transform-origin: right bottom;
+  line-height: 1;
 }
 
-.details details[open] summary::before {
+.details details[open] > summary::after {
   content: '–';
-}
-
-.details details > :is(h2, h3, h4) {
-  font-family: var(--font-body);
-}
-
-.details details > h2 {
-  font-size: var(--size-step-1);
-}
-
-.details details > h3 {
-  --flow-space: var(--space-xl-2xl);
-  font-size: calc(var(--size-step-0) * 1.2);
-}
-
-.details details > h4 {
-  color: var(--color-text-accent);
 }
 
 /* Hide default marker */
@@ -83,10 +85,18 @@ is-land:not(:defined) .details .control {
   display: none;
 }
 
-.details summary + * {
-  margin-block-start: var(--space-s-m);
+.details details > :is(h2, h3, h4) {
+  font-family: var(--font-base);
 }
 
-.details details > * + * {
-  margin-inline-start: var(--size-step-2);
+.details details > h4 {
+  color: var(--color-text-accent);
+}
+
+.details details > :not(summary) {
+  max-inline-size: 48rem;
+}
+
+.details details > :last-child {
+  margin-block-end: var(--space-m);
 }

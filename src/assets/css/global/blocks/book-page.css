@@ -1,0 +1,130 @@
+/* Fiche livre et chronique : couverture et faits à gauche, texte à droite */
+
+.book-layout {
+  display: grid;
+  gap: var(--space-l);
+  align-items: start;
+  padding-block-end: var(--space-xl);
+}
+
+@media (min-width: 52rem) {
+  .book-layout {
+    grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .book-aside {
+    position: sticky;
+    inset-block-start: calc(var(--header-height) + var(--space-m));
+  }
+}
+
+.book-aside {
+  display: grid;
+  gap: var(--space-m);
+  justify-items: stretch;
+}
+
+.book-cover {
+  margin: 0;
+  max-inline-size: 18rem;
+}
+
+.book-cover img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  border: 0;
+  border-radius: 3px var(--border-radius-small) var(--border-radius-small) 3px;
+  box-shadow: var(--shadow-cover);
+}
+
+@media (max-width: 51.99rem) {
+  .book-cover {
+    max-inline-size: 12rem;
+  }
+}
+
+.book-facts {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  border-block-start: 1px solid var(--color-border);
+  font-size: var(--size-step-min-1);
+}
+
+.book-facts > div {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-s);
+  padding-block: var(--space-xs);
+  border-block-end: 1px solid var(--color-border);
+}
+
+.book-facts dt {
+  color: var(--color-text-soft);
+}
+
+.book-facts dd {
+  margin: 0;
+  font-weight: var(--font-bold);
+  text-align: end;
+}
+
+.book-buy {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.book-buy__note {
+  font-size: var(--size-step-min-2);
+  color: var(--color-text-soft);
+}
+
+/* texte courant */
+.book-main {
+  max-inline-size: 44rem;
+}
+
+.book-main > p:first-of-type::first-letter {
+  float: left;
+  margin-inline-end: 0.1em;
+  margin-block-start: 0.04em;
+  font-family: var(--font-display);
+  font-size: 3.6em;
+  font-weight: var(--font-bold);
+  line-height: 0.8;
+  color: var(--color-primary);
+}
+
+.book-main h2 {
+  font-size: var(--size-step-2);
+  clear: both;
+}
+
+.book-about {
+  padding: var(--space-m);
+  border-radius: var(--border-radius-medium);
+  background: var(--color-bg-accent);
+  font-size: var(--size-step-min-1);
+  clear: both;
+}
+
+.book-about h2 {
+  margin-block-end: var(--space-2xs);
+  font-family: var(--font-base);
+  font-size: var(--size-step-min-2);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+}
+
+.chronique-signature {
+  margin-block-start: var(--space-l);
+  padding-block-start: var(--space-s);
+  border-block-start: 1px solid var(--color-border);
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-text-soft);
+  clear: both;
+}

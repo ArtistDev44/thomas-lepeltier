@@ -2,23 +2,24 @@
 
 .button {
   --button-bg: var(--color-text);
-  --button-color: color-mix(in oklab, var(--button-bg) 10%, var(--color-bg));
-  --button-hover-bg: color-mix(in oklab, var(--button-bg) 90%, var(--color-bg));
+  --button-color: var(--color-bg);
+  --button-hover-bg: color-mix(in oklab, var(--button-bg) 82%, var(--color-bg));
   --button-hover-color: var(--button-color);
-  --button-border-width: var(--border-thickness);
+  --button-border-width: 1.5px;
   --button-border-style: solid;
-  --button-border-color: color-mix(in oklab, var(--button-bg) 80%, var(--color-text));
-  --button-radius: var(--border-radius-small);
+  --button-border-color: var(--button-bg);
+  --button-radius: 999px;
   --button-gap: var(--space-2xs);
-  --button-padding: var(--space-xs) var(--space-m);
-  --button-font-family: var(--font-body);
-  --button-font-weight: var(--font-regular);
-  --button-font-size: var(--size-step-0);
+  --button-padding: 0.7em 1.35em;
+  --button-font-family: var(--font-base);
+  --button-font-weight: var(--font-bold);
+  --button-font-size: var(--size-step-min-1);
   --button-text-transform: none;
-  --button-tracking: normal;
+  --button-tracking: 0.01em;
 
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--button-gap);
   padding: var(--button-padding);
   background: var(--button-bg);
@@ -31,72 +32,86 @@
   font-family: var(--button-font-family);
   font-weight: var(--button-font-weight);
   font-size: var(--button-font-size);
-  line-height: var(--leading-flat);
+  line-height: 1.2;
+  text-align: center;
   text-transform: var(--button-text-transform);
   letter-spacing: var(--button-tracking);
-  /* trim the space at the cap height - in  Safari Technology Preview */
-  text-box-trim: trim-both;
-  text-box-edge: cap alphabetic;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing),
+    border-color var(--transition-duration) var(--transition-timing),
+    transform 120ms var(--transition-timing);
 }
 
 .button svg {
-  block-size: var(--button-icon-size, 1.2cap);
+  block-size: var(--button-icon-size, 1.1em);
 }
 
 /* Hover/focus/active */
 .button:hover,
-.button[aria-current='page'],
 .button[aria-pressed='true'],
 .button[data-state='active'] {
   background: var(--button-hover-bg);
+  border-color: var(--button-hover-bg);
   color: var(--button-hover-color);
 }
 
 .button:active {
-  transform: scale(99%);
+  transform: translateY(1px);
 }
 
 /* Variants */
 .button[data-button-variant='primary'] {
   --button-bg: var(--color-primary);
-  --button-color: var(--color-light);
-  --button-color: color-mix(in oklab, var(--color-primary) 5%, var(--color-light));
+  --button-color: var(--color-on-primary);
+  --button-hover-bg: color-mix(in oklab, var(--color-primary) 85%, var(--color-text));
 }
 
 .button[data-button-variant='secondary'] {
   --button-bg: var(--color-secondary);
-  --button-color: var(--color-light);
-  --button-color: color-mix(in oklab, var(--color-secondary) 5%, var(--color-light));
+  --button-color: #ffffff;
+  --button-hover-bg: color-mix(in oklab, var(--color-secondary) 82%, black);
 }
 
 .button[data-button-variant='tertiary'] {
   --button-bg: var(--color-tertiary);
   --button-color: var(--color-dark);
-  --button-color: color-mix(in oklab, var(--color-tertiary) 10%, var(--color-dark));
 }
 
+/* contour : sobre, pour les actions secondaires */
 .button[data-ghost-button] {
-  --button-bg: var(--color-bg);
-  --button-border-color: var(--color-text);
+  --button-bg: transparent;
+  --button-border-color: color-mix(in oklab, var(--color-text) 35%, transparent);
   --button-color: var(--color-text);
-  --button-hover-color: var(--color-bg);
+  --button-hover-color: var(--color-text);
 }
 
 .button[data-ghost-button]:hover {
-  --_ghost-hover-bg: var(--color-bg);
-  --_ghost-hover-bg: color-mix(in oklab, var(--button-bg) 95%, var(--color-dark));
-  background: var(--_ghost-hover-bg);
+  background: color-mix(in oklab, var(--color-text) 8%, transparent);
+  border-color: var(--color-text);
   color: var(--button-color);
 }
 
-.button[data-small-button] {
-  --button-border-width: 2px;
-  --button-radius: var(--border-radius-small);
-  --button-font-size: var(--size-step-min-2);
-  --button-padding: var(--space-2xs) var(--space-s) var(--space-3xs) var(--space-s);
-  --button-text-transform: uppercase;
-  --button-tracking: var(--tracking-wide);
+/* contour sur fond sombre (bandeau, héros) */
+.on-dark .button[data-ghost-button] {
+  --button-border-color: rgb(255 255 255 / 0.55);
+  --button-color: #ffffff;
+  --button-hover-color: #ffffff;
 }
+
+.on-dark .button[data-ghost-button]:hover {
+  background: rgb(255 255 255 / 0.14);
+  border-color: #ffffff;
+}
+
+.button[data-small-button] {
+  --button-font-size: var(--size-step-min-2);
+  --button-padding: 0.4em 0.9em;
+  --button-text-transform: none;
+  --button-tracking: 0;
+}
+
 /* Radius variants */
 .button[data-button-radius='hard'] {
   --button-radius: 0;
@@ -104,12 +119,17 @@
 
 .button[data-icon] {
   --button-padding: var(--space-2xs);
-  --button-bg: var(--color-bg);
-  --button-border-color: var(--color-bg);
+  --button-bg: transparent;
+  --button-border-color: transparent;
   --button-color: var(--color-text);
   --button-hover-color: var(--color-primary);
   --button-radius: 50%;
   aspect-ratio: 1;
   display: inline-grid;
   place-items: center;
+}
+
+.button[data-icon]:hover {
+  background: var(--color-bg-accent);
+  border-color: var(--color-bg-accent);
 }

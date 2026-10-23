@@ -1,16 +1,25 @@
-<header class="wrapper">
+<header class="site-header">
   <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
 
-  <div class="repel ontop gutter-s">
+  <div class="site-header__inner">
     <a href="/" class="logo | cluster" {{ indicateActiveHome }}>
       {% svg "misc/logo" %}
 
-      <span class="font-display">{{ meta.siteName }}</span>
+      <span>{{ meta.siteName }}</span>
     </a>
-    {% include "partials/main-nav.njk" %}
 
-<a href="/recherche" aria-label="Rechercher sur le site" title="Recherche" rel="nofollow">
-  {% svg "misc/search", "Recherche", "search-icon" %}
-</a>
+    <div class="site-header__tools">
+      {% include "partials/main-nav.njk" %}
+
+      <a
+        href="/recherche/"
+        class="site-header__search"
+        aria-label="Rechercher sur le site"
+        title="Rechercher"
+        {{ helpers.getLinkActiveState("/recherche/", page.url) | safe }}
+      >
+        {% svg "misc/search", "", "search-icon" %}
+      </a>
+    </div>
   </div>
 </header>

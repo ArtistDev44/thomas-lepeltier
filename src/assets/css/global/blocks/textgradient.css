@@ -1,6 +1,0 @@
-/* Les dégradés de texte échouaient le contraste WCAG (G145) : les classes restent pour les gabarits mais ne colorent plus. */
-.gradient-text,
-.gradient-text-linear {
-  color: var(--color-text);
-  padding: 0.6rem 0;
-}

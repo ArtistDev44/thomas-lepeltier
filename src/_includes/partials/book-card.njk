@@ -1,0 +1,17 @@
+{#- Carte de couverture. Variables attendues : cardUrl, cardTitle, cardImage, cardYear, cardTags (liste), cardExternal (booléen) -#}
+<li>
+  <a
+    class="cover-card"
+    href="{{ cardUrl }}"
+    {% if cardExternal %}target="_blank" rel="noopener noreferrer"{% endif %}
+  >
+    <figure class="cover-card__media">{% image cardImage, "", "", "lazy", "", "", [320, 640], "(min-width: 64rem) 16vw, 45vw", ["webp", "jpeg"] %}</figure>
+    <span class="cover-card__body">
+      <span class="cover-card__title">{{ cardTitle }}{% if cardExternal %}<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span>{% endif %}</span>
+      <span class="cover-card__meta">
+        {%- if cardYear %}<span>{{ cardYear }}</span>{% endif -%}
+        {%- for tag in cardTags | publicTags %}<span class="tag">{{ tag }}</span>{% endfor -%}
+      </span>
+    </span>
+  </a>
+</li>

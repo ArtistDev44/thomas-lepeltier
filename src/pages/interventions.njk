@@ -1,25 +1,29 @@
 ---
 layout: page.njk
 title: Conférences et interventions publiques
-description: Historique des conférences, débats et passages médias de Thomas Lepeltier depuis 2004, et invitation à le contacter pour en organiser une.
+eyebrow: Conférences
+lead: Depuis 2004, j’interviens dans des universités, des festivals et des médias sur la philosophie des sciences, la cosmologie et l’éthique animale.
 permalink: /interventions/index.html
+description: Historique des conférences, débats et passages médias de Thomas Lepeltier depuis 2004, et invitation à le contacter pour en organiser une.
 ---
 
-<h2>Inviter Thomas Lepeltier</h2>
+<div class="contact-card">
+  <div class="flow">
+    <h2>Inviter Thomas Lepeltier</h2>
+    <p>
+      Je propose des conférences, débats et ateliers sur la philosophie des sciences, la cosmologie et l’éthique animale,
+      pour les universités, les entreprises, les festivals et les médias.
+    </p>
+  </div>
+  <a class="button" data-button-variant="primary" href="/contact/">Organiser une intervention</a>
+</div>
 
-<p>
-  Je propose des conférences, débats et ateliers sur la philosophie des sciences, la cosmologie et l’éthique animale,
-  pour les universités, les entreprises, les festivals et les médias.
-  <a href="/contact/">Contactez-moi</a> pour organiser une intervention.
-</p>
+<section class="page-section" aria-labelledby="historique">
+  <div class="section-head">
+    <h2 id="historique">Historique des interventions</h2>
+    <p>Liste anti-chronologique et non exhaustive. Cliquez sur une affiche pour l’agrandir.</p>
+  </div>
 
-<h2>Liste anti-chronologique et non exhaustive</h2>
-
-{% set gallery = conferences %}
-{% include "partials/gallery.njk" %}
-
-<style>
-.gallery dialog+button img {
-aspect-ratio: 16/12;
-}
-</style>
+  {% set gallery = conferences %}
+  {% include "partials/gallery.njk" %}
+</section>

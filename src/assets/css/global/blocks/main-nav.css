@@ -7,6 +7,8 @@
 .mainnav:has([data-drawer-toggle][aria-expanded='true']) {
   --nav-position: fixed;
   inset-inline-end: var(--gap);
+  inset-block-start: 0.75rem;
+  z-index: 30;
 }
 
 .mainnav ul {
@@ -69,7 +71,10 @@
   display: var(--nav-button-display, inline-flex);
   position: relative;
   z-index: 2;
-  padding: var(--space-2xs) 0;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  white-space: nowrap;
   line-height: var(--leading-flat);
 }
 
@@ -98,17 +103,21 @@ body:has([data-drawer-toggle][aria-expanded='true']) {
   stroke-width: 3;
 }
 
-.mainnav [aria-expanded='true'] svg {
+.mainnav [data-drawer-toggle][aria-expanded='true'] svg {
   transform: rotate(45deg);
+}
+
+.mainnav [data-submenu-toggle][aria-expanded='true'] svg {
+  transform: rotate(180deg);
 }
 
 .mainnav :is(a, [data-submenu-toggle]) {
   /* configuration */
   --nav-item-background: transparent;
   --nav-item-text-color: var(--color-text);
-  --nav-item-padding: var(--space-xs) var(--space-2xs);
+  --nav-item-padding: 0.5rem 0.75rem;
   --nav-item-decoration-color: transparent;
-  --nav-item-font-size: var(--size-step-0);
+  --nav-item-font-size: var(--size-step-min-1);
   --nav-item-font-weight: var(--font-bold);
 
   background: var(--nav-item-background);
@@ -116,11 +125,12 @@ body:has([data-drawer-toggle][aria-expanded='true']) {
   font-size: var(--nav-item-font-size);
   padding: var(--nav-item-padding);
   display: block;
-  border-radius: var(--border-radius-medium);
-  text-decoration-line: underline;
-  text-decoration-color: var(--nav-item-decoration-color);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 0.2em;
+  border-radius: 999px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing);
 }
 
 .mainnav:has(.nav-sublist) :is(a, [data-submenu-toggle]) {
@@ -140,23 +150,20 @@ body:has([data-drawer-toggle][aria-expanded='true']) {
 }
 
 .mainnav :is(a, [data-submenu-toggle]):hover {
-  --nav-item-background: transparent;
+  --nav-item-background: var(--color-bg-accent);
   --nav-item-text-color: var(--color-text);
-  --nav-item-decoration-color: var(--color-bg-accent-2);
 }
 
 .mainnav [aria-current='page'],
 .mainnav [data-state='active'] {
-  --nav-item-background: var(--color-bg);
+  --nav-item-background: color-mix(in oklab, var(--color-primary) 13%, transparent);
   --nav-item-text-color: var(--color-primary);
-  --nav-item-decoration-color: var(--color-primary);
 }
 
 /* current parent (if submenu) */
 li:has(ul a[aria-current='page']) > [data-submenu-toggle] {
-  --nav-item-background: var(--color-bg);
-  --nav-item-text-color: var(--color-text);
-  --nav-item-decoration-color: var(--color-text);
+  --nav-item-background: color-mix(in oklab, var(--color-primary) 13%, transparent);
+  --nav-item-text-color: var(--color-primary);
 }
 
 /* sub menu */
@@ -213,9 +220,8 @@ li:has(ul a[aria-current='page']) > [data-submenu-toggle] {
   .mainnav [aria-current='page'],
   .mainnav [data-state='active'],
   li:has(ul a[aria-current='page']) > [data-submenu-toggle] {
-    --nav-item-background: transparent;
+    --nav-item-background: color-mix(in oklab, var(--color-primary) 13%, transparent);
     --nav-item-text-color: var(--color-primary);
-    --nav-item-decoration-color: var(--color-primary);
   }
 
   .mainnav [data-submenu-toggle] {
@@ -229,13 +235,15 @@ li:has(ul a[aria-current='page']) > [data-submenu-toggle] {
   .mainnav .nav-sublist {
     --nav-sublist-position: absolute;
     --nav-sublist-background: var(--color-bg);
-    --nav-sublist-border: var(--color-text);
+    --nav-sublist-border: var(--color-border);
     --nav-sublist-width: max-content;
-    --nav-list-padding-block: var(--space-xs);
-    --nav-list-padding-inline: var(--space-xs);
-    border: 3px solid var(--nav-sublist-border);
-    inset-block-start: var(--space-xl);
-    inset-inline-start: var(--space-2xs);
+    --nav-list-padding-block: var(--space-2xs);
+    --nav-list-padding-inline: var(--space-2xs);
+    border: 1px solid var(--nav-sublist-border);
+    border-radius: var(--border-radius-medium);
+    box-shadow: var(--shadow-m);
+    inset-block-start: calc(100% + var(--space-2xs));
+    inset-inline-start: 0;
   }
 }
 
@@ -257,9 +265,8 @@ assumes that the button doesn’t exist without JS, making the list the first ch
 
 .mainnav ul:first-child [aria-current='page'],
 .mainnav ul:first-child [data-state='active'] {
-  --nav-item-background: transparent;
+  --nav-item-background: color-mix(in oklab, var(--color-primary) 13%, transparent);
   --nav-item-text-color: var(--color-primary);
-  --nav-item-decoration-color: var(--color-primary);
 }
 
 /* make menu wrap without drawer */

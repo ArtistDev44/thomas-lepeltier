@@ -5,7 +5,7 @@ import {sortAlphabetically} from './filters/sort-alphabetic.js';
 import {splitlines} from './filters/splitlines.js';
 import {striptags} from './filters/striptags.js';
 import {slugifyString} from './filters/slugify.js';
-import lettrine from './filters/lettrine.js';
+import {publicTags} from './filters/public-tags.js';
 
 const relatedRapports = function (rapports, currentTags, currentUrl) {
   if (!rapports) return [];
@@ -49,5 +49,5 @@ export default {
   slugifyString,
   relatedRapports,
   relatedLivres, // ajout$
-  lettrine
+  publicTags
 };

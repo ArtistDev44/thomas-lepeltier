@@ -1,54 +1,69 @@
 ---
 title: Sites à visiter
+eyebrow: Ressources
+lead: Une sélection de sites sur les auteurs, l’édition, la science, la philosophie et la littérature, qui accompagnent mes lectures.
 permalink: /liens/index.html
 description: 'Sélection de sites sur des auteurs, l’édition, la science et la philosophie, recommandés par Thomas Lepeltier.'
 layout: page
 ---
 
-<div data-pagefind-body>
+<div class="link-groups" data-pagefind-body>
 
+<section class="link-group">
+<h2>Think &amp; Do Tank des transitions</h2>
+<ul role="list" class="link-list">
+<li><a href="https://apala.fr/">APALA</a><span>Think tank basé à Nantes, sous ma direction.</span></li>
+</ul>
+</section>
 
-## **Think & Do Tank des transitions**
+<section class="link-group">
+<h2>Sites sur des auteurs</h2>
+<ul role="list" class="link-list">
+<li><a href="http://www.fnet.fr/CMF/textepardefaut.html">Foucault</a><span>Le site du Centre Michel Foucault.</span></li>
+<li><a href="http://www.france.diplomatie.fr/culture/france/biblio/folio/levi/">Lévi-Strauss</a><span>L’œuvre de Lévi-Strauss présentée par Didier Éribon.</span></li>
+</ul>
+</section>
 
-- [APALA](https://apala.fr/) : Think Tank basé à Nantes sous ma direction.
-##  **Sites sur des auteurs**
+<section class="link-group">
+<h2>Sites du monde de l’édition</h2>
+<ul role="list" class="link-list">
+<li><a href="http://perso.wanadoo.fr/alinea.bouquiniste">Alinea</a><span>Un bouquiniste dans l’Aude.</span></li>
+<li><a href="http://www.bibliomme.com/">Bibliothèque de l’Homme</a><span>Une nouvelle maison d’édition.</span></li>
+<li><a href="http://www.ombres-blanches.com/">Ombres blanches</a><span>Une librairie à découvrir à Toulouse.</span></li>
+</ul>
+</section>
 
--   [Foucault](http://www.fnet.fr/CMF/textepardefaut.html) : Le site du Centre Michel Foucault.
--   [Lévi-Strauss](http://www.france.diplomatie.fr/culture/france/biblio/folio/levi/) : L'oeuvre de Lévi-Strauss présentée par Didier Éribon.
+<section class="link-group">
+<h2>Sites consacrés à la science</h2>
+<ul role="list" class="link-list">
+<li><a href="http://www.daec.obspm.fr/users/nottale">La relativité d’échelle</a><span>Le site de Laurent Nottale.</span></li>
+<li><a href="http://www.infoscience.fr/index.phtml">Info Science</a><span>Pour suivre au quotidien l’information scientifique.</span></li>
+</ul>
+</section>
 
-## **Sites du monde de l'édition**
+<section class="link-group">
+<h2>Sites consacrés à la philosophie</h2>
+<ul role="list" class="link-list">
+<li><a href="http://kphi.doremi.net/respublica">Res Publica</a><span>La revue de l’Université Paris XII.</span></li>
+</ul>
+</section>
 
--   [Alinea](http://perso.wanadoo.fr/alinea.bouquiniste) : Un bouquiniste dans l'Aude
--   [Bibliothèque de l'Homme](http://www.bibliomme.com/) : Une nouvelle maison d'édition.
--   [Ombres blanches](http://www.ombres-blanches.com/) : Une librairie à découvrir à Toulouse.
+<section class="link-group">
+<h2>Sites consacrés à la littérature et à l’art</h2>
+<ul role="list" class="link-list">
+<li><a href="http://perso.club-internet.fr/mul/">La revue MUL</a><span>Une réflexion originale sur la nature de l’art et de la littérature.</span></li>
+<li><a href="http://www.pagina.tm.fr/">Pagina</a><span>Une revue sur l’actualité littéraire et la production éditoriale.</span></li>
+<li><a href="http://www.republique-des-lettres.com/">République Internationale des Lettres</a><span>Un journal mensuel d’informations culturelles, de débats intellectuels et de critique littéraire.</span></li>
+</ul>
+</section>
 
-## **Sites consacrés à la science**
+<section class="link-group">
+<h2>Sites proposant des chroniques de livres</h2>
+<ul role="list" class="link-list">
+<li><a href="http://dannyreviews.com/">Danny Yee</a><span>Un site très éclectique (en anglais).</span></li>
+<li><a href="http://www.diplomatie.fr/culture/france/biblio/folio/essai/index.html">La diplomatie française</a><span>Quelques chroniques de livres français.</span></li>
+<li><a href="http://www.paru.com/">Paru.com</a><span>Pour suivre l’actualité éditoriale.</span></li>
+</ul>
+</section>
 
--   [La relativité d'échelle](http://www.daec.obspm.fr/users/nottale) : Le site de Laurent Nottale.
--   [Info Science](http://www.infoscience.fr/index.phtml) : Pour être tenu au courant quotidiennement de l'information scientifique.
-
-## **Sites consacrés à la philosophie**
-
--   [Page de philosophie](http://www.gesnet.net/philo/) : Un site bien géré de discussions philosophiques.
--   [Res Publica](http://kphi.doremi.net/respublica) : La revue de l'Université Paris XII.
-
-## **Sites consacrés à la littérature et l'art**
-
--   [La revue MUL](http://perso.club-internet.fr/mul/) : Une réflexion originale sur la nature de l'art et de la littérature.
--   [Pagina](http://www.pagina.tm.fr/) : Une revue sur l'actualité littéraire et la production éditoriale.
--    [République Internationale des Lettres](http://www.republique-des-lettres.com/) : Un journal mensuel d'informations culturelles, de débats intellectuels et de critique littéraire.
-
-## **Sites proposant des chroniques de livres**
-
--   [Danny YEE](http://dannyreviews.com/) : Un site très éclectique (en anglais).
--   [La diplomatie française](http://www.diplomatie.fr/culture/france/biblio/folio/essai/index.html) : Quelques chroniques de livres français.
--   [Paru.com](http://www.paru.com/) : Pour suivre l'actualité éditoriale.
 </div>
-
-<style>
-@layer global {
-  h2 {
-    font-size: var(--size-step-3);
-  }
-}
-</style>

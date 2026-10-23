@@ -1,59 +1,71 @@
-<footer class="site-footer mt-l-xl p-s-m">
+<footer class="site-footer">
   <div class="wrapper">
-    <div class="cluster gutter-xs">
-      <nav class="cluster text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
-        &copy; {% year %}
-        <a href="/" {{ indicateActiveHome }}
-          ><span class="font-display">{{ meta.siteName }}</span>
-        </a>
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <a href="/" class="site-footer__name" {{ indicateActiveHome }}>{{ meta.siteName }}</a>
+        <p class="site-footer__tagline">
+          Docteur en astrophysique, historien et philosophe des sciences. Livres, articles, plus de 500 chroniques
+          d’essais et conférences.
+        </p>
+      </div>
 
-        {% for item in navigation.bottom %}
-          <a
-            href="{{ item.url }}"
-            {{
-              helpers.getLinkActiveState(item.url,
-              page.url)
-              |
-              safe
-            }}
-            >{{ item.text }}</a
-          >
-        {% endfor %}
-      </nav>
+      <div class="site-footer__cols">
+        <nav aria-label="Parcourir le site">
+          <h2 class="site-footer__title">Parcourir</h2>
+          <ul role="list">
+            {% for item in navigation.top %}
+              {% if item.url != "/" %}
+                <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
 
-      <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
-        <!-- gets the first item from the feed loop set in meta -->
-        <a
-          href="{{ meta.blog.feedLinks[0].url }}"
-          rel="alternate"
-          type="{{ meta.blog.feedLinks[0].type }}"
-          class="button"
-          data-icon
-        >
-          <span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
-          {% svg "misc/rss" %}
-        </a>
+        <nav aria-label="{{ meta.navigation.ariaBottom }}">
+          <h2 class="site-footer__title">Informations</h2>
+          <ul role="list">
+            {% for item in navigation.bottom %}
+              <li>
+                <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+              </li>
+            {% endfor %}
+            <li><a href="/liens/">Sites à visiter</a></li>
+          </ul>
+        </nav>
 
-        {% for key, value in personal.platforms %}
-          {% if value != "" %}
-            <!-- regular platforms -->
-            <a class="no-indicator button" data-icon href="{{ value }}" rel="me">
-              <span class="visually-hidden">{{ key | capitalize }}</span>
-              {% svg 'platform/' + key %}
+        <nav aria-label="{{ meta.navigation.ariaPlatforms }}">
+          <h2 class="site-footer__title">Suivre</h2>
+          <div class="site-footer__social">
+            <a
+              href="{{ meta.blog.feedLinks[0].url }}"
+              rel="alternate"
+              type="{{ meta.blog.feedLinks[0].type }}"
+              class="button"
+              data-icon
+              title="Flux RSS des chroniques"
+            >
+              <span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
+              {% svg "misc/rss" %}
             </a>
-          {% endif %}
-        {% endfor %}
-      </nav>
+
+            {% for key, value in personal.platforms %}
+              {% if value != "" %}
+                <a class="no-indicator button" data-icon href="{{ value }}" rel="me" title="{{ key | capitalize }}">
+                  <span class="visually-hidden">{{ key | capitalize }}</span>
+                  {% svg 'platform/' + key %}
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </nav>
+      </div>
     </div>
 
-    <aside class="creator | cluster gutter-2xs text-step-min-1 mt-xl">
-      Made with <span class="visually-hidden">love</span> <span>{% svg "misc/heart" %}</span> and
-      <a class="no-indicator" href="https://www.11ty.dev/">
-        <span class="visually-hidden">Eleventy</span>
-        {% svg "misc/11ty" %}
-      </a>
-      by
-      <a href="{{ meta.creator.website }}">{{ meta.creator.name }}</a>
-    </aside>
+    <div class="site-footer__legal">
+      <span>&copy; {% year %} {{ meta.siteName }}</span>
+      <span class="creator">
+        Site réalisé par <a class="no-indicator" href="{{ meta.creator.website }}">{{ meta.creator.name }}</a>
+      </span>
+    </div>
   </div>
 </footer>

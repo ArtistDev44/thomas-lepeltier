@@ -1,0 +1,120 @@
+/* Grille de couvertures : livres, chroniques, articles. Même carte partout, les titres restent lisibles hors de l'image. */
+
+.cover-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--cover-min, 9.5rem), 1fr));
+  gap: var(--space-m-l) var(--space-s-m);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cover-grid--home {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 36rem) {
+  .cover-grid--home {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  .cover-grid--home {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+.cover-card {
+  min-inline-size: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--space-xs);
+  block-size: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.cover-card__media {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+  background: var(--color-bg-accent);
+  box-shadow: var(--shadow-cover);
+  aspect-ratio: 2 / 3;
+  transition:
+    transform var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
+}
+
+.cover-card__media picture {
+  block-size: 100%;
+}
+
+.cover-card__media img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border: 0;
+  border-radius: 0;
+}
+
+.cover-card:hover .cover-card__media,
+.cover-card:focus-visible .cover-card__media {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-m);
+}
+
+.cover-card__body {
+  display: grid;
+  align-content: start;
+  gap: 0.15rem;
+  text-align: start;
+}
+
+.cover-card__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-size: var(--size-step-min-1);
+  font-weight: var(--font-bold);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.cover-card--scan .cover-card__media {
+  aspect-ratio: 3 / 4;
+}
+
+.cover-card__meta .tag {
+  white-space: normal;
+}
+
+.cover-card:hover .cover-card__title {
+  color: var(--color-primary);
+}
+
+.cover-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.6rem;
+  font-size: var(--size-step-min-2);
+  color: var(--color-text-soft);
+}
+
+/* Affiches de conférences : paysage */
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: var(--space-s-m);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

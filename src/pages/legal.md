@@ -5,6 +5,8 @@ discover:
 permalink: /legal/index.html
 description: Éditeur, hébergeur, propriété intellectuelle et liens d'affiliation du site de Thomas Lepeltier.
 layout: page
+narrow: true
+eyebrow: Informations
 ---
 
 **Éditeur et directeur de la publication**
