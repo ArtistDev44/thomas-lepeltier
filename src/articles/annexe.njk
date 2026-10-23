@@ -10,36 +10,59 @@ description: 'Articles et entretiens de Thomas Lepeltier, classés par rubrique 
 
 {% js "inline" %}
  {% include "scripts/search_articles.js" %}
+ {% include "scripts/list-filter.js" %}
 {% endjs %}
 
-<section class="search-panel" aria-labelledby="rubriques">
-  <h2 id="rubriques" class="visually-hidden">Rubriques et recherche</h2>
-  <ul class="tag-list" role="list">
+<section class="search-panel" aria-label="Recherche et filtres">
+  {% set lfList = "liste-articles" %}
+  {% set lfNoun = "article" %}
+  {% set lfNouns = "articles" %}
+  {% set lfPageSize = 60 %}
+  {% set lfPlaceholder = "Titre ou publication" %}
+  {% set lfThemeLabel = "Rubrique" %}
+  {% set lfExtra = "source" %}
+  {% set lfExtraLabel = "Publication" %}
+  {% set lfExtraPlaceholder = "Toutes les publications" %}
+  {% include "partials/list-filter.njk" %}
+
+  <ul class="tag-list" role="list" data-lf-fallback>
     {%- for rubrique in ["Histoire et philosophie des sciences", "Éthique animale", "Environnement", "Économie", "Historiographie", "Cosmologie", "Divers"] -%}
       <li><a class="tag" href="/tags/{{ rubrique | slugify }}/">{{ rubrique }}</a></li>
     {%- endfor -%}
   </ul>
-  <pagefind-modal-trigger></pagefind-modal-trigger>
-  <pagefind-modal></pagefind-modal>
 </section>
 
-<ul class="article-grid" role="list">
-  {%- for article in collections.article | reverse -%}
-    {% set targetUrl = article.data.externalLink or article.data.internalLink or article.url %}
-    {% set isExternal = article.data.externalLink | length > 0 %}
-    <li>
-      <a class="cover-card cover-card--scan" href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
-        <figure class="cover-card__media">
-          <img src="{{ article.data.imageUrl }}" alt="" loading="lazy" decoding="async">
-        </figure>
-        <span class="cover-card__body">
-          <span class="cover-card__title">{{ article.data.title }}{% if isExternal %}<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span>{% endif %}</span>
-          <span class="cover-card__meta">
-            {%- if article.date | anneeConnue %}<span>{{ article.date | anneeConnue }}</span>{% endif -%}
-            {%- if article.data.category %}<span class="tag">{{ article.data.category }}</span>{% endif -%}
+<section aria-labelledby="titre-liste">
+  <div class="section-head">
+    <h2 id="titre-liste">Tous les articles</h2>
+    <p data-list-status role="status">{{ collections.article | length }} articles, du plus récent au plus ancien.</p>
+  </div>
+
+  <ul class="article-grid" id="liste-articles" role="list">
+    {%- for article in collections.article | reverse -%}
+      {% set targetUrl = article.data.externalLink or article.data.internalLink or article.url %}
+      {% set isExternal = article.data.externalLink | length > 0 %}
+      {% set source = article.data.description | sourceArticle(article.data.title) %}
+      <li
+        data-title="{{ article.data.title }}"
+        data-search="{{ article.data.title }} {{ source }} {{ article.data.category }}"
+        data-tags="{{ article.data.category }}"
+        data-year="{{ article.date | anneeConnue }}"
+        data-source="{{ source }}"
+      >
+        <a class="cover-card cover-card--scan" href="{{ targetUrl }}" {% if isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
+          <figure class="cover-card__media">
+            <img src="{{ article.data.imageUrl }}" alt="" loading="lazy" decoding="async">
+          </figure>
+          <span class="cover-card__body">
+            <span class="cover-card__title">{{ article.data.title }}{% if isExternal %}<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span>{% endif %}</span>
+            <span class="cover-card__meta">
+              {%- if article.date | anneeConnue %}<span>{{ article.date | anneeConnue }}</span>{% endif -%}
+              {%- if article.data.category %}<span class="tag">{{ article.data.category }}</span>{% endif -%}
+            </span>
           </span>
-        </span>
-      </a>
-    </li>
-  {%- endfor -%}
-</ul>
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</section>

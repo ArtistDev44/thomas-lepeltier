@@ -1,0 +1,74 @@
+{#
+  Barre de recherche et de filtres d'une page-liste. Réglages à définir avant l'inclusion :
+  lfList (id de la liste), lfNoun / lfNouns, lfPageSize, lfPlaceholder, lfThemeLabel,
+  lfExtra ("author" ou "source"), lfExtraLabel, lfExtraPlaceholder, lfSortByAuthor.
+  Le formulaire reste masqué tant que le script n'a pas pris la main : sans JavaScript, la liste complète s'affiche.
+#}
+<form
+  class="list-filter"
+  role="search"
+  aria-label="Filtrer les {{ lfNouns }}"
+  data-pagefind-ignore
+  data-list-filter
+  data-list="#{{ lfList }}"
+  data-noun="{{ lfNoun }}"
+  data-nouns="{{ lfNouns }}"
+  data-page-size="{{ lfPageSize }}"
+  hidden
+>
+  <div class="list-filter__field list-filter__field--search">
+    <label for="{{ lfList }}-q" data-lf-scope>Rechercher parmi les {{ lfNouns }}</label>
+    <input type="search" id="{{ lfList }}-q" name="q" placeholder="{{ lfPlaceholder }}" autocomplete="off" enterkeyhint="search" spellcheck="false" />
+  </div>
+
+  <fieldset class="list-filter__themes">
+    <legend>{{ lfThemeLabel }}</legend>
+    <div class="list-filter__chips" data-lf-chips></div>
+  </fieldset>
+
+  <div class="list-filter__row">
+    {% if lfExtra == "author" %}
+      <div class="list-filter__field">
+        <label for="{{ lfList }}-extra">{{ lfExtraLabel }}</label>
+        <input type="text" id="{{ lfList }}-extra" name="auteur" data-lf-extra="author" list="{{ lfList }}-auteurs" placeholder="{{ lfExtraPlaceholder }}" autocomplete="off" spellcheck="false" />
+        <datalist id="{{ lfList }}-auteurs"></datalist>
+      </div>
+    {% elif lfExtra == "source" %}
+      <div class="list-filter__field">
+        <label for="{{ lfList }}-extra">{{ lfExtraLabel }}</label>
+        <select id="{{ lfList }}-extra" name="source" data-lf-extra="source">
+          <option value="">{{ lfExtraPlaceholder }}</option>
+        </select>
+      </div>
+    {% endif %}
+
+    <div class="list-filter__field">
+      <label for="{{ lfList }}-annee">Année</label>
+      <select id="{{ lfList }}-annee" name="annee">
+        <option value="">Toutes les années</option>
+      </select>
+    </div>
+
+    <div class="list-filter__field">
+      <label for="{{ lfList }}-tri">Trier par</label>
+      <select id="{{ lfList }}-tri" name="tri">
+        <option value="recent">Plus récents d’abord</option>
+        <option value="ancien">Plus anciens d’abord</option>
+        <option value="titre">Titre (A → Z)</option>
+        {% if lfSortByAuthor %}<option value="auteur">Auteur (A → Z)</option>{% endif %}
+      </select>
+    </div>
+
+    <button type="button" class="button" data-small-button data-ghost-button data-lf-reset hidden>Réinitialiser</button>
+  </div>
+
+  <div class="list-filter__fulltext">
+    <span>Pas trouvé ? Cherchez dans le texte intégral :</span>
+    <pagefind-modal-trigger></pagefind-modal-trigger>
+    <pagefind-modal></pagefind-modal>
+  </div>
+</form>
+
+{% css "local" %}
+  {% include "css/list-filter.css" %}
+{% endcss %}

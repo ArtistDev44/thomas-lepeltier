@@ -1,6 +1,6 @@
-/** All blog posts as a collection. */
+/** Toutes les chroniques (le dossier posts contient aussi un article de test du modèle de départ). */
 export const getAllPosts = collection => {
-  return collection.getFilteredByGlob('./src/posts/**/*.md').reverse();
+  return collection.getFilteredByGlob('./src/posts/comptes-rendus/**/*.md').reverse();
 };
 
 /** All relevant pages as a collection for sitemap.xml */

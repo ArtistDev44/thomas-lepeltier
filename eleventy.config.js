@@ -163,6 +163,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('relatedRapports', filters.relatedRapports);
   eleventyConfig.addFilter('relatedLivres', filters.relatedLivres);
   eleventyConfig.addFilter('publicTags', filters.publicTags);
+  eleventyConfig.addFilter('splitAuteurs', filters.splitAuteurs);
+  eleventyConfig.addFilter('sourceArticle', filters.sourceArticle);
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);

@@ -1,4 +1,11 @@
-<li>
+<li
+  data-title="{{ item.data.title }}"
+  data-search="{{ item.data.title }} {{ item.data.authorFullName or '' }}"
+  data-tags="{{ item.data.tags | publicTags | join('|') }}"
+  data-year="{{ item.date | anneeConnue }}"
+  data-authors="{{ item.data.authorFullName | splitAuteurs | join('|') }}"
+  data-sort-author="{{ item.data.authorLastName or '' }}"
+>
   <a class="chronique-card" href="{{ item.url | url }}">
     <span class="chronique-card__cover">
       {% if item.data.imageUrl %}{% image item.data.imageUrl, "", "", "lazy", "", "", [160, 320], "96px", ["webp", "jpeg"] %}{% endif %}

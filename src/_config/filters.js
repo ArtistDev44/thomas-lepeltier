@@ -6,6 +6,7 @@ import {splitlines} from './filters/splitlines.js';
 import {striptags} from './filters/striptags.js';
 import {slugifyString} from './filters/slugify.js';
 import {publicTags} from './filters/public-tags.js';
+import {splitAuteurs, sourceArticle} from './filters/listing.js';
 
 const relatedRapports = function (rapports, currentTags, currentUrl) {
   if (!rapports) return [];
@@ -49,5 +50,7 @@ export default {
   slugifyString,
   relatedRapports,
   relatedLivres, // ajout$
-  publicTags
+  publicTags,
+  splitAuteurs,
+  sourceArticle
 };

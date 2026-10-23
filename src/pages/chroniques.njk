@@ -4,37 +4,37 @@ title: Chroniques de livres
 eyebrow: Lectures
 lead: Des chroniques d’essais de sciences, de philosophie, d’histoire et d’éthique animale. Précises, fidèles et, parfois, critiques.
 description: 'Plus de 500 chroniques d’essais de sciences, de philosophie, d’histoire et d’éthique animale.'
-pagination:
-  data: collections.allPosts
-  size: 50
-permalink: 'chroniques/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+permalink: 'chroniques/index.html'
 ---
 
-<section class="search-panel" aria-labelledby="rechercher">
-  <h2 id="rechercher" class="visually-hidden">Rechercher une chronique</h2>
-  <pagefind-modal-trigger></pagefind-modal-trigger>
-  <pagefind-modal></pagefind-modal>
+<section class="search-panel" aria-label="Recherche et filtres">
+  {% set lfList = "liste-chroniques" %}
+  {% set lfNoun = "chronique" %}
+  {% set lfNouns = "chroniques" %}
+  {% set lfPageSize = 48 %}
+  {% set lfPlaceholder = "Titre ou auteur" %}
+  {% set lfThemeLabel = "Thème" %}
+  {% set lfExtra = "author" %}
+  {% set lfExtraLabel = "Auteur du livre" %}
+  {% set lfExtraPlaceholder = "Nom d’un auteur" %}
+  {% set lfSortByAuthor = true %}
+  {% include "partials/list-filter.njk" %}
 </section>
 
-<section aria-labelledby="liste-chroniques">
+<section aria-labelledby="titre-liste">
   <div class="section-head">
-    <h2 id="liste-chroniques">{% if pagination.pageNumber == 0 %}Les plus récentes{% else %}Page {{ pagination.pageNumber + 1 }}{% endif %}</h2>
-    <p>{{ collections.allPosts | length }} chroniques, de la plus récente à la plus ancienne.</p>
+    <h2 id="titre-liste">Toutes les chroniques</h2>
+    <p data-list-status role="status">{{ collections.allPosts | length }} chroniques, de la plus récente à la plus ancienne.</p>
   </div>
 
-  <ul class="chronique-list" role="list">
-    {% asyncEach item in pagination.items %}
+  <ul class="chronique-list" id="liste-chroniques" role="list">
+    {% asyncEach item in collections.allPosts %}
       {% include "partials/chronique-card.njk" %}
     {% endeach %}
   </ul>
 </section>
 
-{% set collectionToPaginate = collections.posts %}
-{% set metaKey = "blog" %}
-{% if collectionToPaginate.length > pagination.size %}
-  {% include 'partials/pagination.njk' %}
-{% endif %}
-
 {% js "inline" %}
   {% include "scripts/search_cr.js" %}
+  {% include "scripts/list-filter.js" %}
 {% endjs %}
