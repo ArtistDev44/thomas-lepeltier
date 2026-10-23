@@ -7,7 +7,7 @@ tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/va-t-on-perdre-le-controle-des-ia.webp"
 internalLink: ""
-externalLink: ""
+externalLink: "https://union-rationaliste.org/produit/cahier-rationaliste-n702-703"
 buyLink: ""
 price: ""
 pageCount: ""

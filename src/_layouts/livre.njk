@@ -3,6 +3,7 @@ layout: base
 ---
 
 <article data-pagefind-body data-pagefind-filter="section: Livres" class="wrapper">
+  {% include "partials/search-index.njk" %}
   <header class="page-header">
     <span class="eyebrow">Livre{% if page.date | anneeConnue %} · {{ page.date | anneeConnue }}{% endif %}</span>
     <h1>{{ title }}</h1>
@@ -46,7 +47,7 @@ layout: base
       {% endif %}
     </aside>
 
-    <div class="book-main prose flow" data-pagefind-ignore>
+    <div class="book-main prose flow">
       {{ content | safe }}
 
       {% if description_auteur %}

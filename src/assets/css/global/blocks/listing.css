@@ -4,27 +4,6 @@
   margin-block-end: var(--space-l);
 }
 
-/* Composants Pagefind : on aligne leur thème sur le design system */
-:root {
-  --pf-text: var(--color-text);
-  --pf-background: var(--color-bg);
-  --pf-border: var(--color-border);
-  --pf-border-focus: var(--color-primary);
-  --pf-outline-focus: var(--color-primary);
-  --pf-input-height: 52px;
-  --pf-input-font-size: 18px;
-  --pf-border-radius: 999px;
-}
-
-pagefind-modal-trigger {
-  display: block;
-  max-inline-size: 36rem;
-}
-
-.search-panel .tag-list + pagefind-modal-trigger {
-  margin-block-start: var(--space-m);
-}
-
 .chronique-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));

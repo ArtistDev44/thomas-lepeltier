@@ -6,14 +6,52 @@ layout: base
   <header class="page-header">
     <span class="eyebrow">Recherche</span>
     <h1>{{ title }}</h1>
-    <p class="lead">Cherchez un livre, un article, une chronique ou un auteur. Les résultats se mettent à jour pendant la saisie.</p>
+    <p class="lead">Cherchez dans le texte des livres, articles, chroniques et annexes, puis affinez par type de contenu ou par catégorie. Les résultats se mettent à jour pendant la saisie.</p>
   </header>
 
-  <div class="page-body search-page">
-    <pagefind-input></pagefind-input>
-    <pagefind-filter-pane></pagefind-filter-pane>
-    <pagefind-summary></pagefind-summary>
-    <pagefind-results></pagefind-results>
+  <div class="page-body search-page" data-pagefind-ignore>
+    <form class="search-form" role="search" aria-label="Rechercher sur le site" data-site-search hidden>
+      <div class="search-form__field">
+        <label for="recherche-q">Mots à rechercher</label>
+        <div class="search-form__control">
+          <input type="search" id="recherche-q" name="q" placeholder="Un titre, un auteur, un sujet…" autocomplete="off" enterkeyhint="search" spellcheck="false" aria-describedby="recherche-statut" />
+          <button type="submit" class="button" data-button-variant="primary">Rechercher</button>
+        </div>
+      </div>
+
+      <fieldset class="search-form__group">
+        <legend>Type de contenu</legend>
+        <div class="search-form__chips" data-sf-types></div>
+      </fieldset>
+
+      <fieldset class="search-form__group">
+        <legend>Catégorie <span class="search-form__hint">(plusieurs choix possibles)</span></legend>
+        <div class="search-form__chips" data-sf-cats></div>
+      </fieldset>
+
+      <button type="button" class="button" data-small-button data-ghost-button data-sf-reset hidden>Réinitialiser la recherche</button>
+    </form>
+
+    <p class="search-status" id="recherche-statut" role="status" aria-live="polite" data-sf-status></p>
+
+    <ol class="search-results" role="list" data-sf-results aria-label="Résultats de la recherche"></ol>
+
+    <div class="search-more" data-sf-more hidden>
+      <button type="button" class="button" data-ghost-button>Afficher plus de résultats</button>
+    </div>
+
+    <noscript>
+      <p>La recherche demande JavaScript. Vous pouvez toutefois parcourir les <a href="/livres/">livres</a>, les <a href="/articles/">articles</a> et les <a href="/chroniques/">chroniques</a>.</p>
+    </noscript>
+
     {{ content | safe }}
   </div>
 </div>
+
+{% css "local" %}
+  {% include "css/recherche.css" %}
+{% endcss %}
+
+{% js "inline" %}
+  {% include "scripts/recherche.js" %}
+{% endjs %}

@@ -18,6 +18,7 @@ permalink: 'chroniques/index.html'
   {% set lfExtraLabel = "Auteur du livre" %}
   {% set lfExtraPlaceholder = "Nom d’un auteur" %}
   {% set lfSortByAuthor = true %}
+  {% set lfSection = "Chroniques" %}
   {% include "partials/list-filter.njk" %}
 </section>
 
@@ -27,7 +28,7 @@ permalink: 'chroniques/index.html'
     <p data-list-status role="status">{{ collections.allPosts | length }} chroniques, de la plus récente à la plus ancienne.</p>
   </div>
 
-  <ul class="chronique-list" id="liste-chroniques" role="list">
+  <ul class="chronique-list" id="liste-chroniques" role="list" data-lf-pending>
     {% asyncEach item in collections.allPosts %}
       {% include "partials/chronique-card.njk" %}
     {% endeach %}
@@ -35,6 +36,5 @@ permalink: 'chroniques/index.html'
 </section>
 
 {% js "inline" %}
-  {% include "scripts/search_cr.js" %}
   {% include "scripts/list-filter.js" %}
 {% endjs %}

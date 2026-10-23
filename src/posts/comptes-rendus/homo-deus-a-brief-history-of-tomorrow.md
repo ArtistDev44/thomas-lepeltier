@@ -11,5 +11,13 @@ alphabeticalPage: ["h"]
 description: "Chronique du livre de Yuval Noah Harari, Homo Deus, A Brief History of Tomorrow par Thomas Lepeltier"
 externalLink: "http://www.larecherche.fr/livre-lu-dailleurs-prospective/le-nouveau-souffle-de-yuval-noah-harari"
 externalLinkSource: "La Recherche"
+publication:
+  titre: La Recherche
+  url: http://www.larecherche.fr
+  detail: 517, novembre 2016
+  annee: 2016
+ouvrage:
+  - <strong>Homo Deus</strong>.<br><strong>A Brief History of Tomorrow</strong>,<br>de Yuval Noah Harari,<br>Harvill Secker, 2016.
 ---
 
+\[**Texte disponible [ici](http://www.larecherche.fr/livre-lu-dailleurs-prospective/le-nouveau-souffle-de-yuval-noah-harari)**\]

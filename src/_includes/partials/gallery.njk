@@ -14,6 +14,11 @@
           </button>
         </div>
         {%- image item.image, item.alt, item.caption -%}
+        {%- if item.lien %}
+          <p class="text-center">
+            <a href="{{ item.lien }}" target="_blank" rel="noopener noreferrer">Voir ou écouter l’intervention<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a>
+          </p>
+        {%- endif %}
       </dialog>
       <button data-index="{{ loop.index }}" aria-label="Agrandir : {{ item.alt }}"><span class="poster-year">{{ item.year }}</span>{%- image item.image, item.alt -%}</button>
     {%- endfor -%}

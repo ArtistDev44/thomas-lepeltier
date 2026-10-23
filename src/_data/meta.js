@@ -98,4 +98,5 @@ export const viewRepo = {
   allow: true,
   infoText: 'Voir cette page sur GitHub'
 };
-export const easteregg = true;
+// Désactivé : gadget du modèle de départ (confettis chargés depuis un CDN tiers quand on tape « eleventy »)
+export const easteregg = false;

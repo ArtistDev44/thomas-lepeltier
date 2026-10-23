@@ -1,0 +1,132 @@
+/*
+ * Animations légères, en CSS pur (aucun JavaScript).
+ *
+ * - Tout est réservé aux visiteurs qui n'ont pas demandé de réduire les animations.
+ * - Chaque effet est une amélioration progressive : sans prise en charge, le contenu est simplement affiché.
+ * - Les animations d'arrivée utilisent `backwards` (et non `both`) : une fois terminées, elles ne laissent ni
+ *   contexte d'empilement ni style résiduel.
+ * - On n'anime que `opacity`, `transform`, `scale` et `box-shadow` (pas de recalcul de mise en page), et jamais
+ *   le `transform` d'un élément qui en a déjà un au survol (les cartes) : l'animation l'écraserait.
+ */
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes motion-rise {
+    from {
+      opacity: 0;
+      transform: translateY(0.9rem);
+    }
+  }
+
+  @keyframes motion-fade {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @keyframes motion-header-shadow {
+    from {
+      box-shadow: 0 0 0 rgb(21 19 15 / 0);
+    }
+    to {
+      box-shadow: 0 6px 18px rgb(21 19 15 / 0.1);
+    }
+  }
+
+  /* --- À l'arrivée sur une page : l'en-tête et le héros se posent en cascade --------------------------- */
+  .page-header > *,
+  .hero__content > * {
+    animation: motion-rise 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  }
+
+  .page-header > :nth-child(2),
+  .hero__content > :nth-child(2) {
+    animation-delay: 70ms;
+  }
+
+  .page-header > :nth-child(3),
+  .hero__content > :nth-child(3) {
+    animation-delay: 140ms;
+  }
+
+  .hero__content > :nth-child(4) {
+    animation-delay: 210ms;
+  }
+
+  /* Le panneau de filtres et la liste suivent l'en-tête de page */
+  .search-panel,
+  .book-layout {
+    animation: motion-fade 0.5s 0.15s ease-out backwards;
+  }
+
+  /* --- Survols : les couvertures respirent ------------------------------------------------------------ */
+  .cover-card__media img,
+  .chronique-card__cover img {
+    transition: scale 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .cover-card:hover .cover-card__media img,
+  .cover-card:focus-visible .cover-card__media img,
+  .chronique-card:hover .chronique-card__cover img {
+    scale: 1.045;
+  }
+
+  .button:active {
+    transform: translateY(1px) scale(0.99);
+  }
+
+  /* --- Au défilement : les blocs apparaissent en entrant dans l'écran (animations pilotées par le scroll) --- */
+  @supports (animation-timeline: view()) {
+    .section-head,
+    .quicknav li,
+    .cover-grid > li,
+    .bio-teaser > *,
+    .band__inner > *,
+    .chronique-list > li,
+    .article-grid > li {
+      animation: motion-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 30%;
+    }
+
+    /* L'ombre de l'en-tête collant apparaît dès qu'on quitte le haut de page */
+    .site-header {
+      animation: motion-header-shadow linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 5rem;
+    }
+  }
+
+  /* --- Accordéons : ouverture en douceur (là où `::details-content` existe) ----------------------------- */
+  @supports selector(::details-content) {
+    .details details {
+      interpolate-size: allow-keywords;
+    }
+
+    .details details::details-content {
+      block-size: 0;
+      overflow: clip;
+      transition:
+        block-size 0.3s ease,
+        content-visibility 0.3s allow-discrete;
+    }
+
+    .details details[open]::details-content {
+      block-size: auto;
+    }
+  }
+
+  /* --- Passage d'une page à l'autre (transition de document, déclarée dans reset.css) ------------------- */
+  /* L'ancienne page reste en place, la nouvelle apparaît par-dessus (sans le fondu additif par défaut) */
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    mix-blend-mode: normal;
+  }
+
+  ::view-transition-old(root) {
+    animation: none;
+  }
+
+  ::view-transition-new(root) {
+    animation: motion-fade 0.2s ease-out both;
+  }
+}

@@ -25,6 +25,7 @@ const processImage = async options => {
     imageClass,
     widths = [650, 960, 1400],
     sizes,
+    fetchpriority,
     formats = ['avif', 'webp', 'jpeg']
   } = options;
 
@@ -56,7 +57,9 @@ const processImage = async options => {
     }
   });
 
-  const lowsrc = metadata.jpeg[metadata.jpeg.length - 1];
+  // Image de repli : le jpeg s'il existe, sinon le dernier format demandé
+  const fallbackSizes = metadata.jpeg ?? Object.values(metadata).at(-1);
+  const lowsrc = fallbackSizes[fallbackSizes.length - 1];
 
   const imageSources = Object.values(metadata)
     .map(imageFormat => {
@@ -72,6 +75,7 @@ const processImage = async options => {
     'height': lowsrc.height,
     alt,
     loading,
+    ...(fetchpriority && {fetchpriority}),
     'decoding': loading === 'eager' ? 'sync' : 'async',
     ...(imageClass && {class: imageClass}),
     'eleventy:ignore': ''

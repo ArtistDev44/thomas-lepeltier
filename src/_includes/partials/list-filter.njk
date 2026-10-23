@@ -1,7 +1,8 @@
 {#
   Barre de recherche et de filtres d'une page-liste. Réglages à définir avant l'inclusion :
   lfList (id de la liste), lfNoun / lfNouns, lfPageSize, lfPlaceholder, lfThemeLabel,
-  lfExtra ("author" ou "source"), lfExtraLabel, lfExtraPlaceholder, lfSortByAuthor.
+  lfExtra ("author" ou "source"), lfExtraLabel, lfExtraPlaceholder, lfSortByAuthor,
+  lfSection (type de contenu de la page /recherche/ vers lequel renvoie le lien « texte intégral »).
   Le formulaire reste masqué tant que le script n'a pas pris la main : sans JavaScript, la liste complète s'affiche.
 #}
 <form
@@ -64,8 +65,7 @@
 
   <div class="list-filter__fulltext">
     <span>Pas trouvé ? Cherchez dans le texte intégral :</span>
-    <pagefind-modal-trigger></pagefind-modal-trigger>
-    <pagefind-modal></pagefind-modal>
+    <a class="button" data-small-button data-ghost-button href="/recherche/?type={{ lfSection | urlencode }}" data-lf-fulltext>Ouvrir la recherche plein texte</a>
   </div>
 </form>
 

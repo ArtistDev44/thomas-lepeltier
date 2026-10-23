@@ -9,7 +9,6 @@ description: 'Articles et entretiens de Thomas Lepeltier, classés par rubrique 
 ---
 
 {% js "inline" %}
- {% include "scripts/search_articles.js" %}
  {% include "scripts/list-filter.js" %}
 {% endjs %}
 
@@ -23,6 +22,7 @@ description: 'Articles et entretiens de Thomas Lepeltier, classés par rubrique 
   {% set lfExtra = "source" %}
   {% set lfExtraLabel = "Publication" %}
   {% set lfExtraPlaceholder = "Toutes les publications" %}
+  {% set lfSection = "Articles" %}
   {% include "partials/list-filter.njk" %}
 
   <ul class="tag-list" role="list" data-lf-fallback>
@@ -38,7 +38,7 @@ description: 'Articles et entretiens de Thomas Lepeltier, classés par rubrique 
     <p data-list-status role="status">{{ collections.article | length }} articles, du plus récent au plus ancien.</p>
   </div>
 
-  <ul class="article-grid" id="liste-articles" role="list">
+  <ul class="article-grid" id="liste-articles" role="list" data-lf-pending>
     {%- for article in collections.article | reverse -%}
       {% set targetUrl = article.data.externalLink or article.data.internalLink or article.url %}
       {% set isExternal = article.data.externalLink | length > 0 %}

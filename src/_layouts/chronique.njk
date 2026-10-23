@@ -5,8 +5,10 @@ layout: base
 {% set texteChronique = content | striptags | trim %}
 
 <article data-pagefind-body data-pagefind-filter="section: Chroniques" class="wrapper">
+  {% include "partials/search-index.njk" %}
   <header class="page-header">
-    <span class="eyebrow">Chronique{% if page.date | anneeConnue %} · {{ page.date | anneeConnue }}{% endif %}</span>
+    {% set anneeChronique = publication.annee or (page.date | anneeConnue) %}
+    <span class="eyebrow">Chronique{% if anneeChronique %} · {{ anneeChronique }}{% endif %}</span>
     <h1>{{ title }}</h1>
     {% if authorFullName %}<p class="lead">{{ authorFullName }}</p>{% endif %}
   </header>
@@ -14,27 +16,53 @@ layout: base
   <div class="book-layout">
     <aside class="book-aside" aria-label="Le livre chroniqué">
       {% include 'partials/couverture.njk' %}
+      {% for couverture in couvertures_supplementaires %}
+        <figure class="book-cover">
+          <img src="{{ couverture }}" alt="Couverture d’un autre livre chroniqué" loading="lazy">
+        </figure>
+      {% endfor %}
 
-      {% if publication.titre %}
+      {% if ouvrage %}
+        <div class="book-reference">
+          {% for livre in ouvrage %}<p>{{ livre | safe }}</p>{% endfor %}
+        </div>
+      {% endif %}
+
+      {% if publication.titre or publication.detail %}
         <dl class="book-facts">
           <div>
             <dt>Chronique parue</dt>
             <dd>
-              {% if publication.url %}<a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.titre }}</a>{% else %}<em>{{ publication.titre }}</em>{% endif %}{% if page.date | anneeConnue %}, {{ page.date | anneeConnue }}{% endif %}
+              {% if publication.titre %}{% if publication.url %}<a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.titre }}</a>{% else %}<em>{{ publication.titre }}</em>{% endif %}{% if publication.detail %}, {% endif %}{% endif %}{{ publication.detail }}
             </dd>
           </div>
         </dl>
       {% endif %}
 
-      {% if amazonLink %}
+      {% set achatsMultiples = achats and achats | length > 1 %}
+      {% if amazonLink and not achatsMultiples %}
         <div class="book-buy">
           <a class="button" data-button-variant="primary" href="{{ amazonLink }}" rel="sponsored noopener" target="_blank">Acheter le livre<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a>
           <p class="book-buy__note">Lien d’affiliation : il me soutient sans surcoût pour vous.</p>
         </div>
       {% endif %}
+
+      {% if achats %}
+        <div class="book-buy book-buy--liens">
+          {% for groupe in achats %}
+            <p>
+              {%- if groupe.intro %}{{ groupe.intro }}&nbsp;: {% elif not achatsMultiples %}Aussi chez&nbsp;: {% endif -%}
+              {%- for lien in groupe.liens -%}
+                <a href="{{ lien.url }}" target="_blank" rel="{% if 'amazon' in lien.url or 'amzn' in lien.url %}sponsored {% endif %}noopener">{{ lien.label }}<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a>{% if not loop.last %}, {% endif %}
+              {%- endfor -%}
+            </p>
+          {% endfor %}
+          {% if achatsMultiples %}<p class="book-buy__note">Liens d’affiliation Amazon : ils me soutiennent sans surcoût pour vous.</p>{% endif %}
+        </div>
+      {% endif %}
     </aside>
 
-    <div class="book-main prose flow" data-pagefind-ignore>
+    <div class="book-main prose flow">
       {% if texteChronique.length > 40 %}
         {{ content | safe }}
       {% elif externalLink %}
@@ -44,6 +72,25 @@ layout: base
         </p>
       {% else %}
         <p><em>Cette chronique est en préparation.</em></p>
+      {% endif %}
+
+      {% if autres_livres.items | length %}
+        <section class="book-more" aria-labelledby="autres-livres">
+          <h2 id="autres-livres">{{ autres_livres.titre or "Autres livres à signaler" }}</h2>
+          <ul>
+            {%- for livre in autres_livres.items %}
+              <li>
+                {%- if livre.titre -%}
+                  {%- if livre.auteurs %}{{ livre.auteurs }}, {% endif -%}
+                  {%- if livre.url %}<a href="{{ livre.url }}" target="_blank" rel="{% if 'amazon' in livre.url or 'amzn' in livre.url %}sponsored {% endif %}noopener"><em>{{ livre.titre }}</em><span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a>{% else %}<em>{{ livre.titre }}</em>{% endif -%}
+                  {{ livre.suite }}
+                {%- else -%}
+                  {{ livre.texte }}
+                {%- endif -%}
+              </li>
+            {%- endfor %}
+          </ul>
+        </section>
       {% endif %}
 
       <p class="chronique-signature">Chronique de Thomas Lepeltier</p>

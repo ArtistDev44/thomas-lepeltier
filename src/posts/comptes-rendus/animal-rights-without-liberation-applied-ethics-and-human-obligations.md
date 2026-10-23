@@ -9,6 +9,24 @@ imageUrl: "/assets/images/couvertures/cochrane-animal-rigths-without-liberation.
 amazonLink: "http://www.amazon.fr/gp/product/0231158270/ref=as_li_ss_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=0231158270&linkCode=as2&tag=httpthomaslep-21"
 alphabeticalPage: ["c"]
 description: ""
+publication:
+  titre: Sciences Humaines
+  url: http://www.scienceshumaines.com/
+  detail: 250, juillet 2013
+  annee: 2013
+ouvrage:
+  - <strong><em>Animal Rights without Liberation</em></strong>.<br><em>Applied Ethics and Human Obligations</em>,<br>de Alasdair Cochrane<br>Columbia University Press, 2012.
+autres_livres:
+  titre: Autres livres à signaler
+  items:
+    - auteurs: Sue Donaldson et Will Kymlicka
+      titre: Zoopolis. A Political Theory of Animal Rights
+      url: http://www.amazon.fr/gp/product/0199673012/ref=as_li_ss_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=0199673012&linkCode=as2&tag=httpthomaslep-21
+      suite: ", Oxford University Press, 2011."
+    - auteurs: Cary Wolfe
+      titre: Before the Law. Humans and Other Animals in a Biopolitical Frame
+      url: http://www.amazon.fr/gp/product/0226922413/ref=as_li_ss_tl?ie=UTF8&camp=1642&creative=19458&creativeASIN=0226922413&linkCode=as2&tag=httpthomaslep-21
+      suite: ", University of Chicago Press, Chicago, 2012."
 ---
 
 Concernant la question des droits des animaux, il est possible de distinguer deux grandes positions. D’un côté, il y a ceux qui considèrent qu’attribuer des droits aux animaux n’a pas de sens, puisque ces êtres ne sont pas capables d’en réclamer pour eux-mêmes ni de respecter ceux des autres porteurs de droits. D’un autre côté, il y a ceux qui considèrent que, à l’instar de ce que l’on fait pour les enfants, qui eux non plus ne peuvent en réclamer pour eux-mêmes, cette attribution de droits est tout à fait sensée.
@@ -22,13 +40,3 @@ Or, pour le politologue Alasdair Cochrane, il y aurait une position intermédiai
 Les implications de cette approche ne sont pas minces. Étant donné que les animaux ont le droit de ne pas être abusés et de ne pas être tués sans nécessité, il faudrait mettre un terme à la quasi-totalité de leur utilisation dans l’industrie alimentaire, dans l’expérimentation scientifique, dans les divertissements, etc. Sur un plan pratique, Cochrane est donc plus proche des partisans de la libération des animaux que de leurs opposants. Mais il garde de ces derniers l’idée que l’être humain peut régner en maître sur le monde animal. Ce serait juste un maître bienveillant.
 
 Il n’est pas sûr que la notion d’autonomie qui lui sert à définir cette suprématie humaine soit très pertinente. Il n’en reste pas moins que, pour la clarté de ses analyses et la rigueur de ses réfutations de toutes les justifications des souffrances que l’on inflige aux animaux, son ouvrage est une très utile contribution aux débats de plus en plus fréquents sur la situation des animaux.
-
-Thomas Lepeltier,* Sciences Humaines*, 250, juillet 2013.
-
-Pour acheter ce livre : Amazon.fr
-
-Autres livres à signaler :
-
-— Sue Donaldson et Will Kymlicka, Zoopolis. A Political Theory of Animal Rights, Oxford University Press, 2011.
-
-— Cary Wolfe, Before the Law. Humans and Other Animals in a Biopolitical Frame, University of Chicago Press, Chicago, 2012.

@@ -4,6 +4,7 @@ schema: BlogPosting
 ---
 
 <article data-pagefind-body data-pagefind-filter="section: Articles" class="wrapper">
+  {% include "partials/search-index.njk" %}
   <header class="page-header">
     <span class="eyebrow">Article{% if date | anneeConnue %} · {{ date | anneeConnue }}{% endif %}</span>
     <h1>{{ title }}</h1>
@@ -16,7 +17,7 @@ schema: BlogPosting
     {% endif %}
   </header>
 
-  <div class="page-body prose flow" data-pagefind-ignore>
+  <div class="page-body prose flow">
     {% if image %}
       {%
         imageKeys {
@@ -32,7 +33,7 @@ schema: BlogPosting
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->
-  <div hidden class="h-entry">
+  <div hidden class="h-entry" data-pagefind-ignore>
     <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
     <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
     <img

@@ -7,7 +7,7 @@ tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/la-biodiversite-est-un-anti-humanisme.webp"
 internalLink: ""
-externalLink: "https://www.causeur.fr/le-culte-de-la-biodiversite-est-un-antihumanisme-marc-andre-selosse-333040"
+externalLink: "https://www.causeur.fr/le-culte-de-la-biodiversite-est-un-antihumanisme-marc-andre-selosse-3330405"
 buyLink: ""
 price: ""
 pageCount: ""

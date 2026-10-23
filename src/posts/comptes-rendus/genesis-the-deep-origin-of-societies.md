@@ -1,5 +1,5 @@
 ---
-title: "Genesis. The Deep Origin of Societies,"
+title: "Genesis. The Deep Origin of Societies"
 date: 2019-01-01
 layout: "chronique.njk"
 tags: ["Chronique", "Sciences"]

@@ -14,13 +14,15 @@ description: "Thomas Lepeltier"
 <!-- HÉROS -->
 <section class="hero" aria-labelledby="titre-accueil">
   <div class="hero__bg" aria-hidden="true">
-    <img
-      src="/assets/images/thomas/thomas-lepeltier-en-conferences.webp"
-      alt=""
-      loading="eager"
-      fetchpriority="high"
-      decoding="async"
-    >
+    {% imageKeys {
+      "src": "/assets/images/thomas/thomas-lepeltier-en-conferences.webp",
+      "alt": "",
+      "loading": "eager",
+      "fetchpriority": "high",
+      "widths": [768, 1280, 1920],
+      "sizes": "100vw",
+      "formats": ["avif", "webp"]
+    } %}
   </div>
   <div class="wrapper">
     <div class="hero__content">
@@ -75,11 +77,13 @@ description: "Thomas Lepeltier"
   <div class="wrapper">
     <div class="bio-teaser">
       <figure class="bio-teaser__photo">
-        <img
-          src="/assets/images/thomas/thomas-lepeltier-en-conferences-vertical.webp"
-          alt="Thomas Lepeltier prononçant une conférence, micro en main"
-          loading="lazy"
-        >
+        {% imageKeys {
+          "src": "/assets/images/thomas/thomas-lepeltier-en-conferences-vertical.webp",
+          "alt": "Thomas Lepeltier prononçant une conférence, micro en main",
+          "widths": [480, 800],
+          "sizes": "(min-width: 48rem) 24rem, 90vw",
+          "formats": ["avif", "webp"]
+        } %}
       </figure>
       <div class="bio-teaser__text">
         <span class="eyebrow">Qui suis-je ?</span>
@@ -112,7 +116,7 @@ description: "Thomas Lepeltier"
           <li>
             <a class="cover-card" href="{{ livre.url }}">
               <figure class="cover-card__media">
-                <img src="{{ livre.data.imageUrl }}" alt="" loading="lazy" decoding="async">
+                {% image livre.data.imageUrl, "", "", "lazy", "", "", [200, 400], "(min-width: 64rem) 13rem, (min-width: 36rem) 30vw, 46vw", ["avif", "webp"] %}
               </figure>
               <span class="cover-card__body">
                 <span class="cover-card__title">{{ livre.data.title }}</span>
@@ -139,7 +143,7 @@ description: "Thomas Lepeltier"
           <li>
             <a class="cover-card" href="/chroniques/{{ chronique.data.title | slugify }}/">
               <figure class="cover-card__media">
-                <img src="{{ chronique.data.imageUrl }}" alt="" loading="lazy" decoding="async">
+                {% image chronique.data.imageUrl, "", "", "lazy", "", "", [200, 400], "(min-width: 64rem) 13rem, (min-width: 36rem) 30vw, 46vw", ["avif", "webp"] %}
               </figure>
               <span class="cover-card__body">
                 <span class="cover-card__title">{{ chronique.data.title }}</span>
@@ -166,7 +170,7 @@ description: "Thomas Lepeltier"
           <li>
             <a class="cover-card" href="{{ article.data.externalLink or article.data.internalLink }}">
               <figure class="cover-card__media">
-                <img src="{{ article.data.imageUrl }}" alt="" loading="lazy" decoding="async">
+                {% image article.data.imageUrl, "", "", "lazy", "", "", [200, 400], "(min-width: 64rem) 13rem, (min-width: 36rem) 30vw, 46vw", ["avif", "webp"] %}
               </figure>
               <span class="cover-card__body">
                 <span class="cover-card__title">{{ article.data.title }}</span>

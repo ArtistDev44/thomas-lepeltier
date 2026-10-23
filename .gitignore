@@ -17,5 +17,6 @@ src/pages/annexes
 src/pages/styleguide.njk
 src/comptes-rendus/
 
-# images Open Graph générées au build (npm run clean:og pour les supprimer)
+# images Open Graph : cache de génération (npm run clean:og pour le vider)
+# (déjà couvert par .cache ; ancienne sortie src/assets/og-images ignorée)
 src/assets/og-images

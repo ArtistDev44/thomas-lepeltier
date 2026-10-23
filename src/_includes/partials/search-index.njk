@@ -1,0 +1,8 @@
+{#
+  Métadonnées de l'index Pagefind pour la page /recherche/ : une catégorie par thème public de la fiche,
+  et l'auteur et l'année quand ils sont connus. À inclure dans un élément `data-pagefind-body`.
+#}
+{%- for tag in tags | publicTags %}<meta data-pagefind-filter="categorie[content]" content="{{ tag }}">{% endfor -%}
+{%- if authorFullName %}<meta data-pagefind-meta="auteur[content]" content="{{ authorFullName }}">{% endif -%}
+{%- set searchYear = page.date | anneeConnue -%}
+{%- if searchYear %}<meta data-pagefind-meta="annee[content]" content="{{ searchYear }}"><meta data-pagefind-sort="annee[content]" content="{{ searchYear }}">{% endif -%}

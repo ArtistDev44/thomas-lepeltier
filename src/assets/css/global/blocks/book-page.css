@@ -128,3 +128,64 @@
   color: var(--color-text-soft);
   clear: both;
 }
+
+/* référence bibliographique du livre chroniqué (titre, auteur, éditeur, année) */
+.book-reference {
+  display: grid;
+  gap: var(--space-xs);
+  padding-block: var(--space-xs);
+  border-block-start: 1px solid var(--color-border);
+  font-size: var(--size-step-min-1);
+  line-height: 1.45;
+}
+
+.book-reference p {
+  margin: 0;
+}
+
+.book-reference p + p {
+  padding-block-start: var(--space-xs);
+  border-block-start: 1px dotted var(--color-border);
+}
+
+/* autres liens d'achat, quand il y a plusieurs boutiques ou plusieurs livres */
+.book-buy--liens {
+  font-size: var(--size-step-min-1);
+}
+
+.book-buy--liens p {
+  margin: 0;
+}
+
+/* livres que l'auteur signale en fin de chronique */
+.book-more {
+  clear: both;
+  margin-block-start: var(--space-l);
+  padding: var(--space-m);
+  border-radius: var(--border-radius-medium);
+  background: var(--color-bg-accent);
+  font-size: var(--size-step-min-1);
+}
+
+.book-more h2 {
+  margin-block: 0 var(--space-xs);
+  font-family: var(--font-base);
+  font-size: var(--size-step-min-2);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-text-soft);
+}
+
+.book-more ul {
+  display: grid;
+  gap: var(--space-2xs);
+  margin: 0;
+  padding-inline-start: var(--space-m);
+}
+
+/* plusieurs couvertures : la colonne dépasse l'écran, on la laisse défiler avec la page */
+@media (min-width: 52rem) {
+  .book-aside:has(.book-cover ~ .book-cover) {
+    position: static;
+  }
+}

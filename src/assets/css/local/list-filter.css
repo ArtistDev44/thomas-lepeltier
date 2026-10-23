@@ -145,9 +145,34 @@
   color: var(--color-text-accent);
 }
 
-.list-filter__fulltext pagefind-modal-trigger {
-  flex: 1 1 14rem;
-  max-inline-size: 22rem;
+/*
+ * Performances : les listes comptent plusieurs centaines de fiches.
+ * - Les fiches hors écran ne sont ni mises en page ni peintes tant qu'on n'approche pas (content-visibility).
+ * - Tant que le script n'a pas pris la main (data-lf-pending), seule la première page est affichée : on évite
+ *   de peindre toute la liste puis de la masquer. Les tailles (48 et 60) sont celles de data-page-size.
+ * - Le formulaire de filtres, révélé par le script, garde sa place réservée pour que la liste ne saute pas.
+ */
+.chronique-list > li {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 9.5rem;
+}
+
+.article-grid > li {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 19rem;
+}
+
+@media (scripting: enabled) {
+  .chronique-list[data-lf-pending] > :nth-child(n + 49),
+  .article-grid[data-lf-pending] > :nth-child(n + 61) {
+    display: none;
+  }
+
+  .list-filter[hidden] {
+    display: grid;
+    visibility: hidden;
+    min-block-size: var(--list-filter-reserve, 34rem);
+  }
 }
 
 .list-filter__more {

@@ -22,6 +22,7 @@ import yaml from 'js-yaml';
 //  config import
 import {getAllPosts, showInSitemap, tagList} from './src/_config/collections.js';
 import events from './src/_config/events.js';
+import {collectOgCards, ogImage} from './src/_config/events/og-images.js';
 import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
@@ -70,6 +71,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
+  // Fiches qui reçoivent un visuel Open Graph propre (voir `events/og-images.js`)
+  eleventyConfig.addCollection('ogCards', collectOgCards);
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
@@ -152,6 +155,7 @@ export default async function (eleventyConfig) {
       return '';
     }
   });
+  eleventyConfig.addFilter('ogImage', ogImage);
   eleventyConfig.addFilter('formatDate', filters.formatDate);
   eleventyConfig.addFilter('anneeConnue', filters.anneeConnue);
   eleventyConfig.addFilter('markdownFormat', filters.markdownFormat);
@@ -173,8 +177,15 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // --------------------- Events: after build
+  // `npm run build` indexe avec la CLI Pagefind ; en dev on le fait ici, sans bloquer le serveur
+  if (process.env.ELEVENTY_RUN_MODE === 'serve') {
+    eleventyConfig.on('eleventy.after', ({results}) => {
+      events.pagefindDev({results});
+    });
+  }
+
   if (process.env.ELEVENTY_RUN_MODE === 'build') {
-    eleventyConfig.on('eleventy.after', events.svgToJpeg);
+    eleventyConfig.on('eleventy.after', events.buildOgImages);
   }
 
   // --------------------- Passthrough File Copy
@@ -184,8 +195,7 @@ export default async function (eleventyConfig) {
     'src/assets/images/galerie/', // <--- AJOUTEZ CETTE LIGNE
     'src/assets/fonts/',
     'src/assets/pdf/',
-    'src/assets/images/template',
-    'src/assets/og-images'
+    'src/assets/images/template'
   ].forEach(path => eleventyConfig.addPassthroughCopy(path));
 
   eleventyConfig.addPassthroughCopy({
@@ -199,12 +209,6 @@ export default async function (eleventyConfig) {
   // ----------------------  ignore test files
   if (process.env.ELEVENTY_ENV != 'test') {
     eleventyConfig.ignores.add('src/common/pa11y.njk');
-  }
-
-  // Les visuels Open Graph (un SVG par chronique, images en base64 incluses) ne servent qu'au build final :
-  // en dev ils coûtent plusieurs centaines de pages à rendre et à garder en mémoire à chaque changement.
-  if (isDev) {
-    eleventyConfig.ignores.add('src/common/og-images.njk');
   }
 
   // --------------------- general config

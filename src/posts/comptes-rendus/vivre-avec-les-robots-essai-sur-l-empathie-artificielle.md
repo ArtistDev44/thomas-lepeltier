@@ -9,4 +9,7 @@ imageUrl: "/assets/images/couvertures/dumouchel-damiano-vivre-avec-robots.webp"
 amazonLink: "http://amzn.to/2hGbzMX"
 alphabeticalPage: ["d"]
 description: "Chronique du livre de Paul Dumouchel et Luisa Damiano, Vivre avec les robots, Essai sur l’empathie artificielle,, par Thomas Lepeltier"
+ouvrage:
+  - <strong>Vivre avec les robots</strong>.<br><strong>Essai sur l’empathie artificielle</strong>,<br>de Paul Dumouchel et Luisa Damiano,<br>Éditions du Seuil, 2016.
 ---
+

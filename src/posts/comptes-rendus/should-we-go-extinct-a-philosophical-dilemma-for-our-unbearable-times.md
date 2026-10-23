@@ -9,5 +9,8 @@ imageUrl: "/assets/images/couvertures/may-should-we-go-extinct.webp"
 amazonLink: "https://amzn.to/4h6sMKJ"
 alphabeticalPage: ["m"]
 description: "Chronique du livre de Todd May, Should We Go Extinct?, par Thomas Lepeltier"
+ouvrage:
+  - <strong>Should We Go Extinct ?</strong><br>A Philosophical Dilemma for Our Unbearable Times,<br>de Todd May,<br>Crown, 2024.
 ---
+
 

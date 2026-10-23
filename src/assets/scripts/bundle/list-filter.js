@@ -33,6 +33,7 @@ const initListFilter = form => {
   const chipsBox = form.querySelector('[data-lf-chips]');
   const scopeLabel = form.querySelector('[data-lf-scope]');
   const resetButton = form.querySelector('[data-lf-reset]');
+  const fulltextLink = form.querySelector('[data-lf-fulltext]');
 
   const items = [...list.children].map((el, order) => {
     const authors = split(el.dataset.authors);
@@ -219,6 +220,14 @@ const initListFilter = form => {
 
     resetButton.hidden = !(state.q || state.tag || state.extra || state.year || state.sort !== 'recent');
 
+    // Le lien vers la recherche plein texte reprend les mots saisis
+    if (fulltextLink) {
+      const url = new URL(fulltextLink.getAttribute('href'), location.origin);
+      if (state.q) url.searchParams.set('q', state.q);
+      else url.searchParams.delete('q');
+      fulltextLink.setAttribute('href', url.pathname + url.search);
+    }
+
     if (focusFrom) {
       const target = sorted[focusFrom]?.el.querySelector('a');
       target?.focus({preventScroll: false});
@@ -316,6 +325,14 @@ const initListFilter = form => {
 };
 
 // Ce script est inséré dans le <head> : on attend que la liste soit dans le DOM.
-const start = () => document.querySelectorAll('[data-list-filter]').forEach(initListFilter);
+// Quoi qu'il arrive, la liste cesse d'être tronquée par le CSS (`data-lf-pending`) une fois le script passé.
+const start = () =>
+  document.querySelectorAll('[data-list-filter]').forEach(form => {
+    try {
+      initListFilter(form);
+    } finally {
+      document.querySelector(form.dataset.list)?.removeAttribute('data-lf-pending');
+    }
+  });
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start);
 else start();
