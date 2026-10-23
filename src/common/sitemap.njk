@@ -8,15 +8,10 @@ excludeFromSitemap: true
   {% for page in collections.showInSitemap %}
     {% if page.url and page.data.excludeFromSitemap != true %}
 
-      {% if page.data.lastUpdated %}
-        {% set lastmod = page.data.lastUpdated %}
-      {% else %}
-        {% set lastmod = page.date %}
-      {% endif %}
-
+      {# `lastmod` n'est publié que pour une vraie date de mise à jour (`lastUpdated`) : `page.date` est la date de parution du livre ou de l'article, pas celle de la page #}
       <url>
         <loc>{{ meta.url }}{{ page.url }}</loc>
-        {% if lastmod | anneeConnue %}<lastmod>{{ lastmod | toIsoString }}</lastmod>{% endif %}
+        {% if page.data.lastUpdated %}<lastmod>{{ page.data.lastUpdated | toIsoString }}</lastmod>{% endif %}
         <changefreq>{{ page.data.changeFreq if page.data.changeFreq else "monthly" }}</changefreq>
     </url>
     {% endif %}

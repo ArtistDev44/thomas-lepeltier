@@ -36,7 +36,6 @@ thomas-lepeltier/
 │   ├── pages/                   # Pages statiques (À propos, Contact, etc.)
 ├── dist/                         # 📤 Dossier de sortie (généré automatiquement)
 ├── .cache/                       # Cache Eleventy (à ignorer)
-├── .github/                      # Configuration GitHub (déploiement automatique)
 ├── node_modules/                # Dépendances Node.js (à ignorer)
 ├── eleventy.config.js           # ⚙️ Configuration Eleventy
 ├── tailwind.config.js           # ⚙️ Configuration Tailwind CSS
