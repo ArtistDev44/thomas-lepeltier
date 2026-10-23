@@ -9,5 +9,7 @@ imageUrl: "/assets/images/couvertures/harari-homo-deus.webp"
 amazonLink: "http://amzn.to/2cCQxf8"
 alphabeticalPage: ["h"]
 description: "Chronique du livre de Yuval Noah Harari, Homo Deus, A Brief History of Tomorrow par Thomas Lepeltier"
+externalLink: "http://www.larecherche.fr/livre-lu-dailleurs-prospective/le-nouveau-souffle-de-yuval-noah-harari"
+externalLinkSource: "La Recherche"
 ---
 

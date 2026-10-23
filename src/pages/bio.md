@@ -11,6 +11,10 @@ layout: page
 
 <div class="flow">
 
+<h2>Mon parcours</h2>
+
+<p>Après une formation scientifique (doctorat d’astrophysique), je me suis plongé dans les livres, de l’histoire aux sciences en passant par la philosophie. J’en suis ressorti un peu historien et philosophe des sciences, un peu spécialiste d’éthique animale, un peu journaliste et un peu enseignant (j’ai enseigné la physique, les maths et le français).</p>
+
 <h2>Une œuvre consacrée aux controverses</h2>
 
 <p>Je développe depuis plusieurs années une œuvre consacrée aux grandes controverses scientifiques, philosophiques et éthiques contemporaines. La presse salue la clarté, la rigueur et l’originalité de mes ouvrages : j’expose les arguments en présence sans caricature, je rends accessibles des débats complexes et j’interroge les certitudes établies avec indépendance.</p>
