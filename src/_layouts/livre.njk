@@ -13,28 +13,35 @@ layout: base
     <aside class="book-aside" aria-label="Fiche technique">
       {% include 'partials/couverture.njk' %}
 
-      {% if nombre_de_pages or prix or edition_nom or (page.date | anneeConnue) %}
+      {% if nombre_de_pages or prix or edition_nom or parution or (page.date | anneeConnue) %}
         <dl class="book-facts">
-          {% if page.date | anneeConnue %}<div><dt>Parution</dt><dd>{{ page.date | anneeConnue }}</dd></div>{% endif %}
+          {% if parution or (page.date | anneeConnue) %}<div><dt>Parution</dt><dd>{{ parution or (page.date | anneeConnue) }}</dd></div>{% endif %}
           {% if edition_nom %}<div><dt>Éditeur</dt><dd>{% if edition_lien %}<a href="{{ edition_lien }}" target="_blank" rel="noopener noreferrer">{{ edition_nom }}</a>{% else %}{{ edition_nom }}{% endif %}</dd></div>{% endif %}
           {% if nombre_de_pages %}<div><dt>Pages</dt><dd>{{ nombre_de_pages }}</dd></div>{% endif %}
           {% if prix %}<div><dt>Prix</dt><dd>{{ prix }}</dd></div>{% endif %}
         </dl>
       {% endif %}
 
-      {% if liens_achat and liens_achat.length %}
+      {% if (liens_achat and liens_achat.length) or lien_table_des_matieres %}
         <div class="book-buy">
           {% for lien in liens_achat %}
+            {# un lien d’achat est soit une URL, soit { label, url } #}
+            {% set achatUrl = lien.url or lien %}
             <a
               class="button"
               {% if loop.first %}data-button-variant="primary"{% else %}data-ghost-button{% endif %}
-              href="{{ lien }}"
+              href="{{ achatUrl }}"
               rel="sponsored noopener"
               target="_blank"
-              >{% if loop.first %}Acheter ce livre{% else %}Autre librairie{% endif %}<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a
+              >{% if loop.first %}Acheter{% if lien.label %} sur {{ lien.label }}{% else %} ce livre{% endif %}{% else %}{{ lien.label or "Autre librairie" }}{% endif %}<span class="visually-hidden"> (s’ouvre dans un nouvel onglet)</span></a
             >
           {% endfor %}
-          <p class="book-buy__note">Certains liens sont des liens d’affiliation : ils me soutiennent sans surcoût pour vous.</p>
+          {% if lien_table_des_matieres %}
+            <a class="button" data-ghost-button href="{{ lien_table_des_matieres }}">Table des matières</a>
+          {% endif %}
+          {% if liens_achat and liens_achat.length %}
+            <p class="book-buy__note">Certains liens sont des liens d’affiliation : ils me soutiennent sans surcoût pour vous.</p>
+          {% endif %}
         </div>
       {% endif %}
     </aside>
