@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Les États-Unis ou le nouvel Empire romain"
 date: 2008-03-01
 layout: "post.njk"
 category: "Historiographie"
-tags: ["article","Historiographie"]
+tags: ["article", "Historiographie"]
 authors: []
 imageUrl: "/assets/images/articles/etats-unis-empire-romain.webp"
 internalLink: ""

@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2020-05-01
+title: "La solidarité entre animaux, jusqu’à où ?"
+date: 2020-06-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/solidarite-animale.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-7/index.html"
-description: "La solidarité entre animaux, jusqu’à où ?, Sciences Humaines, 326, juin 2020 (publié sous un autre titre)."
+description: "La solidarité entre animaux, jusqu’à où ?, Sciences Humaines, 326, juin 2020 (publié sous un autre titre)."
 ---

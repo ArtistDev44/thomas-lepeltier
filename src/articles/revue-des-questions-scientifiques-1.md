@@ -1,9 +1,9 @@
 ---
-title: Revue des questions scientifiques
+title: "Fred Hoyle, entre science et fiction. II. Origines cosmiques de la vie"
 date: 2006-01-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/fred-hoyle-entre-science-fiction-origine-vie.webp"
 internalLink: ""

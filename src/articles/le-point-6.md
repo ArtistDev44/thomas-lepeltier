@@ -1,9 +1,9 @@
 ---
-title: Le Point
+title: "Philippe Bihouix, un malthusien moderne"
 date: 2025-10-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/bihouix-malthusien-moderne.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-6/index.html"
-description: "Philippe Bihouix, un malthusien moderne, Le Point, 1er octobre 2025."
+description: "Philippe Bihouix, un malthusien moderne, Le Point, 1er octobre 2025."
 ---

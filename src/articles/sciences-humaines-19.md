@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Paul Veyne croit-il à ses propres mythes ?"
 date: 2005-05-01
 layout: "post.njk"
 category: "Historiographie"
-tags: ["article","Historiographie"]
+tags: ["article", "Historiographie"]
 authors: []
 imageUrl: "/assets/images/articles/veyne-les-grecs-ont-ils-cru-a-leurs-mythes.webp"
 internalLink: ""

@@ -1,9 +1,9 @@
 ---
-title: Annals of Science
+title: "Edward Milne’s influence on modern cosmology"
 date: 2006-01-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/edward-milne-influence-modern-cosmology.webp"
 internalLink: ""

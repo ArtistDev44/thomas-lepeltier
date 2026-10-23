@@ -1,9 +1,9 @@
 ---
-title: Contrepoints
-date: 2024-10-01
+title: "Faut-il coloniser l’espace ?"
+date: 2024-10-31
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/faut-il-coloniser-l-espace.webp"
 internalLink: ""
@@ -13,4 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/contrepoints-1/index.html"
+description: "Faut-il coloniser l’espace ?, Contrepoints, 31 octobre 2024 (ou une version longue de l’article)."
 ---

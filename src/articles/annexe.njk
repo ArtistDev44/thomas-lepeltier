@@ -9,6 +9,13 @@ permalink: '/articles/index.html'
  {% include "scripts/search_articles.js" %}
 {% endjs %}
 
+<h2>Rubriques</h2>
+<ul class="cluster" role="list">
+  {%- for rubrique in ["Histoire et philosophie des sciences", "Éthique animale", "Environnement", "Économie", "Historiographie", "Cosmologie", "Divers"] -%}
+    <li><a class="button" data-small-button href="/tags/{{ rubrique | slugify }}/">{{ rubrique }}</a></li>
+  {%- endfor -%}
+</ul>
+
 <h2>Rangés chronologiquement</h2>
 <hr />
 
@@ -28,11 +35,10 @@ permalink: '/articles/index.html'
     <a
           href="{{ targetUrl }}"
           >    <div class="container">
-      <img src="{{article.data.imageUrl}}" alt="Première page de mon article {{ article.data.title }}" />
+      <img src="{{article.data.imageUrl}}" alt="Première page de l’article « {{ article.data.title }} »" />
       <div class="overlay">
         <p>
-          {{ article.data.title }} - {{ article.date.toLocaleString('fr-FR', { year: 'numeric', month: 'long'
-          }) }}
+          {{ article.data.description or article.data.title }}
         </p>
       </div>
     </div>
@@ -140,7 +146,7 @@ pagefind-modal-trigger {
 }
 
 @layer blocks {
-  .indicator::after, a[href^="http"]:not([href*="localhost:8080"]):not([href*="eleventy-excellent.netlify.app"]):not(.no-indicator)::after {
+  .indicator::after, a[href^="http"]:not([href*="thomaslepeltier.fr"]):not(.no-indicator)::after {
     background-image: none !important;
   }
 img {

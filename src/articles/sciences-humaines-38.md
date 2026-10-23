@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2008-03-01
+title: "A-t-on besoin de la vérité ?"
+date: 2008-05-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/a-t-on-besoin-de-la-verite.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-38/index.html"
-description: "A-t-on besoin de la vérité ?, Sciences Humaines, Hors-série, 10, mars-avril-mai 2008."
+description: "A-t-on besoin de la vérité ?, Sciences Humaines, Hors-série, 10, mars-avril-mai 2008."
 ---

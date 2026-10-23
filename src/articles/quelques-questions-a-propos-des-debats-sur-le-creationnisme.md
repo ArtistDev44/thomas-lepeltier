@@ -6,7 +6,7 @@ category: "Histoire et philosophie des sciences"
 tags: ["article","Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/a_venir.webp"
-internalLink: "http://thomas.lepeltier.free.fr/annexes/creationnisme/questions-a-guillaume-lecointre-.html"
+internalLink: "/annexes/questions-a-guillaume-lecointre/"
 externalLink: ""
 buyLink: ""
 price: ""

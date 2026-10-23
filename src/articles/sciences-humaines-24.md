@@ -1,9 +1,9 @@
 ---
-title: Sciences humaines
-date: 2024-05-01
+title: "Demain, des Jeux Olympiques réservés aux dopés ?"
+date: 2024-08-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/dopage-aux-jeux-olympiques-1.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-24/index.html"
-description: "Demain, des Jeux Olympiques réservés aux dopés ?, Sciences humaines, 370, juillet-août 2024."
+description: "Demain, des Jeux Olympiques réservés aux dopés ?, Sciences humaines, 370, juillet-août 2024."
 ---

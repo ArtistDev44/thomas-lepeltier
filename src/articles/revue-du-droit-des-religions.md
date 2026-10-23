@@ -1,9 +1,9 @@
 ---
-title: Revue du droit des religions
+title: "Véganisme et antispécisme : deux nouvelles formes de religiosité ?"
 date: 2021-01-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/veganisme-religion.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/revue-du-droit-des-religions/index.html"
-description: "Véganisme et antispécisme : deux nouvelles formes de religiosité ?, Revue du droit des religions, 12, 2021."
+description: "Véganisme et antispécisme : deux nouvelles formes de religiosité ?, Revue du droit des religions, 12, 2021."
 ---

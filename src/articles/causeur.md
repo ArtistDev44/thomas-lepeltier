@@ -1,9 +1,9 @@
 ---
-title: Causeur
+title: "Sky is not the limit. Jean-Marc Jancovici se fourvoie sur la thermodynamique"
 date: 2026-04-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/jancovici-mauvais-physicien.webp"
 internalLink: ""

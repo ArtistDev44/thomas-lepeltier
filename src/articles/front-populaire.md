@@ -1,9 +1,9 @@
 ---
-title: Front Populaire
-date: 2022-04-01
+title: "Misère de l’anti-antispécisme"
+date: 2022-04-06
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/front-populaire.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/front-populaire/index.html"
-description: "Misère de l’anti-antispécisme, Front Populaire, 6 avril 2022."
+description: "Misère de l’anti-antispécisme, Front Populaire, 6 avril 2022."
 ---

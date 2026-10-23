@@ -1,9 +1,9 @@
 ---
-title: Le Point
-date: 2025-02-01
+title: "Quand les anticapitalistes auront cassé leur jouet"
+date: 2025-02-04
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/faillite-de-l-anticapitalisme-1.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-8/index.html"
-description: "Quand les anticapitalistes auront cassé leur jouet, Le Point, 4 février 2025."
+description: "Quand les anticapitalistes auront cassé leur jouet, Le Point, 4 février 2025."
 ---

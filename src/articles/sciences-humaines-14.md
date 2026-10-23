@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2013-01-01
+title: "Le nouvel âge de la cause animale"
+date: 2012-12-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/liberation-animale.webp"
 internalLink: ""

@@ -1,9 +1,9 @@
 ---
-title: One Voice - Noé
+title: "La force de l’éthique"
 date: 2016-11-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/one-voice-2016.webp"
 internalLink: ""

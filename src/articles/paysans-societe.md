@@ -1,9 +1,9 @@
 ---
-title: Paysans & Société
-date: 2026-03-01
+title: "Il n’y a pas de crise environnementale !"
+date: 2026-04-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/il-n-y-a-pas-de-crise-environnementale.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/paysans-societe/index.html"
-description: "Il n’y a pas de crise environnementale !, Paysans & Société, 416, mars-avril 2026."
+description: "Il n’y a pas de crise environnementale !, Paysans & Société, 416, mars-avril 2026."
 ---

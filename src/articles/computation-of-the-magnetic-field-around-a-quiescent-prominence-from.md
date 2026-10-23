@@ -1,9 +1,9 @@
 ---
-title: Computation of the magnetic field around a quiescent prominence from...
+title: "Computation of the magnetic field around a quiescent prominence from"
 date: 1995-01-01
 layout: "post.njk"
 category: "Cosmologie"
-tags: ["article","Cosmologie"]
+tags: ["article", "Cosmologie"]
 authors: []
 imageUrl: "/assets/images/articles/astrophysique2.webp"
 internalLink: ""
@@ -13,4 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/computation-of-the-magnetic-field-around-a-quiescent-prominence-from/index.html"
+description: "Computation of the magnetic field around a quiescent prominence from..., Astronomy and Astrophysics, 293, 1995."
 ---

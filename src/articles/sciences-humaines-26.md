@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2023-05-01
+title: "Le néolibéralisme a-t-il un avenir ?"
+date: 2023-11-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/neoliberalisme-sh.webp"
 internalLink: ""

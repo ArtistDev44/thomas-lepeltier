@@ -1,9 +1,9 @@
 ---
-title: Philosophie magazine
+title: "Charles Darwin, le gentleman naturaliste"
 date: 2009-02-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/charles-darwin-gentleman-naturaliste.webp"
 internalLink: ""

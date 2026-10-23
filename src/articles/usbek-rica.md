@@ -1,9 +1,9 @@
 ---
-title: Usbek & Rica
-date: 2025-04-01
+title: "IA : pourquoi il ne faut pas céder aux visions d’apocalypse numérique"
+date: 2025-04-28
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/ia-dangers-1.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/usbek-rica/index.html"
-description: "IA : pourquoi il ne faut pas céder aux visions d’apocalypse numérique, Usbek & Rica, 28 avril 2025."
+description: "IA : pourquoi il ne faut pas céder aux visions d’apocalypse numérique, Usbek & Rica, 28 avril 2025."
 ---

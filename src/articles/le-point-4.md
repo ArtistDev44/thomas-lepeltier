@@ -1,9 +1,9 @@
 ---
-title: Le Point
-date: 2026-03-01
+title: "Non, les inégalités mondiales n’explosent pas !"
+date: 2026-03-03
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/egalite-mondiale-progresse.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-4/index.html"
-description: "Non, les inégalités mondiales n’explosent pas !, Le Point, 3 mars 2026."
+description: "Non, les inégalités mondiales n’explosent pas !, Le Point, 3 mars 2026."
 ---

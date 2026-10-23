@@ -1,9 +1,9 @@
 ---
-title: Titre inconnu
+title: "Historians and the Origins of the French Revolution, 2002, non publié"
 date: 2002-01-01
 layout: "post.njk"
 category: "Historiographie"
-tags: ["article","Historiographie"]
+tags: ["article", "Historiographie"]
 authors: []
 imageUrl: "/assets/images/articles/historians-origins-french-revolution.webp"
 internalLink: ""

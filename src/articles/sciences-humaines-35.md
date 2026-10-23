@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2016-05-01
+title: "Arne Næss. La « deep ecology »"
+date: 2016-01-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/naess-arne-deep-ecology.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-35/index.html"
-description: "Arne Næss. La « deep ecology », Sciences Humaines, Grands dossiers, 43, juin-juillet-août, 2016."
+description: "Arne Næss. La « deep ecology », Sciences Humaines, Grands dossiers, 43, juin-juillet-août, 2016."
 ---

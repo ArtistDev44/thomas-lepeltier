@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Peut-on bien vivre en décroissance ?"
 date: 2024-02-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/peut-on-bien-vivre-en-decroissance.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-25/index.html"
-description: "Peut-on bien vivre en décroissance ?, Sciences Humaines, 365, février 2024."
+description: "Peut-on bien vivre en décroissance ?, Sciences Humaines, 365, février 2024."
 ---

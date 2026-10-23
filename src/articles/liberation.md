@@ -1,9 +1,9 @@
 ---
-title: Libération
-date: 2019-01-01
+title: "L’antispécisme face à ses contempteurs (écrit avec Yves Bonnardel)"
+date: 2019-01-15
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/antispecisme-face-a-ses-contempteurs.webp"
 internalLink: ""

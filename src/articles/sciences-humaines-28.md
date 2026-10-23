@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Pour ou contre la croissance ?"
 date: 2023-03-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/decroissance-sh.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-28/index.html"
-description: "Pour ou contre la croissance ?, Sciences Humaines, 356, mars 2023."
+description: "Pour ou contre la croissance ?, Sciences Humaines, 356, mars 2023."
 ---

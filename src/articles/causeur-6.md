@@ -1,9 +1,9 @@
 ---
-title: Causeur
-date: 2025-09-01
+title: "Jean-Marc Jancovici, l’apôtre du déclin"
+date: 2025-09-05
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/jancovici-apotre-du-declin.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/causeur-6/index.html"
-description: "Jean-Marc Jancovici, l’apôtre du déclin, Causeur, 5 septembre 2025."
+description: "Jean-Marc Jancovici, l’apôtre du déclin, Causeur, 5 septembre 2025."
 ---

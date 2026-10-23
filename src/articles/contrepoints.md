@@ -1,9 +1,9 @@
 ---
-title: Contrepoints
-date: 2024-06-01
+title: "Des scientifiques en rébellion à la dérive"
+date: 2024-06-08
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/scientifiques-en-rebellion.webp"
 internalLink: ""

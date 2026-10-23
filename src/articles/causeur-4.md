@@ -1,9 +1,9 @@
 ---
-title: Causeur
+title: "L’argent du leurre. L’illusion décroissantiste d’un onusien"
 date: 2026-01-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/de-schutter-illusion-decroissantiste.webp"
 internalLink: ""

@@ -1,9 +1,9 @@
 ---
-title: L’amorce. Revue contre le spécisme
-date: 2018-12-01
+title: "L’antispécisme est un projet politique réaliste"
+date: 2018-12-03
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/antispecisme-est-un-projet-politique-realiste.webp"
 internalLink: ""

@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Végétaux. Faut-il leur accorder des droits ?"
 date: 2019-02-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/vegetaux-sh.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-31/index.html"
-description: "Végétaux. Faut-il leur accorder des droits ?, Sciences Humaines, 311, février 2019."
+description: "Végétaux. Faut-il leur accorder des droits ?, Sciences Humaines, 311, février 2019."
 ---

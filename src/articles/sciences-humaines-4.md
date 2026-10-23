@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "L’invention de l’Intelligent Design. Les habits neufs du créationnisme"
 date: 2006-02-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/invention-intelligent-design.webp"
 internalLink: ""

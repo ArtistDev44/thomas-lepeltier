@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2014-05-01
+title: "Faut-il en finir avec l’experimentation animale ?"
+date: 2014-09-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/faut-il-en-finir-avec-experimentation-animale.webp"
 internalLink: ""

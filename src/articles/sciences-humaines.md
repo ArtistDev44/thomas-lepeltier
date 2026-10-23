@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2016-05-01
+title: "Gaston Bachelard. Apprendre de ses erreurs"
+date: 2017-01-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/bachelard-apprendre-erreurs.webp"
 internalLink: ""

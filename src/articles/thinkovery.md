@@ -1,9 +1,9 @@
 ---
-title: Thinkovery
-date: 2014-05-01
+title: "Entretien, sur la relation entre les « sciences dures » et les « sciences humaines », Thinkovery, 1, octobre 2014"
+date: 2014-10-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/thinkovery.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/thinkovery/index.html"
-description: "Entretien, sur la relation entre les « sciences dures » et les « sciences humaines », Thinkovery, 1, octobre 2014."
+description: "Entretien, sur la relation entre les « sciences dures » et les « sciences humaines », Thinkovery, 1, octobre 2014."
 ---

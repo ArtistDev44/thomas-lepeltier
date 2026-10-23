@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2001-05-01
+title: "Les physiciens et l’énigme de la réalité"
+date: 2001-07-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/physiciens-et-enigme-realite.webp"
 internalLink: ""

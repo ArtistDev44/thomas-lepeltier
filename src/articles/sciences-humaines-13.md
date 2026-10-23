@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Mépris des animaux et racisme : une même logique"
 date: 2013-04-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/mepris-animaux-racisme.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-13/index.html"
-description: "Mépris des animaux et racisme : une même logique, Sciences Humaines, 247, avril 2013."
+description: "Mépris des animaux et racisme : une même logique, Sciences Humaines, 247, avril 2013."
 ---

@@ -1,9 +1,9 @@
 ---
-title: Animaux Bonheur
+title: "Respect des animaux et végétalisme"
 date: 2014-01-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/respect-animaux.webp"
 internalLink: ""

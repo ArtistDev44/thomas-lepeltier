@@ -1,9 +1,9 @@
 ---
-title: Titre inconnu
+title: "Modern French Historiography, 2003, non publié"
 date: 2003-01-01
 layout: "post.njk"
 category: "Historiographie"
-tags: ["article","Historiographie"]
+tags: ["article", "Historiographie"]
 authors: []
 imageUrl: "/assets/images/articles/modern-french-historiography.webp"
 internalLink: ""

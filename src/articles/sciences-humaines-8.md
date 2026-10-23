@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Antispécisme. Les animaux, nos égaux ?"
 date: 2019-02-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/antispecisme-sh.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-8/index.html"
-description: "Antispécisme. Les animaux, nos égaux ?, Sciences Humaines, 311, février 2019."
+description: "Antispécisme. Les animaux, nos égaux ?, Sciences Humaines, 311, février 2019."
 ---

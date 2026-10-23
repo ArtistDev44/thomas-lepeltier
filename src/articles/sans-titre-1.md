@@ -1,9 +1,9 @@
 ---
-title: Titre inconnu
-date: 2009-04-01
+title: "L’opiniâtre combat du créationnisme"
+date: 2009-05-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/creationnisme-monde.webp"
 internalLink: ""

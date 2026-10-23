@@ -1,9 +1,9 @@
 ---
-title: Titre inconnu
+title: "Un regard philosophique sur la cosmologie"
 date: 2004-01-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/regard-philosophique-cosmologie.webp"
 internalLink: ""

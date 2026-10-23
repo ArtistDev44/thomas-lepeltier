@@ -1,9 +1,9 @@
 ---
-title: (V)égaux
+title: "L’écoféminisme au regard de l’antispécisme, dans"
 date: 2021-01-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/ecofeminisme-antispecisme.webp"
 internalLink: ""

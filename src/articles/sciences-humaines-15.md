@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2012-05-01
+title: "Faut-il encore manger de la viande ?"
+date: 2012-12-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/faut-il-encore-manger-viande.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-15/index.html"
-description: "Faut-il encore manger de la viande ?, Sciences Humaines, 243, décembre 2012."
+description: "Faut-il encore manger de la viande ?, Sciences Humaines, 243, décembre 2012."
 ---

@@ -1,9 +1,9 @@
 ---
-title: Science et avenir
+title: "Entretien dans Science et avenir, 909, novembre 2022"
 date: 2022-11-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/avant-big-bang-1-2022.webp"
 internalLink: ""

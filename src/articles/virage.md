@@ -1,9 +1,9 @@
 ---
-title: Virage
-date: 2020-01-01
+title: "La hargne des anti-véganes"
+date: 2020-03-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/hargne-des-anti-veganes.webp"
 internalLink: ""

@@ -1,12 +1,12 @@
 ---
-title: Histoire et philosophie des sciences
-date: 2013-05-01
+title: "La science médiévale"
+date: 2013-01-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/science-medievale.webp"
-internalLink: "http://thomas.lepeltier.free.fr/histoire-philosophie-sciences.html"
+internalLink: "/livres/histoire-et-philosophie-des-sciences/"
 externalLink: ""
 buyLink: ""
 price: "12,70 €"

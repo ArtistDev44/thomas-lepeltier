@@ -1,9 +1,9 @@
 ---
-title: Creationism in Europe
+title: "Creationism in France"
 date: 2014-01-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/creationism-france.webp"
 internalLink: ""

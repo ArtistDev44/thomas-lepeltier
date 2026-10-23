@@ -1,9 +1,9 @@
 ---
-title: iPhilo
-date: 2021-03-01
+title: "L’univers n’est-il qu’une fiction heuristique ?"
+date: 2021-03-20
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/univers-fiction.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/iphilo/index.html"
-description: "L’univers n’est-il qu’une fiction heuristique ?, iPhilo, 20 mars 2021."
+description: "L’univers n’est-il qu’une fiction heuristique ?, iPhilo, 20 mars 2021."
 ---

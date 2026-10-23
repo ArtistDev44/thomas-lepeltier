@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "La biographie réhabilitée"
 date: 2006-01-01
 layout: "post.njk"
 category: "Historiographie"
-tags: ["article","Historiographie"]
+tags: ["article", "Historiographie"]
 authors: []
 imageUrl: "/assets/images/articles/biographie-rehabilitee.webp"
 internalLink: ""

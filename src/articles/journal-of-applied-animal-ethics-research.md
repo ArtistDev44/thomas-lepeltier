@@ -1,9 +1,9 @@
 ---
-title: Journal of Applied Animal Ethics Research
+title: "Nature without Suffering"
 date: 2024-01-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/herbivorisation.webp"
 internalLink: ""

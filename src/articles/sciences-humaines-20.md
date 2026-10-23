@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2004-05-01
+title: "Pierre Nora : de l’histoire nationale aux lieux de mémoire"
+date: 2004-09-01
 layout: "post.njk"
 category: "Historiographie"
-tags: ["article","Historiographie"]
+tags: ["article", "Historiographie"]
 authors: []
 imageUrl: "/assets/images/articles/pierre-nora.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-20/index.html"
-description: "Pierre Nora : de l’histoire nationale aux lieux de mémoire, Sciences Humaines, 152, août-septembre 2004."
+description: "Pierre Nora : de l’histoire nationale aux lieux de mémoire, Sciences Humaines, 152, août-septembre 2004."
 ---

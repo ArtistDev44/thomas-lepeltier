@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2005-05-01
+title: "L’Histoire culturelle"
+date: 2005-07-01
 layout: "post.njk"
 category: "Historiographie"
-tags: ["article","Historiographie"]
+tags: ["article", "Historiographie"]
 authors: []
 imageUrl: "/assets/images/articles/histoire-culturelle.webp"
 internalLink: ""

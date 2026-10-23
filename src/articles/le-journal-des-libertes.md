@@ -1,9 +1,9 @@
 ---
-title: Le Journal des libertés
-date: 2024-01-01
+title: "La décroissance est-elle mortifère ?"
+date: 2024-09-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/decroissance-mortifere.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-journal-des-libertes/index.html"
-description: "La décroissance est-elle mortifère ?, Le Journal des libertés, 26, automne 2024."
+description: "La décroissance est-elle mortifère ?, Le Journal des libertés, 26, automne 2024."
 ---

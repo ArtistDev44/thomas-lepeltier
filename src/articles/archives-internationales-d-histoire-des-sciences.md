@@ -1,9 +1,9 @@
 ---
-title: Archives Internationales d’Histoire des Sciences
+title: "Quand l’univers était plus jeune que la Terre"
 date: 2007-01-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/quand-univers-etait-plus-jeune-que-terre.webp"
 internalLink: ""

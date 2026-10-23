@@ -1,9 +1,9 @@
 ---
-title: Causeur
+title: "Kœnig, le roi de la Nature. Le philosophe s’enfonce dans l’humus !"
 date: 2026-03-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/koenig-humus.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/causeur-1/index.html"
-description: "Kœnig, le roi de la Nature. Le philosophe s’enfonce dans l’humus !, Causeur, 143, mars 2026."
+description: "Kœnig, le roi de la Nature. Le philosophe s’enfonce dans l’humus !, Causeur, 143, mars 2026."
 ---

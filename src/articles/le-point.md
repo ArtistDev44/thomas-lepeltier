@@ -1,9 +1,9 @@
 ---
-title: Le Point
-date: 2026-05-01
+title: "Les affabulations du biologiste Olivier Hamant contre la performance"
+date: 2026-05-18
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/hamant-olivier.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point/index.html"
-description: "Les affabulations du biologiste Olivier Hamant contre la performance, Le Point, 18 mai 2026."
+description: "Les affabulations du biologiste Olivier Hamant contre la performance, Le Point, 18 mai 2026."
 ---

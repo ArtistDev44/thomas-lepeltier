@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2004-05-01
+title: "Georges Dumézil, entre mythe et histoire"
+date: 2004-02-01
 layout: "post.njk"
 category: "Historiographie"
-tags: ["article","Historiographie"]
+tags: ["article", "Historiographie"]
 authors: []
 imageUrl: "/assets/images/articles/geores-dumezil.webp"
 internalLink: ""

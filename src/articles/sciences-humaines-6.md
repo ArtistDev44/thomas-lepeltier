@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Les vertus d'un monde sans élevage"
 date: 2024-03-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/vivre-sans-viande-1.webp"
 internalLink: ""

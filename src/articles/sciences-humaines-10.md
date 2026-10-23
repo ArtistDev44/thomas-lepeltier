@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2017-05-01
+title: "Le carnivorisme en débat"
+date: 2017-06-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/carnivorisme-en-debat.webp"
 internalLink: ""

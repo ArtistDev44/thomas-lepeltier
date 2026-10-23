@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2006-05-01
+title: "La philosophie des sciences"
+date: 2006-11-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/philosophie-des-sciences.webp"
 internalLink: ""

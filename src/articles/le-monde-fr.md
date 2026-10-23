@@ -1,9 +1,9 @@
 ---
-title: Le Monde.fr
-date: 2018-07-01
+title: "Pour un véritable débat sur le spécisme !"
+date: 2018-07-10
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/Antispecisme-Le-Monde.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-monde-fr/index.html"
-description: "Pour un véritable débat sur le spécisme !, Le Monde.fr, 10 juillet 2018."
+description: "Pour un véritable débat sur le spécisme !, Le Monde.fr, 10 juillet 2018."
 ---

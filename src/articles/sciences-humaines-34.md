@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2017-05-01
+title: "Et si l’esprit était partout ?"
+date: 2017-06-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/panpsychisme.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-34/index.html"
-description: "Et si l’esprit était partout ?, Sciences Humaines, 293, juin 2017."
+description: "Et si l’esprit était partout ?, Sciences Humaines, 293, juin 2017."
 ---

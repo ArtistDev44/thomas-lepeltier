@@ -1,9 +1,9 @@
 ---
-title: Watson
-date: 2021-04-01
+title: "Manger de la viande sans tuer d'animaux ? Ce livre a la solution"
+date: 2021-04-12
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/watson-viande-de-culture.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/watson/index.html"
-description: "Manger de la viande sans tuer d'animaux ? Ce livre a la solution, Watson, 12 avril 2021."
+description: "Manger de la viande sans tuer d'animaux ? Ce livre a la solution, Watson, 12 avril 2021."
 ---

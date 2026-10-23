@@ -1,9 +1,9 @@
 ---
-title: L’amorce. Revue contre le spécisme
-date: 2018-11-01
+title: "Se soucier des animaux sauvages"
+date: 2018-11-07
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/se-soucier-des-animaux-sauvages.webp"
 internalLink: ""

@@ -1,9 +1,9 @@
 ---
-title: European Scientist
-date: 2025-12-01
+title: "Should we return to the climate of the past ?"
+date: 2025-12-31
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/climat-retour.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/european-scientist/index.html"
-description: "Should we return to the climate of the past ?, European Scientist, 31 décembre 2025."
+description: "Should we return to the climate of the past ?, European Scientist, 31 décembre 2025."
 ---

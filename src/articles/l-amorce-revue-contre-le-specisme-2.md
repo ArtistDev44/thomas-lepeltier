@@ -1,9 +1,9 @@
 ---
-title: L’amorce. Revue contre le spécisme
-date: 2019-05-01
+title: "L’antispécisme face à ses adversaires"
+date: 2019-05-24
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/antispecisme-face-a-ses-adversaires.webp"
 internalLink: ""

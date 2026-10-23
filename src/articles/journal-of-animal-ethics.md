@@ -1,9 +1,9 @@
 ---
-title: Journal of Animal Ethics
+title: "A critique of some appeals to science in animal ethics"
 date: 2020-01-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/a-critique-of-appeals-to-science.png.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/journal-of-animal-ethics/index.html"
-description: "A critique of some appeals to science in animal ethics, Journal of Animal Ethics, 10 (1), 2020."
+description: "A critique of some appeals to science in animal ethics, Journal of Animal Ethics, 10 (1), 2020."
 ---

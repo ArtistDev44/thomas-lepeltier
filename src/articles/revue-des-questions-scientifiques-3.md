@@ -1,9 +1,9 @@
 ---
-title: Revue des questions scientifiques
+title: "Nouveau dialogue sur les deux grands systèmes du monde"
 date: 2005-01-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/nouveau-dialogue-deux-grands-systemes-du-monde.webp"
 internalLink: ""

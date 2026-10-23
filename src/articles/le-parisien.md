@@ -1,9 +1,9 @@
 ---
-title: Le Parisien
-date: 2019-05-01
+title: "Pour des assises nationales de la question animale !"
+date: 2019-05-26
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/tribune-contre-le-specisme.webp"
 internalLink: ""

@@ -1,9 +1,9 @@
 ---
-title: Sens-Dessous
+title: "Petite litanie des arguments anti-végétaliens"
 date: 2013-07-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/petite-litanie-arguments-anti-vegetaliens.webp"
 internalLink: ""

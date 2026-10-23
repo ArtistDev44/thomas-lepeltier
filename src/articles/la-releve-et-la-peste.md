@@ -1,9 +1,9 @@
 ---
-title: La Relève et la Peste
-date: 2020-12-01
+title: "Il est impossible d’avoir un débat sérieux sur la condition animale"
+date: 2020-12-08
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/la-releve-et-la-peste1.webp"
 internalLink: ""

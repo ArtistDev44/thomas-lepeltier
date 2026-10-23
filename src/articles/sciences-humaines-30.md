@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Qu’est-ce qu’un individu biologique ?"
 date: 2022-01-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/individu-biologique.webp"
 internalLink: ""

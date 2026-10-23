@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2007-05-01
+title: "Gaston Bachelard et Alexandre Koyré"
+date: 2007-11-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/gaston-bachelard-alexandre-koyre.webp"
 internalLink: ""

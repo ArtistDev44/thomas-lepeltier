@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Le consommateur impénitent"
 date: 2011-04-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/consommateur-impenitent.webp"
 internalLink: ""

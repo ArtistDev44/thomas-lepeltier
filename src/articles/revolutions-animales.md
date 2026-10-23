@@ -1,9 +1,9 @@
 ---
-title: Révolutions animales
-date: 2016-05-01
+title: "Demain, la révolution végétalienne ?, dans"
+date: 2016-01-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/demain-la-revolution-vegetalienne.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/revolutions-animales/index.html"
-description: "Demain, la révolution végétalienne ?, dans Révolutions animales, Les liens qui libèrent/Arte, 2016."
+description: "Demain, la révolution végétalienne ?, dans Révolutions animales, Les liens qui libèrent/Arte, 2016."
 ---

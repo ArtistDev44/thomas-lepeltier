@@ -1,9 +1,9 @@
 ---
-title: Le Point
-date: 2026-01-01
+title: "Quand l’État-providence devient contre-productif"
+date: 2026-01-29
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/etat-providence-contre-productif.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-5/index.html"
-description: "Quand l’État-providence devient contre-productif, Le Point, 29 janvier 2026."
+description: "Quand l’État-providence devient contre-productif, Le Point, 29 janvier 2026."
 ---

@@ -1,9 +1,9 @@
 ---
-title: Stability criteria for massive current sheets in...
+title: "Stability criteria for massive current sheets in"
 date: 1994-01-01
 layout: "post.njk"
 category: "Cosmologie"
-tags: ["article","Cosmologie"]
+tags: ["article", "Cosmologie"]
 authors: []
 imageUrl: "/assets/images/articles/astrophysique4.webp"
 internalLink: ""

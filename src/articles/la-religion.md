@@ -1,9 +1,9 @@
 ---
-title: La Religion
-date: 2005-05-01
+title: "Vie et mort de la religion romaine"
+date: 2005-01-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/vie-et-mort-de-la-religion-romaine.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/la-religion/index.html"
-description: "Vie et mort de la religion romaine, dans J.-F. Dortier et L. Testot (eds), La Religion, Éd. Sciences Humaines, 2005."
+description: "Vie et mort de la religion romaine, dans J.-F. Dortier et L. Testot (eds), La Religion, Éd. Sciences Humaines, 2005."
 ---

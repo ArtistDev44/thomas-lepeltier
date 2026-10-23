@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Splendeur et misère de la condition animale"
 date: 2018-04-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/splendeur-et-misere-des-animaux.webp"
 internalLink: ""

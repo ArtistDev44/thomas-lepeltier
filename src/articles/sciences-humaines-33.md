@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "De l’inconvénient d’être en vie"
 date: 2018-04-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/incovenient-d-etre-en-vie.webp"
 internalLink: ""

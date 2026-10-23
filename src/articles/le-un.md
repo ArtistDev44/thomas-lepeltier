@@ -1,9 +1,9 @@
 ---
-title: Le Un
-date: 2018-10-01
+title: "Une violence injustifiée"
+date: 2018-10-24
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/une-violence-injustifiee.webp"
 internalLink: ""

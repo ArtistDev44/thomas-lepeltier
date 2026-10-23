@@ -1,9 +1,9 @@
 ---
-title: L’Amorce
-date: 2026-03-01
+title: "Pour en finir avec le vivant"
+date: 2026-03-30
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/pour-en-finir-avec-le-vivant.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/l-amorce-1/index.html"
-description: "Pour en finir avec le vivant, L’Amorce, 30 mars 2026."
+description: "Pour en finir avec le vivant, L’Amorce, 30 mars 2026."
 ---

@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2014-05-01
+title: "Sommes-nous des survivants ?"
+date: 2014-09-01
 layout: "post.njk"
 category: "Divers"
-tags: ["article","Divers"]
+tags: ["article", "Divers"]
 authors: []
 imageUrl: "/assets/images/articles/sommes-nous-des-survivants.webp"
 internalLink: ""

@@ -1,12 +1,12 @@
 ---
-title: L’Express
+title: "L’archaïsme français concernant la viande de culture"
 date: 2021-07-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/viande-de-culture-l-express.webp"
-internalLink: "http://thomas.lepeltier.free.fr/articles/lecture/viande-de-culture-l-express.html"
+internalLink: "/annexes/l-archaisme-francais-concernant-la-viande-de-culture/"
 externalLink: ""
 buyLink: ""
 price: ""

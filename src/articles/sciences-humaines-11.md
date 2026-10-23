@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2016-05-01
+title: "Peter Singer. Diminuer la souffrance"
+date: 2016-01-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/singer-peter-souffrance.webp"
 internalLink: ""

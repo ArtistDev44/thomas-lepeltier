@@ -1,9 +1,9 @@
 ---
-title: Animal
+title: "Les animaux"
 date: 2020-01-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/la-releve-et-la-peste.webp"
 internalLink: ""

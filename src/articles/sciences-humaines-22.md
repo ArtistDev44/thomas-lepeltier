@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
+title: "Rachel Carson, pionnière de l’écologie"
 date: 2026-04-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/rachel-carson-pionniere-de-l-ecologie.webp"
 internalLink: ""

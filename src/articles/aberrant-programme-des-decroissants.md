@@ -1,9 +1,9 @@
 ---
-title: Aberrant programme des décroissants
+title: "L’aberrant programme politique des décroissants"
 date: 2026-06-14
 layout: "post.njk"
 category: "Économie"
-tags: ["article","Économie"]
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/aberrant-programme-politique-des-decroissants.webp"
 internalLink: ""
@@ -12,5 +12,6 @@ buyLink: ""
 price: ""
 pageCount: ""
 permalink: "/articles/aberrant-programme-des-decroissants/index.html"
+description: "L’aberrant programme politique des décroissants, Le Point, 14 juin 2026."
 ---
 description: "L’aberrant programme politique des décroissants, Le Point, 14 juin 2026."

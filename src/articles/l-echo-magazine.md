@@ -1,9 +1,9 @@
 ---
-title: L’Écho Magazine
-date: 2020-10-01
+title: "La question animale. Va-t-on au cœur du problème ?"
+date: 2020-10-08
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/au-coeur-du-probleme-1.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/l-echo-magazine/index.html"
-description: "La question animale. Va-t-on au cœur du problème ?, L’Écho Magazine, 8 octobre 2020."
+description: "La question animale. Va-t-on au cœur du problème ?, L’Écho Magazine, 8 octobre 2020."
 ---

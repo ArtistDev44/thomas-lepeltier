@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2023-05-01
+title: "Le capitalisme est-il mortel ?"
+date: 2023-06-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/capitalisme-sh-1.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-27/index.html"
-description: "Le capitalisme est-il mortel ?, Sciences Humaines, 359, juin 2023."
+description: "Le capitalisme est-il mortel ?, Sciences Humaines, 359, juin 2023."
 ---

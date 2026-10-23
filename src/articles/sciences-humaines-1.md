@@ -1,9 +1,9 @@
 ---
-title: Sciences Humaines
-date: 2008-03-01
+title: "Faut-il défendre la science ?"
+date: 2008-05-01
 layout: "post.njk"
 category: "Histoire et philosophie des sciences"
-tags: ["article","Histoire et philosophie des sciences"]
+tags: ["article", "Histoire et philosophie des sciences"]
 authors: []
 imageUrl: "/assets/images/articles/faut-il-defendre-la-science.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/sciences-humaines-1/index.html"
-description: "Faut-il défendre la science ?, Sciences Humaines, Hors-série (Les grands dossiers), 10, mars-avril-mai 2008."
+description: "Faut-il défendre la science ?, Sciences Humaines, Hors-série (Les grands dossiers), 10, mars-avril-mai 2008."
 ---

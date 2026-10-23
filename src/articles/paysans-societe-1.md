@@ -1,9 +1,9 @@
 ---
-title: Paysans & Société
-date: 2025-01-01
+title: "Pour en finir avec la notion d’écocide"
+date: 2025-02-01
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Environnement"
+tags: ["article", "Environnement"]
 authors: []
 imageUrl: "/assets/images/articles/ecocide-1.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/paysans-societe-1/index.html"
-description: "Pour en finir avec la notion d’écocide, Paysans & Société, 409, janvier-février 2025."
+description: "Pour en finir avec la notion d’écocide, Paysans & Société, 409, janvier-février 2025."
 ---

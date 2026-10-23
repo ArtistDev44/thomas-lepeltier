@@ -1,9 +1,9 @@
 ---
-title: Penser avant d’ouvrir la bouche
+title: "La révolution végétarienne"
 date: 2014-02-01
 layout: "post.njk"
 category: "Éthique animale"
-tags: ["article","Éthique animale"]
+tags: ["article", "Éthique animale"]
 authors: []
 imageUrl: "/assets/images/articles/penser-avant-ouvrir-bouche.webp"
 internalLink: ""

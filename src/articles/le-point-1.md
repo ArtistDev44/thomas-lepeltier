@@ -1,9 +1,9 @@
 ---
-title: Le Point
-date: 2026-05-01
+title: "L’héritage fait-il vraiment les riches ?"
+date: 2026-05-02
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/l-heritage-fait-il-vraiment-les-riches.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/le-point-1/index.html"
-description: "L’héritage fait-il vraiment les riches ?, Le Point, 2 mai 2026."
+description: "L’héritage fait-il vraiment les riches ?, Le Point, 2 mai 2026."
 ---

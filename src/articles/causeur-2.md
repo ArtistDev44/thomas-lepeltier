@@ -1,9 +1,9 @@
 ---
-title: Causeur
-date: 2026-02-01
+title: "Néolibéralisme : pourquoi tant de haine ?"
+date: 2026-02-20
 layout: "post.njk"
-category: "Divers"
-tags: ["article","Divers"]
+category: "Économie"
+tags: ["article", "Économie"]
 authors: []
 imageUrl: "/assets/images/articles/neoliberalisme-pourquoi-tant-de-haine.webp"
 internalLink: ""
@@ -13,5 +13,5 @@ price: ""
 pageCount: ""
 metaDescription: ""
 permalink: "/articles/causeur-2/index.html"
-description: "Néolibéralisme : pourquoi tant de haine ?, Causeur, 20 février 2026."
+description: "Néolibéralisme : pourquoi tant de haine ?, Causeur, 20 février 2026."
 ---
