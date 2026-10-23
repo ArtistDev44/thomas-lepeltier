@@ -1,6 +1,6 @@
 ---
 title: "The Genetic Lottery. Why DNA Matters for Social Equality,"
-date: 1234-01-01
+date: 2021-01-01
 layout: "chronique.njk"
 tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Kathryn Paige Harden"

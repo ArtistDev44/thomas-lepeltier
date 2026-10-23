@@ -1,4 +1,8 @@
-export const url = process.env.URL || 'http://localhost:8080';
+// En production, l'URL canonique est imposée : sitemap, canonicals, flux et robots.txt en dépendent.
+const productionUrl = 'https://www.thomaslepeltier.fr';
+export const url = (
+  process.env.URL || (process.env.ELEVENTY_ENV === 'production' ? productionUrl : 'http://localhost:8080')
+).replace(/\/$/, '');
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
 export const siteName = 'Thomas Lepeltier';
@@ -82,21 +86,10 @@ export const themeSwitch = {
   light: 'light',
   dark: 'dark'
 };
-export const greenweb = {
-  // https://carbontxt.org/
-  disclosures: [
-    {
-      docType: 'sustainability-page',
-      url: `${url}/sustainability/`,
-      domain: domain
-    }
-  ],
-  services: [{domain: 'netlify.com', serviceType: 'cdn'}]
-};
 export const tests = {
   pa11y: {
     // keep customPaths empty if you want to test all pages
-    customPaths: ['/', '/about/', '/blog/', '/styleguide/'],
+    customPaths: ['/', '/bio/', '/livres/', '/chroniques/', '/interventions/', '/recherche/'],
     globalIgnore: []
   }
 };

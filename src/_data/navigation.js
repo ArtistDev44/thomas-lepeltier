@@ -5,7 +5,7 @@ export default {
       url: '/'
     },
     {
-      text: 'Bio',
+      text: 'Qui suis-je ?',
       url: '/bio/'
     },
     {
@@ -35,14 +35,18 @@ export default {
       url: '/chroniques/'
     },
     {
+      text: 'Conférences',
+      url: '/interventions/'
+    },
+    {
       text: 'Contact',
       url: '/contact/'
     }
   ],
   bottom: [
     {
-      text: 'Style guide',
-      url: '/styleguide/'
+      text: 'Publications',
+      url: '/publications/'
     },
     {
       text: 'Légal',

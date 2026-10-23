@@ -1,7 +1,7 @@
 ---
 title: Sites à visiter
 permalink: /liens/index.html
-description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
+description: 'Sélection de sites sur des auteurs, l’édition, la science et la philosophie, recommandés par Thomas Lepeltier.'
 layout: page
 ---
 

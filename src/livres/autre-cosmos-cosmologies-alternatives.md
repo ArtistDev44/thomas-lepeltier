@@ -1,6 +1,6 @@
 ---
 title: "Un autre cosmos ?"
-date: 1234-01-01
+date: 2012-03-09
 layout: "livre.njk"
 tags: ["livre","livresDiriges","Cosmologie"]
 description: "Une déconstruction en règle du spécisme et une promotion d'une éthique prenant en compte les intérêts de l'ensemble des êtres sensibles."
@@ -26,7 +26,7 @@ L'univers est-il né d'un big bang ? La plupart des cosmologistes et astrophysic
 
 Pour illustrer cette part d'indétermination de la cosmologie moderne, les auteurs de ce livre ont entrepris de présenter, d'une manière accessible aux non-spécialistes, ces alternatives au modèle standard du big bang. Les lecteurs découvriront ainsi que, sur un plan scientifique, plusieurs conceptions de l'univers sont de nos jours envisageables. De quoi relancer de fascinantes interrogations sur le cosmos.
 
-[**Thomas Lepeltier**](/bio) est historien et philosophe des sciences, chargé de cours à l'Université d'Oxford (Royaume-Uni), et auteur d'_[Univers parallèles](/livres/univers-paralleles)_ (Seuil, 2010).
+[**Thomas Lepeltier**](/bio) est historien et philosophe des sciences, chargé de cours à l'Université d'Oxford (Royaume-Uni), et auteur d'_[Univers parallèles](/livres/univers-paralleles-le-livre-de-tous-les-possibles/)_ (Seuil, 2010).
 
  **[Jean-Marc Bonnet-Bidaud](http://bonnetbidaud.free.fr/)** est astrophysicien au Commissariat à l'Énergie Atomique et aux énergies Alternatives (Saclay, France). Il a contribué à l'ouvrage _[Le big bang n'est pas une théorie comme les autres](http://www.lavillebrule.com/fr/le_big_bang_n_est_pas_une_theorie_comme_les_autres)_ (La Ville brûle, 2009).
 

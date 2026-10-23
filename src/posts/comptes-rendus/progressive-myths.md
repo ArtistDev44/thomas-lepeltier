@@ -11,4 +11,3 @@ alphabeticalPage: ["h"]
 description: "Chronique du livre de Michael Huemer, Progressive Myths, par Thomas Lepeltier"
 ---
 
-(à paraître)

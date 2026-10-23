@@ -1,35 +1,3065 @@
 {
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "Content-Security-Policy",
-            "value": "upgrade-insecure-requests;"
-          },
-          {
-            "key": "X-Content-Type-Options",
-            "value": "nosniff"
-          },
-          {
-            "key": "X-Frame-Options",
-            "value": "DENY"
-          },
-          {
-            "key": "X-XSS-Protection",
-            "value": "1; mode=block"
-          },
-          {
-            "key": "Referrer-Policy",
-            "value": "strict-origin-when-cross-origin"
-          },
-          {
-            "key": "Permissions-Policy",
-            "value": "autoplay=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), publickey-credentials-get=()"
-          }
-        ]
-      }
-    ],
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist"
-  }
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "upgrade-insecure-requests;"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "autoplay=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), publickey-credentials-get=()"
+        }
+      ]
+    },
+    {
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/annexes/abst_sci.html",
+      "destination": "/annexes/abstracts-articles-scientifiques/",
+      "permanent": true
+    },
+    {
+      "source": "/annexes/creationnisme/creationnisme-est-il-scientifique.html",
+      "destination": "/annexes/creationnisme-est-il-scientifique/",
+      "permanent": true
+    },
+    {
+      "source": "/annexes/creationnisme/questions-a-guillaume-lecointre-.html",
+      "destination": "/annexes/questions-a-guillaume-lecointre/",
+      "permanent": true
+    },
+    {
+      "source": "/annexes/creationnisme/science-est-elle-un-jeu.html",
+      "destination": "/annexes/la-science-nest-pas-un-jeu-d-echecs/",
+      "permanent": true
+    },
+    {
+      "source": "/annexes/d_espagnat.html",
+      "destination": "/annexes/lettre-de-bernard-d-espagnat/",
+      "permanent": true
+    },
+    {
+      "source": "/annexes/revue-de-livres-commentaires.html",
+      "destination": "/annexes/revue-de-livres-commentaires/",
+      "permanent": true
+    },
+    {
+      "source": "/articles.html",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/Antispecisme-Le-Monde-Finale.pdf",
+      "destination": "/assets/pdf/Antispecisme-Le-Monde-Finale.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/Barrau-ou-le-vide-sideral-Version-longue.pdf",
+      "destination": "/assets/pdf/Barrau-ou-le-vide-sideral-Version-longue.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/Faut-il-coloniser-l-espace.pdf",
+      "destination": "/assets/pdf/Faut-il-coloniser-l-espace.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/Limites-planetaires.pdf",
+      "destination": "/assets/pdf/Limites-planetaires.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/Parrique-Decroissance.pdf",
+      "destination": "/assets/pdf/Parrique-Decroissance.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/Rapport-Meadows.pdf",
+      "destination": "/assets/pdf/Rapport-Meadows.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/creationism-france.html",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/enseignement-histoire-physique.pdf",
+      "destination": "/assets/pdf/enseignement-histoire-physique.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/historians-and-the-origins-of-the-french-revolution.pdf",
+      "destination": "/assets/pdf/historians-and-the-origins-of-the-french-revolution.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/modern-french_historiography.pdf",
+      "destination": "/assets/pdf/modern-french_historiography.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/ralentissement-economique.pdf",
+      "destination": "/assets/pdf/ralentissement-economique.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/articles/lecture/viande-de-culture-l-express.html",
+      "destination": "/annexes/l-archaisme-francais-concernant-la-viande-de-culture/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_a.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_b.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_c.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_d.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_e.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_f.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_g.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_h.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_i.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_j.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_k.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_l.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_m.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_n.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_o.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_p.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_q.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_r.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_s.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_t.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_u.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_v.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_w.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_y.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/auteurs/a_z.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/autre-cosmos-cosmologies-alternatives.html",
+      "destination": "/livres/autre-cosmos-cosmologies-alternatives/",
+      "permanent": true
+    },
+    {
+      "source": "/autre-cosmos/contents-cosmologie-alternative.html",
+      "destination": "/livres/autre-cosmos-cosmologies-alternatives/",
+      "permanent": true
+    },
+    {
+      "source": "/autre-cosmos/debats.html",
+      "destination": "/annexes/debats-sur-un-autre-cosmos/",
+      "permanent": true
+    },
+    {
+      "source": "/big-bang-histoire-critique-d-une-idee.html",
+      "destination": "/livres/big-bang-histoire-critique-d-une-idee/",
+      "permanent": true
+    },
+    {
+      "source": "/conferences.html",
+      "destination": "/interventions/",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/cosmologie-face-cachee-univers.html",
+      "destination": "/livres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/Benovsky-le-puzzle-philosophique.html",
+      "destination": "/chroniques/le-puzzle-philosophique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/Fox-keller-mirage-space-between-nature-nurture.html",
+      "destination": "/chroniques/the-mirage-of-a-space-between-nature-and-nurture/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/Lakoff-Johnson-metaphores-vie-quotidienne.html",
+      "destination": "/chroniques/les-metaphores-dans-la-vie-quotidienne/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/aboudrar-comment-voile-devenu-musulman.html",
+      "destination": "/chroniques/comment-le-voile-est-devenu-musulman/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/adams-crary-gruen-the-good-it-promises-the-harm-it-does.html",
+      "destination": "/chroniques/the-good-it-promises-the-harm-it-does/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/adams-politique-sexuelle-de-la-viande.html",
+      "destination": "/chroniques/la-politique-sexuelle-de-la-viande-une-theorie-critique-feministe-vegetarienne/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/afeissa-manifeste-pour-une-ecologie-de-la-difference.html",
+      "destination": "/chroniques/manifeste-pour-une-ecologie-de-la-difference/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/aguirre-rojas-historiographie-francaise.html",
+      "destination": "/chroniques/lhistoire-conquerante-un-regard-sur-lhistoriographie-francaise/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ait-touati-contes-de-la-lune.html",
+      "destination": "/chroniques/contes-de-la-lune-essai-sur-la-fiction-et-la-science-modernes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/alizart-coup-d-etat-climatique.html",
+      "destination": "/chroniques/le-coup-detat-climatique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/alizart-informatique-celeste.html",
+      "destination": "/chroniques/informatique-celeste/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/alizart-pop-theologie.html",
+      "destination": "/chroniques/pop-theologie-protestantisme-et-postmodernite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/allix-perception-realite-nature-visible.html",
+      "destination": "/chroniques/perception-et-realite-essai-sur-la-nature-du-visible/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/amalvi-heros-histoire-france.html",
+      "destination": "/chroniques/les-heros-de-lhistoire-de-france/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/andre-gosseries-la-justice-climatique.html",
+      "destination": "/chroniques/la-justice-climatique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/anscombe-intention.html",
+      "destination": "/chroniques/lintention/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/apel-controverse-expliquer-comprendre.html",
+      "destination": "/chroniques/la-controverse-expliquer-comprendre/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/arnaud-lindet-histoire-politique-rome-historiens-romains.html",
+      "destination": "/chroniques/histoire-et-politique-a-rome/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/arnould-creationnisme-science.html",
+      "destination": "/chroniques/dieu-versus-darwin-les-creationnistes-vont-ils-triompher-de-la-science/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/assmann-prix-monotheisme.html",
+      "destination": "/chroniques/le-prix-du-monotheisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/atten-pestre-hertz-administration-preuve.html",
+      "destination": "/chroniques/heinrich-hertz-ladministration-de-la-preuve/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/attfield-environmental-ethics-a-short-Introduction.html",
+      "destination": "/chroniques/environmental-ethics-a-very-short-introduction/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/avezou-sully-histoire-mythe-politique.html",
+      "destination": "/chroniques/sully-a-travers-lhistoire-les-avatars-dun-mythe-politique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/azihari-ecologistes-contre-la-modernite.html",
+      "destination": "/chroniques/les-ecologistes-contre-la-modernite-le-proces-de-promethee/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/baggini-ego-trick-what-does-it-mean-to-be-you.html",
+      "destination": "/chroniques/the-ego-trick-what-does-it-mean-to-be-you/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/baggini-freedom-regained.html",
+      "destination": "/chroniques/freedom-regained-the-possibility-of-free-will/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/balcombe-what-fish-knows.html",
+      "destination": "/chroniques/what-a-fish-knows-the-inner-lives-of-our-underwater-cousins/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ball-unnatural-the-heretical-idea-of-making-people.html",
+      "destination": "/chroniques/unnatural-the-heretical-idea-of-making-people/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/baptist-the-half-has-never-been-told.html",
+      "destination": "/chroniques/the-half-has-never-been-told-slavery-and-the-making-of-american-capitalism/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/baratay-betes-dieux.html",
+      "destination": "/chroniques/des-betes-et-des-dieux-les-animaux-dans-les-religions/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/baratay-le-point-de-vue-animal.html",
+      "destination": "/chroniques/le-point-de-vue-animal-une-autre-version-de-lhistoire/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/barberousse-kistler-ludwig-philosophie-sciences.html",
+      "destination": "/chroniques/la-philosophie-des-sciences-au-xxe-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/baridon.html",
+      "destination": "/chroniques/le-gothique-des-lumieres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/baril-grande-illusion-comment-selection-naturelle-cree-idee-dieu.html",
+      "destination": "/chroniques/la-grande-illusion-comment-la-selection-naturelle-a-cree-lidee-de-dieu/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/barrau-de-la-verite-dans-les-sciences.html",
+      "destination": "/chroniques/de-la-verite-dans-les-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/barrau-parrochia-forme-origine-univers-regards-philosophiques-cosmologie.html",
+      "destination": "/chroniques/forme-et-origine-de-lunivers/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/barrow.html",
+      "destination": "/chroniques/pourquoi-le-monde-est-il-mathematique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/baschet-quand-commence-le-capitalisme.html",
+      "destination": "/chroniques/quand-commence-le-capitalisme-de-la-societe-feodale-au-monde-de-leconomie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bayard-resistant-ou-bourreau.html",
+      "destination": "/chroniques/aurais-je-ete-resistant-ou-bourreau/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bazot-l-epouvantail-neo-liberal.html",
+      "destination": "/chroniques/lepouvantail-neoliberal-un-mal-tres-francais/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/becker-more-everything-forever.html",
+      "destination": "/chroniques/more-everything-forever-ai-overlords-space-empires/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bedos-rezak-iogna-prat-individu-moyen-age.html",
+      "destination": "/chroniques/lindividu-au-moyen-age/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/belna.html",
+      "destination": "/chroniques/cantor/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/benatar-wasserman-debating-procreation.html",
+      "destination": "/chroniques/debating-procreation-is-it-wrong-to-reproduce/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bensaude-vincent-blondel-savants-face-occulte.html",
+      "destination": "/chroniques/des-savants-face-a-locculte-1870-1940/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bensaude-vincent-fabriquer-la-vie.html",
+      "destination": "/chroniques/fabriquer-la-vie-ou-va-la-biologie-de-synthese/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bensaude-vincent-faut-il-avoir-peur-de-la-chimie.html",
+      "destination": "/chroniques/faut-il-avoir-peur-de-la-chimie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/berlinski-origines-esprit-vie-matiere.html",
+      "destination": "/chroniques/origines-lesprit-la-vie-la-matiere/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bernstein-moral-equality-of-humans-and-animals.html",
+      "destination": "/chroniques/the-moral-equality-of-humans-and-animals/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bertram-do-states-have-the-right-to-exclude-immigrants.html",
+      "destination": "/chroniques/do-states-have-the-right-to-exclude-immigrants/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/beyer-de-ryke-dierkens-mystique-passion-de-un.html",
+      "destination": "/chroniques/mystique-la-passion-de-lun-de-lantiquite-a-nos-jours/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bitbol-physique-philosophie-esprit.html",
+      "destination": "/chroniques/physique-et-philosophie-de-lesprit/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/blanqui.html",
+      "destination": "/chroniques/leternite-par-les-astres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bloom-against-empathy.html",
+      "destination": "/chroniques/against-empathy-the-case-for-rational-compassion/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bloom-the-sweet-spot-suffering-pleasure-and-the-key-to-a-good-life.html",
+      "destination": "/chroniques/the-sweet-spot-suffering-pleasure-and-the-key-to-a-good-life/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/boehm-moral-origins-evolution-virtue-altruism-shame.html",
+      "destination": "/chroniques/moral-origins-the-evolution-of-virtue-altruism-and-shame/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bojowald-univers-en-rebond.html",
+      "destination": "/chroniques/lunivers-en-rebond-avant-le-big-bang/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bonnet-wagner-age-or-empirisme-logique.html",
+      "destination": "/chroniques/lage-dor-de-lempirisme-logique-1929-1936/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/borgeaud-origines-de-histoire-des-religions.html",
+      "destination": "/chroniques/aux-origines-de-lhistoire-des-religions/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/borutti-theorie-interpretation-epistemologie-sciences-humaines.html",
+      "destination": "/chroniques/theorie-et-interpretation-pour-une-epistemologie-des-sciences-humaines/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bory-douleur-des-betes.html",
+      "destination": "/chroniques/la-douleur-des-betes-la-polemique-sur-la-vivisection-au-xixe-siecle-en-france/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bouchet-roi-barricades-histoire-5-6-juin-1832.html",
+      "destination": "/chroniques/le-roi-et-les-barricades-une-histoire-des-5-et-6-juin-1832/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bourban-penser-la-justice-climatique.html",
+      "destination": "/chroniques/penser-la-justice-climatique-devoirs-et-politiques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bourdieu-science-de-la-science-reflexivite.html",
+      "destination": "/chroniques/science-de-la-science-et-reflexivite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bourke-loving-animals-on-bestiality.html",
+      "destination": "/chroniques/loving-animals-on-bestiality-zoophilia-and-post-human-love/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bousquet-mourir-pour-un-crapaud-kammerer.html",
+      "destination": "/chroniques/mourir-pour-un-crapaud-un-authentique-drame-scientifique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bouveresse-rosat-philosophies-de-la-perception.html",
+      "destination": "/chroniques/philosophies-de-la-perception/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bowler-darwin-deleted.html",
+      "destination": "/chroniques/darwin-deleted-imagining-a-world-without-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/brahami-travail-scepticisme-montaigne-bayle-hume.html",
+      "destination": "/chroniques/le-travail-du-scepticisme-montaigne-bayle-hume/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/braudel-mediterranee-monde-mediterraneen-epoque-philippe-2.html",
+      "destination": "/chroniques/la-mediterranee-et-le-monde-mediterraneen-a-lepoque-de-philippe-ii/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bregman-ambition-morale.html",
+      "destination": "/chroniques/ambition-morale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bricker-ibbitson-empty-planet-the-shock-of-global-population-decline.html",
+      "destination": "/chroniques/empty-planet-the-shock-of-global-population-decline/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/briquel.html",
+      "destination": "/chroniques/chretiens-and-haruspices-la-religion-etrusque-dernier-rempart-du-paganisme-romain/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bronner-vie-et-mort-croyances-collectives.html",
+      "destination": "/chroniques/vie-et-mort-des-croyances-collectives/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/brooks-free-radicals-secret-anarchy-of-science.html",
+      "destination": "/chroniques/free-radicals-the-secret-anarchy-of-science/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bucciantini-galilee-kepler-philosophie-cosmologie-theologie.html",
+      "destination": "/chroniques/galilee-et-kepler/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bueno-effondrement-du-monde-n-aura-probablement-pas-lieu.html",
+      "destination": "/chroniques/leffondrement-du-monde-naura-probablement-pas-lieu/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bueno-faut-il-une-dictature-verte.html",
+      "destination": "/chroniques/faut-il-une-dictature-verte-la-democratie-au-secours-de-la-planete/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/bunge-materialisme-scientifique.html",
+      "destination": "/chroniques/le-materialisme-scientifique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/burgat-ahimsa-non-violence-animaux-inde.html",
+      "destination": "/chroniques/ahimsa-violence-et-non-violence-envers-les-animaux-en-inde/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/burgat-etre-le-bien-d-un-autre.html",
+      "destination": "/chroniques/etre-le-bien-dun-autre/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/burgat-humanite-carnivore.html",
+      "destination": "/chroniques/lhumanite-carnivore/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cabanel-dieu-republique-sources-protestantes-laicite.html",
+      "destination": "/chroniques/le-dieu-de-la-republique-aux-sources-protestantes-de-la-laicite-1860-1900/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/canfora.html",
+      "destination": "/chroniques/le-mystere-thucydide-enquete-a-partir-daristote/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/capelle-blancard-la-taxation-des-transactions-financieres.html",
+      "destination": "/chroniques/la-taxation-des-transactions-financieres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/caplan-open-borders.html",
+      "destination": "/chroniques/open-borders-the-science-and-ethics-of-immigration/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/caplan-the-case-against-education.html",
+      "destination": "/chroniques/the-case-against-education-why-the-education-system-is-a-waste-of-time-and-money/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/carens-ethics-of-immigration.html",
+      "destination": "/chroniques/the-ethics-of-immigration/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/carey-hacking-the-code-of-life.html",
+      "destination": "/chroniques/hacking-the-code-of-life-how-gene-editing-will-rewrite-our-futures/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/carnino-invention-de-la-science.html",
+      "destination": "/chroniques/linvention-de-la-science-la-nouvelle-religion-de-lage-industriel/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/carraz-wittgenstein-et-la-deconstruction.html",
+      "destination": "/chroniques/wittgenstein-et-la-deconstruction/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cassirer-theorie-de-la-relativite-einstein-connaissance.html",
+      "destination": "/chroniques/la-theorie-de-la-relativite-elements-pour-une-theorie-de-la-connaissance/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cezilly-male-pere.html",
+      "destination": "/chroniques/de-male-en-pere-a-la-recherche-de-linstinct-paternel/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chaline-fleury-jay-gould-theorie-evolution-darwin.html",
+      "destination": "/chroniques/quoi-de-neuf-depuis-darwin-la-theorie-de-levolution-des-especes-dans-tous-ses-etats/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chamayou-corps-vils-experimenter-humains.html",
+      "destination": "/chroniques/les-corps-vils-experimenter-sur-les-etres-humains-aux-xviiie-et-xixe-siecles/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chambers-against-marriage.html",
+      "destination": "/chroniques/against-marriage-an-egalitarian-defense-of-the-marriage-free-state/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/changeux-la-verite-dans-les-sciences.html",
+      "destination": "/chroniques/la-verite-dans-les-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chansigaud-histoire-du-vegetarisme.html",
+      "destination": "/chroniques/histoire-du-vegetarisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/charbonnat-quand-sciences-dialoguent-avec-metaphysique.html",
+      "destination": "/chroniques/quand-les-sciences-dialoguent-avec-la-metaphysique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chareix-le-mythe-galilee.html",
+      "destination": "/chroniques/le-mythe-galilee/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chateau.html",
+      "destination": "/chroniques/la-question-de-la-question-de-lart/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chauvet-mentaphobie.html",
+      "destination": "/chroniques/contre-la-mentaphobie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chauvet-proces-animaux.html",
+      "destination": "/chroniques/la-personnalite-juridique-des-animaux-juges-au-moyen-age/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/chauvet-une-raison-de-lutter.html",
+      "destination": "/chroniques/une-raison-de-lutter-lavenir-philosophique-et-politique-de-la-viande/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/christen-animal-est-il-un-philosophe-poussins-kantiens-bonobos-aristoteliciens.html",
+      "destination": "/chroniques/lanimal-est-il-un-philosophe-poussins-kantiens-et-bonobos-aristoteliciens/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/christin-histoire-de-ecriture-ideogramme-multimedia.html",
+      "destination": "/chroniques/histoire-de-lecriture-de-lideogramme-au-multimedia/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/churchland-conscience-the-origins-of-moral-intuition.html",
+      "destination": "/chroniques/conscience-the-origins-of-moral-intuition/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/clastres.html",
+      "destination": "/chroniques/archeologie-de-la-violence-la-guerre-dans-les-societes-primitives/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/clavien-je-t-aide-altruisme-biologique-comportemental-psychologique.html",
+      "destination": "/chroniques/je-taide-moi-non-plus/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cochrane-animal-rights-without-liberation.html",
+      "destination": "/chroniques/animal-rights-without-liberation-applied-ethics-and-human-obligations/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cochrane-should-animals-have-political-rights.html",
+      "destination": "/chroniques/should-animals-have-political-rights/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cogneau-un-empire-bon-marche.html",
+      "destination": "/chroniques/un-empire-bon-marche-histoire-et-economie-politique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cohen-neandertalien-metro.html",
+      "destination": "/chroniques/un-neandertalien-dans-le-metro/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/compagnon.html",
+      "destination": "/chroniques/le-demon-de-la-theorie-litterature-et-sens-commun/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/coquery-vidrovitch-petite-histoire-de-l-afrique.html",
+      "destination": "/chroniques/petite-histoire-de-lafrique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cornette-monarchie-entre-renaissance-et-revolution.html",
+      "destination": "/chroniques/la-monarchie-entre-renaissance-et-revolution-1515-1792/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cosandey-descimon-absolutisme-france-histoire-historiographie.html",
+      "destination": "/chroniques/labsolutisme-en-france-histoire-et-historiographie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cottret-culture-et-politique-dans-la-france-des-lumieres.html",
+      "destination": "/chroniques/culture-et-politique-dans-la-france-des-lumieres-1715-1792/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cottret-revolutoin-americaine-quete-bonheur.html",
+      "destination": "/chroniques/la-revolution-americaine/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/curry-le-changement-climatique-n-est-plus-ce-qu-il-etait.html",
+      "destination": "/chroniques/le-changement-climatique-nest-plus-ce-quil-etait-vrais-risques-et-attitudes-rationnelles/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/cutler-montagne-coquillage-nicolas-stenon-bible-science-de-la-terre.html",
+      "destination": "/chroniques/la-montagne-et-le-coquillage-comment-nicolas-stenon-a-cree-les-sciences-de-la-terre/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/d-espagnat-traite-de-physique-et-de-philosophie-implications-science.html",
+      "destination": "/chroniques/traite-de-physique-et-de-philosophie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dabhoiwala-origins-of-sex-first-sexual-revolution.html",
+      "destination": "/chroniques/the-origins-of-sex-a-history-of-the-first-sexual-revolution/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/daftary-legende-assassins-ismaeliens.html",
+      "destination": "/chroniques/legendes-des-assassins-mythes-sur-les-ismaeliens/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/danaher-automation-and-utopia-human-flourishing-in-a-world-without-work.html",
+      "destination": "/chroniques/automation-and-utopia-human-flourishing-in-a-world-without-work/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/darnton-pour-les-lumieres-defense-illustration-methode.html",
+      "destination": "/chroniques/pour-les-lumieres-defense-illustration-methode/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/daston-contre-nature.html",
+      "destination": "/chroniques/contre-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/davies-cracked-psychiatry.html",
+      "destination": "/chroniques/cracked-why-psychiatry-is-doing-more-harm-than-good/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/davies-the-demon-in-the-machine.html",
+      "destination": "/chroniques/the-demon-in-the-machine-how-hidden-webs-of-information-are-solving-the-mystery-of-life/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/davis-beyond-trans.html",
+      "destination": "/chroniques/beyond-trans-does-gender-matter/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dawkins-pour-en-finir-avec-dieu.html",
+      "destination": "/chroniques/pour-en-finir-avec-dieu/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/de-amicis-le-livre-coeur.html",
+      "destination": "/chroniques/le-livre-coeur/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/de-fontenay-sans-offenser-le-genre-humaine-reflexions-sur-la-cause-animale.html",
+      "destination": "/chroniques/sans-offenser-le-genre-humain-reflexions-sur-la-cause-animale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/de-munck-institution-sociale-de-esprit-nouvelles-approches-raison.html",
+      "destination": "/chroniques/linstitution-sociale-de-lesprit-nouvelles-approches-de-la-raison/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/de-sousa-evolution-et-rationalite.html",
+      "destination": "/chroniques/evolution-et-rationalite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/debove-pourquoi-notre-cerveau-a-invente-le-bien-et-le-mal.html",
+      "destination": "/chroniques/pourquoi-notre-cerveau-a-invente-le-bien-et-le-mal/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/del-amo-giroux-larue-animaux.html",
+      "destination": "/chroniques/l214-une-voix-pour-les-animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/delacroix-dosse-garcia-histiore-historiens-france-depuis-1945.html",
+      "destination": "/chroniques/histoire-and-historiens-en-france-depuis-1945/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/delahaye-Intelligence-calcul-godel-ordinateurs-quantiques.html",
+      "destination": "/chroniques/lintelligence-et-le-calcul-de-godel-aux-ordinateurs-quantiques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/deltombe-domergue-tatsitsa-guerre-du-cameroun.html",
+      "destination": "/chroniques/la-guerre-du-cameroun/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dennett-darwin-est-il-dangereux.html",
+      "destination": "/chroniques/darwin-est-il-dangeureux-levolution-et-les-sens-de-la-vie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/descamps-crime-contre-espece-humaine-enfants-clones-enfants-damnes.html",
+      "destination": "/chroniques/un-crime-contre-lespece-humaine-enfants-clones-enfants-damnes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/descamps-uterus-technique-amour-enfant-ectogenese.html",
+      "destination": "/chroniques/luterus-la-technique-et-lamour-lenfant-et-lectogenese/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/descola-pignocchi-ethnographies-des-mondes-a-venir.html",
+      "destination": "/chroniques/ethnographies-des-mondes-a-venir/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/descombes.html",
+      "destination": "/chroniques/la-denree-mentale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dessalles-gaucherel-gouyon-fil-de-la-vie.html",
+      "destination": "/chroniques/le-fil-de-la-vie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dorigny-abolitions-de-l-esclavage.html",
+      "destination": "/chroniques/les-abolitions-de-lesclavage/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dosse-pari-biographique-ecrire-une-vie.html",
+      "destination": "/chroniques/le-pari-biographique-ecrire-une-vie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/doudna-sternberg-crack-in-creation-crispr-cas9.html",
+      "destination": "/chroniques/a-crack-in-creation-the-new-power-to-control-evolution/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/doyle.html",
+      "destination": "/chroniques/des-origines-de-la-revolution-francaise/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/drexler-engins-creation-nanotechnologies.html",
+      "destination": "/chroniques/engins-de-creation-lavenement-des-nanotechnologies/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/droit.html",
+      "destination": "/chroniques/le-culte-du-neant-les-philosophes-et-le-bouddha/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/drouin-philosophie-de-l-insecte.html",
+      "destination": "/chroniques/philosophie-de-linsecte/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dubois-nouvelle-sociologie-des-sciences.html",
+      "destination": "/chroniques/la-nouvelle-sociologie-des-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dubuisson-impostures-et-pseudo-science-mircea-eliade.html",
+      "destination": "/chroniques/impostures-et-pseudo-science-loeuvre-de-mircea-eliade/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dubuisson-invention-des-religions.html",
+      "destination": "/chroniques/linvention-des-religions-imperialisme-cognitif-et-violence-epistemique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ducros-homme-prehistorique-images-imaginaire.html",
+      "destination": "/chroniques/l/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/duflo.html",
+      "destination": "/chroniques/la-finalite-dans-la-nature-de-descartes-a-kant/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dufumier-agriculture-biologique.html",
+      "destination": "/chroniques/agriculture-biologique-espoir-ou-chimere/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/duhem-meca.html",
+      "destination": "/chroniques/levolution-de-la-mecanique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/duhem-mixte.html",
+      "destination": "/chroniques/le-mixte-et-la-combinaison-chimique-essai-sur-levolution-dune-idee/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/duhem-pheno.html",
+      "destination": "/chroniques/sozein-ta-phainomena-essai-sur-la-notion-de-theorie-physique-de-platon-a-galilee/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/duhem-realta-e-rappresentazione-alle-origini-della-theorie-physique.html",
+      "destination": "/chroniques/realta-e-rappresentazione-alle-origini-della/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dumezil.html",
+      "destination": "/chroniques/le-crime-des-lemniennes-rites-et-legendes-du-monde-egeen/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dumouchel-damiano-vivre-avec-les-robots-empathie-artificielle.html",
+      "destination": "/chroniques/vivre-avec-les-robots-essai-sur-lempathie-artificielle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/dumoulin-role-social-de-historien-de-chaire-au-pretoire.html",
+      "destination": "/chroniques/le-role-social-de-lhistorien-de-la-chaire-au-pretoire/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/edelman-histoire-de-la-voyance-et-du-paranormal.html",
+      "destination": "/chroniques/histoire-de-la-voyance-et-du-paranormal-du-xviiie-siecle-a-nos-jours/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/edelman-ni-chose-ni-personne-corps-humain-en-question.html",
+      "destination": "/chroniques/ni-chose-ni-personne-le-corps-humain-en-question/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/edgerton-quoi-de-neuf-du-role-des-techniques-dans-histoire-globale.html",
+      "destination": "/chroniques/quoi-de-neuf-du-role-des-techniques-dans-lhistoire-globale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/edmonds-future-morality.html",
+      "destination": "/chroniques/future-morality/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/edmonds-would-you-kill-the-fat-man-trolley-problem.html",
+      "destination": "/chroniques/would-you-kill-the-fat-man-the-trolley-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ehrman-christianismes-disparus-bataille-ecritures-apocryphes.html",
+      "destination": "/chroniques/les-christianismes-disparus-la-bataille-pour-les-ecritures/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/eisenstaedt-avant-einstein-relativite-lumiere-gravitation.html",
+      "destination": "/chroniques/avant-einstein-relativite-lumiere-gravitation/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/eisenstaedt-lehoucq-einstein-relativite-generale-univers-a-t-il-une-forme.html",
+      "destination": "/chroniques/einstein-et-la-relativite-generale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ekeland-le-meilleur-des-mondes-possibles.html",
+      "destination": "/chroniques/le-meilleur-des-mondes-possibles-mathematiques-et-destinee/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/elliott_grigorenko_dyslexia_debate.html",
+      "destination": "/chroniques/the-dyslexia-debate/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/engel-epistemologie-pour-une-marquise.html",
+      "destination": "/chroniques/epistemologie-pour-une-marquise/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/engel-precis-de-philosophie-analytique.html",
+      "destination": "/chroniques/precis-de-philosophie-analytique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/engel-rorty-a-quoi-bon-la-verite.html",
+      "destination": "/chroniques/a-quoi-bon-la-verite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/engel-va-savoir-de-la-connaissance-en-general.html",
+      "destination": "/chroniques/va-savoir-de-la-connaissance-en-general/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/epstein-fossil-future.html",
+      "destination": "/chroniques/fossil-future-why-global-human-flourishing-requires-more-oil-coal/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/esfeld-la-philosophie-de-esprit-relation-nature.html",
+      "destination": "/chroniques/la-philosophie-de-lesprit-de-la-relation-entre-lesprit-et-la-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/evans-altered-pasts.html",
+      "destination": "/chroniques/altered-past-counterfactuals-in-history/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/evans-language-myth.html",
+      "destination": "/chroniques/the-language-myth-why-language-is-not-an-instinct/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/faria-animal-ethics-in-the-wild-suffering-intervention-nature.html",
+      "destination": "/chroniques/animal-ethics-in-the-wild-wild-animal-suffering-and-intervention-in-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/febvre.html",
+      "destination": "/chroniques/michelet-et-la-renaissance/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/feinberg-mallat-consciousness.html",
+      "destination": "/chroniques/the-ancient-origins-of-consciousness-how-the-brain-created-experience/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ferrari-retours-a-kant-introduction-au-neokantisme.html",
+      "destination": "/chroniques/retours-a-kant-introduction-au-neokantisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ferraris-goodbye-kant-critique-de-la-raison-pure.html",
+      "destination": "/chroniques/goodbye-kant-ce-quil-reste-aujourdhui-de-la/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ferret-identite.html",
+      "destination": "/chroniques/lidentite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/festugiere.html",
+      "destination": "/chroniques/la-revelation-dhermes-trismegiste-tome-ii-le-dieu-cosmique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/feyerabend-tyrannie-science.html",
+      "destination": "/chroniques/la-tyrannie-de-la-science/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/fine-jordan-young-delusions-gender-brain-storm-science-sex-differences.html",
+      "destination": "/chroniques/delusions-of-gender-the-real-science-behind-sex-differences/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/fine-testosterone-rex.html",
+      "destination": "/chroniques/testosterone-rex-unmaking-the-myths-of-our-gendered-minds/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/finneron-burns-what-we-owe-to-future-people.html",
+      "destination": "/chroniques/what-we-owe-to-future-people/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/fleck-genese-et-developpement-fait-scientifique.html",
+      "destination": "/chroniques/genese-et-developpement-dun-fait-scientifique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/fontecave-halte-au-catastrophisme-transition-energetique.html",
+      "destination": "/chroniques/halte-au-catastrophisme-les-verites-de-la-transition-energetique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/foucault-hermeneutique-du-sujet-cours-au-college-de-france.html",
+      "destination": "/chroniques/lhermeneutique-du-sujet-cours-au-college-de-france-1981-1982/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/foucault-pouvoir-psychiatrique-cours-college-de-france.html",
+      "destination": "/chroniques/le-pouvoir-psychiatrique-cours-au-college-de-france-1973-1974/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/foucault-societe.html",
+      "destination": "/chroniques/il-faut-defendre-la-societe-cours-au-college-de-france-1976/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/fox-keller-expliquer-la-vie-biologie.html",
+      "destination": "/chroniques/expliquer-la-vie-modeles-metaphores-et-machines-en-biologie-du-developpement/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/fox-keller-le-siecle-du-gene.html",
+      "destination": "/chroniques/le-siecle-du-gene/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/frank-success-luck-good-fortune-myth-meritocracy.html",
+      "destination": "/chroniques/success-and-luck-good-fortune-and-the-myth-of-meritocracy/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/fressoz-apocalypse-joyeuse.html",
+      "destination": "/chroniques/lapocalypse-joyeuse-une-histoire-du-risque-technologique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/fressoz-locher-les-revoltes-du-ciel-changement-climatique.html",
+      "destination": "/chroniques/les-revoltes-du-ciel/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/galison-ainsi-s-achevent-les-experiences-physique-du-xx-siecle.html",
+      "destination": "/chroniques/ainsi-sachevent-les-experiences-la-place-des-experiences-dans-la-physique-du-xxe-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/galison-daston-objectivite.html",
+      "destination": "/chroniques/objectivite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/galison-l-empire-du-temps-horloges-einstein-cartes-poincare.html",
+      "destination": "/chroniques/lempire-du-temps-les-horloges-deinstein-et-les-cartes-de-poincare/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/galor-le-voyage-de-l-humanite-aux-origines-de-la-richesse-et-des-inegalites.html",
+      "destination": "/chroniques/le-voyage-de-lhumanite-aux-origines-de-la-richesse-et-des-inegalites/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ganascia-mythe-de-la-singularite.html",
+      "destination": "/chroniques/le-mythe-de-la-singularite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/garcia-genieys-invention-du-pays-cathare.html",
+      "destination": "/chroniques/linvention-du-pays-cathare/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/garcia-leduc-enseignement-de-l-histoire-en-france.html",
+      "destination": "/chroniques/lenseignement-de-lhistoire-en-france-de-lancien-regime-a-nos-jours/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gauchet-philosophie-des-sciences-historiques-moment-romantique.html",
+      "destination": "/chroniques/philosophie-des-sciences-historiques-le-moment-romantique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gayon-jacobi-eternel-retour-de-l-eugenisme.html",
+      "destination": "/chroniques/leternel-retour-de-leugenisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gayon-wunenburger-bachelard-dans-le-monde.html",
+      "destination": "/chroniques/bachelard-dans-le-monde/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/geary-quand-les-nations-refont-l-histoire-invention-des-origines-medievales-de-l-europe.html",
+      "destination": "/chroniques/quand-les-nations-refont-lhistoire-linvention-des-origines-medievales-de-leurope/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gee-the-decline-and-fall-of-the-human-empire.html",
+      "destination": "/chroniques/the-decline-and-fall-of-the-human-empire-why-our-species-is-on-the-edge-of-extinction/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gelderloos-comment-la-non-violence-protege-l-etat.html",
+      "destination": "/chroniques/comment-la-non-violence-protege-letat-essai-sur-linefficacite-des-mouvements-sociaux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gengembre-napoleon-la-vie-la-legende.html",
+      "destination": "/chroniques/napoleon-la-vie-la-legende/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/genin-quand-la-nature-s-effondre-comprendre-les-transitions-abruptes-dans-les-ecosystemes.html",
+      "destination": "/chroniques/quand-la-nature-seffondre-comprendre-les-transitions-abruptes-dans-les-ecosystemes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/giacomotto-charra-nony-la-terre-plate-genealogie-d-une-idee-fausse.html",
+      "destination": "/chroniques/la-terre-plate-genealogie-dune-idee-fausse/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gibert-faire-la-morale-aux-robots.html",
+      "destination": "/chroniques/faire-la-morale-aux-robots-une-introduction-a-lethique-des-algorithmes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gibert-voir-son-steak-comme-animal-mort.html",
+      "destination": "/chroniques/voir-son-steak-comme-un-animal-mort-veganisme-et-psychologie-morale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gilson.html",
+      "destination": "/chroniques/daristote-a-darwin-et-retour-essai-sur-quelques-constantes-de-la-biophilosophie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ginzburg-rapports-de-force-histoire-rhetorique-preuve.html",
+      "destination": "/chroniques/rapports-de-force-histoire-rhetorique-preuve/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/glover-choisir-ses-enfants-conception-genetique-handicap.html",
+      "destination": "/chroniques/choisir-ses-enfants-conception-genetique-et-handicap/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/glover-questions-de-vie-ou-de-mort.html",
+      "destination": "/chroniques/questions-de-vie-ou-de-mort/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gnassounou-kistler-les-dispostions-en-philosophie-et-en-sciences.html",
+      "destination": "/chroniques/les-dispositions-en-philosophie-et-en-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/goff-galileo-s-error-new-science-of-consciousness.html",
+      "destination": "/chroniques/galileos-error-foundations-for-a-new-science-of-consciousness/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/golb.html",
+      "destination": "/chroniques/qui-a-ecrit-les-manuscrits-de-la-mer-morte/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/golding-le-proces-du-singe-bible-contre-darwin.html",
+      "destination": "/chroniques/le-proces-du-singe-la-bible-contre-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gollier-l-economie-de-l-in-action-climatique.html",
+      "destination": "/chroniques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gordin-on-the-fringe-where-science-meets-pseudoscience.html",
+      "destination": "/chroniques/on-the-fringe-where-science-meets-pseudoscience/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/goudineau-le-dossier-vercingetorix.html",
+      "destination": "/chroniques/le-dossier-vercingetorix/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/grant.html",
+      "destination": "/chroniques/la-physique-au-moyen-age-vie-xve-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/greely-crispr-people-ethics-of-editing-humans.html",
+      "destination": "/chroniques/crispr-people-the-science-and-ethics-of-editing-humans/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/greely-end-sex-future-human-reproduction.html",
+      "destination": "/chroniques/the-end-of-sex-and-the-future-of-human-reproduction/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gregory-evolutionism-in-eighteenth-century-french-thought.html",
+      "destination": "/chroniques/evolutionism-in-eighteenth-century-french-thought/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/grevy-garibaldi.html",
+      "destination": "/chroniques/garibaldi/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/grimoult-mon-pere-n-est-pas-un-singe-histoire-du-creationnisme.html",
+      "destination": "/chroniques/mon-pere-nest-pas-un-singe-histoire-du-creationnisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/grondeux-la-religion-des-intellectuels-francais-au-xixe-siecle.html",
+      "destination": "/chroniques/la-religion-des-intellectuels-francais-au-xixe-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/grunbaum.html",
+      "destination": "/chroniques/les-fondements-de-la-psychanalyse-une-critique-philosophique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/guerreau-l-avenir-d-un-passe-incertain-quelle-histoire-du-moyen-age-au-xxe-siecle.html",
+      "destination": "/chroniques/lavenir-dun-passe-incertain-quelle-histoire-du-moyen-age-au-xxie-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/gunzig-que-faisiez-vous-avant-le-big-bang.html",
+      "destination": "/chroniques/que-faisiez-vous-avant-le-big-bang/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/halm.html",
+      "destination": "/chroniques/le-chiisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hamou-voir-connaitre-age-classique.html",
+      "destination": "/chroniques/voir-et-connaitre-a-lage-classique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hanna-in-our-best-interest-a-defense-of-paternalism.html",
+      "destination": "/chroniques/in-our-best-interest-a-defense-of-paternalism/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/harari-homo-deus.html",
+      "destination": "/chroniques/homo-deus-a-brief-history-of-tomorrow/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/harden-the-genetic-lottery.html",
+      "destination": "/chroniques/the-genetic-lottery-why-dna-matters-for-social-equality/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hare-woods-survival-of-the-friendliest.html",
+      "destination": "/chroniques/survival-of-the-friendliest/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/harris-rigor-mortis.html",
+      "destination": "/chroniques/rigor-mortis-how-sloppy-science-creates-worthless-cures-crushes-hope/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/harrison-science-et-religion.html",
+      "destination": "/chroniques/science-and-religion/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hautefeuille-wieviorka-legalistation_des_drogues.html",
+      "destination": "/chroniques/la-legalisation-des-drogues-une-mesure-de-salut-public/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/heams-huneman-lecointre-silberstein-mondes-darwiniens-evolution-de-evolution.html",
+      "destination": "/chroniques/les-mondes-darwiniens/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/helg-plus-jamais-esclaves.html",
+      "destination": "/chroniques/plus-jamais-esclaves-de-linsoumission-a-la-revolte-le-grand-recit-dune-emancipation/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/henry-knowledge-is-power-francis-bacon-magic-apocalyptic-vision-modern-science.html",
+      "destination": "/chroniques/knowledge-is-power/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hessen-les-racines-sociales-et-economiques-des-principia-de-newton.html",
+      "destination": "/chroniques/les-racines-sociales-et-economiques-des/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hickok-myth-of-mirror-neurons.html",
+      "destination": "/chroniques/the-myth-of-mirror-neurons/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hilaire-perez-invention-technique-lumieres.html",
+      "destination": "/chroniques/linvention-technique-au-siecle-des-lumieres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hind-the-threat-to-reason-how-the-enlightenment-was-hijacked.html",
+      "destination": "/chroniques/the-threat-to-reason-how-the-enlightenment-was-hijacked-and-how-we-can-reclaim-it/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hoquet-buffon-linne-biologie.html",
+      "destination": "/chroniques/buffon-linne-eternels-rivaux-de-la-biologie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hoquet-current-perspectives-on-sexual-selection.html",
+      "destination": "/chroniques/current-perspectives-on-sexual-selection-whats-left-after-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hoquet-darwin-contre-darwin-lire-origine-des-especes.html",
+      "destination": "/chroniques/darwin-contre-darwin-comment-lire/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hoquet-deicide-ou-la-liberte.html",
+      "destination": "/chroniques/deicide-ou-la-liberte/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hoquet-sexus-nullus.html",
+      "destination": "/chroniques/ou-legalite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hossenfelder-lost-in-math-how-beauty-leads-physics-astray.html",
+      "destination": "/chroniques/lost-in-math-how-beauty-leads-physics-astray/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/hottois-philosophie-des-sciences-philosophies-des-techniques.html",
+      "destination": "/chroniques/philosophie-des-sciences-philosophie-des-techniques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/huemer-dialogue-entre-un-carnivore-et-un-vegetarien.html",
+      "destination": "/chroniques/dialogue-entre-un-carnivore-et-un-vegetarien/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/huemer-progressive-myths.html",
+      "destination": "/chroniques/progressive-myths/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/humphrey-sentience-the-invention-of-consciousness.html",
+      "destination": "/chroniques/sentience-the-invention-of-consciousness/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/iacub-la-fin-du-couple.html",
+      "destination": "/chroniques/la-fin-du-couple/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/immerwahr-how-to-hide-an-empire-history-of-the-united-states.html",
+      "destination": "/chroniques/how-to-hide-an-empire-a-short-history-of-the-greater-united-states/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/israel-jardin-au-noyer-pour-nouveau-rationalisme.html",
+      "destination": "/chroniques/le-jardin-au-noyer-pour-un-nouveau-rationalisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jacquet-is-shame-necessary.html",
+      "destination": "/chroniques/is-shame-necessary-new-uses-for-an-old-tool/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jaquet-le-pire-des-maux.html",
+      "destination": "/chroniques/le-pire-des-maux-ethique-et-ontologie-du-specisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jaquet-naar-qui-peut-sauver-la-morale-metaethique.html",
+      "destination": "/chroniques/qui-peut-sauver-la-morale-essai-de-metaethique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jarrige-tordjman-decroissances.html",
+      "destination": "/chroniques/decroissances/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jeangene-vilmer-responsabilite-proteger.html",
+      "destination": "/chroniques/la-responsabilite-de-proteger/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jeanneret.html",
+      "destination": "/chroniques/perpetuum-mobile-metamorphoses-des-corps-et-des-oeuvres-de-vinci-a-montaigne/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/johannsen-wild-animal-ethics.html",
+      "destination": "/chroniques/wild-animal-ethics-the-moral-and-political-problem-of-wild-animal-suffering/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jonas-evolution-et-liberte.html",
+      "destination": "/chroniques/evolution-et-liberte/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/josse-militantisme-politique-droits-des-animaux.html",
+      "destination": "/chroniques/militantisme-politique-and-droits-des-animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jourdan-la-revolution-une-exception-francaise.html",
+      "destination": "/chroniques/la-revolution-une-exception-francaise/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/joy-introduction-carnisme.html",
+      "destination": "/chroniques/introduction-au-carnisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/jullien.html",
+      "destination": "/chroniques/fonder-la-morale-dialogue-de-mencius-avec-un-philosophe-des-lumieres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/kagan-how-to-count-animals-more-or-less.html",
+      "destination": "/chroniques/how-to-count-animals-more-or-less-2019/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/kahn-lecourt-bioethique-et-liberte.html",
+      "destination": "/chroniques/bioethique-et-liberte/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/karklins-marchay-pour-un-liberalisme-humaniste.html",
+      "destination": "/chroniques/pour-un-liberalisme-humaniste-la-voie-ordoliberale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/keating-losing-the-nobel-prize-a-story-of-cosmology.html",
+      "destination": "/chroniques/losing-the-nobel-prize-a-story-of-cosmology-ambition/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/klein-il-etait-une-fois-la-revolution-einstein.html",
+      "destination": "/chroniques/il-etait-sept-fois-la-revolution-albert-einstein-et-les-autres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/koch-comment-peut-on-etre-dieu-la-secte-d-epicure.html",
+      "destination": "/chroniques/comment-peut-on-etre-dieu-la-secte-depicure/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/korolitski-punir-le-racisme.html",
+      "destination": "/chroniques/punir-le-racisme-liberte-dexpression-democratie-et-discours-racistes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/korsgaard-fellow-creatures.html",
+      "destination": "/chroniques/fellow-creatures-our-obligations-to-the-other-animals/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/kragh-between-the-earth-and-the-heavens.html",
+      "destination": "/chroniques/between-the-earth-and-the-heavens/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/kragh-entropic-creation-religious-contexts-of-thermodynamics-and-cosmology.html",
+      "destination": "/chroniques/entropic-creation-religious-contexts-of-thermodynamics-and-cosmology/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/kripke.html",
+      "destination": "/chroniques/regles-et-langage-prive-introduction-au-paradoxe-de-wittgenstein/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/kung-eersel-petit-traite-du-commencement-de-toutes-choses.html",
+      "destination": "/chroniques/petit-traite-du-commencement-de-toutes-choses/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/kupiec-sonigo-ni-dieu-ni-gene-autre-theorie-de-l-heredite.html",
+      "destination": "/chroniques/ni-dieu-ni-gene-pour-une-autre-theorie-de-lheredite/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/kymlicka-donaldson-zoopolis.html",
+      "destination": "/chroniques/zoopolis-une-theorie-politique-des-droits-des-animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lachieze-rey-hawking-penrose-espace-temps.html",
+      "destination": "/chroniques/la-nature-de-lespace-et-du-temps/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lafon-idees-recues-en-biologie.html",
+      "destination": "/chroniques/idees-recues-en-biologie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lakatos.html",
+      "destination": "/chroniques/histoire-et-methodologie-des-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lambert-itineraire-spirituel-de-georges-lemaitre.html",
+      "destination": "/chroniques/litineraire-spirituel-de-georges-lemaitre/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lambert-la-legende-des-genes-anatomie-d-un-mythe.html",
+      "destination": "/chroniques/la-legende-des-genes-anatomie-dun-mythe-moderne/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/larue-vegetarisme-des-lumieres.html",
+      "destination": "/chroniques/le-vegetarisme-des-lumieres-labstinence-de-viande-dans-la-france-du-xviiie-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/larue-vegetarisme-ennemies.html",
+      "destination": "/chroniques/le-vegetarisme-et-ses-ennemis-vingt-cinq-siecles-de-debats/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/laugier-tous-vulnerables-care-animaux-environnement.html",
+      "destination": "/chroniques/tous-vulnerables-le/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lauwers-naissance-du-cimetiere-lieux-sacres-terre-morts-occident-medieval.html",
+      "destination": "/chroniques/naissance-du-cimetiere-lieux-sacres-et-terre-des-morts-dans-loccident-medieval/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lazari-radek-singer-utilitarianism-very-short-introduction.html",
+      "destination": "/chroniques/utilitarianism-a-very-short-introduction/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/le-guyader-biodiversite.html",
+      "destination": "/chroniques/biodiversite-le-pari-de-lespoir/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lecaille-atome-chimere-ou-realite-debats-combats-chimie.html",
+      "destination": "/chroniques/latome-chimere-ou-realite-debats-et-combats-dans-la-chimie-du-xixe-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lecomte-rien-n-est-joue-la-science-contre-les-theories-de-l-effondrement.html",
+      "destination": "/chroniques/rien-nest-joue-la-science-contre-les-theories-de-leffondrement/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lecourt-la-philosophie-des-sciences.html",
+      "destination": "/chroniques/la-philosophie-des-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lequeux-univers-devoile-histoire-de-l-astronomie.html",
+      "destination": "/chroniques/lunivers-devoile-une-histoire-de-lastronomie-de-1910-a-aujourdhui/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/levenson-the-hunt-for-vulcain.html",
+      "destination": "/chroniques/the-hunt-for-vulcain/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/leveque-erosion-de-la-biodiversite.html",
+      "destination": "/chroniques/erosion-de-la-biodiversite-enjeux-et-debats/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/levinovitz-natural-the-seductive-myth-of-nature-s-goodness.html",
+      "destination": "/chroniques/natural-the-seductive-myth-of-natures-goodness/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/levy-leblond-de-la-matiere-relativiste-quantique-interactive.html",
+      "destination": "/chroniques/de-la-matiere-relativiste-quantique-interactive/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/levy-leblond-la-vitesse-de-l-ombre-aux-limites-de-la-science.html",
+      "destination": "/chroniques/la-vitesse-de-lombre-aux-limites-de-la-science/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lewis-de-la-pluralite-des-mondes.html",
+      "destination": "/chroniques/de-la-pluralite-des-mondes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lewis-parfit-swinburne-identite-survie.html",
+      "destination": "/chroniques/identite-et-survie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/livingstone-adam-ancestors-race-religion-politics-of-human-origins.html",
+      "destination": "/chroniques/adams-ancestors-race-religion-and-the-politics-of-human-origins/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/locqueneux-nature-du-feu.html",
+      "destination": "/chroniques/sur-la-nature-du-feu-aux-siecles-classiques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lomborg-best-things-first-the-12-most-efficient-solutions-for-the-world-s-poorest.html",
+      "destination": "/chroniques/best-things-first-the-12-most-efficient-solutions-for-the-worlds-poorest/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lowith-histoire-et-salut-presupposes-theologiques-philosophie-de-l-histoire.html",
+      "destination": "/chroniques/histoire-et-salut-les-presupposes-theologiques-de-la-philosophie-de-lhistoire/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lukes-relativisme-moral.html",
+      "destination": "/chroniques/le-relativisme-moral/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lurz-mindreading-animals.html",
+      "destination": "/chroniques/mindreading-animals-the-debate-over-what-animals-know-about-other-minds/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/lyons-politics-animal-experimentation.html",
+      "destination": "/chroniques/the-politics-of-animal-experimentation/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/macaskill-what-we-owe-the-future.html",
+      "destination": "/chroniques/what-we-owe-the-future-a-million-year-view/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/maclure-taylor-laicite-liberte-de-conscience.html",
+      "destination": "/chroniques/laicite-and-liberte-de-conscience/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/madelin-faut-il-en-finir-avec-la-civilisation.html",
+      "destination": "/chroniques/faut-il-en-finir-avec-la-civilisation-primitivisme-et-effondrement/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/magnin-penser-l-humain-au-temps-homme-augmente.html",
+      "destination": "/chroniques/penser-lhumain-au-temps-de-lhomme-augmente-face-aux-defis-du-transhumanisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/magueijo-plus-vite-que-la-lumiere.html",
+      "destination": "/chroniques/plus-vite-que-la-lumiere/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/maher-plant-minds-philosophical-defense.html",
+      "destination": "/chroniques/plant-minds-a-philosophical-defense/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/mancuso-intelligence-des-plantes.html",
+      "destination": "/chroniques/lintelligence-des-plantes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/mancuso-the-revolutionary-genius-of-plants.html",
+      "destination": "/chroniques/the-revolutionary-genius-of-plants/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/maris-la-part-sauvage-du-monde.html",
+      "destination": "/chroniques/la-part-sauvage-du-monde-penser-la-nature-dans-lanthropocene/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/marks-information-nexus-capitalism.html",
+      "destination": "/chroniques/the-information-nexus-global-capitalism/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/marris-wild-souls.html",
+      "destination": "/chroniques/wild-souls-freedom-and-flourishing-in-the-non-human-world/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/masri-animaux-en-islam.html",
+      "destination": "/chroniques/les-animaux-en-islam/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/massad-persistance-de-la-question-palestinienne.html",
+      "destination": "/chroniques/la-persistance-de-la-question-palestinienne/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/maurice-couty-images-de-jeannes-d-arc.html",
+      "destination": "/chroniques/images-de-jeanne-darc/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/may-should-we-go-extinct.html",
+      "destination": "/chroniques/should-we-go-extinct-a-philosophical-dilemma-for-our-unbearable-times/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/mayr-apres-darwin-biologie-science-pas-comme-les-autres.html",
+      "destination": "/chroniques/apres-darwin-la-biologie-une-science-pas-comme-les-autres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/mcafee-more-from-less.html",
+      "destination": "/chroniques/more-from-less-the-surprising-story-of-how-we-learned-to-prosper-using-fewer-resources/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/mcwilliams-modern-savage.html",
+      "destination": "/chroniques/the-modern-savage-our-unthinking-decision-to-eat-animals/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/menissier-machiavel-la-politique-et-l-histoire.html",
+      "destination": "/chroniques/machiavel-la-politique-et-lhistoire-enjeux-philosophiques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/merali-big-bang-in-a-little-room.html",
+      "destination": "/chroniques/a-big-bang-in-a-little-room-the-quest-to-create-new-universes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/mercier-sperber-the-enigma-of-reason.html",
+      "destination": "/chroniques/the-enigma-of-reason/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/michon-thomas-d-aquin-controverse-sur-l-eternite-du-monde.html",
+      "destination": "/chroniques/thomas-daquin-et-la-controverse-sur/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/mitzman-michelet-ou-la-subversion-du-passe.html",
+      "destination": "/chroniques/michelet-ou-la-subversion-du-passe/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/monbiot-hutchison-doctrine-invisible-histoire-secrete-du-neoliberalisme.html",
+      "destination": "/chroniques/la-doctrine-invisible-lhistoire-secrete-du-neoliberalisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/moore-la-premiere-revolution-europeenne.html",
+      "destination": "/chroniques/la-premiere-revolution-europeenne-xe-xiiie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/morange-les-secrets-du-vivant-contre-la-pensee-unique-en-biologie.html",
+      "destination": "/chroniques/les-secrets-du-vivant-contre-la-pensee-unique-en-biologie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/moreau-le-scepticisme-au-xvie-et-xviie-siecles-retour-des-philosophies-antiques-age-classique.html",
+      "destination": "/chroniques/le-scepticisme-au-xvie-et-au-xviie-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/morizot-diplomates-loups.html",
+      "destination": "/chroniques/les-diplomates-cohabiter-avec-les-loups-sur-une-autre-carte-du-vivant/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/morland-no-one-left-why-the-world-needs-more-children.html",
+      "destination": "/chroniques/no-one-left-why-the-world-needs-more-children/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/moss-myth-of-persecution.html",
+      "destination": "/chroniques/the-myth-of-persecution-how-early-christians-invented-a-story-of-martyrdom/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/moulines-philosophie-des-sciences-invention-d-une-discipline.html",
+      "destination": "/chroniques/la-philosophie-des-sciences-linvention-dune-discipline/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/mucchielli-mythes-et-histoire-des-sciences-humaines.html",
+      "destination": "/chroniques/mythes-et-histoire-des-sciences-humaines/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/naccache-marx-engels-et-le-singe.html",
+      "destination": "/chroniques/marx-engels-et-le-singe/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/neitzel-welzer-soldaten-fighting-killing-dying.html",
+      "destination": "/chroniques/soldaten-on-fighting-killing-and-dying/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/nesbit-this-is-the-way-the-world-ends.html",
+      "destination": "/chroniques/this-is-the-way-the-world-ends/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/nesvold-off-earth-ethical-questions-and-quandaries-for-living-in-outer-space.html",
+      "destination": "/chroniques/off-earth-ethical-questions-and-quandaries-for-living-in-outer-space/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/newman-varner-linquist-defending-biodiversity.html",
+      "destination": "/chroniques/defending-biodiversity/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/nicolas-la-rebellion-francaise-mouvements-populaires-et-conscience-sociale.html",
+      "destination": "/chroniques/la-rebellion-francaise-mouvements-populaires-et-conscience-sociale-1661-1789/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/nicolet-la-fabrique-d-une-nation-la-france-entre-rome-et-les-germains.html",
+      "destination": "/chroniques/la-fabrique-dune-nation-la-france-entre-rome-et-les-germains/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/nikolski-feminicene.html",
+      "destination": "/chroniques/la-feminicene/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/noble-musique-vie-biologie-genome.html",
+      "destination": "/chroniques/la-musique-de-la-vie-la-biologie-au-dela-du-genome/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/noe-out-of-our-heads-why-you-are-not-your-brain-biology-of-consciousness.html",
+      "destination": "/chroniques/out-of-our-heads-why-you-are-not-your-brain-and-other-lessons-from-the-biology-of-consciousness/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/nora-les-lieux-de-memoire.html",
+      "destination": "/chroniques/les-lieux-de-memoire/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/norberg-the-capitalist-manifesto.html",
+      "destination": "/chroniques/the-capitalist-manifesto-why-the-global-free-market-will-save-the-world/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/nottale-relativite-echelle.html",
+      "destination": "/chroniques/la-relativite-dans-tous-ses-etats/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/oexle-l-historicisme-en-debat-nietzsche-kantorowicz.html",
+      "destination": "/chroniques/lhistorisme-en-debat-de-nietzsche-a-kantorowics/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ogien-tappolet-concepts-de-ethique-consequentialiste.html",
+      "destination": "/chroniques/les-concepts-de-lethique-faut-il-etre-consequentialiste/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/omnes-alors-l-un-devint-deux-question-realisme-physique-philosophie-mathematiques.html",
+      "destination": "/chroniques/alors-lun-devint-deux-la-question-du-realisme-en-physique-et-en-philosophie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ord-precipice-existential-risk-future-of-humanity.html",
+      "destination": "/chroniques/the-precipice-existential-risk-and-the-future-of-humanity/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/oreskes-why-trust-science.html",
+      "destination": "/chroniques/why-trust-science/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/padian-darwin-dinosaures-idee-d-evolution.html",
+      "destination": "/chroniques/de-darwin-aux-dinosaures-essai-sur-lidee-devolution/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/panofsky-idea-theorie-art.html",
+      "destination": "/chroniques/idea-contribution-a-lhistoire-du-concept-de-lancienne-theorie-de-lart/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/parcy-les-cles-du-champ.html",
+      "destination": "/chroniques/les-cles-du-champ-comment-domestiquer-les-plantes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/parodi-la-modernite-manquee-du-structuralisme.html",
+      "destination": "/chroniques/la-modernite-manquee-du-structuralisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/parrique-ralentir-ou-perir-economie-de-la-decroissance.html",
+      "destination": "/chroniques/ralentir-ou-perir-leconomie-de-la-decroissance/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/patterson-un-eternel-treblinka-abattoirs-camp-de-la-mort.html",
+      "destination": "/chroniques/un-eternel-treblinka-des-abattoirs-aux-camps-de-la-mort/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/pauli-physique-moderne-et-philosophie.html",
+      "destination": "/chroniques/physique-moderne-et-philosophie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/peebles-cosmology-s-century.html",
+      "destination": "/chroniques/cosmologys-century-an-inside-history-of-our-modern-understanding-of-the-universe/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/pelletier-puritanisme-vert-origines-de-ecologisme.html",
+      "destination": "/chroniques/le-puritanisme-vert-aux-origines-de-lecologisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/pelluchon-manifeste-animaliste-politiser-la-cause-animale.html",
+      "destination": "/chroniques/manifeste-animaliste-politiser-la-cause-animale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/perrot-schwartz-pasteur-koch.html",
+      "destination": "/chroniques/pasteur-et-koch-un-duel-de-geants-dans-le-monde-des-microbes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/pestre-introduction-aux-science-studies.html",
+      "destination": "/chroniques/introduction-aux-science-studies/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/philips-rozworski-people-s-republic-of-walmart.html",
+      "destination": "/chroniques/peoples-republic-of-walmart/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/pigliucci-boudry-pseudo-science.html",
+      "destination": "/chroniques/philosophy-of-pseudoscience/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/piketty-sandel-ce-que-l-egalite-veut-dire.html",
+      "destination": "/chroniques/ce-que-legalite-veut-dire/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/pilcher-life-changing-how-humans-are-altering-life-on-earth.html",
+      "destination": "/chroniques/life-changing-how-humans-are-altering-life-on-earth/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/pinker-rationalite-ce-qu-est-la-pensee-rationnelle-et-pourquoi-nous-en-avons-plus-que-jamais-besoin.html",
+      "destination": "/chroniques/rationalite-ce-quest-la-pensee-rationnelle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/plouviez-injustice-en-heritage.html",
+      "destination": "/chroniques/linjustice-en-heritage-repenser-la-transmission-du-patrimoine/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/plumwood-reanimer-la-nature.html",
+      "destination": "/chroniques/reanimer-la-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/poole-rethink-surprising-history-of-new-ideas.html",
+      "destination": "/chroniques/rethink-the-surprising-history-of-new-ideas/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/popper-la-logique-de-la-decouverte-scientifique.html",
+      "destination": "/chroniques/la-logique-de-la-decouverte-scientifique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/poree-le-mal-homme-coupable-homme-souffrant.html",
+      "destination": "/chroniques/le-mal-homme-coupable-homme-souffrant/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/poskett-copernic-et-newton-n-etaient-pas-seuls.html",
+      "destination": "/chroniques/copernic-et-newton-netaient-pas-seuls/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/pourprix-la-fecondite-des-erreurs.html",
+      "destination": "/chroniques/la-fecondite-des-erreurs-histoire-des-idees-dynamiques-en-physique-au-xixe-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/prinz-beyond-human-nature.html",
+      "destination": "/chroniques/beyond-human-nature-how-culture-and-experience-shape-our-lives/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ramunni-les-lieux-des-erreurs-scientifiques.html",
+      "destination": "/chroniques/les-lieux-des-erreurs-scientifiques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/raynaud-la-sociologie-et-sa-vocation-scientifique.html",
+      "destination": "/chroniques/la-sociologie-et-sa-vocation-scientifique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/raynaud-sociologie-des-controverses-scientifiques.html",
+      "destination": "/chroniques/sociologie-des-controverses-scientifiques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/reber-the-first-minds.html",
+      "destination": "/chroniques/the-first-minds-caterpillars-karyotes-and-consciousness/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/rediker-un-activiste-des-lumieres-benjamin-lay.html",
+      "destination": "/chroniques/un-activiste-des-lumieres-le-destin-singulier-de-benjamin-lay/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/regan-droits-des-animaux.html",
+      "destination": "/chroniques/les-droits-des-animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/regt-understanding-scientific-understanding.html",
+      "destination": "/chroniques/understanding-scientific-understanding/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/remond-quand-etat-se-mele-de-histoire.html",
+      "destination": "/chroniques/quand-letat-se-mele-de-lhistoire/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/reynaud-paligot-la-republique-raciale-paradigme-raciale-ideologie-republicaine.html",
+      "destination": "/chroniques/la-republique-raciale-paradigme-racial-et-ideologie-republicain-1860-1930/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/rhys-evans-the-waterside-ape.html",
+      "destination": "/chroniques/the-waterside-ape-an-alternative-account-of-human-evolution/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/richard-inventer-prehistoire-debut-archeologie-france.html",
+      "destination": "/chroniques/inventer-la-prehistoire-les-debuts-de-larcheologie-prehistorique-en-france/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/richards-ruse-debating-darwin.html",
+      "destination": "/chroniques/debating-darwin/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/roberts-the-existence-puzzles.html",
+      "destination": "/chroniques/the-existence-puzzles-an-introduction-to-population-ethics/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/robin-la-fabrique-des-pandemies.html",
+      "destination": "/chroniques/la-fabrique-des-pandemies/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/robredo-sens-de-univers-merleau-ponty.html",
+      "destination": "/chroniques/le-sens-de-lunivers-essai-sur-jacques-merleau-ponty/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/routley-aux-origines-de-l-ethique-environnementale.html",
+      "destination": "/chroniques/aux-origines-de-lethique-environnementale-le-dernier-homme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/rubenstein-le-jour-ou-jesus-devint-dieu-arius-divinite-du-christ.html",
+      "destination": "/chroniques/le-jour-ou-jesus-devint-dieu-l-affaire-arius/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ruelland-empire-des-genes-histoire-de-la-sociobiologie.html",
+      "destination": "/chroniques/lempire-des-genes-histoire-de-la-sociobiologie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ruphy-pluralismes-scientifiques.html",
+      "destination": "/chroniques/pluralismes-scientifiques-enjeux-epistemiques-et-metaphysiques/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ruse-gaia-hypothesis.html",
+      "destination": "/chroniques/the-gaia-hypothesis-science-on-a-pagan-planet/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ryan-a-taste-for-the-beautiful.html",
+      "destination": "/chroniques/a-taste-for-the-beautiful-the-evolution-of-attraction/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ryan-jetha-au-commencement-etait-le-sexe.html",
+      "destination": "/chroniques/au-commencement-etait-le-sexe/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ryan-virusphere-from-common-colds-to-ebola-epidemics.html",
+      "destination": "/chroniques/virusphere-from-common-colds-to-ebola-epidemics/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ryle-la-notion-d-esprit-concepts-mentaux.html",
+      "destination": "/chroniques/la-notion-desprit-pour-une-critique-des-concepts-mentaux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/salvat-utilitarisme.html",
+      "destination": "/chroniques/lutilitarisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/samuelie-ether-des-physiciens-existe-t-il.html",
+      "destination": "/chroniques/lether-des-physiciens-existe-t-il-ecrits-sur-lether/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/sand-comment-le-peuple-juif-fut-invente-bible-sionisme.html",
+      "destination": "/chroniques/comment-le-peuple-juif-fut-invente-de-la-bible-au-sionisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/sanders-deconstructing-cosmology.html",
+      "destination": "/chroniques/deconstructing-cosmology/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/sanders-the-dark-matter-problem-a-historical-perspective.html",
+      "destination": "/chroniques/the-dark-matter-problem-a-historical-perspective/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/sapir-le-protectionnisme.html",
+      "destination": "/chroniques/le-protectionnisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/savulescu-bostrom-human-enhancement.html",
+      "destination": "/chroniques/human-enhancement/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/scanlon-why-does-inequality-matter.html",
+      "destination": "/chroniques/why-does-inequality-matter/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/scerri-tale-of-seven-scientists-new-philosophy-of-science.html",
+      "destination": "/chroniques/a-tale-of-seven-scientists-and-a-new-philosophy-of-science/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/schaeffer-genre-litteraire.html",
+      "destination": "/chroniques/quest-ce-quun-genre-litteraire/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/scheffler-why-worry-about-future-generations.html",
+      "destination": "/chroniques/why-worry-about-future-generations/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/scheid-quand-faire-c-est-croire-rites-sacrificiels-des-romains.html",
+      "destination": "/chroniques/quand-faire-cest-croire-les-rites-sacrificiels-des-romains/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/scheidel-great-leveler.html",
+      "destination": "/chroniques/the-great-leveler-violence-and-the-history-of-inequality/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/schiavone-histoire-brisee-rome-antique-occident-moderne.html",
+      "destination": "/chroniques/lhistoire-brisee-la-rome-antique-et-loccident-moderne/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/schutt-eat-me-history-of-cannibalism.html",
+      "destination": "/chroniques/eat-me-a-natural-and-unnatural-history-of-cannibalism/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/scott-against-the-grain-history-of-earliest-states.html",
+      "destination": "/chroniques/against-the-grain-a-deep-history-of-the-earliest-states/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/seabright-la-divine-economie.html",
+      "destination": "/chroniques/la-divine-economie/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/seidengart-dieu-univers-sphere-infinie-infinite-cosmique.html",
+      "destination": "/chroniques/dieu-lunivers-et-la-sphere-infinie-penser-linfinite-cosmique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/seidengart-l-univers-infini-dans-le-monde-des-lumieres.html",
+      "destination": "/chroniques/lunivers-infini-dans-le-monde-des-lumieres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/selosse-microbes-construisent-plantes-animaux-civilisations.html",
+      "destination": "/chroniques/jamais-seul-ces-microbes-qui-construisent-les-plantes-les-animaux-et/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/senac-comme-si-nous-etions-des-animaux.html",
+      "destination": "/chroniques/comme-si-nous-etions-des-animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/senik-l-economie-du-bonheur.html",
+      "destination": "/chroniques/leconomie-du-bonheur-la-croissance-rend-elle-les-individus-heureux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/seth-being-you-a-new-science-of-consciousness.html",
+      "destination": "/chroniques/being-you-a-new-science-of-consciousness/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/shapiro-clean-meat.html",
+      "destination": "/chroniques/clean-meat-how-growing-meat-without-animals-will-revolutionize-dinner-and-the-world/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/shapiro-life-as-we-made-it.html",
+      "destination": "/chroniques/life-as-we-made-it-how-50000-years-of-human-innovation-refined-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/shinn-ragouet-controverses-sur-la-science-sociologie-transversaliste.html",
+      "destination": "/chroniques/controverses-sur-la-science/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/simon-vercingetorix-ideologie-francaise.html",
+      "destination": "/chroniques/vercingetorix-et-lideologie-francaise/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/singer-liberation-animale.html",
+      "destination": "/chroniques/la-liberation-animale/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/singer-one-world-now.html",
+      "destination": "/chroniques/one-world-now-the-ethics-of-globalization/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/singer-the-most-good-you-can-do.html",
+      "destination": "/chroniques/the-most-good-you-can-do-how-effective-altruism-is-changing-ideas-about-living-ethically/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/singh-le-roman-du-big-bang.html",
+      "destination": "/chroniques/le-roman-du-big-bang-la-plus-importante-decouverte-scientifique-de-tous-les-temps/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/slingerland-drunk-how-we-sipped-danced-and-stumbled-our-way-to-civilization.html",
+      "destination": "/chroniques/drunk-how-we-sipped-danced-and-stumbled-our-way-to-civilization/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/slobodchikoff-chasing-doctor-dolittle-language-of-animals.html",
+      "destination": "/chroniques/chasing-doctor-dolittle-learning-the-language-of-animals/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/smet-lost-ego-la-tragedie-du-je-suis.html",
+      "destination": "/chroniques/lost-ego-la-tragedie-du-je-suis/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/smil-how-the-world-really-works.html",
+      "destination": "/chroniques/how-the-world-really-works-a-scientists-guide-to-our-past-present-and-future/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/smil-invention-and-innovation.html",
+      "destination": "/chroniques/invention-and-innovation-a-brief-history-of-hype-and-failure/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/smolin-einstein-s-unfinished-revolution.html",
+      "destination": "/chroniques/einsteins-unfinished-revolution-the-search-for-what-lies-beyond-the-quantum/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/sober-ockham-razors-user-manual.html",
+      "destination": "/chroniques/ockhams-razors-a-users-manual/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/sokal-pseudosciences-et-postmodernisme.html",
+      "destination": "/chroniques/pseudosciences-et-postmodernisme-adversaires-ou-compagnons-de-route/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/soubbotnik-philosophie-des-actes-de-langage.html",
+      "destination": "/chroniques/la-philosophie-des-actes-de-langage/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/staune-notre-existence-a-t-elle-un-sens-enquete-scientifique-philosophique.html",
+      "destination": "/chroniques/notre-existence-a-t-elle-un-sens-une-enquete-scientifique-et-philosophique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/steinberger-the-problem-with-god.html",
+      "destination": "/chroniques/the-problem-with-god/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stengers-bensaude-vincent-100-mots-penser-les-sciences.html",
+      "destination": "/chroniques/100-mots-pour-penser-les-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stepanoff-l-animal-et-la-mort.html",
+      "destination": "/chroniques/lanimal-et-la-mort-chasse-modernite-et-crise-du-sauvage/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stoczkowski-anthropologie-naive-savante-origine-homme.html",
+      "destination": "/chroniques/anthropologie-naive-anthropologie-savante/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stoczkowski-hommes-dieux-extraterrestres-ethnologie-croyance-moderne.html",
+      "destination": "/chroniques/des-hommes-des-dieux-et-des-extraterrestres-ethnologie-dune-croyance-moderne/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stoll-homogenesis-histoire-de-homme.html",
+      "destination": "/chroniques/homogenesis-histoire-de-lhistoire-de-lhomme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stone-les-arbres-doivent-ils-plaider.html",
+      "destination": "/chroniques/les-arbres-doivent-ils-pouvoir-plaider/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/strauss-nihilisme-et-politique.html",
+      "destination": "/chroniques/nihilisme-et-politique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stringer-survivants.html",
+      "destination": "/chroniques/survivants-pourquoi-nous-sommes-les-seuls-humains-sur-terre/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stroumsa-la-fin-du-sacrifice-mutations-religieuses-antiquite-tardive.html",
+      "destination": "/chroniques/la-fin-du-sacrifice-les-mutations-religieuses-de-lantiquite-tardive/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/stuckler-basu-why-austerity-kills.html",
+      "destination": "/chroniques/the-body-economic-why-austerity-kills/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/susskind-trous-noirs-stephen-hawking.html",
+      "destination": "/chroniques/trous-noirs-la-guerre-des-savants/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/swinburne-y-a-t-il-un-dieu.html",
+      "destination": "/chroniques/y-a-t-il-un-dieu/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/symons-ecomodernism-technology-politics-climate-crisis.html",
+      "destination": "/chroniques/ecomodernism-technology-politics-and-the-climate-crisis/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/taft-motivational-methods-for-vegan-advocacy.html",
+      "destination": "/chroniques/motivational-methods-for-vegan-advocacy-a-clinical-psychology-perspective/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/taguieff-sens-progres.html",
+      "destination": "/chroniques/le-sens-du-progres-une-approche-historique-et-philosophique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/tallon-conscience-nationale-et-sentiment-religieux-en-france.html",
+      "destination": "/chroniques/conscience-nationale-et-sentiment-religieux-en-france-au-xvie-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/tannsjo-taking-life.html",
+      "destination": "/chroniques/taking-life-three-theories-on-the-ethics-of-killing/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/taylor-the-artificial-ape-how-technology-changed-the-course-of-human-evolution.html",
+      "destination": "/chroniques/the-artificial-ape-how-technology-changed-the-course-of-human-evolution/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/tegmark-life-3-0-artificial-intelligence.html",
+      "destination": "/chroniques/life-30-being-human-in-the-age-of-artificial-intelligence/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/temkin-being-good-in-a-world-of-need.html",
+      "destination": "/chroniques/being-good-in-a-world-of-need/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/teson-vossen-debating-humanitarian-intervention.html",
+      "destination": "/chroniques/debating-humanitarian-intervention/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/testart-dons-dieux-anthropologie.html",
+      "destination": "/chroniques/des-dons-et-des-dieux-anthropologie-religieuse-et-sociologie-comparative/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/testot-aillet-collapsus-changer-ou-disparaitre.html",
+      "destination": "/chroniques/collapsus-changer-ou-disparaitre/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/tharoor-inglorious-empire.html",
+      "destination": "/chroniques/inglorious-empire-what-the-british-did-to-india/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/thebaud-mony-science_asservie.html",
+      "destination": "/chroniques/la-science-asservie-les-collusions-mortiferes-entre-industriels-et-chercheurs/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/thiesse-creation-identites-nationales.html",
+      "destination": "/chroniques/la-creation-des-identites-nationales-europe-xviiie-xxe-siecle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/thomas-mystere-de-homme-de-piltdown-imposture-scientifique.html",
+      "destination": "/chroniques/le-mystere-de-lhomme-de-piltdown-une-extraodinaire-imposture-scientifique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/thomson-une-defense-de-l-avortement.html",
+      "destination": "/chroniques/une-defense-de-lavortement/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/torres-human-extinction.html",
+      "destination": "/chroniques/human-extinction-a-history-of-the-science-and-ethics-of-annihilation/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/tosh-why-history-matters.html",
+      "destination": "/chroniques/why-history-matters/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/trentmann-empire-of-things.html",
+      "destination": "/chroniques/empire-of-things/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/trivers-deceit-and-self-deception.html",
+      "destination": "/chroniques/deceit-and-self-deception-fooling-yourself-the-better-to-fool-others/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/uttal-reliability-in-cognitive-neuroscience-meta-meta-analysis.html",
+      "destination": "/chroniques/reliability-in-cognitive-neuroscience-a-meta-meta-analysis/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/van-kley-origines-religieuses-de-la-revolution-francaise.html",
+      "destination": "/chroniques/les-origines-religieuses-de-la-revolution-francaise-1560-1791/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/venayre-gloire-de-aventure-genese-mystique-moderne.html",
+      "destination": "/chroniques/la-gloire-de-laventure-genese-dune-mystique-moderne-1850-1940/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/venayre-origine-de-la-france.html",
+      "destination": "/chroniques/les-origines-de-la-france-quand-les-historiens-racontaient-la-nation/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/vico-la-science-nouvelle-nature-commune-des-nations.html",
+      "destination": "/chroniques/la-science-nouvelle/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/villalba-oury-collapsologie.html",
+      "destination": "/chroniques/greta-a-tue-einstein-la-science-sacrifiee-sur-lautel-de-lecologisme/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/visak-garner-ethics-of-killing-animals.html",
+      "destination": "/chroniques/the-ethics-of-killing-animals/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/voegelin-la-nouvelle-science-du-politique.html",
+      "destination": "/chroniques/la-nouvelle-science-du-politique-une-introduction/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/voegelin-science-politique-gnose.html",
+      "destination": "/chroniques/science-politique-et-gnose/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/waal-sommes-nous-trop-betes-pour-comprendre-intelligence-animaux.html",
+      "destination": "/chroniques/sommes-nous-trop-betes-pour-comprendre-lintelligence-des-animaux/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/ward-why-there-almost-certainly-is-a-god-doubting-dawkins.html",
+      "destination": "/chroniques/why-there-almost-certainly-is-a-god-doubting-dawkins/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/wihtol-de-wenden-ouvrir-frontieres.html",
+      "destination": "/chroniques/faut-il-ouvrir-les-frontieres/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/wilson-does-altruism-exist.html",
+      "destination": "/chroniques/does-altruism-exist-culture-genes-and-the-welfare-of-others/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/winegard-the-mosquito-deadliest-predator.html",
+      "destination": "/chroniques/the-mosquito-a-human-history-of-our-deadliest-predator/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/winter-memory-fragments-modern-history.html",
+      "destination": "/chroniques/memory-fragments-of-a-modern-history/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/wiseman-myth-moral-brain.html",
+      "destination": "/chroniques/the-myth-of-the-moral-brain-the-limits-of-moral-enhancement/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/wittgenstein-rameau-or-frazer.html",
+      "destination": "/chroniques/remarques-sur/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/woessner-seznec-les-illusionnistes-climat-agriculture-nucleaire-ogm.html",
+      "destination": "/chroniques/les-illusionnistes-climat-agriculture-nucleaire-ogm/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/woit-meme-pas-fausse-theorie-des-cordes.html",
+      "destination": "/chroniques/meme-pas-fausse-la-physique-renvoyee-dans-ses-cordes/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/wolff-la-vie-a-t-elle-une-valeur.html",
+      "destination": "/chroniques/la-vie-a-t-elle-une-valeur/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/wrangham-catching-fire-how-cooking-made-us-human.html",
+      "destination": "/chroniques/catching-fire-how-cooking-made-us-human/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/wrangham-the-goodness-paradox.html",
+      "destination": "/chroniques/the-goodness-paradox-how-evolution-made-us-both-more-and-less-violent/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/yates-science-et-tradition-hermetique.html",
+      "destination": "/chroniques/science-et-tradition-hermetique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/yilmaz-le-temps-moderne-variations-anciens-contemporains.html",
+      "destination": "/chroniques/le-temps-moderne-variations-sur-les-anciens-et-les-contemporains/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/zask-quand-la-foret-brule.html",
+      "destination": "/chroniques/quand-la-foret-brule-penser-la-nouvelle-catastrophe-ecologique/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/zuk-paleofantasy-what-evolution-really-tells-us-about-sex-diet-life.html",
+      "destination": "/chroniques/paleofantasy-what-evolution-really-tells-us-about-sex-diet-and-how-we-live/",
+      "permanent": true
+    },
+    {
+      "source": "/cr/zwirn-les-systemes-complexes-mathematiques-biologie.html",
+      "destination": "/chroniques/les-systemes-complexes-mathematiques-et-biologie/",
+      "permanent": true
+    },
+    {
+      "source": "/creationnisme-est-il-scientifique.html",
+      "destination": "/livres/le-creationnisme-est-il-scientifique/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-heretique.html",
+      "destination": "/livres/darwin-heretique-l-eternel-retour-du-creationnisme/",
+      "permanent": true
+    },
+    {
+      "source": "/darwin-heretique/contents.html",
+      "destination": "/livres/darwin-heretique-l-eternel-retour-du-creationnisme/",
+      "permanent": true
+    },
+    {
+      "source": "/faut-il-sauver-ours-blanc-transformation-nature.html",
+      "destination": "/livres/faut-il-sauver-l-ours-blanc-la-transformation-de-la-nature/",
+      "permanent": true
+    },
+    {
+      "source": "/hist-philo-sciences/histoire-philosophie-sciences-tb-2.html",
+      "destination": "/livres/histoire-et-philosophie-des-sciences-edition-revue-et-augmentee/",
+      "permanent": true
+    },
+    {
+      "source": "/histoire-philosophie-sciences-2.html",
+      "destination": "/livres/histoire-et-philosophie-des-sciences-edition-revue-et-augmentee/",
+      "permanent": true
+    },
+    {
+      "source": "/histoire-philosophie-sciences.html",
+      "destination": "/livres/histoire-et-philosophie-des-sciences/",
+      "permanent": true
+    },
+    {
+      "source": "/imposture-intellectuelle.html",
+      "destination": "/livres/imposture-intellectuelle/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/liste-des-publications.html",
+      "destination": "/publications/",
+      "permanent": true
+    },
+    {
+      "source": "/livres.html",
+      "destination": "/livres/",
+      "permanent": true
+    },
+    {
+      "source": "/qui-suis-je.html",
+      "destination": "/bio/",
+      "permanent": true
+    },
+    {
+      "source": "/revolution-antispeciste.html",
+      "destination": "/livres/revolution-antispeciste/",
+      "permanent": true
+    },
+    {
+      "source": "/revolution-antispeciste/tdm.html",
+      "destination": "/livres/revolution-antispeciste/#table-des-matieres",
+      "permanent": true
+    },
+    {
+      "source": "/revolution-vegetarienne.html",
+      "destination": "/livres/revolution-vegetarienne/",
+      "permanent": true
+    },
+    {
+      "source": "/univers-existe-t-il.html",
+      "destination": "/livres/l-univers-existe-t-il/",
+      "permanent": true
+    },
+    {
+      "source": "/univers-paralleles.html",
+      "destination": "/livres/univers-paralleles-le-livre-de-tous-les-possibles/",
+      "permanent": true
+    },
+    {
+      "source": "/univers_paralleles/contents.html",
+      "destination": "/livres/univers-paralleles-le-livre-de-tous-les-possibles/",
+      "permanent": true
+    },
+    {
+      "source": "/veganes-au-pouvoir.html",
+      "destination": "/livres/les-veganes-vont-ils-prendre-le-pouvoir/",
+      "permanent": true
+    },
+    {
+      "source": "/veganes-au-pouvoir/tdm-1.html",
+      "destination": "/livres/les-veganes-vont-ils-prendre-le-pouvoir/",
+      "permanent": true
+    },
+    {
+      "source": "/viande-de-culture.html",
+      "destination": "/livres/viande-de-culture/",
+      "permanent": true
+    },
+    {
+      "source": "/viande-de-culture/tdm.html",
+      "destination": "/livres/viande-de-culture/",
+      "permanent": true
+    },
+    {
+      "source": "/recherche.html",
+      "destination": "/recherche/",
+      "permanent": true
+    }
+  ]
+}

@@ -11,4 +11,3 @@ alphabeticalPage: ["b"]
 description: "Chronique du livre de Adam Becker, More Everything Forever. AI Overlords, Space Empires, and Silicon Valley’s Crusade to Control the Fate of Humanity, par..."
 ---
 
-[à venir]

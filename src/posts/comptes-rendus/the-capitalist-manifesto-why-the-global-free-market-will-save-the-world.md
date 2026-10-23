@@ -1,6 +1,6 @@
 ---
 title: "The Capitalist Manifesto. Why the Global Free Market Will Save the World"
-date: 1234-01-01
+date: 2023-01-01
 layout: "chronique.njk"
 tags: ["Chronique", "Sciences humaines"]
 authorFullName: "Johan Norberg"

@@ -9,4 +9,6 @@ imageUrl: "/assets/images/couvertures/mccloskey-carden-laissez-moi-faire-et-je-v
 amazonLink: ""
 alphabeticalPage: ["m"]
 description: ""
+externalLink: "https://www.lepoint.fr/debats/quand-la-bourgeoisie-sauve-le-monde-09-04-2025-2586977_2.php"
+externalLinkSource: "Le Point"
 ---

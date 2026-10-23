@@ -388,3 +388,10 @@ Vous avez maintenant les outils pour gérer votre site de manière autonome !
 2. 🧪 Testez avec `npm run dev`
 3. 🚀 Compilez avec `npm run build`
 4. 📤 Le déploiement se fait automatiquement
+
+## Mise en production (Vercel)
+
+- Commande de build : `npm run build` (nettoie `dist/`, build Eleventy, index Pagefind, puis `scripts/check-dist.mjs`). Le build échoue si `dist/` contient `localhost`, une date factice, une page du modèle, un lien interne cassé, un `h1` en double ou une redirection vers une page absente.
+- Domaine canonique : `https://www.thomaslepeltier.fr`, imposé par `src/_data/meta.js` quand `ELEVENTY_ENV=production`. La variable `URL` peut le remplacer (prévisualisations).
+- Redirections de l'ancien site : éditer `redirects/anciennes-urls.csv`, puis `npm run redirects` pour régénérer la section `redirects` de `vercel.json`.
+- Les PDF des articles sont dans `src/assets/pdf/` (servis sous `/assets/pdf/`).

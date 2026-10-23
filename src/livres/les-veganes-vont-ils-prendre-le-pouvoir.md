@@ -1,6 +1,6 @@
 ---
 title: "Les véganes vont-ils prendre le pouvoir ?"
-date: 1234-01-01
+date: 2021-12-01
 layout: "livre.njk"
 tags: ["livre", "mesLivres", "Éthique animale"]
 description: "Une réflexion sur les choix de société qui pourraient faire basculer dans l'ère du véganisme."

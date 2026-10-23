@@ -1,6 +1,6 @@
 ---
 title: "La Libération animale"
-date: 1234-01-01
+date: 2012-01-01
 layout: "chronique.njk"
 tags: ["Chronique", "Philosophie"]
 authorFullName: "Peter Singer"

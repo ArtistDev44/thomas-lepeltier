@@ -11,4 +11,3 @@ alphabeticalPage: ["m"]
 description: "Chronique du livre de Todd May, Should We Go Extinct?, par Thomas Lepeltier"
 ---
 
-(à paraître)

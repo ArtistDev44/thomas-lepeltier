@@ -6,10 +6,10 @@ layout: base
   <h1 class="gradient-text">Présentation du livre {{ title }}</h1>
 
   <h2>Fiche technique</h2>
-<p>Date de commercialisation : {{page.date.toLocaleString( undefined, { year: 'numeric' })}}
-<p>Nombre de pages : {{nombre_de_pages}} </p>
-<p>Prix en euro : {{prix}} </p>
-<p>Editeur : <a href="{{ edition_lie }}">{{ edition_nom }}</a> </p>
+{% if page.date | anneeConnue %}<p>Date de commercialisation : {{ page.date | anneeConnue }}</p>{% endif %}
+{% if nombre_de_pages %}<p>Nombre de pages : {{ nombre_de_pages }}</p>{% endif %}
+{% if prix %}<p>Prix en euro : {{ prix }}</p>{% endif %}
+{% if edition_nom %}<p>Éditeur : {% if edition_lien %}<a href="{{ edition_lien }}">{{ edition_nom }}</a>{% else %}{{ edition_nom }}{% endif %}</p>{% endif %}
 <div>
 
     {% include 'partials/livre3D.njk' %}
@@ -23,9 +23,13 @@ layout: base
     {% include 'partials/commentaires.njk' %}
   {% endif %}
 
+{% if liens_achat and liens_achat.length %}
 <div class="flow prose">
-<a class="button" href="{{liens_achat}}">Soutenez moi en achetant ce livre</a>
+{% for lien in liens_achat %}
+<a class="button" href="{{ lien }}" rel="sponsored noopener" target="_blank">{% if loop.first %}Soutenez-moi en achetant ce livre{% else %}Autre librairie{% endif %}</a>
+{% endfor %}
 </div>
+{% endif %}
 </div>
 <style>
 

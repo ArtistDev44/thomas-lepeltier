@@ -11,4 +11,3 @@ alphabeticalPage: ["h"]
 description: "Chronique du livre de Yuval Noah Harari, Homo Deus, A Brief History of Tomorrow par Thomas Lepeltier"
 ---
 
-[Texte disponible ici]

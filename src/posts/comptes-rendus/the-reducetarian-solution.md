@@ -9,4 +9,6 @@ imageUrl: "/assets/images/couvertures/kateman-reducetarian-solution.webp"
 amazonLink: ""
 alphabeticalPage: ["k"]
 description: ""
+externalLink: "https://lamorce.co/demander-de-reduire-plutot-que-d-arreter-une-fausse-bonne-idee/"
+externalLinkSource: "L’Amorce"
 ---

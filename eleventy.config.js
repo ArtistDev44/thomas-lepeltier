@@ -105,6 +105,7 @@ export default async function (eleventyConfig) {
     }
   });
   eleventyConfig.addFilter('formatDate', filters.formatDate);
+  eleventyConfig.addFilter('anneeConnue', filters.anneeConnue);
   eleventyConfig.addFilter('markdownFormat', filters.markdownFormat);
   eleventyConfig.addFilter('splitlines', filters.splitlines);
   eleventyConfig.addFilter('striptags', filters.striptags);
@@ -132,6 +133,7 @@ export default async function (eleventyConfig) {
   [
     'src/assets/images/galerie/', // <--- AJOUTEZ CETTE LIGNE
     'src/assets/fonts/',
+    'src/assets/pdf/',
     'src/assets/images/template',
     'src/assets/og-images'
   ].forEach(path => eleventyConfig.addPassthroughCopy(path));

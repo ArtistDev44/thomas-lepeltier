@@ -1,1 +1,1 @@
-<time datetime="{{ definedDate | toIsoString }}"> {{ definedDate | formatDate('MMMM D, YYYY') }} </time>
+{% if definedDate | anneeConnue %}<time datetime="{{ definedDate | toIsoString }}">{{ definedDate | formatDate('YYYY') }}</time>{% endif %}

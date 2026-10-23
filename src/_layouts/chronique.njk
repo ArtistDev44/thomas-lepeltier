@@ -13,18 +13,30 @@ layout: base
     </div>
 <div>
 
+  {% set texteChronique = content | striptags | trim %}
   <div data-pagefind-ignore>
+    {% if texteChronique.length > 40 %}
       {{ content | lettrine | safe }}
+    {% elif externalLink %}
+      <p>
+        Cette chronique a été publiée dans {{ externalLinkSource or "un autre média" }}.
+        <a href="{{ externalLink }}" target="_blank" rel="noopener noreferrer">Lire la chronique</a>
+      </p>
+    {% else %}
+      <p><em>Cette chronique est en préparation.</em></p>
+    {% endif %}
   </div>
   </div>
   <div>
       <div class="flex flex-nowrap" style="gap: 5rem;">
+{% if amazonLink %}
 <div>
-          <a class="button" href="{{amazonLink}}">Lien amazon</a>
+          <a class="button" href="{{amazonLink}}" rel="sponsored noopener" target="_blank">Acheter sur Amazon</a>
 </div>
+{% endif %}
 <div>
   <p class="publication-source content-end">
-    Paru
+    {% if publication.titre or (page.date | anneeConnue) %}Paru
 {% if publication.titre %}
  dans
     {% if publication.url %}
@@ -35,7 +47,7 @@ layout: base
       <em>{{ publication.titre }}</em>
     {% endif %}
 {% endif %}
-en {{page.date.toLocaleString( undefined, { year: 'numeric' })}}.
+{% if page.date | anneeConnue %}en {{ page.date | anneeConnue }}{% endif %}.{% endif %}
 </p>
 </div>
 </div>
@@ -260,7 +272,7 @@ footer.review__meta {
 }
 
 @layer blocks {
-  .indicator::after, a[href^="http"]:not([href*="localhost:8080"]):not([href*="eleventy-excellent.netlify.app"]):not(.no-indicator)::after {
+  .indicator::after, a[href^="http"]:not([href*="thomaslepeltier.fr"]):not(.no-indicator)::after {
     background-image: none !important;
   }
   }
@@ -279,6 +291,6 @@ footer.review__meta {
 }
 
 @layer blocks {
-  .indicator::after, a[href^="http"]:not([href*="localhost:8080"]):not([href*="eleventy-excellent.netlify.app"]):not(.no-indicator)::after {
+  .indicator::after, a[href^="http"]:not([href*="thomaslepeltier.fr"]):not(.no-indicator)::after {
     background-image: none !important;
 </style>

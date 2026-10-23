@@ -9,4 +9,6 @@ imageUrl: "/assets/images/couvertures/barrau-hypothese-k.webp"
 amazonLink: ""
 alphabeticalPage: ["b"]
 description: ""
+externalLink: "https://www.lepoint.fr/societe/aurelien-barrau-ou-le-naufrage-de-la-pensee-19-10-2023-2540068_23.php"
+externalLinkSource: "Le Point"
 ---

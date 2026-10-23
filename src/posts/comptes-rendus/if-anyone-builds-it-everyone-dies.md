@@ -9,4 +9,6 @@ imageUrl: "/assets/images/couvertures/yudkowsky-soares-if-anyone-builds-it-every
 amazonLink: ""
 alphabeticalPage: ["y"]
 description: ""
+externalLink: "https://www.lepoint.fr/debats/l-intelligence-artificielle-finira-t-elle-par-nous-exterminer-25-11-2025-2604054_2.php"
+externalLinkSource: "Le Point"
 ---

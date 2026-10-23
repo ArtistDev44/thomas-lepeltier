@@ -1,6 +1,6 @@
 ---
 title: "Révolution antispéciste"
-date: 1234-01-01
+date: 2023-03-15
 layout: "livre.njk"
 tags: ["livre","livresDiriges", "Éthique animale"]
 description: "Une déconstruction en règle du spécisme et une promotion d'une éthique prenant en compte les intérêts de l'ensemble des êtres sensibles."

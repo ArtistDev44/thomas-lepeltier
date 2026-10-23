@@ -9,4 +9,6 @@ imageUrl: "/assets/images/couvertures/sowell-social-justice-fallacies.webp"
 amazonLink: ""
 alphabeticalPage: ["s"]
 description: ""
+externalLink: "https://www.lepoint.fr/politique/pourquoi-les-defenseurs-de-la-justice-sociale-font-fausse-route-14-11-2023-2543152_20.php"
+externalLinkSource: "Le Point"
 ---

@@ -9,4 +9,6 @@ imageUrl: ""
 amazonLink: ""
 alphabeticalPage: ["z"]
 description: ""
+permalink: false
+eleventyExcludeFromCollections: true
 ---

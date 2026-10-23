@@ -9,4 +9,6 @@ imageUrl: "/assets/images/couvertures/sugy-extinction-de-l-homme-projet-fou-anti
 amazonLink: ""
 alphabeticalPage: ["s"]
 description: ""
+externalLink: "https://lamorce.co/choisir-dieu-ou-la-raison-a-propos-de-paul-sugy-lextinction-de-lhomme-2021//"
+externalLinkSource: "L’Amorce"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Viande de culture"
-date: 1234-01-01
+date: 2021-04-07
 layout: "livre.njk"
 tags: ["livre","livresDiriges", "Éthique animale"]
 description: "Un essai sur la viande produite in vitro et ses implications éthiques et pratiques."

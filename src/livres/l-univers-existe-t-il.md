@@ -1,6 +1,6 @@
 ---
 title: "L'univers existe-t-il ?"
-date: 1234-01-01
+date: 2021-01-13
 layout: "livre.njk"
 tags: ["livre", "mesLivres", "Cosmologie"]
 description: "Une réflexion sur le statut des concepts d'univers et de multivers en cosmologie."

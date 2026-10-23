@@ -1,10 +1,6 @@
 # Personal details used for public facing pages (legal pages) and footer platform links.
 
 email: thom.lepeltier@gmail.com
-address: |-
-  Thomas Lepeltier
-  Your street
-  12345, city
 platforms:
   instagram: 'https://www.instagram.com/thomas.lepeltier/'
   linkedin: 'https://fr.linkedin.com/in/thomas-lepeltier-24b16653'

@@ -83,7 +83,7 @@ h3 {
 
 @layer blocks {
   .indicator,
-  a[href^='http']:not([href*='localhost:8080']):not([href*='eleventy-excellent.netlify.app']):not(
+  a[href^='http']:not([href*='thomaslepeltier.fr']):not(
       .button
     ):not(.no-indicator) {
     padding-inline-end: 0.8em;

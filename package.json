@@ -9,7 +9,7 @@
     "node": ">=20.x.x"
   },
   "scripts": {
-    "clean": "rimraf dist/assets/css dist/assets/scripts src/_includes/css src/_includes/scripts",
+    "clean": "rimraf dist src/_includes/css src/_includes/scripts",
     "clean:og": "rimraf src/assets/og-images",
     "favicons": "node ./src/_config/setup/generate-favicons.js",
     "colors": "node ./src/_config/setup/create-colors.js",
@@ -18,11 +18,13 @@
     "build:11ty": "cross-env ELEVENTY_ENV=production eleventy",
     "start": "npm run dev:11ty",
     "serve-low": "cross-env ELEVENTY_ENV=development eleventy --serve",
-    "build": "npm run clean && npm run build:11ty && npx -y pagefind --site dist",
+    "build": "npm run clean && npm run build:11ty && pagefind --site dist && npm run check:dist",
     "pa11y:build": "npm run clean && cross-env ELEVENTY_ENV=test eleventy",
     "pa11y:test": "sleep 3 && pa11y-ci --config ./dist/pa11y.json",
     "pa11y:serve": "ELEVENTY_ENV=test eleventy --serve --ignore-initial",
-    "test:a11y": "npm run pa11y:build && (npm run pa11y:serve &) && sleep 5 && npm run pa11y:test"
+    "test:a11y": "npm run pa11y:build && (npm run pa11y:serve &) && sleep 5 && npm run pa11y:test",
+    "check:dist": "node scripts/check-dist.mjs dist",
+    "redirects": "node scripts/generate-redirects.mjs"
   },
   "keywords": [],
   "repository": {
@@ -68,6 +70,7 @@
     "markdown-it-prism": "^3.0.1",
     "netlify-plugin-cache": "^1.0.3",
     "pa11y-ci": "^4.1.1",
+    "pagefind": "^1.5.2",
     "postcss": "^8.5.15",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",

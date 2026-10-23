@@ -1,6 +1,6 @@
 ---
 title: "Histoire et philosophie des sciences (édition revue et augmentée)"
-date: 1234-01-01
+date: 2022-09-15
 layout: "livre.njk"
 tags: ["livre","livresDiriges", "Histoire des sciences", "Philosophie"]
 description: "Édition revue et augmentée du panorama complet des réflexions les plus récentes sur l'activité scientifique."

@@ -1,7 +1,7 @@
 ---
 title: Contact
 permalink: /contact/index.html
-description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
+description: 'Contacter Thomas Lepeltier : questions sur ses livres, invitations à des conférences ou à des débats, demandes d’entretien.'
 layout: page
 ---
 

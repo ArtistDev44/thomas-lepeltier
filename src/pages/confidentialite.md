@@ -4,7 +4,6 @@ discover:
   title: Politique de confidentialité
 permalink: /confidentialite/index.html
 description: Je respecte le règlement général de l'UE sur la protection des données (RGPD). Ce document de politique générale explique comment je collecte et traite les informations que vous me fournissez.
-date: "Last Modified"
 layout: page
 ---
 
@@ -13,7 +12,7 @@ Je respecte le Règlement général sur la protection des données (RGPD) de l'U
 ---
 
 **Quelles données personnelles sont collectées ?**
-Ce site n'utilise aucun script de suivi tiers.
+Ce site n'utilise aucun script de suivi tiers et ne dépose aucun cookie de mesure d'audience ni de publicité. Les liens d'affiliation Amazon ne déposent de cookie qu'après un clic de votre part, sur le site d'Amazon.
 
 ---
 
@@ -33,7 +32,7 @@ Ce site web transmet ses données via HTTPS, chiffrant toutes les données écha
 ---
 
 **Responsable du traitement des données**
-{{ personal.address }}
+Thomas Lepeltier, éditeur du site.
 Si vous avez des questions ou des doutes, n'hésitez pas à me contacter : {{ personal.email }}.
 
 ---
@@ -48,4 +47,4 @@ Si vous avez des raisons de vous plaindre de la manière dont je traite votre vi
 
 ---
 
-*Last updated: {{ page.date | formatDate('MMMM D, YYYY') }}*
+*Dernière mise à jour : octobre 2026.*

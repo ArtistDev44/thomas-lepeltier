@@ -1,7 +1,7 @@
 ---
 title: Ma biographie
 permalink: /bio/index.html
-description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
+description: 'Thomas Lepeltier, docteur en astrophysique, historien et philosophe des sciences : parcours, affiliations et ouvrages.'
 layout: page
 ---
 
