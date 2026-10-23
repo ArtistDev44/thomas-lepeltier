@@ -171,7 +171,13 @@
   .list-filter[hidden] {
     display: grid;
     visibility: hidden;
-    min-block-size: var(--list-filter-reserve, 34rem);
+    min-block-size: 34rem; /* mesuré : ~35rem sur mobile, ~25rem sur grand écran */
+  }
+}
+
+@media (scripting: enabled) and (min-width: 48rem) {
+  .list-filter[hidden] {
+    min-block-size: 24rem;
   }
 }
 

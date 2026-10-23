@@ -90,6 +90,17 @@ for (const {source, destination} of vercel.redirects ?? []) {
   if (pageFile(source) && source !== '/index.html') fail(`redirection ${source} masque une page existante`);
 }
 
+// 7. Chaque image Open Graph annoncée par une page existe dans dist/
+const missingOg = new Set();
+for (const file of htmlFiles) {
+  if (rel(file).startsWith('/pagefind/')) continue;
+  const og = fs.readFileSync(file, 'utf8').match(/<meta property="og:image" content="([^"]*)"/);
+  if (!og?.[1].startsWith(siteUrl)) continue;
+  const imagePath = decodeURI(og[1].slice(siteUrl.length));
+  if (!fs.existsSync(path.join(dist, imagePath))) missingOg.add(`${imagePath} (${rel(file)})`);
+}
+for (const entry of missingOg) fail(`image Open Graph absente : ${entry}`);
+
 if (errors.length) {
   console.error(`\n${errors.length} problème(s) bloquant(s) dans ${dist} :`);
   for (const error of errors.slice(0, 60)) console.error(` - ${error}`);
