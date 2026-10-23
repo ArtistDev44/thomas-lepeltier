@@ -38,9 +38,15 @@ const processImage = async options => {
     src = `./src${src}`;
   }
 
+  // En dev (serve/watch) on n'encode qu'un jpeg de taille moyenne : l'avif et les 3 tailles
+  // multiplient par ~9 le travail de sharp à chaque nouvelle image rencontrée.
+  const isDev = ['serve', 'watch'].includes(process.env.ELEVENTY_RUN_MODE);
+  const outputWidths = isDev ? [widths[Math.floor(widths.length / 2)]] : [...widths];
+  const outputFormats = isDev ? ['jpeg'] : [...formats];
+
   const metadata = await Image(src, {
-    widths: [...widths],
-    formats: [...formats],
+    widths: outputWidths,
+    formats: outputFormats,
     urlPath: '/assets/images/',
     outputDir: './dist/assets/images/',
     filenameFormat: (id, src, width, format, options) => {

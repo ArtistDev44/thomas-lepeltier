@@ -9,12 +9,25 @@
  */
 
 import {optimize} from 'svgo';
-import {readFileSync} from 'node:fs';
+import {readFileSync, statSync} from 'node:fs';
+
+// Chaque SVG est optimisé une seule fois (invalidé si le fichier change) au lieu d'une fois par page.
+const optimizedSvgs = new Map();
+
+const getOptimizedSvg = svgName => {
+  const filePath = `./src/assets/svg/${svgName}.svg`;
+  const {mtimeMs} = statSync(filePath);
+
+  const cached = optimizedSvgs.get(filePath);
+  if (cached?.mtimeMs === mtimeMs) return cached.data;
+
+  const {data} = optimize(readFileSync(filePath, 'utf8'));
+  optimizedSvgs.set(filePath, {mtimeMs, data});
+  return data;
+};
 
 export const svgShortcode = async (svgName, ariaName = '', className = '', styleName = '') => {
-  const svgData = readFileSync(`./src/assets/svg/${svgName}.svg`, 'utf8');
-
-  const {data} = await optimize(svgData);
+  const data = getOptimizedSvg(svgName);
 
   return data.replace(
     /<svg(.*?)>/,

@@ -1,7 +1,7 @@
-import fs from 'node:fs/promises';
 import path from 'node:path';
 import fg from 'fast-glob';
 import esbuild from 'esbuild';
+import {signature, writeIfChanged} from './utils.js';
 
 export const buildJs = async (inputPath, outputPath) => {
   const result = await esbuild.build({
@@ -14,13 +14,18 @@ export const buildJs = async (inputPath, outputPath) => {
 
   const output = result.outputFiles[0].text;
 
-  await fs.mkdir(path.dirname(outputPath), {recursive: true});
-  await fs.writeFile(outputPath, output);
+  await writeIfChanged(outputPath, output);
 
   return output;
 };
 
+let lastSignature = null;
+
 export const buildAllJs = async () => {
+  // Les scripts sont indépendants des templates : on ne les recompile que s'ils ont changé.
+  const currentSignature = await signature(['src/assets/scripts/**/*.js']);
+  if (currentSignature === lastSignature) return;
+
   const tasks = [];
 
   const inlineBundleFiles = await fg(['src/assets/scripts/bundle/**/*.js']);
@@ -38,4 +43,6 @@ export const buildAllJs = async () => {
   }
 
   await Promise.all(tasks);
+
+  lastSignature = currentSignature;
 };

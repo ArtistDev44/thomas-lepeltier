@@ -8,6 +8,9 @@
  */
 import fs from 'fs';
 import path from 'path';
+import Image from '@11ty/eleventy-img';
+import sharp from 'sharp';
+
 
 // register dotenv for process.env.* variables to pickup
 import dotenv from 'dotenv';
@@ -23,16 +26,39 @@ import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
 
+// `serve` et `watch` : on privilégie la légèreté (RAM/CPU) sur l'exhaustivité du rendu
+const isDev = ['serve', 'watch'].includes(process.env.ELEVENTY_RUN_MODE);
+
+// Cache des images encodées en base64 (profil, couvertures…) : lues une fois, pas une fois par page
+const base64Cache = new Map();
+
 export default async function (eleventyConfig) {
+  if (isDev) {
+    // Limite le parallélisme d'eleventy-img et de sharp (libvips) pour ne pas saturer CPU/RAM en dev
+    Image.concurrency = 2;
+    sharp.concurrency(2);
+    sharp.cache({memory: 64, files: 0, items: 100});
+  }
+
   // --------------------- Events: before build
   eleventyConfig.on('eleventy.before', async () => {
     await events.buildAllCss();
     await events.buildAllJs();
+    events.watchCss();
   });
 
   // --------------------- custom wtach targets
-  eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
-  eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
+  // (pas d'images ici : surveiller des centaines de png/jpeg coûte cher et n'a aucun effet sur le rendu)
+  // (le CSS n'est pas listé : en `--serve` il est recompilé et injecté à chaud par `events.watchCss`)
+  eleventyConfig.addWatchTarget('./src/assets/scripts/');
+  eleventyConfig.addWatchTarget('./src/assets/svg/');
+  eleventyConfig.addWatchTarget('./src/_includes/webc/');
+
+  // Recharge les feuilles de style de dev en injectant le CSS, sans recharger ni reconstruire les pages
+  eleventyConfig.setServerOptions({watch: ['dist/assets/css/dev/**/*.css']});
+
+  // Évite de relancer un build à chaque écriture intermédiaire (enregistrements en rafale)
+  eleventyConfig.setWatchThrottleWaitTime(150);
 
   // --------------------- layout aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk');
@@ -54,8 +80,25 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
 
   eleventyConfig.addPlugin(plugins.webc, {
-    components: ['./src/_includes/webc/**/*.webc'],
+    // Seuls les composants réellement utilisés sont enregistrés : ceux à `webc:setup`
+    // (custom-youtube, custom-peertube…) créent un contexte `vm` V8 par page rendue.
+    // Pour en réactiver un, l'ajouter ici (et dans `webcTag` ci-dessous).
+    components: [
+      './src/_includes/webc/custom-card.webc',
+      './src/_includes/webc/custom-masonry.webc',
+      './src/_includes/webc/custom-masonry-no-js.webc'
+    ],
     useTransform: true
+  });
+
+  // La transformation WebC parse chaque page HTML avec parse5 et garde l'AST en cache sans jamais
+  // l'évincer (clé = HTML complet) : en dev, c'est ~0,5 Go de RAM perdus à chaque rebuild complet.
+  // On ne la lance donc que sur les pages qui utilisent réellement un composant.
+  const webcTransformName = '@11ty/eleventy-plugin-webc';
+  const webcTransform = eleventyConfig.transforms[webcTransformName];
+  const webcTag = /<custom-(card|masonry)[\s>/]/;
+  eleventyConfig.addTransform(webcTransformName, function (content) {
+    return webcTag.test(content) ? webcTransform.call(this, content) : content;
   });
 
   eleventyConfig.addPlugin(plugins.eleventyImageTransformPlugin, {
@@ -63,9 +106,8 @@ export default async function (eleventyConfig) {
     // formats: ['webp', 'jpeg'],
     formats: ['webp'],
     widths: ['auto'],
-    concurrency: 1, // 👈 traitement séquentiel
 
-    // AJOUT ICI :
+    // (l'option `concurrency` n'existe pas ici : la file est réglée plus haut via `Image.concurrency`)
     sharpOptions: {
       animated: false
     },
@@ -95,10 +137,16 @@ export default async function (eleventyConfig) {
     if (!imagePath) return '';
     const filePath = path.join('src', imagePath);
     try {
+      const {mtimeMs} = fs.statSync(filePath);
+      const cached = base64Cache.get(filePath);
+      if (cached?.mtimeMs === mtimeMs) return cached.dataUri;
+
       const file = fs.readFileSync(filePath);
       const ext = path.extname(imagePath).slice(1).toLowerCase();
       const mime = ext === 'jpg' ? 'jpeg' : ext;
-      return `data:image/${mime};base64,${file.toString('base64')}`;
+      const dataUri = `data:image/${mime};base64,${file.toString('base64')}`;
+      base64Cache.set(filePath, {mtimeMs, dataUri});
+      return dataUri;
     } catch (e) {
       console.warn(`[toBase64] Image non trouvée : ${filePath}`);
       return '';
@@ -149,6 +197,12 @@ export default async function (eleventyConfig) {
   // ----------------------  ignore test files
   if (process.env.ELEVENTY_ENV != 'test') {
     eleventyConfig.ignores.add('src/common/pa11y.njk');
+  }
+
+  // Les visuels Open Graph (un SVG par chronique, images en base64 incluses) ne servent qu'au build final :
+  // en dev ils coûtent plusieurs centaines de pages à rendre et à garder en mémoire à chaque changement.
+  if (isDev) {
+    eleventyConfig.ignores.add('src/common/og-images.njk');
   }
 
   // --------------------- general config
