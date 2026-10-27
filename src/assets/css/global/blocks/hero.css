@@ -1,24 +1,52 @@
-/* Héros de l'accueil : photo en fond, texte à gauche, hauteur dictée par le contenu */
+/* Héros de l'accueil : titre à gauche, photo à droite, sur le fond de la page */
 
 .hero {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  background: var(--color-band);
-  color: #ffffff;
+  background: var(--color-bg);
+  border-block-end: 1px solid var(--color-border);
 }
 
-.hero__bg,
-.hero__bg picture,
-.hero__bg img {
-  position: absolute;
-  inset: 0;
-  inline-size: 100%;
-  block-size: 100%;
+.hero__grid {
+  display: grid;
+  gap: var(--space-l);
+  align-items: end;
+  padding-block: var(--space-l) var(--space-xl);
+}
+
+@media (min-width: 56rem) {
+  .hero__grid {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: var(--space-xl);
+    padding-block: var(--space-xl) 0;
+  }
+}
+
+.hero__content {
+  display: grid;
+  gap: var(--space-m);
+  justify-items: start;
+  padding-block-end: var(--space-xl);
 }
 
 .hero__bg {
-  z-index: -2;
+  order: 2;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+  background: var(--color-bg-accent);
+  aspect-ratio: 4 / 3;
+}
+
+@media (min-width: 56rem) {
+  .hero__bg {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+.hero__bg picture,
+.hero__bg img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .hero__bg img {
@@ -28,125 +56,87 @@
   border-radius: 0;
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(90deg, rgb(7 8 32 / 0.92) 0%, rgb(7 8 32 / 0.74) 45%, rgb(7 8 32 / 0.28) 100%),
-    linear-gradient(0deg, rgb(7 8 32 / 0.5), transparent 40%);
-}
-
-@media (max-width: 40rem) {
-  .hero::after {
-    background: linear-gradient(180deg, rgb(7 8 32 / 0.7), rgb(7 8 32 / 0.9));
-  }
-}
-
-.hero__content {
-  display: grid;
-  gap: var(--space-m);
-  justify-items: start;
-  max-inline-size: 42rem;
-  padding-block: clamp(4rem, 9vw + 1rem, 8.5rem);
-}
-
-.hero .eyebrow {
-  color: var(--color-band-accent);
-}
-
 .hero h1 {
-  font-size: var(--size-step-4);
-  line-height: 1.08;
-  color: #ffffff;
-  text-shadow: 0 1px 24px rgb(0 0 0 / 0.35);
+  font-size: var(--size-step-5);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
 }
 
 .hero h1 .hero__name {
   display: block;
-  margin-block-end: var(--space-xs);
+  inline-size: fit-content;
+  margin-block-end: var(--space-m);
+  padding-block-start: var(--space-2xs);
+  padding-inline-end: var(--space-l);
+  border-block-start: 4px solid var(--color-text);
   font-family: var(--font-base);
-  font-size: var(--size-step-min-1);
+  font-size: var(--size-step-0);
   font-weight: var(--font-bold);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
-  color: var(--color-band-accent);
-  text-shadow: none;
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
 .hero__lead {
-  max-inline-size: 36rem;
+  max-inline-size: 34rem;
   font-size: var(--size-step-1);
   line-height: 1.5;
-  color: rgb(255 255 255 / 0.88);
+  color: var(--color-text-accent);
 }
 
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-xs) var(--space-s);
-  margin-block-start: var(--space-2xs);
 }
 
-/* Accès rapides, juste sous le héros */
+/* Accès rapides : une table des matières, pas une rangée de cartes */
 .quicknav {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
-  gap: var(--space-s);
   margin: 0;
   padding: 0;
   list-style: none;
+  border-block-start: 2px solid var(--color-text);
+}
+
+.quicknav li {
+  border-block-end: 1px solid var(--color-border);
 }
 
 .quicknav a {
   display: grid;
-  gap: 0.2rem;
-  block-size: 100%;
-  padding: var(--space-s-m);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-medium);
-  background: var(--color-surface);
+  gap: 0.15rem var(--space-l);
+  padding-block: var(--space-s);
   color: inherit;
   text-decoration: none;
-  box-shadow: var(--shadow-s);
-  transition:
-    transform var(--transition-duration) var(--transition-timing),
-    box-shadow var(--transition-duration) var(--transition-timing),
-    border-color var(--transition-duration) var(--transition-timing);
 }
 
-.quicknav a:hover {
-  transform: translateY(-3px);
-  border-color: var(--color-primary);
-  box-shadow: var(--shadow-m);
+@media (min-width: 40rem) {
+  .quicknav a {
+    grid-template-columns: minmax(11rem, 1fr) minmax(0, 2.2fr);
+    align-items: baseline;
+  }
 }
 
 .quicknav__title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-xs);
   font-family: var(--font-display);
-  font-size: var(--size-step-2);
-  font-weight: var(--font-bold);
+  font-size: var(--size-step-3);
+  font-weight: var(--font-extra-bold);
+  line-height: 1.05;
   letter-spacing: var(--tracking-s);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.12em;
+  transition: text-decoration-color var(--transition-duration) var(--transition-timing);
 }
 
-.quicknav__title::after {
-  content: '→';
-  font-family: var(--font-base);
-  font-size: var(--size-step-0);
-  color: var(--color-primary);
-  transition: transform var(--transition-duration) var(--transition-timing);
-}
-
-.quicknav a:hover .quicknav__title::after {
-  transform: translateX(4px);
+.quicknav a:hover .quicknav__title,
+.quicknav a:focus-visible .quicknav__title {
+  text-decoration-color: var(--color-primary);
 }
 
 .quicknav__text {
-  font-size: var(--size-step-min-1);
+  font-size: var(--size-step-0);
   color: var(--color-text-soft);
   line-height: 1.4;
 }
@@ -188,7 +178,7 @@
 
 .band__text p {
   max-inline-size: 38rem;
-  color: rgb(244 242 236 / 0.86);
+  color: rgb(244 245 244 / 0.86);
 }
 
 .band__posters {
@@ -203,7 +193,6 @@
 .band__posters li {
   overflow: hidden;
   border-radius: var(--border-radius-small);
-  box-shadow: 0 6px 20px rgb(0 0 0 / 0.45);
   aspect-ratio: 4 / 3;
 }
 
@@ -215,15 +204,13 @@
   border-radius: 0;
 }
 
-/* Contact : carte à fond teinté */
+/* Contact : un filet épais plutôt qu'une carte */
 .contact-card {
   display: grid;
   gap: var(--space-s);
   justify-items: start;
-  padding: var(--space-l) var(--space-m-l);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-large);
-  background: var(--color-bg-accent);
+  padding-block: var(--space-l) 0;
+  border-block-start: 4px solid var(--color-text);
 }
 
 @media (min-width: 48rem) {
@@ -265,8 +252,7 @@
 .bio-teaser__photo {
   margin: 0;
   overflow: hidden;
-  border-radius: var(--border-radius-large);
-  box-shadow: var(--shadow-m);
+  border-radius: var(--border-radius-small);
   max-inline-size: 26rem;
 }
 

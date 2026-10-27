@@ -14,8 +14,8 @@ import sharp from 'sharp';
 const WIDTH = 1200;
 const HEIGHT = 630;
 const CACHE_DIR = '.cache/og-images';
-const TEMPLATE_VERSION = 4; // à incrémenter quand le dessin change
-const COLORS = {bgTop: '#141740', bgBottom: '#070820', accent: '#ffa04d', text: '#ffffff', soft: '#cfcabd'};
+const TEMPLATE_VERSION = 5; // à incrémenter quand le dessin change
+const COLORS = {bg: '#0d0f0e', accent: '#ff6f9c', text: '#ffffff', soft: '#c9cecb'};
 const TEXT_X = 72;
 const TEXT_WIDTH = 640;
 const COVER_BOX = {x: 760, width: 368, height: 500};
@@ -44,41 +44,22 @@ const titleBlock = async (title, maxHeight) => {
 
 const background = () =>
   Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}">
-    <defs>
-      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="${COLORS.bgTop}"/><stop offset="1" stop-color="${COLORS.bgBottom}"/>
-      </linearGradient>
-      <radialGradient id="halo" cx="0.8" cy="0.5" r="0.5">
-        <stop offset="0" stop-color="#3a44a8" stop-opacity="0.45"/><stop offset="1" stop-color="#3a44a8" stop-opacity="0"/>
-      </radialGradient>
-    </defs>
-    <rect width="100%" height="100%" fill="url(#g)"/>
-    <rect width="100%" height="100%" fill="url(#halo)"/>
-    <rect x="${TEXT_X}" y="64" width="64" height="6" rx="3" fill="${COLORS.accent}"/>
+    <rect width="100%" height="100%" fill="${COLORS.bg}"/>
+    <rect x="${TEXT_X}" y="64" width="64" height="6" fill="${COLORS.accent}"/>
   </svg>`);
 
-/** Couverture aux angles arrondis, avec une ombre portée. */
+/** Couverture à plat, angles à peine adoucis, sans ombre. */
 const coverLayers = async file => {
   const {data, info} = await sharp(file)
     .resize({width: COVER_BOX.width, height: COVER_BOX.height, fit: 'inside'})
     .toBuffer({resolveWithObject: true});
   const mask = Buffer.from(
-    `<svg width="${info.width}" height="${info.height}"><rect width="100%" height="100%" rx="10" fill="#fff"/></svg>`
+    `<svg width="${info.width}" height="${info.height}"><rect width="100%" height="100%" rx="2" fill="#fff"/></svg>`
   );
   const rounded = await sharp(data).composite([{input: mask, blend: 'dest-in'}]).png().toBuffer();
   const left = COVER_BOX.x + Math.round((COVER_BOX.width - info.width) / 2);
   const top = Math.round((HEIGHT - info.height) / 2);
-  // Ombre : un calque de la taille du visuel, flouté, pour que le flou ne soit jamais coupé
-  const shadow = await sharp(
-    Buffer.from(`<svg width="${WIDTH}" height="${HEIGHT}"><rect x="${left}" y="${top + 24}" width="${info.width}" height="${info.height}" rx="10" fill="#000" fill-opacity="0.5"/></svg>`)
-  )
-    .blur(30)
-    .png()
-    .toBuffer();
-  return [
-    {input: shadow, left: 0, top: 0},
-    {input: rounded, left, top}
-  ];
+  return [{input: rounded, left, top}];
 };
 
 const render = async card => {
@@ -86,9 +67,9 @@ const render = async card => {
   const layers = hasCover ? await coverLayers(card.cover) : [];
   const width = hasCover ? TEXT_WIDTH : 960;
 
-  const label = await textBlock(card.label.toUpperCase(), {size: 26, color: COLORS.accent, weight: 'bold', width, spacing: 3000});
+  const label = await textBlock(card.label, {size: 28, color: COLORS.accent, weight: 'bold', width});
   const author = card.author ? await textBlock(card.author, {size: 30, color: COLORS.soft, weight: 'medium', width}) : null;
-  const signature = await textBlock('THOMAS LEPELTIER', {size: 24, color: COLORS.text, weight: 'bold', width, spacing: 4000});
+  const signature = await textBlock('Thomas Lepeltier', {size: 28, color: COLORS.text, weight: 'bold', width});
   const titleMax = HEIGHT - 110 - label.info.height - (author?.info.height ?? 0) - signature.info.height - 150;
   const title = await titleBlock(card.title, Math.max(titleMax, 200));
 

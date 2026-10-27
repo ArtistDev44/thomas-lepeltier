@@ -3,19 +3,19 @@
 .button {
   --button-bg: var(--color-text);
   --button-color: var(--color-bg);
-  --button-hover-bg: color-mix(in oklab, var(--button-bg) 82%, var(--color-bg));
-  --button-hover-color: var(--button-color);
-  --button-border-width: 1.5px;
+  --button-hover-bg: var(--color-primary);
+  --button-hover-color: var(--color-on-primary);
+  --button-border-width: 2px;
   --button-border-style: solid;
   --button-border-color: var(--button-bg);
-  --button-radius: 999px;
+  --button-radius: var(--border-radius-small);
   --button-gap: var(--space-2xs);
-  --button-padding: 0.7em 1.35em;
+  --button-padding: 0.75em 1.25em;
   --button-font-family: var(--font-base);
   --button-font-weight: var(--font-bold);
   --button-font-size: var(--size-step-min-1);
   --button-text-transform: none;
-  --button-tracking: 0.01em;
+  --button-tracking: 0;
 
   display: inline-flex;
   align-items: center;
@@ -57,21 +57,20 @@
   color: var(--button-hover-color);
 }
 
-.button:active {
-  transform: translateY(1px);
-}
 
 /* Variants */
 .button[data-button-variant='primary'] {
   --button-bg: var(--color-primary);
   --button-color: var(--color-on-primary);
-  --button-hover-bg: color-mix(in oklab, var(--color-primary) 85%, var(--color-text));
+  --button-hover-bg: var(--color-text);
+  --button-hover-color: var(--color-bg);
 }
 
 .button[data-button-variant='secondary'] {
   --button-bg: var(--color-secondary);
   --button-color: #ffffff;
-  --button-hover-bg: color-mix(in oklab, var(--color-secondary) 82%, black);
+  --button-hover-bg: var(--color-text);
+  --button-hover-color: var(--color-bg);
 }
 
 .button[data-button-variant='tertiary'] {
@@ -88,9 +87,9 @@
 }
 
 .button[data-ghost-button]:hover {
-  background: color-mix(in oklab, var(--color-text) 8%, transparent);
+  background: var(--color-text);
   border-color: var(--color-text);
-  color: var(--button-color);
+  color: var(--color-bg);
 }
 
 /* contour sur fond sombre (bandeau, héros) */
@@ -103,6 +102,7 @@
 .on-dark .button[data-ghost-button]:hover {
   background: rgb(255 255 255 / 0.14);
   border-color: #ffffff;
+  color: #ffffff;
 }
 
 .button[data-small-button] {
@@ -123,7 +123,7 @@
   --button-border-color: transparent;
   --button-color: var(--color-text);
   --button-hover-color: var(--color-primary);
-  --button-radius: 50%;
+  --button-radius: var(--border-radius-small);
   aspect-ratio: 1;
   display: inline-grid;
   place-items: center;

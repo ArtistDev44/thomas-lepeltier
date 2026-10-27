@@ -39,7 +39,7 @@ is-land:not(:defined) .details .control {
   padding-block: var(--space-s);
   cursor: pointer;
   list-style: none;
-  font-family: var(--font-display);
+  font-family: var(--font-base);
   font-size: var(--size-step-1);
   font-weight: var(--font-bold);
   line-height: 1.2;

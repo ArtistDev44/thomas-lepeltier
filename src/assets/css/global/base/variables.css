@@ -3,37 +3,24 @@
 /* Basic variable definitions for color schemes */
 :root {
   --gutter: var(--space-m-l);
-  --transition-duration: 200ms;
-  --transition-timing: ease;
+  --transition-duration: 160ms;
+  --transition-timing: cubic-bezier(0.2, 0, 0, 1);
   --wrapper-width: 80rem;
   --measure: 68ch;
   --tracking: 0;
-  --tracking-s: -0.01em;
-  --tracking-wide: 0.08em;
+  --tracking-s: -0.02em;
+  --tracking-wide: 0;
   --stroke: 1px solid var(--color-border);
   --header-height: 4rem;
-
-  --gradient-rainbow: var(--color-text);
-  --gradient-conic: conic-gradient(
-    var(--color-primary) 0 28%,
-    var(--color-secondary) 0 67%,
-    var(--color-tertiary) 0 100%
-  );
-  --gradient-stripes: linear-gradient(
-    45deg,
-    var(--color-gray-900) 0 75%,
-    var(--color-primary) 0 85%,
-    var(--color-secondary) 0 92%,
-    var(--color-tertiary) 0 100%
-  );
 
   --color-light: var(--color-gray-100);
   --color-dark: var(--color-gray-900);
   --color-mid: var(--color-gray-400);
 
-  --shadow-s: 0 1px 2px rgb(21 19 15 / 0.08), 0 1px 3px rgb(21 19 15 / 0.06);
-  --shadow-m: 0 2px 4px rgb(21 19 15 / 0.06), 0 8px 24px rgb(21 19 15 / 0.1);
-  --shadow-cover: 0 1px 2px rgb(21 19 15 / 0.2), 0 6px 18px rgb(21 19 15 / 0.18);
+  /* À plat : seules les couvertures de livres gardent un bord, comme un objet posé sur la page */
+  --shadow-s: none;
+  --shadow-m: none;
+  --shadow-cover: 0 0 0 1px rgb(13 15 14 / 0.14), 0 1px 2px rgb(13 15 14 / 0.12);
 }
 
 /* Light theme */
@@ -42,7 +29,7 @@
   --color-text: var(--color-gray-800);
   --color-bg: var(--color-gray-100);
 
-  --color-primary: var(--color-orange);
+  --color-primary: var(--color-signal);
   --color-secondary: var(--color-blue);
   --color-tertiary: var(--color-gold);
 
@@ -51,59 +38,57 @@
   --color-bg-accent: var(--color-gray-200);
   --color-bg-accent-2: var(--color-gray-300);
   --color-surface: #ffffff;
-  --color-border: #e3dccf;
-  --color-link: #1f43b8;
-  --color-band: #0c0e2e;
-  --color-on-band: #f4f2ec;
-  --color-band-accent: #ffc58f;
+  --color-border: #cfd3d0;
+  --color-link: var(--color-gray-800);
+  --color-band: #0d0f0e;
+  --color-on-band: #f4f5f4;
+  --color-band-accent: #ff6f9c;
   --color-on-primary: #ffffff;
-  --color-header-bg: rgb(250 248 244 / 0.86);
+  --color-header-bg: var(--color-gray-100);
 }
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --color-text: #ece8df;
-    --color-bg: #0c0e2e;
+    --color-text: #e9ebe9;
+    --color-bg: #0d0f0e;
 
-    --color-primary: #ffa04d;
+    --color-primary: var(--color-signal-subdued);
     --color-secondary: var(--color-blue-subdued);
     --color-tertiary: var(--color-gold-subdued);
 
-    --color-text-accent: #cfcabd;
-    --color-text-soft: #aaa69a;
-    --color-bg-accent: #171a47;
-    --color-bg-accent-2: #2b3070;
-    --color-surface: #141740;
-    --color-border: #2a2f6b;
-    --color-link: #9db4ff;
-    --color-band: #070820;
-    --color-on-band: #f4f2ec;
-    --color-on-primary: #1a0e02;
-    --color-header-bg: rgb(12 14 46 / 0.86);
-    --shadow-s: 0 1px 2px rgb(0 0 0 / 0.4);
-    --shadow-m: 0 8px 28px rgb(0 0 0 / 0.45);
+    --color-text-accent: #c9cecb;
+    --color-text-soft: #a9afac;
+    --color-bg-accent: #181b1a;
+    --color-bg-accent-2: #2a2e2c;
+    --color-surface: #151817;
+    --color-border: #2f3432;
+    --color-link: #e9ebe9;
+    --color-band: #060807;
+    --color-on-band: #f4f5f4;
+    --color-on-primary: #0d0f0e;
+    --color-header-bg: #0d0f0e;
+    --shadow-cover: 0 0 0 1px rgb(255 255 255 / 0.16);
   }
 }
 :root[data-theme='dark'] {
-  --color-text: #ece8df;
-  --color-bg: #0c0e2e;
+  --color-text: #e9ebe9;
+  --color-bg: #0d0f0e;
 
-  --color-primary: #ffa04d;
+  --color-primary: var(--color-signal-subdued);
   --color-secondary: var(--color-blue-subdued);
   --color-tertiary: var(--color-gold-subdued);
 
-  --color-text-accent: #cfcabd;
-  --color-text-soft: #aaa69a;
-  --color-bg-accent: #171a47;
-  --color-bg-accent-2: #2b3070;
-  --color-surface: #141740;
-  --color-border: #2a2f6b;
-  --color-link: #9db4ff;
-  --color-band: #070820;
-  --color-on-band: #f4f2ec;
-  --color-on-primary: #1a0e02;
-  --color-header-bg: rgb(12 14 46 / 0.86);
-  --shadow-s: 0 1px 2px rgb(0 0 0 / 0.4);
-  --shadow-m: 0 8px 28px rgb(0 0 0 / 0.45);
+  --color-text-accent: #c9cecb;
+  --color-text-soft: #a9afac;
+  --color-bg-accent: #181b1a;
+  --color-bg-accent-2: #2a2e2c;
+  --color-surface: #151817;
+  --color-border: #2f3432;
+  --color-link: #e9ebe9;
+  --color-band: #060807;
+  --color-on-band: #f4f5f4;
+  --color-on-primary: #0d0f0e;
+  --color-header-bg: #0d0f0e;
+  --shadow-cover: 0 0 0 1px rgb(255 255 255 / 0.16);
 }

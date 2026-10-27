@@ -13,28 +13,30 @@ description: "Thomas Lepeltier"
 
 <!-- HÉROS -->
 <section class="hero" aria-labelledby="titre-accueil">
-  <div class="hero__bg" aria-hidden="true">
-    {% imageKeys {
-      "src": "/assets/images/thomas/thomas-lepeltier-en-conferences.webp",
-      "alt": "",
-      "loading": "eager",
-      "fetchpriority": "high",
-      "widths": [768, 1280, 1920],
-      "sizes": "100vw",
-      "formats": ["avif", "webp"]
-    } %}
-  </div>
   <div class="wrapper">
-    <div class="hero__content">
-      <h1 id="titre-accueil">
-        <span class="hero__name">Thomas Lepeltier</span><span class="visually-hidden">, </span>Un regard décalé sur les sciences, l’éthique et les grands problèmes de société
-      </h1>
-      <p class="hero__lead">
-        Docteur en astrophysique, historien et philosophe des sciences. Je confronte les idées reçues aux arguments, sans caricature.
-      </p>
-      <div class="hero__actions on-dark">
-        <a href="/livres/" class="button" data-button-variant="primary">Découvrir mes livres</a>
-        <a href="/chroniques/" class="button" data-ghost-button>Lire les chroniques</a>
+    <div class="hero__grid">
+      <div class="hero__content">
+        <h1 id="titre-accueil">
+          <span class="hero__name">Thomas Lepeltier</span><span class="visually-hidden">, </span>Un regard décalé sur les sciences, l’éthique et les grands problèmes de société
+        </h1>
+        <p class="hero__lead">
+          Docteur en astrophysique, historien et philosophe des sciences. Je confronte les idées reçues aux arguments, sans caricature.
+        </p>
+        <div class="hero__actions">
+          <a href="/livres/" class="button" data-button-variant="primary">Découvrir mes livres</a>
+          <a href="/chroniques/" class="button" data-ghost-button>Lire les chroniques</a>
+        </div>
+      </div>
+      <div class="hero__bg" aria-hidden="true">
+        {% imageKeys {
+          "src": "/assets/images/thomas/thomas-lepeltier-en-conferences.webp",
+          "alt": "",
+          "loading": "eager",
+          "fetchpriority": "high",
+          "widths": [640, 960, 1280],
+          "sizes": "(min-width: 56rem) 40vw, 100vw",
+          "formats": ["avif", "webp"]
+        } %}
       </div>
     </div>
   </div>

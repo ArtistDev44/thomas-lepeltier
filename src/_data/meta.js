@@ -28,9 +28,9 @@ export const creator = {
   website: 'https://portfolio-guillaume-renoult.vercel.app/'
 };
 export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
-export const themeColor = '#dd4462'; // used in manifest, for example primary color value
-export const themeLight = '#f8f8f8'; // used for meta tag theme-color, if light colors are prefered. best use value set for light bg
-export const themeDark = '#2e2e2e'; // used for meta tag theme-color, if dark colors are prefered. best use value set for dark bg
+export const themeColor = '#c8104f'; // used in manifest, for example primary color value
+export const themeLight = '#f4f5f4'; // used for meta tag theme-color, if light colors are prefered. best use value set for light bg
+export const themeDark = '#0d0f0e'; // used for meta tag theme-color, if dark colors are prefered. best use value set for dark bg
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
 export const opengraph_default_alt =
   "Thomas Lepeltier, docteur en astrophysique, philosophe et historien des sciences. Livres, articles et plus de 500 chroniques d'essais.";

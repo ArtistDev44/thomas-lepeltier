@@ -6,15 +6,15 @@
   "items": [
     {
       "name": "small",
-      "value": "0.375rem"
+      "value": "0.125rem"
     },
     {
       "name": "Medium",
-      "value": "0.75rem"
+      "value": "0.25rem"
     },
     {
       "name": "Large",
-      "value": "1.25rem"
+      "value": "0.5rem"
     }
   ]
 }

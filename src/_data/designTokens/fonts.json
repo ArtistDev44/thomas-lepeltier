@@ -5,14 +5,12 @@
   "items": [
     {
       "name": "Display",
-      "description": "Display font stack for headings and large text: an editorial serif available on every system (Iowan Old Style on Apple devices, Palatino Linotype on Windows, Georgia as a safety net). No download needed.",
+      "description": "Display font stack for headings and large text: Red Hat Display Black, a heavy geometric grotesque, self-hosted in /assets/fonts/redhat (one weight only, 900).",
       "value": [
-        "Iowan Old Style",
-        "Palatino Linotype",
-        "Palatino",
-        "Book Antiqua",
-        "Georgia",
-        "serif"
+        "Redhat",
+        "Segoe UI",
+        "system-ui",
+        "sans-serif"
       ]
     },
     {

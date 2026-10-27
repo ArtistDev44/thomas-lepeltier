@@ -18,14 +18,11 @@
   background: var(--color-bg-accent);
   aspect-ratio: 4 / 3;
   cursor: pointer;
-  transition:
-    transform var(--transition-duration) var(--transition-timing),
-    box-shadow var(--transition-duration) var(--transition-timing);
 }
 
 .gallery dialog + button:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-m);
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .gallery .poster-year {
@@ -34,8 +31,8 @@
   inset-inline-start: var(--space-2xs);
   z-index: 1;
   padding: 0.15em 0.6em;
-  border-radius: 999px;
-  background: rgb(12 14 46 / 0.82);
+  border-radius: var(--border-radius-small);
+  background: rgb(13 15 14 / 0.86);
   color: #ffffff;
   font-size: var(--size-step-min-2);
   font-weight: var(--font-bold);
@@ -73,7 +70,7 @@ is-land:not(:defined) .gallery dialog + button {
 }
 
 .gallery dialog::backdrop {
-  background: rgb(7 8 32 / 0.88);
+  background: rgb(6 8 7 / 0.88);
 }
 
 .gallery dialog img {

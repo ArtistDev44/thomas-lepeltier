@@ -19,11 +19,11 @@
 .styleguide :is(h2, h3) {
   font-size: var(--size-step-0);
   font-family: var(--font-base);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .styleguide h2 {
-  letter-spacing: var(--tracking-wide);
+  letter-spacing: 0;
 }
 
 .styleguide .colors {

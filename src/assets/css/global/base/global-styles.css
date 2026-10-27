@@ -39,7 +39,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-extra-bold);
   line-height: var(--leading-fine);
   letter-spacing: var(--tracking-s);
   color: var(--color-text);
@@ -47,11 +47,20 @@ h4 {
 
 h1 {
   font-size: var(--size-step-4);
-  line-height: 1.1;
+  line-height: 1.02;
 }
 
 h2 {
   font-size: var(--size-step-3);
+  line-height: 1.08;
+}
+
+/* petits titres : la grotesque noire est réservée aux grands corps, la police de texte prend le relais */
+h3,
+h4 {
+  font-family: var(--font-base);
+  font-weight: var(--font-bold);
+  letter-spacing: var(--tracking);
 }
 
 h3 {
@@ -63,10 +72,8 @@ h4 {
 }
 
 blockquote {
-  padding-inline: var(--space-m-l);
-  padding-block: var(--space-2xs);
-  border-inline-start: 3px solid var(--color-primary);
-  font-family: var(--font-display);
+  padding-block: var(--space-s) var(--space-2xs);
+  border-block-start: 2px solid var(--color-text);
   font-size: var(--size-step-1);
   font-style: italic;
   color: var(--color-text-accent);
@@ -131,7 +138,7 @@ a:not([class]):hover {
 :focus-visible {
   outline: 3px solid var(--focus-color, var(--color-primary));
   outline-offset: var(--focus-offset, 3px);
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 /* reduce focus offset for Firefox

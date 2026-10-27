@@ -3,22 +3,23 @@
 .eyebrow {
   display: block;
   font-family: var(--font-base);
-  font-size: var(--size-step-min-2);
+  font-size: var(--size-step-min-1);
   font-weight: var(--font-bold);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-text-soft);
 }
 
 .page-header {
   display: grid;
   gap: var(--space-xs);
-  padding-block: var(--space-xl) var(--space-l);
+  margin-block-end: var(--space-l);
+  padding-block: var(--space-l) var(--space-m);
+  border-block-end: 2px solid var(--color-text);
 }
 
 .page-header h1 {
   font-size: var(--size-step-4);
   max-inline-size: 22ch;
+  text-wrap: balance;
 }
 
 .page-header .lead,
@@ -57,22 +58,18 @@
   gap: 0.35em;
   font-weight: var(--font-bold);
   font-size: var(--size-step-min-1);
-  color: var(--color-primary);
-  text-decoration: none;
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.25em;
   white-space: nowrap;
 }
 
 .section-head__link:hover {
-  text-decoration: underline;
-}
-
-.section-head__link::after {
-  content: '→';
-  transition: transform var(--transition-duration) var(--transition-timing);
-}
-
-.section-head__link:hover::after {
-  transform: translateX(3px);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  text-decoration-color: transparent;
 }
 
 .section-head p {
@@ -85,9 +82,10 @@
 .tag {
   display: inline-flex;
   align-items: center;
-  padding: 0.2em 0.7em;
-  border-radius: 999px;
-  background: var(--color-bg-accent);
+  padding: 0.15em 0.55em;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-small);
+  background: transparent;
   color: var(--color-text-accent);
   font-size: var(--size-step-min-2);
   font-weight: var(--font-bold);
@@ -97,8 +95,9 @@
 }
 
 a.tag:hover {
-  background: color-mix(in oklab, var(--color-primary) 16%, var(--color-bg-accent));
-  color: var(--color-primary);
+  border-color: var(--color-text);
+  background: var(--color-text);
+  color: var(--color-bg);
 }
 
 .tag-list {

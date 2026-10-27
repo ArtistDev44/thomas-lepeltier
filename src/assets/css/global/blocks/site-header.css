@@ -1,4 +1,4 @@
-/* En-tête collant : fond translucide porté par un pseudo-élément pour ne pas piéger le menu mobile (position: fixed) */
+/* En-tête collant : fond plein et filet, sans flou ni ombre */
 .site-header {
   position: sticky;
   inset-block-start: 0;
@@ -13,8 +13,6 @@
   inset: 0;
   z-index: -1;
   background: var(--color-header-bg);
-  -webkit-backdrop-filter: saturate(1.4) blur(12px);
-  backdrop-filter: saturate(1.4) blur(12px);
 }
 
 .site-header__inner {
@@ -40,11 +38,12 @@
 
 .site-header .logo svg {
   block-size: 1.15em;
+  fill: var(--color-primary);
 }
 
 .site-header .logo span {
   font-family: var(--font-display);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-extra-bold);
   letter-spacing: var(--tracking-s);
 }
 
@@ -60,14 +59,14 @@
   place-items: center;
   inline-size: 2.5rem;
   block-size: 2.5rem;
-  border-radius: 50%;
+  border-radius: var(--border-radius-small);
   color: var(--color-text);
   text-decoration: none;
 }
 
 .site-header__search:hover {
-  background: var(--color-bg-accent);
-  color: var(--color-primary);
+  background: var(--color-text);
+  color: var(--color-bg);
 }
 
 .site-header__search svg {
@@ -75,5 +74,5 @@
 }
 
 .site-header__search[aria-current='page'] {
-  color: var(--color-primary);
+  box-shadow: inset 0 -3px 0 var(--color-primary);
 }

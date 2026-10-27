@@ -85,15 +85,12 @@ custom-card[img-square] img {
 
 custom-card[clickable] {
   position: relative;
-  transition:
-    border-color var(--transition-duration) var(--transition-timing),
-    box-shadow var(--transition-duration) var(--transition-timing);
+  transition: border-color var(--transition-duration) var(--transition-timing);
 }
 
 custom-card[clickable]:hover,
 custom-card[clickable]:focus-within {
-  border-color: var(--color-primary);
-  box-shadow: var(--shadow-m);
+  border-color: var(--color-text);
 }
 
 custom-card[clickable]:focus-within a:focus {
